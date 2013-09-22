@@ -56,8 +56,8 @@ $route['presskit'] = "links/presskit";
 $route['radioone'] = "radioone/episode";
 $route['obom'] = "obom/obomLandingPage";
 
-$route['tours'] = "tour/tourPage";
-$route['campaign'] = "tour/campaignPage";
+$route['tours'] = "CFtour/tourPage";
+$route['campaign'] = "CFtour/campaignPage";
 
 // $route['fbconnect'] = "fbconnect/connectFb";
 
