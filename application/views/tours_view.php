@@ -12,7 +12,7 @@
 
 <script type="text/javascript">
     <?
-    print('console.log($tours);');
+    //print('console.log($tours);');
     ?>
 </script>
 
