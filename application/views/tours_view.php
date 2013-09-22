@@ -10,6 +10,12 @@
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
+<script type="text/javascript">
+    <?
+    print('console.log($tours);');
+    ?>
+</script>
+
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>

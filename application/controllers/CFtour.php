@@ -4,9 +4,11 @@ class CFtour extends CI_Controller{
 
 	public function tourPage(){
 
-	//	$this->load->model('model/tourDetails');
+		$this->load->model('Model');
 
-		$this->load->view('tours_view');
+        $data['tours'] = $this->Model->tourDetails();
+
+		$this->load->view('tours_view', $data);
 	}
 
 	public function campaignPage(){

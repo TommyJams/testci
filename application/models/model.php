@@ -19,25 +19,32 @@ class Model extends CI_Model{
    				$tourDate = $row['tourDate'];
    				$target = $row['target'];
 
+                $response[] = $row;
+
    				// 3D array formation; Getting venue details
    				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tourid';");
    				if ($query1->num_rows() > 0)
 				{	
-					foreach ($query1->result() as $row)
+					foreach ($query1->result() as $rowInner)
 					{
-						$venue_name = $row['venue_name'];
-						$image = $row['image'];
-						$desc = $row['desc'];
-						$link = $row['link'];	
-						$city = $row['city'];
-						$contact = $row['contact'];
+						$venue_name = $rowInner['venue_name'];
+						$image = $rowInner['image'];
+						$desc = $rowInner['desc'];
+						$link = $rowInner['link'];
+						$city = $rowInner['city'];
+						$contact = $rowInner['contact'];
+
+                        $response['venues'][] = $rowInner;
 					}
 				}
 
 			}
+
+            return $response;
 		}
 
 		// Getting on-going campaign details 
+        /*
 		$query1 = $this->db->query("SELECT * FROM campaignCF;");
 		if ($query1->num_rows() > 0)
 		{
@@ -64,6 +71,7 @@ class Model extends CI_Model{
 		$days_to_go = $days;
 
 		// In which format and how to return values to controller
+        */
 	}
 
 	public function campaignDetails(){
