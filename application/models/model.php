@@ -21,6 +21,7 @@ class Model extends CI_Model{
    				$target = $row->target;
 
    				// 3D array formation; Getting venue details
+                $venues = null;
    				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
    				if ($query1->num_rows() > 0)
 				{	
