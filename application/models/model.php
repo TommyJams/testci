@@ -20,8 +20,6 @@ class Model extends CI_Model{
    				$tourDate = $row->tourDate;
    				$target = $row->target;
 
-                $response[] = $row;
-
    				// 3D array formation; Getting venue details
    				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
    				if ($query1->num_rows() > 0)
@@ -36,10 +34,21 @@ class Model extends CI_Model{
 						$city = $rowInner->city;
 						$contact = $rowInner->contact;
 
-                        $response['venues'][] = $rowInner;
+                        $venues[] = $rowInner;
 					}
 				}
 
+                $tourRow = array(
+                                    'tour_id' => $tour_id, 
+                                    'tour_name' => $tour_name,
+                                    'applyBy' => $applyBy, 
+                                    'startCamp' => $startCamp, 
+                                    'endCamp' => $endCamp, 
+                                    'tourDate' => $tourDate, 
+                                    'target' => $target,
+                                    'venues' => $venues
+                                );
+                $response[] = $tourRow;
 			}
 
             return $response;
