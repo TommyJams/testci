@@ -11,11 +11,11 @@
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
-    console.log(
+    console.log('Tour Data:',JSON.stringify(
       <?
       print($tours);
       ?>
-    );
+    ));
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
