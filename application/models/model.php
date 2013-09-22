@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class CFmodel extends CI_Model{
+class Model extends CI_Model{
 
 	public function tourDetails(){
 
