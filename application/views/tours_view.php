@@ -11,9 +11,11 @@
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
-    <?
-    print('console.log('$tours');');
-    ?>
+    console.log(
+      <?
+      print($tours);
+      ?>
+    );
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
