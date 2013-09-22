@@ -23,7 +23,7 @@ class Model extends CI_Model{
                 $response[] = $row;
 
    				// 3D array formation; Getting venue details
-   				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tourid';");
+   				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
    				if ($query1->num_rows() > 0)
 				{	
                     $q1result = $query1->result();
