@@ -9,7 +9,7 @@ class Model extends CI_Model{
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
 		{
-            $qresult = $query->result()
+            $qresult = $query->result();
 			foreach ($qresult as $row)
 			{
    				$tour_id = $row->tour_id;
@@ -26,7 +26,7 @@ class Model extends CI_Model{
    				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tourid';");
    				if ($query1->num_rows() > 0)
 				{	
-                    $q1result = $query1->result()
+                    $q1result = $query1->result();
 					foreach ($q1result as $rowInner)
 					{
 						$venue_name = $rowInner->venue_name;
