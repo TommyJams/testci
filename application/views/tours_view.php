@@ -406,6 +406,6 @@ $('#foo5').carouFredSel({
 <script type="text/javascript" src="/script/jquery.easing.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
-<script src="js/tj.js"></script>
+<script src="/script/tj.js"></script>
 </body>
 </html>
