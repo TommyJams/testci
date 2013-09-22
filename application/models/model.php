@@ -12,13 +12,13 @@ class Model extends CI_Model{
             $qresult = $query->result()
 			foreach ($qresult as $row)
 			{
-   				$tour_id = $row["tour_id"];
-   				$tour_name = $row["tour_name"];
-   				$applyBy = $row["applyBy"];
-   				$startCamp = $row["startCamp"];
-   				$endCamp = $row["endCamp"];
-   				$tourDate = $row["tourDate"];
-   				$target = $row["target"];
+   				$tour_id = $row->tour_id;
+   				$tour_name = $row->tour_name;
+   				$applyBy = $row->applyBy;
+   				$startCamp = $row->startCamp;
+   				$endCamp = $row->endCamp;
+   				$tourDate = $row->tourDate;
+   				$target = $row->target;
 
                 $response[] = $row;
 
@@ -29,12 +29,12 @@ class Model extends CI_Model{
                     $q1result = $query1->result()
 					foreach ($q1result as $rowInner)
 					{
-						$venue_name = $rowInner['venue_name'];
-						$image = $rowInner['image'];
-						$desc = $rowInner['desc'];
-						$link = $rowInner['link'];
-						$city = $rowInner['city'];
-						$contact = $rowInner['contact'];
+						$venue_name = $rowInner->venue_name;
+						$image = $rowInner->image;
+						$desc = $rowInner->desc;
+						$link = $rowInner->link;
+						$city = $rowInner->city;
+						$contact = $rowInner->contact;
 
                         $response['venues'][] = $rowInner;
 					}
