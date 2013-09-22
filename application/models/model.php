@@ -11,13 +11,13 @@ class Model extends CI_Model{
 		{
 			foreach ($query->result() as $row)
 			{
-   				$tour_id = $row['tour_id'];
-   				$tour_name = $row['tour_name'];
-   				$applyBy = $row['applyBy'];
-   				$startCamp = $row['startCamp'];
-   				$endCamp = $row['endCamp'];
-   				$tourDate = $row['tourDate'];
-   				$target = $row['target'];
+   				$tour_id = $row["tour_id"];
+   				$tour_name = $row["tour_name"];
+   				$applyBy = $row["applyBy"];
+   				$startCamp = $row["startCamp"];
+   				$endCamp = $row["endCamp"];
+   				$tourDate = $row["tourDate"];
+   				$target = $row["target"];
 
                 $response[] = $row;
 
