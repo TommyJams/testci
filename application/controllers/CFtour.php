@@ -6,7 +6,8 @@ class CFtour extends CI_Controller{
 
 		$this->load->model('Model');
 
-        $data['tours'] = $this->Model->tourDetails();
+        $this->load->helper('functions');
+        $data['tours'] = createResponse($this->Model->tourDetails());
 
 		$this->load->view('tours_view', $data);
 	}
