@@ -4,7 +4,7 @@ class Model extends CI_Model{
 
 	public function tourDetails(){
 
-		$this->load->database($db);
+		//$this->load->database($db);
 
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
