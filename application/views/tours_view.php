@@ -13,7 +13,7 @@
 <script type="text/javascript">
     console.log('Tour Data:',JSON.stringify(
       <?
-      print($tours);
+      print($tours[0]);
       ?>
     ));
 </script>
