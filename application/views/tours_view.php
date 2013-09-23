@@ -12,22 +12,22 @@
 
 <script type="text/javascript">
   console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
-  console.log('Tour ID:',JSON.stringify(<? print($tours->tour_id); ?>));
-/*  <? foreach($tours as $row){ ?>
+ // console.log('Tour ID:',JSON.stringify(<? print($tours->tour_id); ?>));
+  <? foreach($tours as $tour){ ?>
     <?
-      $tour_id = $row[0];
-      $tour_name = $row[1];
+      $tour_id = $tour->tour_id;
+    /*  $tour_name = $row[1];
       $applyBy = $row[2];
       $startCamp = $row[3];
       $endCamp = $row[4];
       $tourDate = $row[5];
       $target = $row[6];
-      $venues = $row[7];
+      $venues = $row[7];*/
     ?>  
     console.log('Tour Data:',JSON.stringify(<? print($tour_id); ?>)); 
   <? 
   } 
-  ?>  */
+  ?>  
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
