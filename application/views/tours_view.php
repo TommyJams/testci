@@ -17,7 +17,7 @@
       <?
         $tour_id=$row[0];
         print($tour_id);
-      ?>
+      }?>
     ));
 </script>
 
