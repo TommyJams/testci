@@ -13,12 +13,8 @@
 <script type="text/javascript">
     console.log('Tour Data:',JSON.stringify(
       <?
-
-      foreach($tours as $row){ ?>
-      <?
-        $tour_id = $row->tour_id;
-        print($tour_id);
-      }?>
+        print($tours['tour_id']);
+      ?>
     ));
 </script>
 
