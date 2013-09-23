@@ -11,11 +11,9 @@
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
-    console.log('Tour Data:',JSON.stringify(
-     <?
-        print($tours);
-     ?>
-    ));
+  <?  foreach($tours as $row){ ?>
+    console.log('Tour Data:',JSON.stringify(<? print($row); ?>)); 
+  <? } ?>  
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
