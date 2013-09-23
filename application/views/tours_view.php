@@ -16,8 +16,8 @@
 
       foreach($tours as $row){ ?>
       <?
-        //$tour_id=$row[0];
-        print($row[0]);
+        $tour_id = $row->tour_id;
+        print($tour_id);
       }?>
     ));
 </script>
