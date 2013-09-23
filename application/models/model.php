@@ -38,26 +38,31 @@ class Model extends CI_Model{
 				}
 
                 $tourRow = array(
-                                    'tour_id' => $tour_id, 
+                                    'tour_id' 	=> $tour_id, 
                                     'tour_name' => $tour_name,
-                                    'applyBy' => $applyBy, 
+                                    'applyBy' 	=> $applyBy, 
                                     'startCamp' => $startCamp, 
-                                    'endCamp' => $endCamp, 
-                                    'tourDate' => $tourDate, 
-                                    'target' => $target,
-                                    'venues' => $venues
+                                    'endCamp' 	=> $endCamp, 
+                                    'tourDate' 	=> $tourDate, 
+                                    'target' 	=> $target,
+                                    'venues' 	=> $venues
                                 );
 
-                $response['tourRow'][] = $tourRow;
+                $response[] = $tourRow;
 			}
-		}
 
-		// Getting on-going campaign details  
-		$query1 = $this->db->query("SELECT * FROM campaignCF;");
-		if ($query1->num_rows() > 0)
+			//Return values to controller
+			return $response; 
+		}       
+	}
+
+	public function getFeaturedCampaign(){
+
+		$query = $this->db->query("SELECT * FROM campaignCF WHERE status=1;");
+		if ($query->num_rows() > 0)
 		{
-			$q1result = $query1->result();
-			foreach ($q1result as $row)
+			$qresult = $query->result();
+			foreach ($qresult as $row)
 			{
 				$campaign_id = $row->campaign_id;
    				$tour_id = $row->tour_id;
@@ -85,12 +90,12 @@ class Model extends CI_Model{
 										'days_to_go'  => $days_to_go
 									);
 							
-				$response['campaignRow'][] = $campaignRow;
+				$response[] = $campaignRow;
    			}
-   		}
 
-   		//Return values to controller
-		return $response;        
+   			//Return values to controller
+			return $response;
+   		}
 	}
 
 	public function campaignDetails(){
@@ -176,10 +181,10 @@ class Model extends CI_Model{
 							
 				$response[] = $campaignDetails;
    			}
-   		}
-		
-		//Return values to controller
-		return $response;
+   		
+   			//Return values to controller
+			return $response;
+   		}		
 	}
 }
 ?>
