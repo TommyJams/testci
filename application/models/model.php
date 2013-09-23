@@ -3,9 +3,7 @@
 class Model extends CI_Model{
 
 	public function tourDetails(){
-
-		//$this->load->database($db);
-
+		
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
 		{
@@ -49,27 +47,26 @@ class Model extends CI_Model{
                                     'target' => $target,
                                     'venues' => $venues
                                 );
-                $response[] = $tourRow;
-			}
 
-            return $response;
+                $response['tourRow'] = $tourRow;
+			}
 		}
 
-		// Getting on-going campaign details 
-        /*
+		// Getting on-going campaign details  
 		$query1 = $this->db->query("SELECT * FROM campaignCF;");
 		if ($query1->num_rows() > 0)
 		{
-			foreach ($query1->result() as $row)
+			$q1result = $query1->result();
+			foreach ($q1result as $row)
 			{
-				$campaign_id = $row['campaign_id'];
-   				$tour_id = $row['tour_id'];
-   				$tour_name = $row['tour_name'];
-   				$artist_id = $row['artist_id'];
-   				$artist_name = $row['artist_name'];
-   				$target = $row['target'];
-   				$raised = $row['raised'];
-   				$endCamp = $row['endCamp'];
+				$campaign_id = $row->campaign_id;
+   				$tour_id = $row->tour_id;
+   				$tour_name = $row->tour_name;
+   				$artist_id = $row->artist_id;
+   				$artist_name = $row->artist_name;
+   				$target = $row->target;
+   				$raised = $row->raised;
+   				$endCamp = $row->endCamp;
    			}
    		}
    			
@@ -82,8 +79,17 @@ class Model extends CI_Model{
 		$funded = (( $raised/$target ) * 100);
 		$days_to_go = $days;
 
-		// In which format and how to return values to controller
-        */
+		$campaignRow = array(
+								'campaign_id' => $campaign_id,
+								'artist_id'   => $artist_id,
+								'artist_name' => $artist_name,
+								'funded'      => $funded,
+								'days_to_go'  => $days_to_go
+							);
+							
+		$response['campaignRow'] = $campaignRow;	
+
+		return $response;        
 	}
 
 	public function campaignDetails(){
