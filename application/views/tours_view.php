@@ -12,7 +12,7 @@
 
 <script type="text/javascript">
   <?  foreach($tours as $row){ ?>
-    console.log('Tour Data:',JSON.stringify(<? print($row); ?>)); 
+    console.log('Tour Data:',JSON.stringify(<? print($row[0]); ?>)); 
   <? } ?>  
 </script>
 
