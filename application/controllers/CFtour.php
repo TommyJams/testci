@@ -14,9 +14,12 @@ class CFtour extends CI_Controller{
 
 	public function campaignPage(){
 
-	//	$this->load->model('model/campaignDetails');
+		$this->load->model('Model');
 
-		$this->load->view('campaign_view');
+        $this->load->helper('functions');
+        $data['campaign'] = json_encode($this->Model->campaignDetails());
+
+		$this->load->view('campaign_view', $data);
 	}
 }
 ?>
