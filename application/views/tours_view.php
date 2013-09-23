@@ -15,7 +15,7 @@
  
   <? foreach($tours as $tour){ ?>
     <?
-      $tour_id = $tour[0];
+      $tour_id = $tour['tour_id'];
     ?>  
     console.log('Tour ID:',JSON.stringify(<? print($tour_id); ?>)); 
   <? 
