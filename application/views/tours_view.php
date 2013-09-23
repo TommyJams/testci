@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
+  console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
   <? foreach($tours as $row){ ?>
     <?
       $tour_id = $row[0];
