@@ -37,8 +37,8 @@ class Model extends CI_Model{
 					}
 				}
 
-				$tourRow = array($tour_id, $tour_name, $applyBy, $startCamp, $endCamp, $tourDate, $target, $venues);
-              /*  $tourRow = array(
+			//	$tourRow = array($tour_id, $tour_name, $applyBy, $startCamp, $endCamp, $tourDate, $target, $venues);
+                $tourRow = array(
                                     'tour_id' 	=> $tour_id, 
                                     'tour_name' => $tour_name,
                                     'applyBy' 	=> $applyBy, 
@@ -47,7 +47,7 @@ class Model extends CI_Model{
                                     'tourDate' 	=> $tourDate, 
                                     'target' 	=> $target,
                                     'venues' 	=> $venues
-                                );*/
+                                );
 
                 $response[] = $tourRow;
 			}
