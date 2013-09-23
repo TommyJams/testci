@@ -15,7 +15,7 @@
  // console.log('Tour ID:',JSON.stringify(<? print($tours->tour_id); ?>));
   <? foreach($tours as $tour){ ?>
     <?
-      $tour_id = $tour->tour_id;
+      $tour_id = $tour['tour_id'];
     /*  $tour_name = $row[1];
       $applyBy = $row[2];
       $startCamp = $row[3];
