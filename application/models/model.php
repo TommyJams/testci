@@ -3,7 +3,7 @@
 class Model extends CI_Model{
 
 	public function tourDetails(){
-		
+
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
 		{
@@ -48,7 +48,7 @@ class Model extends CI_Model{
                                     'venues' => $venues
                                 );
 
-                $response['tourRow'] = $tourRow;
+                $response['tourRow'][] = $tourRow;
 			}
 		}
 
@@ -87,7 +87,7 @@ class Model extends CI_Model{
 								'days_to_go'  => $days_to_go
 							);
 							
-		$response['campaignRow'] = $campaignRow;	
+		$response['campaignRow'][] = $campaignRow;	
 
 		return $response;        
 	}
