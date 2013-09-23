@@ -12,6 +12,7 @@
 
 <script type="text/javascript">
   console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
+  console.log('Tour ID:',JSON.stringify(<? print($tours->tour_id); ?>));
 /*  <? foreach($tours as $row){ ?>
     <?
       $tour_id = $row[0];
