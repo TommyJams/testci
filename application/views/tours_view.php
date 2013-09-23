@@ -13,15 +13,14 @@
 <script type="text/javascript">
   console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
  
- /* <? foreach($tours as $tour){ ?>
+  <? foreach($tours as $tour){ ?>
     <?
-      //$tour_id = $tour['tour_id'];
       $tour_id = $tour[0];
     ?>  
-    console.log('Tour Data:',JSON.stringify(<? print($tour_id); ?>)); 
+    console.log('Tour ID:',JSON.stringify(<? print($tour_id); ?>)); 
   <? 
   } 
-  ?>  */
+  ?>  
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
