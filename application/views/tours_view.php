@@ -41,24 +41,27 @@
             
           </div>
 
-          <? foreach($venues as $venue){ ?>
-          <?
-            $venue_name = $venue->venue_name;
-            $city = $venue->city;
-            $image = $venue->image;
-          ?>
+          
           <div class="row text-center">
             <div class="col-md-6 col-sm-6  d-tj-tour-left" > 
+
+            <? foreach($venues as $venue){ ?>
+            <?
+              $venue_name = $venue->venue_name;
+              $city = $venue->city;
+              $image = $venue->image;
+            ?>
             <div style="background:black">
-            <img src="img/temp/<? print($image); ?>" alt="" height="50" width="50">
+            <img src="img/temp/<? print($image); ?>" alt="">
             </div>
               <h4>
               <span ><? print($venue_name); ?></span> <? print($city); ?></h4>
+              <? 
+              } 
+              ?>
             </div>
           </div>
-          <? 
-          } 
-          ?>
+          
         </div>
         <div class="col-sm-12 col-md-6 d-tj-black-box-container">
           <div class="d-tj-black-box d-tj-tour-right">
