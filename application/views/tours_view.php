@@ -119,7 +119,7 @@
                     <div class="d-tj-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
                   </div>
                   <div class="d-tj-progress">
-                    <div class="d-tj-progress-g" style="width:25%;"> </div>
+                    <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
                   </div>
                   <div>
                     <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
