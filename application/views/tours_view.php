@@ -37,7 +37,7 @@
         <div class="col-sm-12 col-xs-12 col-md-6">
           <div class="row" style="margin:0;">
             
-              <h3>(<? print($tour_name); ?>)</h3>
+              <h3><? print($tour_name); ?></h3>
             
           </div>
           <div class="row text-center">
@@ -58,9 +58,9 @@
         </div>
         <div class="col-sm-12 col-md-6 d-tj-black-box-container">
           <div class="d-tj-black-box d-tj-tour-right">
-            <h4 class="raise" >APPLY BY: (<? print($applyBy); ?>)</h4>
-            <h4 class="tgt" >START CAMPAIGN: (<? print($startCamp); ?>)</h4>
-            <h3>TARGET: (<? print($target); ?>)</h3>
+            <h4 class="raise" >APPLY BY: <? print($applyBy); ?></h4>
+            <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
+            <h3>TARGET: <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" value="APPLY Now">
             </div>
