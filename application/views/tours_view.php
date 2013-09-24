@@ -31,16 +31,28 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body>   
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
+    <? $tours = (json_decode($tours));
+    foreach($tours as $tour){ ?>
+    <?
+      $tour_id = $tour->tour_id;
+      $tour_name = $tour->tour_name;
+      $applyBy = $tour->applyBy;
+      $startCamp = $tour->startCamp;
+      $endCamp = $tour->endCamp;
+      $tourDate = $tour->tourDate;
+      $target = $tour->target;
+      $venues = $tour->venues;
+    ?>
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-6">
           <div class="row" style="margin:0;">
             
-              <h3>TOUR 1</h3>
+              <h3>JSON.stringify(<? print($tour_name); ?>)</h3>
             
           </div>
           <div class="row text-center">
@@ -61,9 +73,9 @@
         </div>
         <div class="col-sm-12 col-md-6 d-tj-black-box-container">
           <div class="d-tj-black-box d-tj-tour-right">
-            <h4 class="raise" >APPLY BY:</h4>
-            <h4 class="tgt" >START CAMPAIGN:</h4>
-            <h3>TARGET: Rs.50,000</h3>
+            <h4 class="raise" >APPLY BY: JSON.stringify(<? print($applyBy); ?>)</h4>
+            <h4 class="tgt" >START CAMPAIGN: JSON.stringify(<? print($startCamp); ?>)</h4>
+            <h3>TARGET: JSON.stringify(<? print($target); ?>)</h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" value="APPLY Now">
             </div>
@@ -71,6 +83,9 @@
         </div>
       </div>
     </div>
+    <? 
+    } 
+    ?>
     <div class="d-tj-black-box d-tj-offset-top-40 d-tj-why">
       <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
       <div class="row d-tj-offset-top-40">
