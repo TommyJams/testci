@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
-  console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
+/*  console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
 
  
   <? $tours = (json_decode($tours));
@@ -22,7 +22,7 @@
     console.log('Tour ID:',JSON.stringify(<? print($tour_id); ?>)); 
   <? 
   } 
-  ?>  
+  ?>  */
 </script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,7 +35,7 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
-    <? $tours = (json_encode($tours));
+    <? $tours = (json_decode($tours));
     foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
