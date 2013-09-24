@@ -8,6 +8,7 @@ class CFtour extends CI_Controller{
 
         $this->load->helper('functions');
         $data['tours'] = json_encode($this->Model->tourDetails());
+        $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
 		$this->load->view('tours_view', $data);
 	}
