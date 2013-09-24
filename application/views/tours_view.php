@@ -10,21 +10,6 @@
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
-<script type="text/javascript">
-/*  console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
-
- 
-  <? $tours = (json_decode($tours));
-  foreach($tours as $tour){ ?>
-    <?
-      $tour_id = $tour->tour_id;
-    ?>  
-    console.log('Tour ID:',JSON.stringify(<? print($tour_id); ?>)); 
-  <? 
-  } 
-  ?>  */
-</script>
-
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
