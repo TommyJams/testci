@@ -127,8 +127,8 @@ class Model extends CI_Model{
 					$q1result = $query1->result();
 					foreach ($q1result as $rowPledge)
 					{
-						$amount = $row->amount;
-						$desc = $row->desc;
+						$amount = $rowPledge->amount;
+						$desc = $rowPledge->desc;
 
 						$pledge[] = $rowPledge;
 					}
@@ -141,12 +141,12 @@ class Model extends CI_Model{
 					$q2result = $query2->result();
 					foreach ($q2result as $rowVenue)
 					{
-						$venue_name = $row->venue_name;
-						$image = $row->image;
-						$desc = $row->desc;
-						$link = $row->link;	
-						$city = $row->city;
-						$contact = $row->contact;
+						$venue_name = $rowVenue->venue_name;
+						$image = $rowVenue->image;
+						$desc = $rowVenue->desc;
+						$link = $rowVenue->link;	
+						$city = $rowVenue->city;
+						$contact = $rowVenue->contact;
 
 						$venues[] = $rowVenue;
 
