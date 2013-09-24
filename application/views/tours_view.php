@@ -50,7 +50,7 @@
           <div class="row text-center">
             <div class="col-md-6 col-sm-6  d-tj-tour-left" > 
             <div style="background:black">
-            <img src="img/temp/<? print($image); ?>" alt="">
+            <img src="img/temp/<? print($image); ?>" alt="" height="50" width="50">
             </div>
               <h4>
               <span ><? print($venue_name); ?></span> <? print($city); ?></h4>
