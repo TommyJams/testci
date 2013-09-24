@@ -101,7 +101,9 @@
       <div class="d-tj-slide">
         <div class="list_carousel responsive" style="position:relative">
           <ul id="foo5">            
-              <? foreach($featuredCampaigns as $campaign){ ?>
+              <?
+                $featuredCampaigns = (json_decode($featuredCampaigns)); 
+                foreach($featuredCampaigns as $campaign){ ?>
               <?
                 $campaign_id = $campaign->campaign_id;
                 $artist_id = $campaign->artist_id;
