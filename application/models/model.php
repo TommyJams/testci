@@ -59,6 +59,7 @@ class Model extends CI_Model{
 
 	public function getFeaturedCampaign(){
 
+		$days_to_go = 0;
 		$query = $this->db->query("SELECT * FROM campaignCF WHERE status=1;");
 		if ($query->num_rows() > 0)
 		{
@@ -75,14 +76,17 @@ class Model extends CI_Model{
    				$endCamp = $row->endCamp;
 
 		   		$todayDate = date("Y-m-d");	
-   				$diff = abs(strtotime($endCamp) - strtotime($todayDate));
-				$years = floor($diff / (365*60*60*24));
-				$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
-				$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+		   		if($endCamp > $todayDate)
+		   		{	
+   					$diff = abs(strtotime($endCamp) - strtotime($todayDate));
+					$years = floor($diff / (365*60*60*24));
+					$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+					$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+					$days_to_go = $days;
+				}
 
 				$funded = (( $raised/$target ) * 100);
-				$days_to_go = $days;
-
 				$campaignRow = array(
 										'campaign_id' => $campaign_id,
 										'artist_id'   => $artist_id,
