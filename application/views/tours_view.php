@@ -40,26 +40,23 @@
               <h3><? print($tour_name); ?></h3>
             
           </div>
-
-          
           <div class="row text-center">
-            <div class="col-md-6 col-sm-6  d-tj-tour-left" > 
-
             <? foreach($venues as $venue){ ?>
             <?
               $venue_name = $venue->venue_name;
               $city = $venue->city;
               $image = $venue->image;
             ?>
+            <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div style="background:black">
             <img src="img/temp/<? print($image); ?>" alt="">
             </div>
               <h4>
-              <span ><? print($venue_name); ?></span> <? print($city); ?></h4>
-              <? 
-              } 
-              ?>
+              <span ><? print($venue_name); ?></span> <? print($city); ?></h4> 
             </div>
+            <? 
+              } 
+            ?>
           </div>
           
         </div>
