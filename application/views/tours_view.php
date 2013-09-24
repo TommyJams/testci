@@ -14,7 +14,7 @@
   console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
 
  
-  <? $tours = (json_decode($tours));
+  <? $tours = (json_decode(JSON.stringify($tours)));
   foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
@@ -35,7 +35,7 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
-    <? $tours = (json_decode($tours));
+    <? $tours = (json_encode($tours));
     foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
