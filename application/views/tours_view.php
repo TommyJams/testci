@@ -14,7 +14,7 @@
   console.log('Tour Data:',JSON.stringify(<? print($tours); ?>));
 
  
-  <? $tours = (json_decode(JSON.stringify($tours)));
+  <? $tours = (json_decode($tours));
   foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
