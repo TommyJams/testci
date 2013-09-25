@@ -27,9 +27,20 @@
             width: 100%;"  alt=""/> </div>
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" >
-            <h4 class="raise">RAISED : Rs.26,000 [90 PLEDGES]</h4>
-            <h4 class="tgt" >TARGET : Rs.50,000</h4>
-            <h3>7 DAYS TO GO</h3>
+            <?  $campaign = (json_decode($campaign));
+
+                $raised = $campaign->raised;
+                $totalPledges = $campaign->totalPledges;
+                $target = $campaign->target;
+                $days_to_go = $campaign->days_to_go;
+                $tourDate = $campaign->tourDate;
+                $venues = $campaign->venues;
+                $pledges = $campaign->pledges;
+                $desc = $campaign->desc;
+            ?>
+            <h4 class="raise">RAISED : Rs.<? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
+            <h4 class="tgt" >TARGET : Rs.<? print($target); ?></h4>
+            <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" value="PLEDGE NOW">
             </div>
@@ -41,43 +52,87 @@
       <div> 
         <!--Artist-->
         <div class="col-md-7 d-tj-artist" >
-          <h3 style="margin-top: 5px;">Artist Name</h3>
+          <h3 style="margin-top: 5px;"><? print($artist_name); ?></h3>
+          <? foreach($venues as $venue){ ?>
+            <?
+              $venue_name = $venue->venue_name;
+              $city = $venue->city;
+              $image = $venue->image;
+            ?>
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/hard-rock.png" alt="" style="max-height: 150px;"></div>
+            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/temp/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
             <div class="col-md-1"></div>
             <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
-              <h4 >HARD ROCK CAFE <br>
-                BANGALORE</h4>
+              <h4 ><? print($venue_name); ?> <br>
+                <? print($city); ?></h4>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0" > <img src="img/phoenix.png" alt="" style="max-height: 150px;"></div>
-            <div class="col-md-1 col-xs-12"></div>
-            <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0 d-tj-venue" >
-              <h4 >PHOENIX MARKETCITY<br>
-                CHENNAI</h4>
-            </div>
-          </div>
+          <? 
+            } 
+          ?>
           <div class="clearfix"></div>
           <!--date-->
           <div class="d-tj-offset-top-30">
-            <h4>DATES:OCTOBER : 15</h4>
+            <h4>DATES: <? print($tourDate); ?></h4>
           </div>
           <!--/date--> 
           <!-- social-->
           <div>
             <ul class=" list-unstyled social-list clear-fix">
-              <li ><a  href="http://www.facebook.com/tommyjams.live" title="Facebook" alt="Facebook" target="_blank" class="social-list-facebook"></a></li>
-              <li ><a  href="http://twitter.com/TommyJams" title="Twitter" alt="Twitter" target="_blank" class="social-list-twitter"></a></li>
-              <li ><a  href="http://www.tommyjams.com/blog" title="Blog" alt="Blog" target="_blank" class="social-list-blog"></a></li>
+            <?  $fb = $campaign->fb;
+                $twitter = $campaign->twitter;
+                $blog = $campaign->blog;
+                $website = $campaign->website; 
+                $scloud = $campaign->scloud;
+                $rever = $campaign->rever;
+                $youtube = $campaign->youtube;
+                $myspace = $campaign->myspace;
+                $gplus = $campaign->gplus;
+           
+              if($fb!="")
+              {
+                print("<a href='$fb' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/facebook.png' /></a>");
+              }
+              if($twitter!="")
+              { 
+                print("<a href='$twitter' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/twitter.png' /></a>"); 
+              }
+              if($blog!="")
+              {
+                print("<a href='$blog' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/blog.png' /></a>"); 
+              }
+              if($website!="")
+              {
+                print("<a href='$website' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
+              }
+              if($scloud!="")
+              {
+                print("<a href='$scloud' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
+              }
+              if($rever!="")
+              {
+                print("<a href='$rever' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
+              }     
+              if($youtube!="")
+              { 
+                print("<a href='$youtube' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/youtube.png' /></a>"); 
+              }             
+              if($myspace!="")
+              {
+                print("<a href='$myspace' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/myspace.png' /></a>"); 
+              }             
+              if($gplus!="")
+              { 
+                print("<a href='$gplus' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/gplus.png' /></a>"); 
+              }
+            ?>
             </ul>
           </div>
           <div class="clearfix"></div>
           <!-- /social-->
           
           <div class="d-tj-offset-top-20">
-            <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h5>
+            <h5><? print($desc); ?></h5>
             <img src="img/guitar.png" alt=""  style="width: 100%;">
             <h5 class="d-tj-offset-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
@@ -91,29 +146,19 @@
         <div class="col-md-5 ">
           <div class="row">
             <div class="d-tj-pledge">
+              <? foreach($pledges as $pledge){ ?>
+              <?
+                $amount = $pledge->amount;
+                $desc = $pledge->desc;
+              ?>
               <div style="">
-                <h4>PLEDGE  AMT 1</h4>
-                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h5>
+                <h4>PLEDGE  AMT <? print($amount); ?></h4>
+                <h5><? print($desc); ?></h5>
               </div>
               <div class="seperator" ></div>
-              <div style="">
-                <h4>PLEDGE  AMT 2</h4>
-                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h5>
-              </div>
-              <div class="seperator" ></div>
-              <div style="">
-                <h4>PLEDGE  AMT 3</h4>
-                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h5>
-              </div>
-              <div class="seperator" ></div>
-              <div style="">
-                <h4>PLEDGE  AMT 4</h4>
-                <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h5>
-              </div>
+              <? 
+                } 
+              ?>
             </div>
             <div class=" d-tj-offset-top-30 pledge-btn" >
               <input type="button" value="PLEDGE NOW" style="">

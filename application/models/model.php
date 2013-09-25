@@ -103,9 +103,10 @@ class Model extends CI_Model{
    		}
 	}
 
-	public function campaignDetails(){
+	public function campaignDetails($camp_id){
 
-		$query = $this->db->query("SELECT * FROM campaignCF;");
+		$days_to_go = 0;
+		$query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$camp_id';");
 		if ($query->num_rows() > 0)
 		{
 			$qresult = $query->result();
@@ -115,12 +116,14 @@ class Model extends CI_Model{
    				$artist_id = $row->artist_id;$artist_name = $row->artist_name;$deadline = $row->deadline;
    				$target = $row->target;$raised = $row->raised;$totalPledges = $row->totalPledges;
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
-   				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
+   				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;$blog = $row->blog;
    				$scloud = $row->soundcloud;$rever = $row->reverbnation;$youtube = $row->youtube;
    				$myspace = $row->myspace;$image1 = $row->image1;$image2 = $row->image2;
-   				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;
+   				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
+   				$tourDate = $row->tourDate;$gplus = $row->gplus;
 
    				// 3D array formation; Getting amount details
+   				$pledges = null;
    				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id';");
 				if ($query1->num_rows() > 0)
 				{
@@ -130,11 +133,12 @@ class Model extends CI_Model{
 						$amount = $rowPledge->amount;
 						$desc = $rowPledge->desc;
 
-						$pledge[] = $rowPledge;
+						$pledges[] = $rowPledge;
 					}
 				}
 
 				// 3D array formation; Getting venue details
+				$venues = null;
 				$query2 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
 				if ($query2->num_rows() > 0)
 				{
@@ -154,28 +158,36 @@ class Model extends CI_Model{
 				}
    				
    				$todayDate = date("Y-m-d");	
-   				$diff = abs(strtotime($endCamp) - strtotime($todayDate));
-				$years = floor($diff / (365*60*60*24));
-				$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
-				$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
-				$days_to_go = $days;
+
+   				if($endCamp > $todayDate)
+		   		{	
+   					$diff = abs(strtotime($endCamp) - strtotime($todayDate));
+					$years = floor($diff / (365*60*60*24));
+					$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+					$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+					$days_to_go = $days;
+				}
 
 				$campaignDetails = array(
 											'campaign_id' 	=> $campaign_id,
 											'videoLink'		=> $videoLink,
 											'raised' 		=> $raised,
 											'target' 		=> $target,
+											'totalPledges' 	=> $totalPledges,
 											'artist_id'   	=> $artist_id,
 											'artist_name' 	=> $artist_name,
+											'desc' 			=> $desc,
 											'venues' 		=> $venues,
-											'pledge' 		=> $pledge,
+											'pledge' 		=> $pledges,
 											'fb' 			=> $fb,
 											'twitter' 		=> $twitter,
+											'blog' 			=> $blog,
 											'website' 		=> $website,
 											'scloud' 		=> $scloud,
 											'rever' 		=> $rever,
 											'youtube' 		=> $youtube,
 											'myspace' 		=> $myspace,
+											'gplus' 		=> $gplus,
 											'image1' 		=> $image1,
 											'image2' 		=> $image2,
 											'image3' 		=> $image3,

@@ -15,10 +15,13 @@ class CFtour extends CI_Controller{
 
 	public function campaignPage(){
 
+		//$campaign_id = $this->uri->segment(2);
+		$campaign_id = 1;
+
 		$this->load->model('Model');
 
         $this->load->helper('functions');
-        $data['campaign'] = json_encode($this->Model->campaignDetails());
+        $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 
 		$this->load->view('campaign_view', $data);
 	}
