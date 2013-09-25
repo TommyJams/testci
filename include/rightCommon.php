@@ -60,6 +60,7 @@
 			<!-- Code for the new Facebook Login widget
 			<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
 			-->
+			<? $fbURL = print(base_url()); ?>
 			<?
 			$sessionArray = $this->session->all_userdata();
 			if(isset($sessionArray['username']))
@@ -112,7 +113,7 @@
 						</td>
 					</tr>
 				</table>*/
-				print("<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='base_url().'fbconnect/registerMethod/noregister''>
+				print("<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='$fbURL/fbconnect/registerMethod/noregister'>
 				</div>");
 			}
 			?>
