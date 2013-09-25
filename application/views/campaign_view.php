@@ -94,15 +94,15 @@
             <?           
               if($fb!="")
               {
-                print("<a href='$fb' rel='me' target='_blank' class='social-list-facebook'><img src='img/icon_facebook.png' /></a>");
+                print("<li ><a href='$fb' title='Facebook' alt='Facebook' target='_blank' class='social-list-facebook'><img src='img/icon_facebook.png' /></a></li >");
               }
               if($twitter!="")
               { 
-                print("<a href='$twitter' rel='me' target='_blank' class='social-list-twitter'><img src='img/icon_twitter.png' /></a>"); 
+                print("<li ><a href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'><img src='img/icon_twitter.png' /></a></li >"); 
               }
               if($blog!="")
               {
-                print("<a href='$blog' rel='me' target='_blank' class='social-list-blog'><img src='img/icon_blog.png' /></a>"); 
+                print("<li ><a href='$blog' title='Blog' alt='Blog' target='_blank' class='social-list-blog'><img src='img/icon_blog.png' /></a></li >"); 
               }
               if($website!="")
               {
