@@ -94,15 +94,15 @@
             <?           
               if($fb!="")
               {
-                print("<a href='$fb' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/facebook.png' /></a>");
+                print("<a href='$fb' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/icon_facebook.png' /></a>");
               }
               if($twitter!="")
               { 
-                print("<a href='$twitter' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/twitter.png' /></a>"); 
+                print("<a href='$twitter' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/icon_twitter.png' /></a>"); 
               }
               if($blog!="")
               {
-                print("<a href='$blog' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/blog.png' /></a>"); 
+                print("<a href='$blog' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/icon_blog.png' /></a>"); 
               }
               if($website!="")
               {
@@ -152,7 +152,7 @@
               <? foreach($pledges as $pledge){ ?>
               <?
                 $amount = $pledge->amount;
-                $pledge_desc = $pledge->pledge_desc;
+                $pledge_desc = $pledge->desc;
               ?>
               <div style="">
                 <h4>PLEDGE  AMT <? print($amount); ?></h4>
