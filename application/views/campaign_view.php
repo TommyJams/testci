@@ -91,22 +91,18 @@
           <!-- social-->
           <div>
             <ul class=" list-unstyled social-list clear-fix">
-              <li ><a  href="http://www.facebook.com/tommyjams.live" title="Facebook" alt="Facebook" target="_blank" class="social-list-facebook"></a></li>
-              <li ><a  href="http://twitter.com/TommyJams" title="Twitter" alt="Twitter" target="_blank" class="social-list-twitter"></a></li>
-              <li ><a  href="http://www.tommyjams.com/blog" title="Blog" alt="Blog" target="_blank" class="social-list-blog"></a></li>
-
-            <? /*          
+            <?           
               if($fb!="")
               {
-                print("<li ><a href='$fb' title='Facebook' alt='Facebook' target='_blank' class='social-list-facebook'><img src='img/icon_facebook.png' /></a></li >");
+                print("<li ><a href='$fb' title='Facebook' alt='Facebook' target='_blank' class='social-list-facebook'></a></li >");
               }
               if($twitter!="")
               { 
-                print("<li ><a href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'><img src='img/icon_twitter.png' /></a></li >"); 
+                print("<li ><a href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'></a></li >"); 
               }
               if($blog!="")
               {
-                print("<li ><a href='$blog' title='Blog' alt='Blog' target='_blank' class='social-list-blog'><img src='img/icon_blog.png' /></a></li >"); 
+                print("<li ><a href='$blog' title='Blog' alt='Blog' target='_blank' class='social-list-blog'></a></li >"); 
               }
               if($website!="")
               {
@@ -132,7 +128,7 @@
               { 
                 print("<a href='$gplus' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/gplus.png' /></a>"); 
               }
-            */?>
+            ?>
             </ul>
           </div>
           <div class="clearfix"></div>
