@@ -179,7 +179,7 @@ class Model extends CI_Model{
 											'artist_name' 	=> $artist_name,
 											'desc' 			=> $desc,
 											'venues' 		=> $venues,
-											'pledge' 		=> $pledges,
+											'pledges' 		=> $pledges,
 											'fb' 			=> $fb,
 											'twitter' 		=> $twitter,
 											'blog' 			=> $blog,

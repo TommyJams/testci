@@ -39,6 +39,7 @@
           $youtube = $campaign->youtube;
           $myspace = $campaign->myspace;
           $gplus = $campaign->gplus;
+          $artist_name = $campaign->artist_name;
         ?>
 
     <div class="d-tj-box " >
@@ -84,7 +85,7 @@
           <div class="clearfix"></div>
           <!--date-->
           <div class="d-tj-offset-top-30">
-            <h4>DATES: <? print($tourDate); ?></h4>
+            <h4>TOUR DATE: <? print($tourDate); ?></h4>
           </div>
           <!--/date--> 
           <!-- social-->
