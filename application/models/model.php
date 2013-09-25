@@ -105,6 +105,7 @@ class Model extends CI_Model{
 
 	public function campaignDetails($camp_id){
 
+		error_log($camp_id);
 		$days_to_go = 0;
 		$query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$camp_id';");
 		if ($query->num_rows() > 0)
