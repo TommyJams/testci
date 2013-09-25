@@ -19,6 +19,28 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
+    <?  $campaign = (json_decode($campaign));
+        foreach($campaign as $campaign) { ?>
+        <?    
+          $raised = $campaign->raised;
+          $totalPledges = $campaign->totalPledges;
+          $target = $campaign->target;
+          $days_to_go = $campaign->days_to_go;
+          $tourDate = $campaign->tourDate;
+          $venues = $campaign->venues;
+          $pledges = $campaign->pledges;
+          $desc = $campaign->desc;
+          $fb = $campaign->fb;
+          $twitter = $campaign->twitter;
+          $blog = $campaign->blog;
+          $website = $campaign->website; 
+          $scloud = $campaign->scloud;
+          $rever = $campaign->rever;
+          $youtube = $campaign->youtube;
+          $myspace = $campaign->myspace;
+          $gplus = $campaign->gplus;
+        ?>
+
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
@@ -26,18 +48,7 @@
           <img src="/img/youtube.png" class="d-tj-video d-tj-video-img"  style="min-height: 300px;
             width: 100%;"  alt=""/> </div>
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-          <div class="d-tj-black-box d-tj-tour-right" >
-            <?  $campaign = (json_decode($campaign));
-
-                $raised = $campaign->raised;
-                $totalPledges = $campaign->totalPledges;
-                $target = $campaign->target;
-                $days_to_go = $campaign->days_to_go;
-                $tourDate = $campaign->tourDate;
-                $venues = $campaign->venues;
-                $pledges = $campaign->pledges;
-                $desc = $campaign->desc;
-            ?>
+          <div class="d-tj-black-box d-tj-tour-right" > 
             <h4 class="raise">RAISED : Rs.<? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
             <h4 class="tgt" >TARGET : Rs.<? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
@@ -79,16 +90,7 @@
           <!-- social-->
           <div>
             <ul class=" list-unstyled social-list clear-fix">
-            <?  $fb = $campaign->fb;
-                $twitter = $campaign->twitter;
-                $blog = $campaign->blog;
-                $website = $campaign->website; 
-                $scloud = $campaign->scloud;
-                $rever = $campaign->rever;
-                $youtube = $campaign->youtube;
-                $myspace = $campaign->myspace;
-                $gplus = $campaign->gplus;
-           
+            <?           
               if($fb!="")
               {
                 print("<a href='$fb' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/facebook.png' /></a>");
@@ -177,6 +179,9 @@
         <div class="pull-right"> <a class=" social-icons" href="https://www.facebook.com/tommyjams.live" target="_blank" style="cursor:pointer;background:url(img/fb-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://twitter.com/TommyJams" target="_blank" style="cursor:pointer;background:url(img/tw-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://www.tommyjams.com/blog" target="_blank" style="cursor:pointer;background:url(img/blog-icon.png) no-repeat;"></a> </div>
       </div>
     </footer>
+    <? 
+    } 
+    ?>
   </div>
 </div>
 <script src="/script/jquery.js"></script> 
