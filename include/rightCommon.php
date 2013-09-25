@@ -33,6 +33,7 @@
 			</>
 		</div>
 
+		<? $fbURL = print(base_url()); ?>
 		<div id="loginBox" class="parent">
 			<div id="enclosingLoginButton">
 			<!-- <table id = "loginTable">
@@ -112,7 +113,7 @@
 						</td>
 					</tr>
 				</table>*/
-				print("<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='base_url().fbconnect/registerMethod/noregister'>
+				print("<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='$fbURL/fbconnect/registerMethod/noregister'>
 				</div>");
 			}
 			?>
