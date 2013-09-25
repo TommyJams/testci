@@ -29,7 +29,7 @@
           $tourDate = $campaign->tourDate;
           $venues = $campaign->venues;
           $pledges = $campaign->pledges;
-          $desc = $campaign->desc;
+          $campaign_desc = $campaign->campaign_desc;
           $fb = $campaign->fb;
           $twitter = $campaign->twitter;
           $blog = $campaign->blog;
@@ -135,7 +135,7 @@
           <!-- /social-->
           
           <div class="d-tj-offset-top-20">
-            <h5>hello <? print($desc); ?></h5>
+            <h5>hello <? print($campaign_desc); ?></h5>
             <img src="img/guitar.png" alt=""  style="width: 100%;">
             <h5 class="d-tj-offset-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
@@ -152,11 +152,11 @@
               <? foreach($pledges as $pledge){ ?>
               <?
                 $amount = $pledge->amount;
-                $desc = $pledge->desc;
+                $pledge_desc = $pledge->pledge_desc;
               ?>
               <div style="">
                 <h4>PLEDGE  AMT <? print($amount); ?></h4>
-                <h5><? print($desc); ?></h5>
+                <h5><? print($pledge_desc); ?></h5>
               </div>
               <div class="seperator" ></div>
               <? 
