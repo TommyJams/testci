@@ -76,8 +76,8 @@
             <div class="col-md-1"></div>
             <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
               <h4 >
-                <span ><? print($venue_name); ?>
-                </span> <? print($city); ?></h4>
+                <span ><? print($venue_name); ?> <br>
+                </span> <? print($city); ?>
               </h4>
             </div>
           </div>
