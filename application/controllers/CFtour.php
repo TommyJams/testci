@@ -35,5 +35,15 @@ class CFtour extends CI_Controller{
 
 		$this->load->view('fanPage_view', $data);
 	}
+
+	public function campaignEditPage(){
+
+		//$this->load->model('Model');
+
+        //$this->load->helper('functions');
+        //$data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
+
+		$this->load->view('campaignedit_view');
+	}
 }
 ?>

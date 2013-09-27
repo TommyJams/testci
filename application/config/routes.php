@@ -59,6 +59,7 @@ $route['obom'] = "obom/obomLandingPage";
 $route['tours'] = "CFtour/tourPage";
 $route['campaign'] = "CFtour/campaignPage";
 $route['fans'] = "CFtour/fanPage";
+$route['editcampaign'] = "CFtour/campaignEditPage";
 
 // $route['fbconnect'] = "fbconnect/connectFb";
 
