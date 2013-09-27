@@ -52,6 +52,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
             );
     });
 </script>    
+</head>
+<body>
 
 <div class="form">
   <div class="modal-content socialModal">
@@ -64,8 +66,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
     <div class="modal-footer"><a href="#" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
-</head>
-<body>
+
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     <form>
