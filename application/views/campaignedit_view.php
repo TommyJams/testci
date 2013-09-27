@@ -17,6 +17,42 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
+<script>
+$(document).ready(function(){
+  
+$(".add-option").click(function(){
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
+addoption +=' <div class="seperator" ></div></div></div>';
+
+ $("#add-option").prepend($(addoption).fadeIn('slow'));
+ });
+   });
+   
+$('body').on('click', '.btn-delete-pledge', function(){
+    var $this = $(this);
+    $this.closest('.pledge').fadeOut("slow");
+    });
+  
+  
+    $("a.openform").click(function () {
+        $.fancybox(
+                $('.form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'onStart': function () {
+                      //On Start callback if needed  
+                    }
+                 }
+            );
+    });
+</script>    
+
 <div class="form">
   <div class="modal-content socialModal">
     <div class="modal-header">
@@ -260,40 +296,6 @@
 <script type="text/javascript" src="/script/jquery.easing.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj.js"></script> 
-<script>
-$(document).ready(function(){
-	
-$(".add-option").click(function(){
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
-addoption +=' <div class="seperator" ></div></div></div>';
 
- $("#add-option").prepend($(addoption).fadeIn('slow'));
- });
-   });
-   
-$('body').on('click', '.btn-delete-pledge', function(){
-		var $this = $(this);
-		$this.closest('.pledge').fadeOut("slow");
-    });
-	
-	
-    $("a.openform").click(function () {
-        $.fancybox(
-                $('.form').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                    'onStart': function () {
-                      //On Start callback if needed  
-                    }
-                 }
-            );
-    });
-</script>
 </body>
 </html>
