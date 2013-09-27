@@ -380,31 +380,31 @@ ul.social-list li a:hover {
 	background-position:0px -39px;
 }
 ul.social-list li a.social-list-twitter {
-	background-image:url('../img/icon_twitter.png');
+	background-image:url('/img/icon_twitter.png');
 }
 ul.social-list li a.social-list-facebook {
-	background-image:url('../img/icon_facebook.png');
+	background-image:url('/img/icon_facebook.png');
 }
 ul.social-list li a.social-list-googleplus {
-	background-image:url('../img/icon_social_googleplus.png');
+	background-image:url('/img/icon_social_googleplus.png');
 }
 ul.social-list li a.social-list-blog {
-	background-image:url('../img/icon_blog.png');
+	background-image:url('/img/icon_blog.png');
 }
 ul.social-list li a.social-list-twitter-edit {
-	background-image:url('../img/social-add.png');
+	background-image:url('/img/social-add.png');
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-facebook-edit {
-	background-image:url('../img/social-add.png');
+	background-image:url('/img/social-add.png');
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-googleplus-edit {
-	background-image:url('../img/social-add.png');
+	background-image:url('/img/social-add.png');
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-blog-edit {
-	background-image:url('../img/social-add.png');
+	background-image:url('/img/social-add.png');
 	margin-right: 2px;
 }
 /* Offsets */

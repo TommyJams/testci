@@ -241,25 +241,25 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="img/m-s-ventures.png" /></a> </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="/img/m-s-ventures.png" /></a> </div>
   </div>
   <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
     <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
   </div>
 </footer>
 </div>
-<script src="js/jquery.js"></script> 
+<script src="/script/jquery.js"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-<script src="external/jquery.hotkeys.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="external/google-code-prettify/prettify.js"></script> 
-<script src="js/bootstrap-wysiwyg.js"></script> 
+<script src="/script/external/jquery.hotkeys.js"></script> 
+<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/external/google-code-prettify/prettify.js"></script> 
+<script src="/script/bootstrap-wysiwyg.js"></script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
-<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script> 
-<script type="text/javascript" src="js/supersized.shutter.min.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.min.js"></script> 
-<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-<script src="js/tj.js"></script> 
+<script type="text/javascript" src="/script/supersized.min.js"></script> 
+<script type="text/javascript" src="/script/supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.easing.js"></script> 
+<script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
+<script src="/script/tj.js"></script> 
 <script>
 $(document).ready(function(){
 	
