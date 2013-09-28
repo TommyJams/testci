@@ -76,10 +76,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
             <div class="d-tj-video-edit-bdr">
               <h2>UPLOAD <br>
                 YOUR VIDEO</h2>
-                <ul class=" list-unstyled social-list ">
-                <li ><a  data-toggle="modal" href="#fbModal" title="VideoLink" alt="VideoLink" 
-                  target="_blank" class="social-list-facebook-edit openform" onClick="popup('prof')"></a></li>
-              </ul>
+                <a href="javascript:;" title="VideoLink" alt="VideoLink" 
+                  target="_blank" class="social-list-facebook-edit openform" onClick="popup('prof')"></a>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
@@ -188,6 +186,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
           <h5>
             <textarea class="form-control" rows="4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
           </h5>
+          <div class="clearfix"></div>
           <div class="seperator" ></div>
         </div>
         <div class="pledge">
