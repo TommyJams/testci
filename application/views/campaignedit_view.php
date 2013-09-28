@@ -74,10 +74,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
             <div class="d-tj-video-edit-bdr">
+              <input type="file">
               <h2>UPLOAD <br>
                 YOUR VIDEO</h2>
-                <a href="javascript:;" title="VideoLink" alt="VideoLink" 
-                  target="_blank" class="social-list-facebook-edit openform" onClick="popup('prof')"></a>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
@@ -294,7 +293,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.js"></script> 
-<script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
+<script type="text/javascript" src="/script/jquery.fancybox2.js"></script> 
 <script src="/script/tj.js"></script> 
 
 </body>
