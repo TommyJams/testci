@@ -55,7 +55,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 </head>
 <body>
 
-<div class="form">
+<div class="form" id="prof">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
@@ -78,7 +78,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
                 YOUR VIDEO</h2>
                 <ul class=" list-unstyled social-list ">
                 <li ><a  data-toggle="modal" href="#fbModal" title="VideoLink" alt="VideoLink" 
-                  target="_blank" class="social-list-facebook-edit openform"></a></li>
+                  target="_blank" class="social-list-facebook-edit openform" onClick="popup('prof')"></a></li>
               </ul>
             </div>
           </div>
