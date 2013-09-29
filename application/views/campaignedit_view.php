@@ -16,6 +16,19 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<script src="/script/jquery.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+<script src="/script/external/jquery.hotkeys.js"></script> 
+<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/external/google-code-prettify/prettify.js"></script> 
+<script src="/script/bootstrap-wysiwyg.js"></script> 
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
+<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.easing.js"></script> 
+<script type="text/javascript" src="/script/jquery.fancybox2.js"></script> 
+<script src="/script/tj.js"></script> 
 
 <script>
 $(document).ready(function(){
@@ -283,19 +296,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
   </div>
 </footer>
 </div>
-<script src="/script/jquery.js"></script> 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
-<script src="/script/external/jquery.hotkeys.js"></script> 
-<script src="/script/bootstrap.min.js"></script> 
-<script src="/script/external/google-code-prettify/prettify.js"></script> 
-<script src="/script/bootstrap-wysiwyg.js"></script> 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
-<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.easing.js"></script> 
-<script type="text/javascript" src="/script/jquery.fancybox2.js"></script> 
-<script src="/script/tj.js"></script> 
+
 
 </body>
 </html>
