@@ -35,7 +35,7 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis:400,300,200,500,600,700,800" />
 
 		<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.easing.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.blockUI.js"></script>
