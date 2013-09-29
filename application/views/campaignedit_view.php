@@ -16,59 +16,8 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-<script src="/script/jquery.js"></script> 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-<!---<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script> -->
-<script src="/script/external/jquery.hotkeys.js"></script> 
-<script src="/script/bootstrap.min.js"></script> 
-<script src="/script/external/google-code-prettify/prettify.js"></script> 
-<script src="/script/bootstrap-wysiwyg.js"></script> 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
-<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.easing.js"></script> 
-<script type="text/javascript" src="/script/jquery.fancybox2.js"></script> 
-<script src="/script/tj.js"></script> 
 
-<script>
-$(document).ready(function(){
-  
-$(".add-option").click(function(){
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
-addoption +=' <div class="seperator" ></div></div></div>';
-
- $("#add-option").prepend($(addoption).fadeIn('slow'));
- });
-   });
-   
-$('body').on('click', '.btn-delete-pledge', function(){
-    var $this = $(this);
-    $this.closest('.pledge').fadeOut("slow");
-    });
-  
-  
-    $("a.openform").click(function () {
-        $.fancybox(
-                $('.form').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                    'onStart': function () {
-                      //On Start callback if needed  
-                    }
-                 }
-            );
-    });
-</script>    
-</head>
-<body>
-
-<div class="form" id="prof">
+<div class="form">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
@@ -79,7 +28,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
     <div class="modal-footer"><a href="#" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
-
+</head>
+<body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     <form>
@@ -114,7 +64,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
           <input class="form-control input-lg" type="text" placeholder="ARTIST NAME">
         </h3>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/hrc.png" alt="" style="max-height: 150px;"></div>
+          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/hard-rock.png" alt="" style="max-height: 150px;"></div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
             <h4 >HARD ROCK CAFE <br>
@@ -198,7 +148,6 @@ $('body').on('click', '.btn-delete-pledge', function(){
           <h5>
             <textarea class="form-control" rows="4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
           </h5>
-          <div class="clearfix"></div>
           <div class="seperator" ></div>
         </div>
         <div class="pledge">
@@ -289,14 +238,59 @@ $('body').on('click', '.btn-delete-pledge', function(){
         </ul>
       </div>
     </div>
-    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="/img/m-s-ventures.png" /></a> </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="img/m-s-ventures.png" /></a> </div>
   </div>
   <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
     <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
   </div>
 </footer>
 </div>
+<script src="/script/jquery.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="/script/external/jquery.hotkeys.js"></script> 
+<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/external/google-code-prettify/prettify.js"></script> 
+<script src="/script/bootstrap-wysiwyg.js"></script> 
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
+<script type="text/javascript" src="/script/supersized.min.js"></script> 
+<script type="text/javascript" src="/script/supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
+<script src="/script/tj.js"></script> 
+<script>
+$(document).ready(function(){
+  
+$(".add-option").click(function(){
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
+addoption +=' <div class="seperator" ></div></div></div>';
 
-
+ $("#add-option").prepend($(addoption).fadeIn('slow'));
+ });
+   });
+   
+$('body').on('click', '.btn-delete-pledge', function(){
+    var $this = $(this);
+    $this.closest('.pledge').fadeOut("slow");
+    });
+  
+  
+    $("a.openform").click(function () {
+        $.fancybox(
+                $('.form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'onStart': function () {
+                      //On Start callback if needed  
+                    }
+                 }
+            );
+    });
+</script>
 </body>
 </html>
