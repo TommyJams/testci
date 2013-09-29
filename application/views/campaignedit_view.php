@@ -45,14 +45,9 @@
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
-              <h4 class="raise">RAISED : Rs.26,000 [90 PLEDGES]</h4>
               <h4 class="tgt" >TARGET :
                 <textarea  type="text" placeholder="ENTER TARGET  AMOUNT [MIN:Rs50000]"></textarea>
               </h4>
-              <h3>7 DAYS TO GO</h3>
-              <div class="text-center d-tj-offset-top-40">
-                <input type="button" value="PLEDGE NOW">
-              </div>
             </div>
           </div>
         </div>
