@@ -13,10 +13,10 @@ class CFtour extends CI_Controller{
 		$this->load->view('tours_view', $data);
 	}
 
-	public function campaignPage(){
+	public function campaignPage($formData){
 
 		//$campaign_id = $this->uri->segment(2);
-		$campaign_id = 1;
+		$campaign_id = $formData;
 
 		$this->load->model('Model');
 
@@ -24,6 +24,17 @@ class CFtour extends CI_Controller{
         $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 
 		$this->load->view('campaign_view', $data);
+	}
+
+	public function formValues(){
+
+      	$this->load->model('Model');
+      	//$data['campaign_id'] = json_encode($this->Model->formDetails());
+      	$this->Model->formDetails();
+
+      	$this->load->view('campaignedit_view');
+
+      	//$this->campaignPage($data);
 	}
 
 	public function fanPage(){
@@ -45,15 +56,6 @@ class CFtour extends CI_Controller{
 
 		$this->load->view('campaignedit_view');
 
-	}
-
-	public function formValues(){
-
-		$form_data = $this->input->post();
-      	// or just the username:
-      	$target = $this->input->post("target");
-
-      	error_log($target);
 	}
 }
 ?>

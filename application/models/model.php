@@ -204,5 +204,27 @@ class Model extends CI_Model{
 			return $response;
    		}		
 	}
+
+	public function formDetails(){
+
+		$target = $this->input->post("target");
+
+		$query = $this->db->query("INSERT INTO `campaignCF` (`target`) VALUES('$target')");
+
+		/*$query1 = $this->db->query("SELECT * FROM campaignCF");
+		if ($query1->num_rows() > 0)
+		{
+			$q1result = $query1->result();
+			foreach ($q1result as $row)
+			{
+				$campaign_id = $row->campaign_id;
+
+				$campaignID = array('campaign_id' => $campaign_id);
+				$response[] = $campaignID;
+			}
+
+			return $response;
+		}*/
+	}
 }
 ?>
