@@ -32,7 +32,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
-    <form name="editcampaign" action="CFtour/campaignEditPage" method="post">
+    <form name="editcampaign" action="editcampaign" method="post">
       <div class="d-tj-box " >
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
@@ -170,7 +170,7 @@
         <div  class="add-option"><a ><img src="img/add.png" alt="" style=""> ADD OPTION</a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
-      <input type="button" value="SUBMIT" >
+      <input type="submit" value="SUBMIT" >
     </form>
   </div>
 </div>
