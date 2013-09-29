@@ -37,9 +37,11 @@
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
             <div class="d-tj-video-edit-bdr">
+              <div class="social-links" >
               <a  data-toggle="modal" href="#videoModal" title="VideoLink" alt="VideoLink" target="_blank" class="social-list-facebook-edit openform">
                 <h2>VIDEO LINK</h2>
               </a>
+              </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
