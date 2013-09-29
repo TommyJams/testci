@@ -252,8 +252,8 @@
 <script src="/script/external/google-code-prettify/prettify.js"></script> 
 <script src="/script/bootstrap-wysiwyg.js"></script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
-<script type="text/javascript" src="/script/supersized.min.js"></script> 
-<script type="text/javascript" src="/script/supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj.js"></script> 
