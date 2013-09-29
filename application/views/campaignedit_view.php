@@ -32,7 +32,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
-    <form>
+    <form name="editcampaign" action="CFtour/campaignEditPage" method="post">
       <div class="d-tj-box " >
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
@@ -46,7 +46,7 @@
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
               <h4 class="tgt" >TARGET :
-                <textarea  type="text" placeholder="ENTER TARGET  AMOUNT [MIN:Rs50000]"></textarea>
+                <textarea  type="text" name="target" placeholder="ENTER TARGET  AMOUNT [MIN:Rs50000]"></textarea>
               </h4>
             </div>
           </div>

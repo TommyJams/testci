@@ -44,6 +44,12 @@ class CFtour extends CI_Controller{
         //$data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
 		$this->load->view('campaignedit_view');
+
+		$form_data = $this->input->post();
+      	// or just the username:
+      	$target = $this->input->post("target");
+
+      	error_log($target);
 	}
 }
 ?>
