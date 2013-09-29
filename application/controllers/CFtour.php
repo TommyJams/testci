@@ -17,6 +17,7 @@ class CFtour extends CI_Controller{
 
 		//$campaign_id = $this->uri->segment(2);
 		$campaign_id = $formData;
+		error_log("ID: ".$campaign_id);
 
 		$this->load->model('Model');
 
