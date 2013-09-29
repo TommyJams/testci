@@ -230,7 +230,7 @@
                                     <?  
                                         if($budget_min == -1)
                                             {print("Undefined");}
-                                        elseif($budget_max == 0)
+                                        elseif($budget_max == $budget_min)
                                             {print("INR $budget_min");}
                                         else{print("INR $budget_min - $budget_max");} 
                                     ?>
