@@ -170,7 +170,7 @@ class Promoter extends Base{
 	    $response['cat'] = $cat;   
 		$response['budget_min'] = $budget_min;
 		$response['budget_max'] = $budget_max;
-		$response['formattedDate'] =  $date;
+		$response['formattedDate'] = $date;
 		$response['vtime'] = $time;
 		$response['duration'] = $duration;
 		$response['fb'] = $fb;
@@ -184,6 +184,7 @@ class Promoter extends Base{
 		$response['gigStatus'] = $gigStatus;
 		$response['add'] = $venue_add;
 		$response['pincode'] = $venue_pin;
+		$response['ida'] = $ida;
 
 		createResponse($response);
 	}
