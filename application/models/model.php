@@ -211,7 +211,7 @@ class Model extends CI_Model{
 
 		$query = $this->db->query("INSERT INTO `campaignCF` (`target`) VALUES('$target')");
 
-		$query1 = $this->db->query("SELECT LAST_INSERT_ID() FROM campaignCF");
+		$query1 = $this->db->query("SELECT LAST_INSERT_ID FROM campaignCF");
 		if ($query1->num_rows() > 0)
 		{
 			$q1result = $query1->result();
@@ -220,7 +220,7 @@ class Model extends CI_Model{
 				$campaign_id = $row->campaign_id;
 
 				$campaignID = array('campaign_id' => $campaign_id);
-				$response[] = $campaignID;
+				$response = $campaignID;
 			}
 
 			return $response;

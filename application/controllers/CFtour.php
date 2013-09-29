@@ -29,7 +29,7 @@ class CFtour extends CI_Controller{
 	public function formValues(){
 
       	$this->load->model('Model');
-      	$data['campaign_id'] = json_encode($this->Model->formDetails());
+      	$data = json_encode($this->Model->formDetails());
       	//$this->Model->formDetails();
 
       	$this->campaignPage($data);
