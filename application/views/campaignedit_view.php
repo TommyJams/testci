@@ -18,7 +18,7 @@
     <![endif]-->
 <script src="/script/jquery.js"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+<!---<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script> -->
 <script src="/script/external/jquery.hotkeys.js"></script> 
 <script src="/script/bootstrap.min.js"></script> 
 <script src="/script/external/google-code-prettify/prettify.js"></script> 
