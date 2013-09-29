@@ -39,7 +39,7 @@
             <div class="d-tj-video-edit-bdr">
               <h2>
                 <a  data-toggle="modal" href="#videoModal" title="VideoLink" alt="" target="_blank" 
-                    class="social-list-facebook-edit openform">UPLOAD VIDEO LINK</a>  
+                    class="social-list-facebook-edit openform">UPLOAD<br>VIDEO LINK</a>  
               </h2>        
             </div>
           </div>
