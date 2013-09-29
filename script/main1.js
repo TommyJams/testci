@@ -285,12 +285,14 @@ $(document).ready(function()
 	{
 		$.fancybox(
 		{
-			'width'             : '80%',
-            'height'            : '35%',
-            'autoScale'         : false,
-            'transitionIn'      : 'none',
-            'transitionOut'     : 'none',
-            'hideOnContentClick': false
+			'padding'		: 10,
+			'autoScale'		: false,
+			'transitionIn'	: 'none',
+			'transitionOut'	: 'none',
+			'width'			: '80%',
+			'height'		: '35%',
+			'href'			: this.href,
+			'type'			: 'iframe'
 		});
 
 		return false;
