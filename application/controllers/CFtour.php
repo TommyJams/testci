@@ -45,6 +45,10 @@ class CFtour extends CI_Controller{
 
 		$this->load->view('campaignedit_view');
 
+	}
+
+	public function formValues(){
+
 		$form_data = $this->input->post();
       	// or just the username:
       	$target = $this->input->post("target");
