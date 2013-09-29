@@ -215,7 +215,7 @@
 							<tr style="color: #000; width:10%" >
                                 <?php $duration = (json_decode($_POST['json'])->duration); ?>
                                 <td style="width:10%; background: #ffcc00;"><h2>Duration<h2></td>
-                                <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?>hours</td>
+                                <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?> hours</td>
                             </tr>
                             <tr style="color: #000; width:10%" >
                                 <?php $cat = (json_decode($_POST['json'])->cat); ?>
