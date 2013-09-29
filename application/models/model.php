@@ -218,9 +218,7 @@ class Model extends CI_Model{
 			foreach ($q1result as $row)
 			{
 				$campaign_id = $row->campaign_id;
-
-				$campaignID = array('campaign_id' => $campaign_id);
-				$response = $campaignID;
+				$response = $campaign_id;
 			}
 
 			return $response;
