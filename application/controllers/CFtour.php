@@ -54,10 +54,10 @@ class CFtour extends CI_Controller{
 
 	public function campaignEditPage(){
 
-        $data['tour_id'] = $this->uri->segment(2);
+        $tour_id = $this->uri->segment(2);
 
         $this->load->model('Model');
-        $data['getTourDetail'] = json_encode($this->Model->getTourDetail($data));
+        $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
 
 		$this->load->view('campaignedit_view', $data);
 	}
