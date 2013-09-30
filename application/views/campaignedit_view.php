@@ -25,7 +25,7 @@
     <div class="modal-body modal-link">
       <input value="http://" name="SocialLink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer"><a href="javascript:;" name="socialLink" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
 </head>
