@@ -231,6 +231,10 @@ class Model extends CI_Model{
 				$campaign_id = $row->campaign_id;
 			}
 
+			$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
+					VALUES('$campaign_id', '$amount', '$desc')");
+
+			//Return values to controller
 			return $campaign_id;
 		}
 	}
