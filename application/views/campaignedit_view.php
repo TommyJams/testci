@@ -11,6 +11,7 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
+
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -171,7 +172,7 @@
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
-      <input type="hidden" name="tour_id" value="<?php echo $tour_id ?>" />  
+      <input type="hidden" name="tour_id" value="<? print($tour_id); ?>" />  
       <input type="submit" value="SUBMIT" >
     </form>
   </div>
