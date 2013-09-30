@@ -23,9 +23,9 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input value="http://" class="input-lg">
+      <input value="http://" name="SocialLink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="#" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
 </head>
@@ -85,9 +85,9 @@
         <div class="social-links" >
           <h4 >UPLOAD SOCIAL LINKS</h4>
           <ul class=" list-unstyled social-list ">
-            <li ><a  data-toggle="modal" href="#fbModal" title="Facebook" alt="Facebook" target="_blank" class="social-list-facebook-edit openform"></a></li>
-            <li ><a  data-toggle="modal" href="#twModal" title="Twitter" alt="Twitter" target="_blank" class="social-list-twitter-edit openform"></a></li>
-            <li ><a  data-toggle="modal" href="#blogModal" title="Blog" alt="Blog" target="_blank" class="social-list-blog-edit openform"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" target="_blank" class="social-list-facebook-edit openform"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" target="_blank" class="social-list-twitter-edit openform"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" target="_blank" class="social-list-blog-edit openform"></a></li>
           </ul>
           <div class="clearfix"></div>
         </div>
