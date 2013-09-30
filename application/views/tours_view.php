@@ -66,7 +66,7 @@
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
             <h3>TARGET: <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
-              <input type="button" value="APPLY Now">
+              <a href="/CFtour/campaignEditPage/<?php echo $tour_id ?>">APPLY NOW</a>
             </div>
           </div>
         </div>

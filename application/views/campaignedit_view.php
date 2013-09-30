@@ -126,8 +126,7 @@
               
               <!-- <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">--> 
             </div>
-            <div id="editor">
-              <textarea class="form-control" name="campaignDesc" placeholder="ENTER DESCRIPTION ABOUT CAMPAIGN" ></textarea>
+            <div id="editor" name="campaignDesc">
             </div>
           </div>
         </div>
@@ -172,6 +171,7 @@
         <div  class="add-option"><a ><img src="img/add.png" alt="" style=""> ADD OPTION</a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
+      <input type="hidden" name="tour_id" value="<?php echo $tour_id ?>" />  
       <input type="submit" value="SUBMIT" >
     </form>
   </div>
