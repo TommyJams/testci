@@ -126,10 +126,7 @@
               
               <!-- <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">--> 
             </div>
-            <div id="editor" > 
-              <h5>
-                <textarea class="form-control" name="campaignDesc" placeholder="ENTER DESCRIPTION ABOUT CAMPAIGN"></textarea>
-              </h5> 
+            <div id="editor" name="campaignDesc" placeholder="ENTER DESCRIPTION ABOUT CAMPAIGN">
             </div>
           </div>
         </div>
