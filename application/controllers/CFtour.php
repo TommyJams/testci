@@ -51,11 +51,6 @@ class CFtour extends CI_Controller{
 
 	public function campaignEditPage(){
 
-		//$this->load->model('Model');
-
-        //$this->load->helper('functions');
-        //$data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
-        //$tour_id = $this->input->post("tour_id");
         $data['tour_id'] = $this->uri->segment(3);
 
 		$this->load->view('campaignedit_view', $data);
