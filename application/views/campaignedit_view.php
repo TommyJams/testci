@@ -138,7 +138,7 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT 1">
+            <input  class="form-control input-lg pull-left" type="text" name="pledge amount" placeholder="PLEDGE AMT 1">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>

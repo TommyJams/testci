@@ -207,9 +207,12 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
-		$target = $this->input->post("target");
+		//$target = $this->input->post("target");
+		$form_data = $this->input->post("editcampaign");
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`target`) VALUES('$target')");
+		error_log("Form Data: ".$form_data);
+
+		/*$query = $this->db->query("INSERT INTO `campaignCF` (`target`) VALUES('$target')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
@@ -221,7 +224,7 @@ class Model extends CI_Model{
 			}
 
 			return $campaign_id;
-		}
+		}*/
 	}
 }
 ?>
