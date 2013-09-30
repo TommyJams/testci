@@ -208,7 +208,7 @@ class Model extends CI_Model{
 	public function formDetails(){
 
 		//$target = $this->input->post("target");
-		$form_data = $this->input->post("editcampaign");
+		$form_data = $this->input->post();
 
 		error_log("Form Data: ".$form_data);
 
