@@ -13,13 +13,13 @@ class CFtour extends CI_Controller{
 		$this->load->view('tours_view', $data);
 	}
 
-	public function campaignPage($formData){
+	public function campaignPage(){
 
 		//$campaign_id = $this->uri->segment(2);
 		$this->load->model('Model');
-      	$data = $this->Model->formDetails();
+      	$form_data = $this->Model->formDetails();
 
-		$campaign_id = $formData;
+		$campaign_id = $form_data;
 		error_log($campaign_id);
 
 		$this->load->model('Model');
