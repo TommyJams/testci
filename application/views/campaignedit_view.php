@@ -57,7 +57,7 @@
       <!--Artist-->
       <div class="col-md-7 d-tj-artist" >
         <h3 style="margin-top: 5px;">
-          <input class="form-control input-lg" type="text" placeholder="ARTIST NAME">
+          <input class="form-control input-lg" type="text" name="artistName" placeholder="ARTIST NAME">
         </h3>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
           <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/hrc.png" alt="" style="max-height: 150px;"></div>
@@ -126,7 +126,7 @@
               
               <!-- <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">--> 
             </div>
-            <div id="editor" > ENTER DESCRIPTION ABOUT CAMPAIGN </div>
+            <div id="editor" name="campaignDesc" > ENTER DESCRIPTION ABOUT CAMPAIGN </div>
           </div>
         </div>
         <!--  /Description text editor--> 
@@ -138,7 +138,7 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" name="pledge amount" placeholder="PLEDGE AMT 1">
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -148,7 +148,7 @@
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT 2">
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -158,7 +158,7 @@
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT 3">
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -257,7 +257,7 @@
 $(document).ready(function(){
   
 $(".add-option").click(function(){
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="pledgeAmount" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
