@@ -34,6 +34,18 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <form name="editcampaign" action="/campaign" method="post">
+      <?  $getTourDetail = (json_decode($getTourDetail));
+        foreach($getTourDetail as $getTourDetail) { ?>
+        <?
+          $tour_id = $getTourDetail->tour_id;
+          $tour_name = $getTourDetail->tour_name;
+          $applyBy = $getTourDetail->applyBy;
+          $startCamp = $getTourDetail->startCamp;
+          $endCamp = $getTourDetail->endCamp; 
+          $tourDate = $getTourDetail->tourDate;
+          $min_target = $getTourDetail->target;
+          $venues = $getTourDetail->venues;
+        ?> 
       <div class="d-tj-box " >
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
@@ -60,26 +72,28 @@
         <h3 style="margin-top: 5px;">
           <input class="form-control input-lg" type="text" name="artistName" placeholder="ARTIST NAME">
         </h3>
+        <? foreach($venues as $venue){ ?>
+          <?
+            $venue_name = $venue->venue_name;
+            $city = $venue->city;
+            $image = $venue->image;
+          ?>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
           <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/hrc.png" alt="" style="max-height: 150px;"></div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
-            <h4 >HARD ROCK CAFE <br>
-              BANGALORE</h4>
+            <h4 ><? print($venue_name); ?> <br>
+              <? print($city); ?>
+            </h4>
           </div>
         </div>
-        <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0" > <img src="/img/phoenix.png" alt="" style="max-height: 150px;"></div>
-          <div class="col-md-1 col-xs-12"></div>
-          <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0 d-tj-venue" >
-            <h4 >PHOENIX MARKETCITY<br>
-              CHENNAI</h4>
-          </div>
-        </div>
+        <? 
+          } 
+        ?>
         <div class="clearfix"></div>
         <!--date-->
         <div class="d-tj-offset-top-30">
-          <h4>DATES:OCTOBER : 15</h4>
+          <h4>TOUR DATE: <? print($tourDate); ?></h4>
         </div>
         <!--/date--> 
         <!-- social-->
@@ -172,8 +186,16 @@
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
-      <input type="hidden" name="tour_id" value="<? print($tour_id); ?>" />  
+      <input type="hidden" name="tour_id"   value="<? print($tour_id); ?>" /> 
+      <input type="hidden" name="tour_name" value="<? print($tour_name); ?>" />
+      <input type="hidden" name="applyBy"   value="<? print($applyBy); ?>" />
+      <input type="hidden" name="startCamp" value="<? print($startCamp); ?>" />
+      <input type="hidden" name="endCamp"   value="<? print($endCamp); ?>" />
+      <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
       <input type="submit" value="SUBMIT" >
+      <? 
+        } 
+      ?>
     </form>
   </div>
 </div>

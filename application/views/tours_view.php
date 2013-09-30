@@ -52,7 +52,8 @@
             <img src="img/temp/<? print($image); ?>" alt="">
             </div>
               <h4>
-              <span ><? print($venue_name); ?></span> <? print($city); ?></h4> 
+                <span ><? print($venue_name); ?></span> <? print($city); ?>
+              </h4> 
             </div>
             <? 
               } 

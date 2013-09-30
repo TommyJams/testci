@@ -207,12 +207,20 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
-		//$target = $this->input->post("target");
+		$tour_id = $this->input->post("tour_id");
+		$tour_name = $this->input->post("tour_name");
+		$artist_name = $this->input->post("artist_name");
+		$target = $this->input->post("target");
+		$startCamp = $this->input->post("startCamp");
+		$endCamp = $this->input->post("endCamp");
+		$tourDate = $this->input->post("tourDate");
+		
+		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
-
 		error_log("Form Data: ".$form_data);
 
-		/*$query = $this->db->query("INSERT INTO `campaignCF` (`target`) VALUES('$target')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`) 
+					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
@@ -224,7 +232,7 @@ class Model extends CI_Model{
 			}
 
 			return $campaign_id;
-		}*/
+		}
 	}
 
 	public function getTourDetail($tour_id){
