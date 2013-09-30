@@ -54,7 +54,7 @@ class CFtour extends CI_Controller{
 
 	public function campaignEditPage(){
 
-        $data['tour_id'] = $this->uri->segment(3);
+        $data['tour_id'] = $this->uri->segment(2);
 
 		$this->load->view('campaignedit_view', $data);
 	}
