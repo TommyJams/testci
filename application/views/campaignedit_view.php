@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="d-tj-bg-overlay">
-  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
+  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <form name="editcampaign" action="campaign" method="post">
       <div class="d-tj-box " >
         <div class="row d-tj-tour">
@@ -60,7 +60,7 @@
           <input class="form-control input-lg" type="text" name="artistName" placeholder="ARTIST NAME">
         </h3>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/hrc.png" alt="" style="max-height: 150px;"></div>
+          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/hrc.png" alt="" style="max-height: 150px;"></div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
             <h4 >HARD ROCK CAFE <br>
@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0" > <img src="img/phoenix.png" alt="" style="max-height: 150px;"></div>
+          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0" > <img src="/img/phoenix.png" alt="" style="max-height: 150px;"></div>
           <div class="col-md-1 col-xs-12"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0 d-tj-venue" >
             <h4 >PHOENIX MARKETCITY<br>
@@ -168,7 +168,7 @@
           <div class="seperator" ></div>
         </div>
         <div id="add-option" ></div>
-        <div  class="add-option"><a ><img src="img/add.png" alt="" style=""> ADD OPTION</a></div>
+        <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" name="tour_id" value="<?php echo $tour_id ?>" />  
@@ -186,7 +186,7 @@
 <footer class="d-tj-footer">
   <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
     <div class="col-md-3 col-sm-12 col-xs-12 footer-top">
-      <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="img/tj.jpg" height="50" alt=""> </a> </div>
+      <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="/img/tj.jpg" height="50" alt=""> </a> </div>
       <div class="col-md-12 f-social">
         <ul class=" list-unstyled social-list clear-fix">
           <li><a href="http://www.facebook.com/tommyjams.live" title="" alt="Facebook" target="_blank" class="social-list-facebook" data-original-title="Facebook"></a></li>
@@ -236,7 +236,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="img/m-s-ventures.png" /></a> </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="/img/m-s-ventures.png" /></a> </div>
   </div>
   <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
     <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
