@@ -142,7 +142,7 @@
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" rows="4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
+            <textarea class="form-control" name="desc1" rows="4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
@@ -152,7 +152,7 @@
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" rows="4" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
+            <textarea class="form-control" name="desc2" rows="4" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
@@ -162,7 +162,7 @@
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" rows="4" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
+            <textarea class="form-control" name="desc3" rows="4" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
@@ -258,7 +258,7 @@ $(document).ready(function(){
   
 $(".add-option").click(function(){
 var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="pledgeAmount" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" rows="4" ></textarea></h5>';
+addoption +='<h5> <textarea class="form-control" name="desc" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
  $("#add-option").prepend($(addoption).fadeIn('slow'));
