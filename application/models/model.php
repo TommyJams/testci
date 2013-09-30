@@ -226,5 +226,55 @@ class Model extends CI_Model{
 			return $campaign_id;
 		}*/
 	}
+
+	public function getTourDetail($tour_id){
+
+		error_log("message: ".$tour_id);
+
+		$query = $this->db->query("SELECT * FROM toursCF WHERE tour_id = '$tour_id';");
+		if ($query->num_rows() > 0)
+		{
+            $qresult = $query->result();
+			foreach ($qresult as $row)
+			{
+   				$tour_id = $row->tour_id;
+   				$tour_name = $row->tour_name;
+   				$applyBy = $row->applyBy;
+   				$startCamp = $row->startCamp;
+   				$endCamp = $row->endCamp;
+   				$tourDate = $row->tourDate;
+   				$target = $row->target;
+
+   				// 3D array formation; Getting venue details
+                $venues = null;
+   				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
+   				if ($query1->num_rows() > 0)
+				{	
+                    $q1result = $query1->result();
+					foreach ($q1result as $rowInner)
+					{
+                        $venues[] = $rowInner;
+					}
+				}
+
+			//	$tourRow = array($tour_id, $tour_name, $applyBy, $startCamp, $endCamp, $tourDate, $target, $venues);
+                $tourRow = array(
+                                    'tour_id' 	=> $tour_id, 
+                                    'tour_name' => $tour_name,
+                                    'applyBy' 	=> $applyBy, 
+                                    'startCamp' => $startCamp, 
+                                    'endCamp' 	=> $endCamp, 
+                                    'tourDate' 	=> $tourDate, 
+                                    'target' 	=> $target,
+                                    'venues' 	=> $venues
+                                );
+
+                $response[] = $tourRow;
+			}
+
+			//Return values to controller
+			return $response; 
+		}       
+	}
 }
 ?>
