@@ -291,7 +291,7 @@ var b = a + maxIndex;
 
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="pledgeAmount" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="b" placeholder="PLEDGE AMT "><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="desc" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
