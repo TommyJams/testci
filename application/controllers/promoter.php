@@ -388,7 +388,7 @@ class Promoter extends Base{
 						</tr>
 						<tr>
 							<td>Rate Promoter and Gig</td>
-							<td><a href='<?php echo base_url();?>artist/feedback/$link'>RATE</a> (enabled only after the gig)</td>
+							<td><a href='http://www.facebook.com'>RATE</a> (enabled only after the gig)</td>
 						</tr>
 					</table>
 					</center>
@@ -474,7 +474,7 @@ class Promoter extends Base{
 						</tr>
 						<tr>
 							<td>Rate Artist and Gig</td>
-							<td><a href='<?php echo base_url();?>index' >RATE</a> (enabled only after the gig)</td>
+							<td><a href='<? print(base_url().'fbconnect/registerMethod/preregistered'); ?>' >RATE</a> (enabled only after the gig)</td>
 						</tr>
 					</table>
 					</center>
