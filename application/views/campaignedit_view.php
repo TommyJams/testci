@@ -300,11 +300,13 @@ var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control inp
 addoption +='<h5> <textarea class="form-control" name="desc" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
- $("#add-option").prepend($(addoption).fadeIn('slow'));
- });
-  console.log(x);
+console.log(x);
   x++;
-  console.log(x);
+console.log(x);
+
+$("#add-option").prepend($(addoption).fadeIn('slow'));
+ });
+
    });
    
 $('body').on('click', '.btn-delete-pledge', function(){
