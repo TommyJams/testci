@@ -281,28 +281,20 @@
 <script>
 $(document).ready(function(){
   
-  var x = 3;
+var x = 3;
 
 $(".add-option").click(function(){
 
-  var maxIndex = x + 1; 
-  var a = 'pledgeAmount';
-  var b = a + maxIndex;
-  var c = 'PLEDGE AMT' + maxIndex;
+var maxIndex = x + 1; 
+var a = 'pledgeAmount' + maxIndex;
+var b = 'PLEDGE AMT' + maxIndex;
+var desc = 'desc' + maxIndex;
 
-  console.log(maxIndex);
-  console.log(b);
-  console.log(c);
-  
-  var desc = 'desc' + maxIndex;
-
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="b" placeholder="c"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" name="desc" placeholder="Please write description" rows="4" ></textarea></h5>';
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="<? print(a); ?>" placeholder="<? print(b); ?>"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+addoption +='<h5> <textarea class="form-control" name="<? print(desc); ?>" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
-console.log(x);
-  x++;
-console.log(x);
+x++;
 
 $("#add-option").prepend($(addoption).fadeIn('slow'));
  });
