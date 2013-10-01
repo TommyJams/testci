@@ -452,7 +452,6 @@ class Promoter extends Base{
 				$subject = "Booked Gig: $gigname";
 				$promoterRateLink = base_url().'promoter/feedback/$link';
 
-				error_log(message)
 				$mess="<p style='text-align:left;'>
 					Dear $promoter_name,<br><br>
 					Congratulations! Your gig: '$gigname' is now booked on TommyJams.
