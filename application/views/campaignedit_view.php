@@ -17,6 +17,24 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<style>
+.video-link{display:none}
+.d-tj-video-edit-bdr{min-height: 240px;}
+.d-tj-video-edit-bdr a{color:white;text-decoration:none}
+</style>
+<!--Video modal-->
+<div class="video-link">
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>Add  Video Link</h4>
+    </div>
+    <div class="modal-body modal-link">
+      <input value="http://" name="VideoLink" class="input-lg">
+    </div>
+    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+  </div>
+</div>
+<!--/Video modal-->    
 
 <div class="form">
   <div class="modal-content socialModal">
@@ -52,8 +70,8 @@
             <div class="d-tj-video-edit-bdr">
               <h2>
                 <a  data-toggle="modal" href="#videoModal" title="VideoLink" alt="" target="_blank" 
-                    class="social-list-facebook-edit openform">UPLOAD<br>VIDEO LINK</a>  
-              </h2>        
+                    class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>  
+              </h2>       
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
@@ -291,7 +309,7 @@ var a = 'pledgeAmount' + maxIndex;
 var b = 'PLEDGE AMT' + maxIndex;
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -301,7 +319,7 @@ console.log(maxIndex);
 
 document.getElementById('maxIndex').value = maxIndex;
 
-$("#add-option").prepend($(addoption).fadeIn('slow'));
+$("#add-option").append($(addoption).fadeIn('slow'));
  });
 
    });
@@ -315,6 +333,23 @@ $('body').on('click', '.btn-delete-pledge', function(){
     $("a.openform").click(function () {
         $.fancybox(
                 $('.form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'onStart': function () {
+                      //On Start callback if needed  
+                    }
+                 }
+            );
+    });
+
+    $("a.open-video-link").click(function () {
+        $.fancybox(
+                $('.video-link').html(),
                 {
                     'width'             : 950,
                     'height'            : 1100,
