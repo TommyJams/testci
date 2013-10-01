@@ -290,6 +290,9 @@ var a = 'pledgeAmount';
 var b = a + maxIndex;
 var c = 'PLEDGE AMT' + maxIndex;
 
+console.log(b);
+console.log(c);
+
 var desc = 'desc' + maxIndex;
 
 var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="b" placeholder="c"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
