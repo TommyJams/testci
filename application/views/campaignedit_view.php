@@ -302,7 +302,9 @@ addoption +=' <div class="seperator" ></div></div></div>';
 
  $("#add-option").prepend($(addoption).fadeIn('slow'));
  });
+  console.log(x);
   x++;
+  console.log(x);
    });
    
 $('body').on('click', '.btn-delete-pledge', function(){
