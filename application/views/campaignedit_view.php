@@ -291,7 +291,9 @@ var b = 'PLEDGE AMT' + maxIndex;
 document.getElementById("pholder").innerHTML=b;
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="document.write(a);" placeholder="<p id="pholder"></p>"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+var pholder = '<p id="pholder"></p>';
+
+var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="document.write(a);" placeholder="document.writeln(pholder)"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="document.write(desc);" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 

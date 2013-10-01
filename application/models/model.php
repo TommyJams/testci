@@ -214,6 +214,8 @@ class Model extends CI_Model{
 		$startCamp = $this->input->post("startCamp");
 		$endCamp = $this->input->post("endCamp");
 		$tourDate = $this->input->post("tourDate");
+
+		$maxIndex = $this->input->post("maxIndex"); 
 		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
@@ -231,9 +233,20 @@ class Model extends CI_Model{
 				$campaign_id = $row->campaign_id;
 			}
 
-			$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
+			while($maxIndex)
+			{
+				$pledgeAmount = 'pledgeAmount'.$maxIndex;
+				$desc = 'desc'.$maxIndex;
+
+				$amount = $this->input->post("$pledgeAmount");
+				$desc = $this->input->post("$desc");
+
+				$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
 					VALUES('$campaign_id', '$amount', '$desc')");
 
+				$maxIndex--;
+			}
+			
 			//Return values to controller
 			return $campaign_id;
 		}
