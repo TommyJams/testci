@@ -454,7 +454,7 @@ class Promoter extends Base{
 				$promoter_email=$found["email"];
 				$to = $promoter_email;
 				$subject = "Booked Gig: $gigname";
-				$promoterRateLink = base_url().'promoter/feedback/$link';
+				$promoterRateLink = base_url()."promoter/feedback/$link";
 
 				error_log($promoterRateLink);
 
