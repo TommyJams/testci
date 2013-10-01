@@ -474,7 +474,7 @@ class Promoter extends Base{
 						</tr>
 						<tr>
 							<td>Rate Artist and Gig</td>
-							<td><a href='<?php echo base_url();?>promoter/feedback/$link'>RATE</a> (enabled only after the gig)</td>
+							<td><a href='<? print(base_url().'promoter/feedback/$link'); ?>'>RATE</a> (enabled only after the gig)</td>
 						</tr>
 					</table>
 					</center>
