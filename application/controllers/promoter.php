@@ -364,6 +364,8 @@ class Promoter extends Base{
 					$subject = "Dib Accepted for $gig";
 					$artistRateLink = base_url().'artist/feedback/$link';
 
+					error_log($artistRateLink);
+
 					$mess="<p style='text-align:left;'>
 					Dear $artist_name,<br><br>
 					Congratulations! Your dib has been accepted for the gig: '$gig' on TommyJams.
@@ -389,7 +391,7 @@ class Promoter extends Base{
 						</tr>
 						<tr>
 							<td>Rate Promoter and Gig</td>
-							<td><a href='artistRateLink'>RATE</a> (enabled only after the gig)</td>
+							<td><a href='$artistRateLink'>RATE</a> (enabled only after the gig)</td>
 						</tr>
 					</table>
 					</center>
@@ -451,6 +453,8 @@ class Promoter extends Base{
 				$to = $promoter_email;
 				$subject = "Booked Gig: $gigname";
 				$promoterRateLink = base_url().'promoter/feedback/$link';
+
+				error_log($promoterRateLink);
 
 				$mess="<p style='text-align:left;'>
 					Dear $promoter_name,<br><br>
