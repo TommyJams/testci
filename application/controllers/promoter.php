@@ -364,7 +364,7 @@ class Promoter extends Base{
 					}
 					$acceptedArtist=$artist_name;
 					$subject = "Dib Accepted for $gig";
-					$artistRateLink = base_url().'artist/feedback/'$link'';
+					$artistRateLink = base_url()."artist/feedback/$link";
 
 					error_log($artistRateLink);
 
