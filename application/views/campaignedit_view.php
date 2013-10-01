@@ -302,6 +302,7 @@ addoption +=' <div class="seperator" ></div></div></div>';
 
  $("#add-option").prepend($(addoption).fadeIn('slow'));
  });
+  x++;
    });
    
 $('body').on('click', '.btn-delete-pledge', function(){
