@@ -305,6 +305,8 @@ class Promoter extends Base{
 
 		//$link=$_POST["gig"]/15999;
 		$link=$_POST['link'];
+
+		error_log("Link: ".$link);
 		$artistId=$_POST['artist_id'];
 		$accepted=$_POST['accepted'];
 
