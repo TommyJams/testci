@@ -288,10 +288,11 @@ $(".add-option").click(function(){
 var maxIndex = x + 1; 
 var a = 'pledgeAmount' + maxIndex;
 var b = 'PLEDGE AMT' + maxIndex;
-document.getElementById("pholder").innerHTML=b;
+document.getElementById("pholder").innerHTML="b";
 var desc = 'desc' + maxIndex;
 
 var pholder = '<p id="pholder"></p>';
+console.log(pholder);
 
 var addoption = '<div id="t1" class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" name="document.write(a);" placeholder="document.writeln(pholder)"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="document.write(desc);" placeholder="Please write description" rows="4" ></textarea></h5>';
