@@ -216,6 +216,8 @@ class Model extends CI_Model{
 		$tourDate = $this->input->post("tourDate");
 
 		$maxIndex = $this->input->post("maxIndex"); 
+
+		error_log($maxIndex);
 		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
