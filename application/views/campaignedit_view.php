@@ -287,7 +287,7 @@ $(".add-option").click(function(){
 
   var maxIndex = x + 1; 
   var a = 'pledgeAmount';
-  var b = a + 4;
+  var b = a + maxIndex;
   var c = 'PLEDGE AMT' + maxIndex;
 
   console.log(maxIndex);
