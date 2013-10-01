@@ -285,6 +285,7 @@ var maxIndex = 3;
 
 $(".add-option").click(function(){
 
+var maxIndex = 3;
 var maxIndex = maxIndex + 1; 
 var a = 'pledgeAmount';
 var b = a + 4;
