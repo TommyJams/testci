@@ -192,6 +192,7 @@
       <input type="hidden" name="startCamp" value="<? print($startCamp); ?>" />
       <input type="hidden" name="endCamp"   value="<? print($endCamp); ?>" />
       <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
+      <input type="hidden" id="maxIndex" name="maxIndex" value="" />
       <input type="submit" value="SUBMIT" >
       <? 
         } 
@@ -295,6 +296,10 @@ addoption +='<h5> <textarea class="form-control" name="'+ desc +'" placeholder="
 addoption +=' <div class="seperator" ></div></div></div>';
 
 x++;
+
+console.log(maxIndex);
+
+document.getElementById('maxIndex').value = maxIndex;
 
 $("#add-option").prepend($(addoption).fadeIn('slow'));
  });
