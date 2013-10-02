@@ -52,6 +52,7 @@
         <div class="col-sm-12 col-xs-12 col-md-7"> 
           <iframe title="YouTube video player" class="d-tj-video" width="535" height="300" 
           src="http://www.youtube.com/embed/6X3zUh8RqbY?hd=1" frameborder="0" allowfullscreen></iframe>
+        </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>    
