@@ -228,12 +228,15 @@ class Model extends CI_Model{
 		$maxIndex = $this->input->post("maxIndex");
 		$index = $this->input->post("index"); 
 
+
+
 		if(!($maxIndex > 0))
 		{
 			$maxIndex = $index;
 		}
 
 		error_log("maxIndex: ".$maxIndex);
+		error_log("Index: ".$index);
 		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
