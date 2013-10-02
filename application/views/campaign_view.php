@@ -45,6 +45,10 @@
           {
             $raised = 0;
           }
+          if(!isset($totalPledges))
+          {
+            $totalPledges = 0;
+          }
         ?>
 
     <div class="d-tj-box " >
