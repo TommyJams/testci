@@ -330,7 +330,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
     var $this = $(this);
     //$this.closest('.pledge').fadeOut("slow");
     //$this.('.pledge').remove();
-    $this.( "div" ).remove( ".pledge" );
+    //$this.( "div" ).remove( ".pledge" );
+    $('.pledge', this).remove();
     });
   
   
