@@ -230,7 +230,7 @@ class Model extends CI_Model{
 
 		error_log("Index: ".$maxIndex);
 
-		if(!isset($maxIndex))
+		if($maxIndex > 0)
 		{
 			error_log("hello");
 			$maxIndex = $index;
@@ -262,7 +262,7 @@ class Model extends CI_Model{
 				$amount = $this->input->post("$pledgeAmount");
 				$desc = $this->input->post("$desc");
 
-				if($amount != 0)
+				if($amount > 0)
 				{
 					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
 								VALUES('$campaign_id', '$amount', '$desc')");
