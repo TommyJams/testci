@@ -97,7 +97,7 @@
             $image = $venue->image;
           ?>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/hrc.png" alt="" style="max-height: 150px;"></div>
+          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
             <h4 ><? print($venue_name); ?> <br>

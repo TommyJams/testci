@@ -67,7 +67,8 @@
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
             <h3>TARGET: <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
-              <a type="button" href="editcampaign/<?php echo $tour_id ?>">APPLY NOW</a>
+              <input type="button" onclick="editcampaign/<?php echo $tour_id ?>" value="APPLY NOW">
+            <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
             </div>
           </div>
         </div>
@@ -186,7 +187,7 @@
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
-        <input class="apply-btn" style="" type="button" value="APPLY Now">
+        <input class="apply-btn" style="" onclick="editcampaign/<?php echo $tour_id ?>" type="button" value="APPLY Now">
       </div>
     </div>
     <!-- /circle-connect-->

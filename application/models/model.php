@@ -228,11 +228,8 @@ class Model extends CI_Model{
 		$maxIndex = $this->input->post("maxIndex");
 		$index = $this->input->post("index"); 
 
-		error_log("Index: ".$maxIndex);
-
 		if(!($maxIndex > 0))
 		{
-			error_log("hello");
 			$maxIndex = $index;
 		}
 
