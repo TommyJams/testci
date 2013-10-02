@@ -52,7 +52,7 @@
             <? if(isset($raised)){ ?>
               <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
             <? }?>
-            <? else{ ?>
+            <? if(!isset($raised)){ ?>
               <h4 class="raise">RAISED : Rs. 0<? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
             <? }?>    
             <h4 class="tgt" >TARGET : Rs. <? print($target); ?></h4>
