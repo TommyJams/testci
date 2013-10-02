@@ -232,6 +232,7 @@ class Model extends CI_Model{
 
 		if(!isset($maxIndex))
 		{
+			error_log("hello");
 			$maxIndex = $index;
 		}
 
