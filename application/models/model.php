@@ -209,7 +209,7 @@ class Model extends CI_Model{
 
 		$tour_id = $this->input->post("tour_id");
 		$tour_name = $this->input->post("tour_name");
-		$artist_name = $this->input->post("artist_name");
+		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
 		$startCamp = $this->input->post("startCamp");
 		$endCamp = $this->input->post("endCamp");
