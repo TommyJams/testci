@@ -329,7 +329,7 @@ $("#add-option").append($(addoption).fadeIn('slow'));
 $('body').on('click', '.btn-delete-pledge', function(){
     var $this = $(this);
     //$this.closest('.pledge').fadeOut("slow");
-    $('.pledge').remove();
+    $this.('.pledge').remove();
     });
   
   
