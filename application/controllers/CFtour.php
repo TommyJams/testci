@@ -16,7 +16,7 @@ class CFtour extends CI_Controller{
 	public function campaignPage(){
 
 		// Loading Model class
-		//$this->load->model('Model');
+		$this->load->model('Model');
 
 		// Inserting values in CampaignCF
       	//$campaign_id = $this->Model->formDetails();
@@ -25,9 +25,15 @@ class CFtour extends CI_Controller{
 		 
 		error_log($campaign_id);
 
-        $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
-
-		$this->load->view('campaign_view', $data);
+		if(!isset($campaign_id))
+		{
+			redirect(base_url().'fans');
+		}
+		else
+		{
+        	$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+			$this->load->view('campaign_view', $data);
+		}
 	}
 
 	public function insertCampaignDetail(){
@@ -43,7 +49,6 @@ class CFtour extends CI_Controller{
 
 		$this->load->model('Model');
 
-        $this->load->helper('functions');
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
 		$this->load->view('fanPage_view', $data);
