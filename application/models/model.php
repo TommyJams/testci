@@ -211,7 +211,6 @@ class Model extends CI_Model{
 		$startCamp = $this->input->post("startCamp");
 		$endCamp = $this->input->post("endCamp");
 		$tourDate = $this->input->post("tourDate");
-
 		$maxIndex = $this->input->post("maxIndex"); 
 
 		if(!isset($maxIndex))
@@ -219,7 +218,7 @@ class Model extends CI_Model{
 			$maxIndex = 3;
 		}
 
-		error_log($maxIndex);
+		error_log("Index: ".$maxIndex);
 		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
