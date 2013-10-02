@@ -125,15 +125,12 @@ class Model extends CI_Model{
 
    				// 3D array formation; Getting amount details
    				$pledges = null;
-   				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id';");
+   				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' ORDER BY amount ASC;");
 				if ($query1->num_rows() > 0)
 				{
 					$q1result = $query1->result();
 					foreach ($q1result as $rowPledge)
 					{
-						$amount = $rowPledge->amount;
-						$pledge_desc = $rowPledge->desc;
-
 						$pledges[] = $rowPledge;
 					}
 				}
