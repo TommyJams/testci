@@ -51,7 +51,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <form name="editcampaign" action="/campaign" method="post">
+    <form name="editcampaign" action="/insertCampaignDetail" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
         <?
