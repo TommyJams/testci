@@ -214,6 +214,11 @@ class Model extends CI_Model{
 
 		$maxIndex = $this->input->post("maxIndex"); 
 
+		if(!isset($maxIndex))
+		{
+			$maxIndex = 3;
+		}
+
 		error_log($maxIndex);
 		
 		// Getting posted Form Data 
