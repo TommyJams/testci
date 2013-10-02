@@ -187,7 +187,7 @@
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
-        <input class="apply-btn" style="" onclick="editcampaign/<?php echo $tour_id ?>" type="button" value="APPLY Now">
+        <input class="apply-btn" style="" onclick="window.location.href='editcampaign/<?php echo $tour_id ?>'" type="button" value="APPLY Now">
       </div>
     </div>
     <!-- /circle-connect-->
