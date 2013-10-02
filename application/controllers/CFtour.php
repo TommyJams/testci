@@ -25,15 +25,9 @@ class CFtour extends CI_Controller{
 		 
 		error_log($campaign_id);
 
-		if(!isset($campaign_id))
-		{
-			redirect(base_url().'fans');
-		}
-		else
-		{
-        	$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
-			$this->load->view('campaign_view', $data);
-		}
+        $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+		$this->load->view('campaign_view', $data);
+		
 	}
 
 	public function insertCampaignDetail(){

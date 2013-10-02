@@ -199,7 +199,12 @@ class Model extends CI_Model{
    		
    			//Return values to controller
 			return $response;
-   		}		
+   		}	
+
+   		else
+   		{
+   			redirect(base_url().'fans');
+   		}	
 	}
 
 	public function formDetails(){
