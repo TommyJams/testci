@@ -81,7 +81,7 @@
               $image = $venue->image;
             ?>
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="img/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
+            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
             <div class="col-md-1"></div>
             <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
               <h4 >
@@ -147,7 +147,7 @@
           
           <div class="d-tj-offset-top-20">
             <h5><? print($campaign_desc); ?></h5>
-            <img src="img/guitar.png" alt=""  style="width: 100%;">
+            <img src="/img/guitar.png" alt=""  style="width: 100%;">
             <h5 class="d-tj-offset-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -188,7 +188,7 @@
         <p>Copyright &copy; 2013 - All Rights Reserved</p>
       </div>
       <div class="col-md-6 col-sm-6 social col-xs-6 footer-p" >
-        <div class="pull-right"> <a class=" social-icons" href="https://www.facebook.com/tommyjams.live" target="_blank" style="cursor:pointer;background:url(img/fb-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://twitter.com/TommyJams" target="_blank" style="cursor:pointer;background:url(img/tw-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://www.tommyjams.com/blog" target="_blank" style="cursor:pointer;background:url(img/blog-icon.png) no-repeat;"></a> </div>
+        <div class="pull-right"> <a class=" social-icons" href="https://www.facebook.com/tommyjams.live" target="_blank" style="cursor:pointer;background:url(/img/fb-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://twitter.com/TommyJams" target="_blank" style="cursor:pointer;background:url(/img/tw-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://www.tommyjams.com/blog" target="_blank" style="cursor:pointer;background:url(/img/blog-icon.png) no-repeat;"></a> </div>
       </div>
     </footer>
     <? 
