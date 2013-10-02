@@ -240,7 +240,7 @@ class Model extends CI_Model{
 				$amount = $this->input->post("$pledgeAmount");
 				$desc = $this->input->post("$desc");
 
-				if(isset($amount) && isset($desc))
+				if($amount != 0)
 				{
 					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
 								VALUES('$campaign_id', '$amount', '$desc')");

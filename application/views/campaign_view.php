@@ -40,6 +40,11 @@
           $myspace = $campaign->myspace;
           $gplus = $campaign->gplus;
           $artist_name = $campaign->artist_name;
+
+          if(!isset($raised))
+          {
+            $raised = 0;
+          }
         ?>
 
     <div class="d-tj-box " >
@@ -49,12 +54,7 @@
           src="http://www.youtube.com/embed/6X3zUh8RqbY?hd=1" frameborder="0" allowfullscreen></iframe>
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <? if(isset($raised)){ ?>
-              <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
-            <? }?>
-            <? if(!isset($raised)){ ?>
-              <h4 class="raise">RAISED : Rs. 0<? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>
-            <? }?>    
+            <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>    
             <h4 class="tgt" >TARGET : Rs. <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40">
