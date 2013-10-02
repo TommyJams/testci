@@ -216,11 +216,12 @@ class Model extends CI_Model{
 		$startCamp = $this->input->post("startCamp");
 		$endCamp = $this->input->post("endCamp");
 		$tourDate = $this->input->post("tourDate");
-		$maxIndex = $this->input->post("maxIndex"); 
+		$maxIndex = $this->input->post("maxIndex");
+		$index = $this->input->post("index"); 
 
 		if(!isset($maxIndex))
 		{
-			$maxIndex = 3;
+			$maxIndex = $index;
 		}
 
 		error_log("Index: ".$maxIndex);

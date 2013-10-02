@@ -211,6 +211,7 @@
       <input type="hidden" name="endCamp"   value="<? print($endCamp); ?>" />
       <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
       <input type="hidden" id="maxIndex" name="maxIndex" value="" />
+      <input type="hidden" id="index" name="index" value="" />
       <input type="submit" value="SUBMIT" >
       <? 
         } 
@@ -301,6 +302,7 @@
 $(document).ready(function(){
   
 var x = 3;
+document.getElementById('index').value = x;
 
 $(".add-option").click(function(){
 
