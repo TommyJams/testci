@@ -230,7 +230,7 @@ class Model extends CI_Model{
 
 		error_log("Index: ".$maxIndex);
 
-		if($maxIndex > 0)
+		if(!($maxIndex > 0))
 		{
 			error_log("hello");
 			$maxIndex = $index;
