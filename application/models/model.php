@@ -123,6 +123,15 @@ class Model extends CI_Model{
    				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$gplus = $row->gplus;$campaign_desc = $row->desc;
 
+   				if(!isset($raised))
+          		{
+            		$raised = 0;
+          		}
+          		if(!isset($totalPledges))
+          		{
+            		$totalPledges = 0;
+          		}
+
    				// 3D array formation; Getting amount details
    				$pledges = null;
    				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' ORDER BY amount ASC;");

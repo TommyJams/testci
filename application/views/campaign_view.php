@@ -40,15 +40,6 @@
           $myspace = $campaign->myspace;
           $gplus = $campaign->gplus;
           $artist_name = $campaign->artist_name;
-
-          if(!isset($raised))
-          {
-            $raised = 0;
-          }
-          if(!isset($totalPledges))
-          {
-            $totalPledges = 0;
-          }
         ?>
 
     <div class="d-tj-box " >
