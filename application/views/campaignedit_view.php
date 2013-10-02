@@ -23,6 +23,7 @@
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
+<form name="videolink" method="post">
 <div class="video-link">
   <div class="modal-content socialModal">
     <div class="modal-header">
@@ -34,6 +35,7 @@
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
+</form>
 <!--/Video modal-->    
 
 <div class="form">
@@ -329,7 +331,7 @@ $("#add-option").append($(addoption).fadeIn('slow'));
 $('body').on('click', '.btn-delete-pledge', function(){
     var $this = $(this);
     //$this.closest('.pledge').fadeOut("slow");
-    $this.closest('.pledge').remove("slow");
+    $this.closest('.pledge').remove();
     });
   
   
