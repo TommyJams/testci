@@ -67,7 +67,7 @@
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
             <h3>TARGET: <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
-              <input type="button" onclick="editcampaign/<?php echo $tour_id ?>" value="APPLY NOW">
+              <input type="button" onclick="window.location.href='editcampaign/<?php echo $tour_id ?>'" value="APPLY NOW">
             <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
             </div>
           </div>
