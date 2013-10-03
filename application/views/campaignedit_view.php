@@ -31,7 +31,7 @@
     <div class="modal-body modal-link">
       <input value="http://" name="VideoLink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="javascript:;" onclick="insertLinks(this,'VideoLink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer"><a href="javascript:;" onclick="insertLinks($(this),'VideoLink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
 <!--/Video modal-->    
