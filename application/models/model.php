@@ -227,9 +227,7 @@ class Model extends CI_Model{
 		$tourDate = $this->input->post("tourDate");
 		$maxIndex = $this->input->post("maxIndex");
 		$index = $this->input->post("index"); 
-
-
-
+		
 		if(!($maxIndex > 0))
 		{
 			$maxIndex = $index;
