@@ -375,7 +375,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
       if(linkType == 'VideoLink'){
 
-        var blah = $(elem).closest('.socialModal');
+        var blah = $(elem);
 
         var vlink = $(elem).closest('.socialModal').children('.input-lg').val();
         console.log(vlink);
