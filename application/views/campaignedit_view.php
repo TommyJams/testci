@@ -23,7 +23,6 @@
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
-<form name="videolink" method="post">
 <div class="video-link">
   <div class="modal-content socialModal">
     <div class="modal-header">
@@ -35,7 +34,6 @@
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
-</form>
 <!--/Video modal-->    
 
 <div class="form">
@@ -214,6 +212,10 @@
       <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
       <input type="hidden" id="maxIndex" name="maxIndex" value="" />
       <input type="hidden" id="index" name="index" value="" />
+      <input type="hidden" name="vlink" value="" />
+      <input type="hidden" name="sociallink-1" value="" />
+      <input type="hidden" name="sociallink-2" value="" />
+      <input type="hidden" name="sociallink-3" value="" />
       <input type="submit" value="SUBMIT" >
       <? 
         } 
@@ -363,11 +365,16 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
                     'onStart': function () {
-                      //On Start callback if needed  
+                      //On Start callback if needed 
+                      var $hiddenVal = $(this).siblings('input[type="hidden"]').val();
+                      console.log($hiddenVal);
+                      $('input[name=vlink]').val($hiddenVal); 
                     }
                  }
             );
     });
+
+
 </script>
 </body>
 </html>
