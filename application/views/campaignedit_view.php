@@ -29,7 +29,7 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input value="" placeholder="http://youTube_link" id="VideoLink" name="VideoLink" class="input-lg">
+      <input value="http://" id="VideoLink" name="VideoLink" class="input-lg">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="insertLinks($(this),'VideoLink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
