@@ -375,9 +375,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
       if(linkType == 'VideoLink'){
 
-        var blah = elem.closest('.socialModal');
+        var blah = elem.closest('.video-link');
 
-        var vlink = elem.closest('.socialModal').children('.input-lg').val();
+        var vlink = elem.closest('.video-link').children('.input-lg').val();
         console.log(vlink);
         $('input[name=vlink]').val(vlink);
         $.fancybox.close();  
