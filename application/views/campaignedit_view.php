@@ -31,7 +31,7 @@
     <div class="modal-body modal-link">
       <input value="http://" name="VideoLink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer"><a href="javascript:;" onclick="insertLinks('VideoLink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
 <!--/Video modal-->    
@@ -365,14 +365,22 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
                     'onStart': function () {
-                      //On Start callback if needed 
-                      var $hiddenVal = $(this).siblings('input[type="hidden"]').val();
-                      console.log($hiddenVal);
-                      $('input[name=vlink]').val($hiddenVal); 
+                      //On Start callback if needed  
                     }
                  }
             );
     });
+
+    function insertLinks(linkType){
+
+      if(linkType == 'VideoLink'){
+        var vlink = $('input[name=VideoLink]').value;
+        console.log(vlink);
+        $('input[name=vlink]').val(vlink);  
+      }
+      
+
+    }
 
 
 </script>
