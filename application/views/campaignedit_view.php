@@ -29,7 +29,7 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" id="videolink" name="vlink" class="input-lg">
+      <input type="text" id="videolink" name="videolink" class="input-lg">
     </div>
     <div class="modal-footer">
       <a href="javascript:;" onclick="insertLinks();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
@@ -380,7 +380,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
 
-        var vlink = document.getElementById('videolink').value;
+        var vlink = document.getElementByName("videolink")[0].value;
         console.log(vlink);
         $('input[name=v-link]').val(vlink);
         $.fancybox.close();  
