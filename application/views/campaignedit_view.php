@@ -366,8 +366,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'beforeClose': function(){
-                        var x = document.getElementById('videolink').value;
+                    'beforeClose': function(){ 
+                        var x = $('body',$('.fancybox-iframe').contents()).find('#videolink').val();
                         //$('#fancybox-frame').contents().find('#videolink').val();
                         console.log(x);
                         insertLinks(x);
