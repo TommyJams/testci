@@ -17,6 +17,21 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<script type="text/javascript">
+
+$('#videoForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+            link = document.getElementById('vlink').value;
+            console.log(link);
+            $('input[name=vlink]').val(link);
+            $.fancybox.close();    
+
+            //editProfile("professionalForm",obj);
+        });
+
+</script>
+
 <style>
 .video-link{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
@@ -389,17 +404,6 @@ $('body').on('click', '.btn-delete-pledge', function(){
         $.fancybox.close();  
       //}
     }
-
-    $('#videoForm').bind('submit',function(e) 
-        {
-            e.preventDefault();
-            link = document.getElementById('vlink').value;
-            console.log(link);
-            $('input[name=vlink]').val(link);
-            $.fancybox.close();    
-
-            //editProfile("professionalForm",obj);
-        });
 
     function insertLinks(linkType){
 
