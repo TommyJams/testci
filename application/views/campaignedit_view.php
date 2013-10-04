@@ -366,7 +366,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'onClosed': function(){
+                    'beforeClose': function(){
                         x = $('#fancybox-frame').contents().find('#videolink').val();
                         console.log(x);
                         insertLinks(x, video);
