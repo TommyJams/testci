@@ -29,9 +29,9 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input value="http://" id="vlink" name="VideoLink" class="input-lg">
+      <input value="http://" id="vlink" name="vlink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="javascript:;" onclick="insertLinks('VideoLink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer"><a href="javascript:;" onclick="insertLinks('vlink');" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
 <!--/Video modal-->    
@@ -373,7 +373,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
     function insertLinks(linkType){
 
-      if(linkType == 'VideoLink'){
+      if(linkType == 'vlink'){
 
         //var blah = elem.closest('.video-link');
 
