@@ -23,17 +23,22 @@
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
+<form action="" method="POST" class="" id="videoForm">
 <div class="video-link">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input value="http://" id="vlink" name="vlink" class="input-lg">
+      <input type="text" value="http://" id="vlink" name="vlink" class="input-lg">
     </div>
-    <div class="modal-footer"><a href="javascript:;" onfocus="insertLinks(this);" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+    <div class="modal-footer">
+      <input type="submit" value="Submit" class="btn blk-btn" data-dismiss="modal" />
+      <!---<a href="javascript:;" onclick="insertLinks('vlink');" class="btn blk-btn" data-dismiss="modal">Submit</a> -->
+    </div>
   </div>
 </div>
+</form>
 <!--/Video modal-->    
 
 <div class="form">
@@ -373,17 +378,41 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
     function insertLinks(linkType){
 
-      var vlink = linkType.value;
-     // if(linkType == 'vlink'){
+      //if(linkType == 'vlink'){
 
         //var blah = elem.closest('.video-link');
 
-        //var vlink = document.getElementById('vlink').select();
+        var vlink = document.getElementById('vlink').value;
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
         console.log(vlink);
         $('input[name=vlink]').val(vlink);
         $.fancybox.close();  
-    //  }
+      //}
+    }
+
+    $('#videoForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+            link = document.getElementById('vlink').value;
+            console.log(link);
+            $('input[name=vlink]').val(link);
+            $.fancybox.close();    
+
+            //editProfile("professionalForm",obj);
+        });
+
+    function insertLinks(linkType){
+
+      if(linkType == 'vlink'){
+
+        //var blah = elem.closest('.video-link');
+
+        var vlink = document.getElementById('vlink').value;
+        //var vlink = elem.closest('.video-link').children('.input-lg').val();
+        console.log(vlink);
+        $('input[name=vlink]').val(vlink);
+        $.fancybox.close();  
+      }
       
 
     }
