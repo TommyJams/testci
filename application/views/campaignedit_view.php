@@ -29,7 +29,7 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" id="videolink" name="videolink" class="input-lg">
+      <input type="text" value="" id="videolink" name="videolink" class="input-lg">
     </div>
     <div class="modal-footer">
       <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
