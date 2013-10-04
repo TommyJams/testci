@@ -33,7 +33,7 @@
       <input type="text" value="http://" id="vlink" name="vlink" class="input-lg">
     </div>
     <div class="modal-footer">
-      <input type="submit" value="Submit" class="btn blk-btn" data-dismiss="modal" />
+      <input type="submit" value="Submit" style = "height: 45px; width: auto padding: 5px 5px;" />
       <!---<a href="javascript:;" onclick="insertLinks('vlink');" class="btn blk-btn" data-dismiss="modal">Submit</a> -->
     </div>
   </div>
