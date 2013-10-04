@@ -369,15 +369,15 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'beforeClose': function(){
                         x = $('#fancybox-frame').contents().find('#videolink').val();
                         console.log(x);
-                        insertLinks(x, video);
+                        insertLinks(x);
                       }
                  }
             );
     });
 
-    function insertLinks(link, linkType){
+    function insertLinks(link){
 
-      if(linkType == 'video'){
+     // if(linkType == 'video'){
 
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
@@ -387,7 +387,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
         console.log(vlink);
         $('input[name=v-link]').val(vlink);
         //$.fancybox.close();  
-      }
+     // }
     }
 
 </script>
