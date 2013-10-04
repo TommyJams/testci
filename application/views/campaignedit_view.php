@@ -367,7 +367,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
                     'beforeClose': function(){
-                        x = $('#fancybox-frame').contents().find('#videolink').val();
+                        var x = $('#fancybox-frame').contents().find('#videolink').val();
                         console.log(x);
                         insertLinks(x);
                       }
