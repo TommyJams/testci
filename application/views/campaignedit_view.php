@@ -214,7 +214,7 @@
       <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
       <input type="hidden" id="maxIndex" name="maxIndex" value="" />
       <input type="hidden" id="index" name="index" value="" />
-      <input type="hidden" name="vlink" value="" />
+      <input type="hidden" name="v-link" value="" />
       <input type="hidden" name="sociallink-1" value="" />
       <input type="hidden" name="sociallink-2" value="" />
       <input type="hidden" name="sociallink-3" value="" />
@@ -382,7 +382,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
         var vlink = document.getElementById('videolink').value;
         console.log(vlink);
-        $('input[name=vlink]').val(vlink);
+        $('input[name=v-link]').val(vlink);
         $.fancybox.close();  
       //}
     }
