@@ -22,7 +22,21 @@
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
-   
+<!--Video modal-->
+<div class="video-link" >
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>Add  Video Link</h4>
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" id="videolink" name="videolink" class="input-lg">
+    </div>
+    <div class="modal-footer">
+      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
+    </div>
+  </div>
+</div>
+<!--/Video modal-->    
 
 <div class="form">
   <div class="modal-content socialModal">
@@ -37,21 +51,6 @@
 </div>
 </head>
 <body>
-  <!--Video modal-->
-<div class="video-link" style="display: none;">
-  <div class="modal-content socialModal">
-    <div class="modal-header">
-      <h4>Add  Video Link</h4>
-    </div>
-    <div class="modal-body modal-link">
-      <input type="text" id="videolink" name="videolink" class="input-lg">
-    </div>
-    <div class="modal-footer">
-      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
-    </div>
-  </div>
-</div>
-<!--/Video modal--> 
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <form name="editcampaign" action="/CFtour/insertCampaignDetail" method="post">
