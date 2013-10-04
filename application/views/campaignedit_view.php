@@ -32,7 +32,7 @@
       <input type="text" value ="" id="videolink" name="vlink" class="input-lg">
     </div>
     <div class="modal-footer">
-      <a href="javascript:;" onclick="insertLinks(this.value);" class="btn blk-btn" data-dismiss="modal">Submit</a> 
+      <a href="javascript:;" onclick="insertLinks();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
     </div>
   </div>
 </div>
@@ -373,14 +373,14 @@ $('body').on('click', '.btn-delete-pledge', function(){
             );
     });
 
-    function insertLinks(linkType){
+    function insertLinks(){
 
       //if(linkType == 'vlink'){
 
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
 
-        var vlink = document.getElementById('videolink').value = linkType;
+        var vlink = document.getElementById('videolink').value;
         console.log(vlink);
         $('input[name=vlink]').val(vlink);
         $.fancybox.close();  
