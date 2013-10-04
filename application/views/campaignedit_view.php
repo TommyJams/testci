@@ -23,7 +23,7 @@
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
-<div class="video-link">
+<div class="video-link" >
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Video Link</h4>
@@ -32,7 +32,7 @@
       <input type="text" id="videolink" name="videolink" class="input-lg">
     </div>
     <div class="modal-footer">
-      <a href="javascript:;" onclick="insertLinks();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
+      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
     </div>
   </div>
 </div>
@@ -366,9 +366,11 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'onStart': function () {
-                      //On Start callback if needed  
-                    }
+                    'onCleanup': function(){
+                        x = $('#fancybox-frame').contents().find('#videolink').val();
+                        console.log(x);
+                        //$('input[name=v-link]').val(x);
+                      }
                  }
             );
     });
