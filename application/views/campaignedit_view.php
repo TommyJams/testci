@@ -377,7 +377,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
         //var blah = elem.closest('.video-link');
 
-        var vlink = document.getElementById('vlink').value;
+        var vlink = document.getElementById('vlink').select();
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
         console.log(vlink);
         $('input[name=vlink]').val(vlink);
