@@ -380,7 +380,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
 
-        var vlink = document.getElementByName("videolink")[0].value;
+        var vlink = document.getElementById("videolink").value;
         console.log(vlink);
         $('input[name=v-link]').val(vlink);
         $.fancybox.close();  
