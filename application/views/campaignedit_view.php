@@ -29,10 +29,10 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" id="videolink" name="vlink" class="input-lg">
+      <input type="text" value ="" id="videolink" name="vlink" class="input-lg">
     </div>
     <div class="modal-footer">
-      <a href="javascript:;" onchange="insertLinks(this.value);" class="btn blk-btn" data-dismiss="modal">Submit</a> 
+      <a href="javascript:;" onclick="insertLinks(this.value);" class="btn blk-btn" data-dismiss="modal">Submit</a> 
     </div>
   </div>
 </div>
