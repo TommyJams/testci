@@ -47,7 +47,7 @@
       <input type="text" id="videolink" name="videolink" class="input-lg">
     </div>
     <div class="modal-footer">
-      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
+      <a href="javascript:;" onclick="insertLinks()" class="btn blk-btn" data-dismiss="modal">Submit</a> 
     </div>
   </div>
 </div>
@@ -368,29 +368,29 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
                     'beforeClose': function(){ 
-                        var x = $('.fancybox-iframe').contents().find('.videolink').val();
+                        //var x = $('.fancybox-iframe').contents().find('.videolink').val();
                         //var x = $('#fancybox-iframe').contents().find('#videolink').val();
                         //var x = $('body',$('.fancybox-iframe').contents());
                         //$('#fancybox-frame').contents().find('#videolink').val();
-                        console.log(x);
-                        insertLinks(x);
+                        //console.log(x);
+                        //insertLinks(x);
                       }
                  }
             );
     });
 
-    function insertLinks(link){
+    function insertLinks(){
 
      // if(linkType == 'video'){
 
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
 
-        //var vlink = document.getElementById("videolink").value;
-        var vlink = link;
+        var vlink = document.getElementById('videolink').value;
+        //var vlink = link;
         console.log(vlink);
         $('input[name=v-link]').val(vlink);
-        //$.fancybox.close();  
+        $.fancybox.close();  
      // }
     }
 
