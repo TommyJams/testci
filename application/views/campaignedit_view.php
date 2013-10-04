@@ -369,24 +369,25 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'onCleanup': function(){
                         x = $('#fancybox-frame').contents().find('#videolink').val();
                         console.log(x);
-                        //$('input[name=v-link]').val(x);
+                        insertLinks(x, video);
                       }
                  }
             );
     });
 
-    function insertLinks(){
+    function insertLinks(link, linkType){
 
-      //if(linkType == 'vlink'){
+      if(linkType == 'video'){
 
         //var blah = elem.closest('.video-link');
         //var vlink = elem.closest('.video-link').children('.input-lg').val();
 
-        var vlink = document.getElementById("videolink").value;
+        //var vlink = document.getElementById("videolink").value;
+        var vlink = link;
         console.log(vlink);
         $('input[name=v-link]').val(vlink);
-        $.fancybox.close();  
-      //}
+        //$.fancybox.close();  
+      }
     }
 
 </script>
