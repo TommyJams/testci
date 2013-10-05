@@ -17,6 +17,7 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+
 <style>
 .video-link{display:none}
 .help-form{display:none}
@@ -61,6 +62,7 @@
 </div>
 <!--/Help modal-->   
 
+<!--Social modal-->
 <div class="form">
   <div class="modal-content socialModal">
     <div class="modal-header">
@@ -72,6 +74,8 @@
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
+<!--/Social modal-->
+
 </head>
 <body>
 <div class="d-tj-bg-overlay">
@@ -421,13 +425,29 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
     function insertLinks(link, linkType){
 
+      var i = 1;
+
       if(linkType == 'video')
       {
         $('input[name=v-link]').val(link);
       }
       if(linkType == 'sociallink')
       {
-        $('input[name=sociallink-1]').val(link);
+        if(i == 1)
+        {
+          $('input[name=sociallink-1]').val(link);
+          i++;
+        }
+        else if(i == 2)
+        {
+          $('input[name=sociallink-2]').val(link);
+          i++;
+        }
+        else if(i == 3)
+        {
+          $('input[name=sociallink-3]').val(link);
+          i++;
+        }
       }
 
     }
