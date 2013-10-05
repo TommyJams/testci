@@ -44,7 +44,7 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input value="http://" name="SocialLink" class="input-lg">
+      <input type="text" value="http://" id="SocialLink" name="SocialLink" class="input-lg">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
@@ -204,6 +204,7 @@
         </div>
         <div id="add-option" ></div>
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
+        <div title="Click for Help"><a ><img src="/img/add.png" alt="" style=""></a></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" name="tour_id"   value="<? print($tour_id); ?>" /> 
@@ -352,6 +353,10 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'onStart': function () {
                       //On Start callback if needed  
                     }
+                    'beforeClose': function(){ 
+                        var x = $('.fancybox-inner').contents().find('#SocialLink').val();
+                        insertLinks(x, 'sociallink');
+                    }
                  }
             );
     });
@@ -379,6 +384,10 @@ $('body').on('click', '.btn-delete-pledge', function(){
       if(linkType == 'video')
       {
         $('input[name=v-link]').val(link);
+      }
+      if(linkType == 'sociallink')
+      {
+        $('input[name=sociallink-1]').val(link);
       }
 
     }
