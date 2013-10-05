@@ -315,9 +315,8 @@
               <div class="event-ticker">
                 <ul>
                   <li>
-                    <a href="http://tommyjams.com/blog/events/event/suraj-mani-and-the-tattva-trippers-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""> </div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
                           <h5>Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</h5>
@@ -330,9 +329,8 @@
                     </div>
                   </li>
                   <li>
-                    <a href="http://tommyjams.com/blog/events/event/mind-map-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""> </div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
                           <h5>Mind Map @ Phoenix Marketcity</h5>
@@ -345,9 +343,8 @@
                     </div>
                   </li>
                   <li>
-                    <a href="http://tommyjams.com/blog/events/event/yogi-shubham-roy-the-ways-of-the-world-green-haat/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/greenhaat.jpg" alt=""> </div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/greenhaat.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
                           <h5>Yogi, Shubham Roy and The Ways of the World @ Green Haat</h5>
@@ -396,11 +393,6 @@
     
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:30px;">
-      <div class="" style="border: 1px dashed #999999;min-height:50px"> </div>
-    </div>
-    <!--/bottom 1 col--> 
-
-    <!-- Press Bar -->
       <div class="footer layout-10 clear-fix">                
           <a href="beta/radioone.php" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
@@ -422,9 +414,10 @@
           <a href="http://yourstory.in" target="_blank">                  
             <img src="image/icon/icon-partner/icon7.png" alt="" style="margin-left: 10px;"/>                
           </a>
-      </div>                                
-    <!-- /Press Bar -->
-    
+      </div>  
+    </div>
+    <!--/bottom 1 col--> 
+        
   </div>
   <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
