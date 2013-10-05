@@ -350,9 +350,6 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'onStart': function () {
-                      //On Start callback if needed  
-                    }
                     'beforeClose': function(){ 
                         var x = $('.fancybox-inner').contents().find('#SocialLink').val();
                         insertLinks(x, 'sociallink');
