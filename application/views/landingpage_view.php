@@ -392,7 +392,7 @@
     <!--/bottom 2 col--> 
     
     <!--bottom 1 col-->
-    <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:30px;">
+    <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
       <div class="footer layout-10 clear-fix">                
           <a href="beta/radioone.php" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
