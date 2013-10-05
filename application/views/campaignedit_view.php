@@ -175,9 +175,9 @@
         <div class="social-links" >
           <h4 >UPLOAD SOCIAL LINKS</h4>
           <ul class=" list-unstyled social-list ">
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink1" target="_blank" class="social-list-facebook-edit openform"></a></li>
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink2" target="_blank" class="social-list-twitter-edit openform"></a></li>
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink3" target="_blank" class="social-list-blog-edit openform"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink1" target="_blank" class="social-list-facebook-edit openform1"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink2" target="_blank" class="social-list-twitter-edit openform2"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink3" target="_blank" class="social-list-blog-edit openform3"></a></li>
           </ul>
           <div class="clearfix"></div>
         </div>
@@ -401,7 +401,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
     });
   
   
-    $("a.openform").click(function () {
+    $("a.openform1").click(function () {
         $.fancybox(
                 $('.form1').html(),
                 {
@@ -417,7 +417,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     }
                  }
             ); 
+    });  
 
+    $("a.openform2").click(function () {
         $.fancybox(
                  $('.form2').html(),
                  { 
@@ -432,8 +434,10 @@ $('body').on('click', '.btn-delete-pledge', function(){
                         insertLinks(x, 'sociallink2');
                     }
                  }
-            );  
+            );
+    });        
 
+    $("a.openform3").click(function () {
         $.fancybox(     
                  $('.form3').html(),
                  { 
