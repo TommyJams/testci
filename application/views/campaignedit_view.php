@@ -174,14 +174,7 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <br>
-            <select onchange="ChooseContact(this)">
-              <option value="300">300</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-              <option value="2000">2000</option>
-            </select>
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -191,14 +184,7 @@
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
-            <br>
-            <select onchange="ChooseContact(this)">
-              <option value="300">300</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-              <option value="2000">2000</option>
-            </select>
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -208,14 +194,7 @@
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
-            <br>
-            <select onchange="ChooseContact(this)">
-             <option value="300">300</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-              <option value="2000">2000</option>
-            </select>
+            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
@@ -338,7 +317,7 @@ var a = 'pledgeAmount' + maxIndex;
 var b = 'PLEDGE AMT' + maxIndex;
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="'+ a +'" placeholder="'+ b +'"><br> <select onchange="ChooseContact(this)"><option value="option1">300</option><option value="option2">500</option><option value="option3">1000</option><option value="option4">2000</option></select>
+var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="'+ a +'" placeholder="'+ b +'">
               <i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
