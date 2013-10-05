@@ -32,6 +32,26 @@ class CFtour extends CI_Controller{
 
 	public function insertCampaignDetail(){
 
+		$response=array('error'=>0,'info'=>null);
+
+		$values=array
+		(
+			'video-link'	=> $_POST['v-link'],
+			
+		);
+	
+		if(isGPC()) 
+			$values=array_map('stripslashes',$values);
+	
+		/**************************************************************************/
+	
+		if(!validateEmail($values['video-link']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'newsletter-form-mail','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
+			createResponse($response);
+		}
+
       	$this->load->model('Model');
       	$campaign_id = $this->Model->formDetails();
       	

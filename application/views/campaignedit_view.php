@@ -108,7 +108,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <form name="editcampaign" action="/CFtour/insertCampaignDetail" method="post">
+    <form name="editcampaign" id="editcampaign" action="/CFtour/insertCampaignDetail" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
         <?
@@ -134,7 +134,7 @@
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
               <h4 class="tgt" >TARGET :
-                <textarea  type="text" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
+                <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
             </div>
           </div>
@@ -145,7 +145,7 @@
       <!--Artist-->
       <div class="col-md-7 d-tj-artist" >
         <h3 style="margin-top: 5px;">
-          <input class="form-control input-lg" type="text" name="artistName" placeholder="ARTIST NAME">
+          <input class="form-control input-lg" type="text" id="artistName" name="artistName" placeholder="ARTIST NAME">
         </h3>
         <? foreach($venues as $venue){ ?>
           <?
@@ -229,31 +229,31 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
+            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" name="desc1" placeholder="Please write description" rows="4"></textarea>
+            <textarea class="form-control" id="desc1" name="desc1" placeholder="Please write description" rows="4"></textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
+            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" name="desc2" placeholder="Please write description" rows="4" ></textarea>
+            <textarea class="form-control" id="desc2" name="desc2" placeholder="Please write description" rows="4" ></textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
+            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
-            <textarea class="form-control" name="desc3" placeholder="Please write description" rows="4" ></textarea>
+            <textarea class="form-control" id="desc3" name="desc3" placeholder="Please write description" rows="4" ></textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
@@ -280,7 +280,7 @@
       <input type="hidden" name="sociallink-1" value="" />
       <input type="hidden" name="sociallink-2" value="" />
       <input type="hidden" name="sociallink-3" value="" />
-      <input type="submit" value="SUBMIT" >
+      <input type="submit" id="editcampaign-send" name="editcampaign-send" value="SUBMIT" >
       <? 
         } 
       ?>
@@ -379,8 +379,8 @@ var a = 'pledgeAmount' + maxIndex;
 var b = 'PLEDGE AMT' + maxIndex;
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
+var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
 x++;
@@ -486,6 +486,48 @@ $('body').on('click', '.btn-delete-pledge', function(){
                  }
             );
     });
+
+    function submitCampaignForm()
+    {
+        e.preventDefault();
+        blockForm('editcampaign','block');
+        $.post('CFtour/insertCampaignDetail',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
+    }
+
+    function submitCampaignFormResponse(response)
+    {
+        e.preventDefault();
+        blockForm('editcampaign','unblock');
+        $('#videolink,#target,#artistName,#SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
+
+        var tPosition=
+        {
+            'editcampaign-send'   : {'my':'right center','at':'left center'},
+            'videolink'           : {'my':'bottom center','at':'top center'},
+            'SocialLink1'         : {'my':'bottom center','at':'top center'},
+            'target'              : {'my':'bottom center','at':'top center'},
+            'artistName'          : {'my':'top center','at':'bottom center'},
+            'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
+            'desc1'               : {'my':'top center','at':'bottom center'}
+        };
+
+        if(typeof(response.info)!='undefined')
+        { 
+            if(response.info.length)
+            { 
+                for(var key in response.info)
+                {
+                    var id=response.info[key].fieldId;
+                    $('#'+response.info[key].fieldId).qtip(
+                    {
+                            style:      { classes:(response.error==1 ? 'ui-tooltip-error' : 'ui-tooltip-success')},
+                            content:  { text:response.info[key].message },
+                            position:   { my:tPosition[id]['my'],at:tPosition[id]['at'] }
+                    }).qtip('show');        
+                }
+            }
+        }
+    }
 
     function insertLinks(link, linkType){
 
