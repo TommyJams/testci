@@ -134,7 +134,7 @@
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
               <h4 class="tgt" >TARGET :
-                <textarea  type="text" name="target" placeholder="ENTER TARGET AMOUNT [MIN:Rs <? print($min_target); ?>]"></textarea>
+                <textarea  type="text" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
             </div>
           </div>
@@ -493,7 +493,15 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
       if(linkType == 'video')
       {
-        $('input[name=v-link]').val(link);
+        url = link.replace("http://","");
+        if(isBlank(url))
+        {
+          alert("Please enter your youtTube link");
+          redirect(document.URL);
+        }  
+        {
+          $('input[name=v-link]').val(link);
+        }
       }
       if(linkType == 'sociallink1')
       {
