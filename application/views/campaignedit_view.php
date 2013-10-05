@@ -134,7 +134,7 @@
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
               <h4 class="tgt" >TARGET :
-                <textarea  type="text" name="target" placeholder="ENTER TARGET  AMOUNT [MIN:Rs50000]"></textarea>
+                <textarea  type="text" name="target" placeholder="ENTER TARGET AMOUNT [MIN:Rs <? print($min_target); ?>]"></textarea>
               </h4>
             </div>
           </div>
