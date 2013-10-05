@@ -416,7 +416,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
                         insertLinks(x, 'sociallink1');
                     }
                  }
+            ); 
 
+        $.fancybox(
                  $('.form2').html(),
                  { 
                     'width'             : 950,
@@ -430,7 +432,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
                         insertLinks(x, 'sociallink2');
                     }
                  }
+            );  
 
+        $.fancybox(     
                  $('.form3').html(),
                  { 
                     'width'             : 950,
