@@ -228,7 +228,7 @@
         <div id="add-option" ></div>
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
         <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
-          <div class="d-tj-video-edit-bdr">
+          <div>
           <h2>
             <a  data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
               <img src="/img/add.png" alt="" style="">
