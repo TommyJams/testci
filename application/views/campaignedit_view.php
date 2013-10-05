@@ -489,19 +489,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
     function insertLinks(link, linkType){
 
-      var i = 1;
-
       if(linkType == 'video')
       {
-        url = link.replace("http://","");
-        if(isBlank(url))
-        {
-          alert("Please enter your video link");
-        }  
-        else
-        {
-          $('input[name=v-link]').val(link);
-        }
+        $('input[name=v-link]').val(link);
       }
       if(linkType == 'sociallink1')
       {
