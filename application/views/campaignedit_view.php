@@ -204,7 +204,7 @@
         </div>
         <div id="add-option" ></div>
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
-        <div title="Click for Help"><a ><img src="/img/add.png" alt="" style=""></a></div>
+        <a title="Click for Help" ><img src="/img/add.png" alt="" style=""></a>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" name="tour_id"   value="<? print($tour_id); ?>" /> 
