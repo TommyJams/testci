@@ -60,6 +60,7 @@ $route['tours'] = "CFtour/tourPage";
 $route['campaign/:num'] = "CFtour/campaignPage";
 $route['fans'] = "CFtour/fanPage";
 $route['editcampaign/:num'] = "CFtour/campaignEditPage";
+$route['landingpage'] = "azurepage/landingPage";
 
 // $route['fbconnect'] = "fbconnect/connectFb";
 
