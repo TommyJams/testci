@@ -6,9 +6,9 @@
 <link href="favicon.ico" rel="shortcut icon">
 <!-- Bootstrap -->
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="css/tj.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="/stylecf/tj.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="d-tj-bg-overlay">
-  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a> 
+  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a> 
     <!--top 2 col-->
     <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
       <div class="row">
@@ -486,8 +486,8 @@
     </div>
   </footer>
 </div>
-<script src="js/jquery.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
+<script src="/script/jquery.js"></script> 
+<script src="/script/bootstrap.min.js"></script> 
 <script>
 		$(document).ready(function(){
 			
@@ -526,11 +526,11 @@
 });
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
-<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.min.js"></script> 
-<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script> 
-<script type="text/javascript" src="js/supersized.shutter.min.js"></script> 
-<script type="text/javascript" src="js/jcarousellite_1.0.1c4.js"></script> 
-<script src="js/tj.js"></script>
+<script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jcarousellite_1.0.1c4.js"></script> 
+<script src="/script/tj.js"></script>
 </body>
 </html>
