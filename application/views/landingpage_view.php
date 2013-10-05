@@ -312,6 +312,7 @@
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-events" >
               <h3>EVENTS</h3>
+              <div class="event-ticker">
                 <ul>
                   <li>
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
@@ -356,11 +357,11 @@
                     </div>
                   </li>
                 </ul>
+              </div>
               <div class="clearfix"></div>
             </div>
           </div>
         </div>
-
         <div class="col-md-6 d-tj-col-1 d-tj-network" >
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-network-content" >
@@ -391,7 +392,7 @@
     <!--/bottom 2 col--> 
     
     <!--bottom 1 col-->
-    
+    <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:30px;">
       <div class="footer layout-10 clear-fix">                
           <a href="beta/radioone.php" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
@@ -414,9 +415,9 @@
             <img src="image/icon/icon-partner/icon7.png" alt="" style="margin-left: 10px;"/>                
           </a>
       </div>  
-    
+    </div>
     <!--/bottom 1 col--> 
-
+        
   </div>
   <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
