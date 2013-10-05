@@ -496,9 +496,9 @@ $('body').on('click', '.btn-delete-pledge', function(){
         url = link.replace("http://","");
         if(isBlank(url))
         {
-          alert("Please enter your youtTube link");
-          redirect(document.URL);
+          alert("Please enter your video link");
         }  
+        else
         {
           $('input[name=v-link]').val(link);
         }
