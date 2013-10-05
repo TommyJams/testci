@@ -317,8 +317,7 @@ var a = 'pledgeAmount' + maxIndex;
 var b = 'PLEDGE AMT' + maxIndex;
 var desc = 'desc' + maxIndex;
 
-var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="'+ a +'" placeholder="'+ b +'">
-              <i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
 addoption +='<h5> <textarea class="form-control" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
 addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -392,10 +391,6 @@ $('body').on('click', '.btn-delete-pledge', function(){
         $('input[name=v-link]').val(vlink);
         //$.fancybox.close();  
      // }
-    }
-
-    function ChooseContact(data) {
-      document.getElementById ("pledgeAmount").value = data.value;
     }
 
 </script>
