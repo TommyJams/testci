@@ -63,7 +63,7 @@
 <!--/Help modal-->   
 
 <!--Social modal 1-->
-<div class="form1">
+<div class="form1" style="display: none;">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
@@ -77,7 +77,7 @@
 <!--/Social modal 1-->
 
 <!--Social modal 2-->
-<div class="form2">
+<div class="form2" style="display: none;">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
@@ -91,7 +91,7 @@
 <!--/Social modal 2-->
 
 <!--Social modal 3-->
-<div class="form3">
+<div class="form3" style="display: none;">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
