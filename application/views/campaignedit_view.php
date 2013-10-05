@@ -17,13 +17,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-<script type="text/javascript">
-  
-  function ChooseContact(data) {
-      document.getElementById ("pledgeAmount").value = data.value;
-    }
-
-</script>
 <style>
 .video-link{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
@@ -420,6 +413,10 @@ $('body').on('click', '.btn-delete-pledge', function(){
         $('input[name=v-link]').val(vlink);
         //$.fancybox.close();  
      // }
+    }
+
+    function ChooseContact(data) {
+      document.getElementById ("pledgeAmount").value = data.value;
     }
 
 </script>
