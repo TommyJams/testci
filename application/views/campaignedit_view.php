@@ -62,19 +62,47 @@
 </div>
 <!--/Help modal-->   
 
-<!--Social modal-->
-<div class="form">
+<!--Social modal 1-->
+<div class="form1">
   <div class="modal-content socialModal">
     <div class="modal-header">
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" value="http://" id="SocialLink" name="SocialLink" class="input-lg">
+      <input type="text" value="http://" id="SocialLink1" name="SocialLink" class="input-lg">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
 </div>
-<!--/Social modal-->
+<!--/Social modal 1-->
+
+<!--Social modal 2-->
+<div class="form2">
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>Add  Link</h4>
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" value="http://" id="SocialLink2" name="SocialLink" class="input-lg">
+    </div>
+    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+  </div>
+</div>
+<!--/Social modal 2-->
+
+<!--Social modal 3-->
+<div class="form3">
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>Add  Link</h4>
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" value="http://" id="SocialLink3" name="SocialLink" class="input-lg">
+    </div>
+    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+  </div>
+</div>
+<!--/Social modal 3-->
 
 </head>
 <body>
@@ -375,7 +403,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
   
     $("a.openform").click(function () {
         $.fancybox(
-                $('.form').html(),
+                $('.form1').html(),
                 {
                     'width'             : 950,
                     'height'            : 1100,
@@ -384,8 +412,36 @@ $('body').on('click', '.btn-delete-pledge', function(){
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
                     'beforeClose': function(){ 
-                        var x = $('.fancybox-inner').contents().find('#SocialLink').val();
-                        insertLinks(x, 'sociallink');
+                        var x = $('.fancybox-inner').contents().find('#SocialLink1').val();
+                        insertLinks(x, 'sociallink1');
+                    }
+                 }
+
+                 $('.form2').html(),
+                 { 
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'beforeClose': function(){ 
+                        var x = $('.fancybox-inner').contents().find('#SocialLink2').val();
+                        insertLinks(x, 'sociallink2');
+                    }
+                 }
+
+                 $('.form3').html(),
+                 { 
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'beforeClose': function(){ 
+                        var x = $('.fancybox-inner').contents().find('#SocialLink3').val();
+                        insertLinks(x, 'sociallink3');
                     }
                  }
             );
@@ -431,25 +487,18 @@ $('body').on('click', '.btn-delete-pledge', function(){
       {
         $('input[name=v-link]').val(link);
       }
-      if(linkType == 'sociallink')
+      if(linkType == 'sociallink1')
       {
-        if(i == 1)
-        {
-          $('input[name=sociallink-1]').val(link);
-          i++;
-        }
-        else if(i == 2)
-        {
-          $('input[name=sociallink-2]').val(link);
-          i++;
-        }
-        else if(i == 3)
-        {
-          $('input[name=sociallink-3]').val(link);
-          i++;
-        }
+        $('input[name=sociallink-1]').val(link);
       }
-
+      if(linkType == 'sociallink2')
+      {
+        $('input[name=sociallink-2]').val(link);
+      }
+      if(linkType == 'sociallink3')
+      {
+        $('input[name=sociallink-3]').val(link);
+      }
     }
 
 </script>
