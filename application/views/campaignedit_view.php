@@ -175,6 +175,12 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
+            <select>
+              <option value="option1">300</option>
+              <option value="option2">500</option>
+              <option value="option3">1000</option>
+              <option value="option4">2000</option>
+            </select>
             <i class=" btn-delete-pledge pull-right">-</i></h4>
           <div class="clearfix"></div>
           <h5>
