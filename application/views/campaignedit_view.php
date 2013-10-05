@@ -19,6 +19,7 @@
     <![endif]-->
 <style>
 .video-link{display:none}
+.help-form{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
@@ -36,7 +37,29 @@
     </div>
   </div>
 </div>
-<!--/Video modal-->    
+<!--/Video modal--> 
+
+<!--Help modal-->
+<div class="help-form" >
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>
+        Amount 1: INR. 300
+        Benefit: Free Mug <br>
+        Amount 2: INR. 500
+        Benefit: Free Mug <br>
+        Amount 3: INR. 1000
+        Benefit: Free Mug <br>
+        Amount 4: INR. 2000
+        Benefit: Free Mug
+      </h4>
+    </div>
+    <div class="modal-footer">
+      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
+    </div>
+  </div>
+</div>
+<!--/Help modal-->   
 
 <div class="form">
   <div class="modal-content socialModal">
@@ -204,7 +227,15 @@
         </div>
         <div id="add-option" ></div>
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a></div>
-        <a title="Click for Help" ><img src="/img/add.png" alt="" style=""></a>
+        <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
+          <div class="d-tj-video-edit-bdr">
+          <h2>
+            <a  data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+              <img src="/img/add.png" alt="" style="">
+            </a>  
+          </h2>       
+        </div>
+       </div> 
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" name="tour_id"   value="<? print($tour_id); ?>" /> 
@@ -372,6 +403,20 @@ $('body').on('click', '.btn-delete-pledge', function(){
                         var x = $('.fancybox-inner').contents().find('#videolink').val();
                         insertLinks(x, 'video');
                       }
+                 }
+            );
+    });
+
+    $("a.open-help-form").click(function () {
+        $.fancybox(
+                $('.help-form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
                  }
             );
     });
