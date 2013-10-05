@@ -174,9 +174,9 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  class="form-control input-lg pull-left" type="text" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
+            <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <br>
-            <select>
+            <select onchange="ChooseContact(this)">
               <option value="option1">300</option>
               <option value="option2">500</option>
               <option value="option3">1000</option>
@@ -414,6 +414,10 @@ $('body').on('click', '.btn-delete-pledge', function(){
         $('input[name=v-link]').val(vlink);
         //$.fancybox.close();  
      // }
+    }
+
+    function ChooseContact(data) {
+      document.getElementById ("pledgeAmount").value = data.value;
     }
 
 </script>
