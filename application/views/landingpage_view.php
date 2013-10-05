@@ -43,36 +43,26 @@
     </div>
     <!--/top 2 col--> 
     <!-- tour-->
-    <div class="d-tj-3-col d-tj-offset-top-30" >
+    <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
       <h3>CROWDFUNDING CAMPAIGNS</h3>
-      <div class="d-tj-slide">
+      <div class="d-tj-campaign-slide">
         <div class="list_carousel responsive" style="position:relative">
-          <ul id="foo5">            
-              <?
-                $featuredCampaigns = (json_decode($featuredCampaigns)); 
-                foreach($featuredCampaigns as $campaign){ ?>
-              <?
-                $campaign_id = $campaign->campaign_id;
-                $artist_id = $campaign->artist_id;
-                $artist_name = $campaign->artist_name;
-                $funded = $campaign->funded;
-                $days_to_go = $campaign->days_to_go;
-              ?>
-              <li>
-              <div class=" col-md-12" style="padding: 5px;">
-                <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
-                <div class="d-tj-slide-body " style="">
-                  <div class="d-tj-slide-img" style="background-image:url(img/temp/66.jpg)">
-                    <div class="d-tj-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
+          <ul id="d-tj-c-slide">
+            <li>
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/66.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png"   alt=""/> </div>
                   </div>
                   <div class="d-tj-progress">
-                    <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
+                    <div class="d-tj-progress-g"> </div>
                   </div>
                   <div>
                     <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                       <ul class="list-unstyled  " >
                         <li>
-                          <p><? print($funded); ?>% </p>
+                          <p>90% </p>
                         </li>
                         <li >
                           <p >FUNDED </p>
@@ -82,7 +72,7 @@
                     <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
                       <ul class="list-unstyled ">
                         <li>
-                          <p><? print($days_to_go); ?> </p>
+                          <p>00 </p>
                         </li>
                         <li>
                           <p>DAYS TO GO </p>
@@ -92,13 +82,221 @@
                   </div>
                 </div>
               </div>
-             </li> 
-            <? } ?>
+            </li>
+            <li>
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/2.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/cross.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/3.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li >
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/31.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/cross.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li >
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/66.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li >
+              <div>
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/2.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/cross.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li >
+              <div >
+                <h4 class="d-tj-slide-head" >THAALAVATTAM</h4>
+                <div class="d-tj-slide-body " >
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(img/temp/3.jpg)">
+                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
+                  </div>
+                  <div class="d-tj-progress">
+                    <div class="d-tj-progress-g"> </div>
+                  </div>
+                  <div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>90% </p>
+                        </li>
+                        <li>
+                          <p >FUNDED </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6" >
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>00 </p>
+                        </li>
+                        <li>
+                          <p>DAYS TO GO </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
-    </div>
       <div class="text-center pull-right" >
         <input class="apply-btn"  type="button" value="MORE CAMPAIGNS">
       </div>
