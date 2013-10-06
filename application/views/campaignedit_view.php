@@ -268,18 +268,19 @@
         </div> 
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
-      <input type="hidden" name="tour_id"   value="<? print($tour_id); ?>" /> 
-      <input type="hidden" name="tour_name" value="<? print($tour_name); ?>" />
-      <input type="hidden" name="applyBy"   value="<? print($applyBy); ?>" />
-      <input type="hidden" name="startCamp" value="<? print($startCamp); ?>" />
-      <input type="hidden" name="endCamp"   value="<? print($endCamp); ?>" />
-      <input type="hidden" name="tourDate"  value="<? print($tourDate); ?>" />
-      <input type="hidden" id="maxIndex" name="maxIndex" value="" />
-      <input type="hidden" id="index" name="index" value="" />
-      <input type="hidden" name="v-link" value="" />
-      <input type="hidden" name="sociallink-1" value="" />
-      <input type="hidden" name="sociallink-2" value="" />
-      <input type="hidden" name="sociallink-3" value="" />
+      <input type="hidden" id="tour_id"     name="tour_id"    value="<? print($tour_id); ?>" /> 
+      <input type="hidden" id="tour_name"   name="tour_name"  value="<? print($tour_name); ?>" />
+      <input type="hidden" id="applyBy"     name="applyBy"    value="<? print($applyBy); ?>" />
+      <input type="hidden" id="startCamp"   name="startCamp"  value="<? print($startCamp); ?>" />
+      <input type="hidden" id="endCamp"     name="endCamp"    value="<? print($endCamp); ?>" />
+      <input type="hidden" id="tourDate"    name="tourDate"   value="<? print($tourDate); ?>" />
+      <input type="hidden" id="min_target"  name="min_target" value="<? print($min_target); ?>" />
+      <input type="hidden" id="maxIndex"    name="maxIndex"   value="" />
+      <input type="hidden" id="index"       name="index"      value="" />
+      <input type="hidden" id="v-link"      name="v-link"     value="" />
+      <input type="hidden" id="sociallink-1" name="sociallink-1" value="" />
+      <input type="hidden" id="sociallink-2" name="sociallink-2" value="" />
+      <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="submit" id="editcampaign-send" name="editcampaign-send" value="SUBMIT" >
       <? 
         } 
@@ -504,7 +505,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
         //blockForm('editcampaign','unblock');
         $('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
 
-        var tPosition=
+        var tPosition =
         {
             'editcampaign-send'   : {'my':'right center','at':'left center'},
             'videolink'           : {'my':'bottom center','at':'top center'},

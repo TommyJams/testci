@@ -218,7 +218,7 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
-		$tour_id = $this->input->post("tour_id");
+	/*	$tour_id = $this->input->post("tour_id");
 		$tour_name = $this->input->post("tour_name");
 		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
@@ -226,7 +226,17 @@ class Model extends CI_Model{
 		$endCamp = $this->input->post("endCamp");
 		$tourDate = $this->input->post("tourDate");
 		$maxIndex = $this->input->post("maxIndex");
-		$index = $this->input->post("index"); 
+		$index = $this->input->post("index"); */
+
+		$tour_id = $_POST["tour_id"];
+		$tour_name = $_POST["tour_name"];
+		$artist_name = $_POST["artistName"];
+		$target = $_POST["target"];
+		$startCamp = $_POST["startCamp"];
+		$endCamp = $_POST["endCamp"];
+		$tourDate = $_POST["tourDate"];
+		$maxIndex = $_POST["maxIndex"];
+		$index = $_POST["index"];
 		
 		if(!($maxIndex > 0))
 		{

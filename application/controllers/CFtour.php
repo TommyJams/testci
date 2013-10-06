@@ -37,20 +37,56 @@ class CFtour extends CI_Controller{
 		$values=array
 		(
 			'video-link'	=> $_POST['v-link'],
-			
+			'sociallink-1'	=> $_POST['sociallink-1'],
+			'sociallink-2'	=> $_POST['sociallink-2'],
+			'sociallink-3'	=> $_POST['sociallink-3'],
+			'maxIndex'		=> $_POST['maxIndex'],
+			'index'			=> $_POST['index'],
+			'artistName'	=> $_POST['artistName'],
+			'target'		=> $_POST['target']	
 		);
+
+		if(isGPC()) $values=array_map('stripslashes',$values);
 	
-		if(isGPC()) 
-			$values=array_map('stripslashes',$values);
-	
-		/**************************************************************************/
+		if(isEmpty($values['artistName']))
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
+		}
+
+		if(isEmpty($values['target']))
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
+		}
 	
 		if(!validateEmail($values['video-link']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'newsletter-form-mail','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
-			createResponse($response);
+			$response['info'][]=array('fieldId'=>'video-link','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
 		}
+	
+		if(!validateEmail($values['sociallink-1']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'sociallink-1','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+		}
+
+		if(!validateEmail($values['sociallink-2']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'sociallink-2','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+		}
+		
+		if(!validateEmail($values['sociallink-3']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'sociallink-3','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+		}	
+	
+		if($response['error']==1) createResponse($response);
+
+		
 
       	$this->load->model('Model');
       	$campaign_id = $this->Model->formDetails();
