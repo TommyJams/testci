@@ -222,7 +222,12 @@ class Model extends CI_Model{
 		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
 		$maxIndex = $this->input->post("maxIndex");
-                $editorContent = htmlspecialchars($this->input->post("editorContent"));
+        $editorContent = htmlspecialchars($this->input->post("editorContent"));
+        $vlink = $this->input->post("v-link");
+        $sociallink1 = $this->input->post("sociallink-1");
+        $sociallink2 = $this->input->post("sociallink-2");
+        $sociallink3 = $this->input->post("sociallink-3");
+
 
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());

@@ -127,7 +127,7 @@
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
             <div class="d-tj-video-edit-bdr">
               <h2>
-                <a  data-toggle="modal" href="#videoModal" title="VideoLink" alt="" target="_blank" 
+                <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>  
               </h2>       
             </div>
@@ -505,7 +505,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target').qtip('destroy');
+      $('#artistName, #target, #vd-link').qtip('destroy');
 
     /*  var tPosition =
       {
@@ -521,7 +521,8 @@
       var tPosition =
       {
         'target'              : {'my':'bottom center','at':'top center'},
-        'artistName'          : {'my':'top center','at':'bottom center'}
+        'artistName'          : {'my':'top center','at':'bottom center'},
+        'vd-link'             : {'my':'top center','at':'bottom center'}
       };
 
       if(typeof(response.info)!='undefined')

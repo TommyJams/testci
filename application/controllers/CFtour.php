@@ -35,7 +35,8 @@ class CFtour extends CI_Controller{
 		(
 			'artistName'	=> $_POST['artistName'],
 			'target'		=> $_POST['target'],
-			'min_target'	=> $_POST['min_target']
+			'min_target'	=> $_POST['min_target'],
+			'video-link'	=> $_POST['v-link']
 		);
 
 		if(isGPC()) $values=array_map('stripslashes',$values);
@@ -46,25 +47,19 @@ class CFtour extends CI_Controller{
 			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
 		}
 
-		if(isEmpty($values['target']))
+		if( (isEmpty($values['target'])) || ($values['target'] < $values['min_target']) )
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
-
-		if($values['target'] < $values['min_target'])
-		{
-			$response['error']=1;
-			$response['info'][]=array('fieldId'=>'min_target','message'=>CONTACT_FORM_MSG_TARGET_ERROR);
-		}
 	
-	/*	if(!validateEmail($values['video-link']))
+		if(!IsYoutubeUrl($values['video-link']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'video-link','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+			$response['info'][]=array('fieldId'=>'video-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
 	
-		if(!validateEmail($values['sociallink-1']))
+	/*	if(!validateEmail($values['sociallink-1']))
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'sociallink-1','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);

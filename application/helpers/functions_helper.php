@@ -55,6 +55,12 @@
         return (false);
     }*/
 
+    function IsYoutubeUrl($url)
+    {
+        if(!preg_match("#^https?://(?:www\.)?youtube.com#", $url)) return(false);
+        else return(true);
+    }
+
     /**************************************************************/
     /**************************************************************/
   
