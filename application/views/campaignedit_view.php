@@ -352,9 +352,10 @@
 </footer>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<!---<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 <script src="/script/external/jquery.hotkeys.js"></script> 
-<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/jquery.min.js"></script> 
+<script src="/script/bootstrap.min.js"></script>
 <script src="/script/external/google-code-prettify/prettify.js"></script> 
 <script src="/script/bootstrap-wysiwyg.js"></script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
