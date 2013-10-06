@@ -57,8 +57,8 @@ $route['radioone'] = "radioone/episode";
 $route['obom'] = "obom/obomLandingPage";
 
 $route['tours'] = "CFtour/tourPage";
-$route['campaign/:num'] = "CFtour/campaignPage";
-$route['fans'] = "CFtour/fanPage";
+$route['campaign/:num'] = "CFfans/campaignPage";
+$route['fans'] = "CFfans/fanPage";
 $route['editcampaign/:num'] = "CFtour/campaignEditPage";
 $route['landingpage'] = "azurepage/landingPage";
 

@@ -229,26 +229,29 @@ class Model extends CI_Model{
 		$index = $this->input->post("index"); */
 
 		$tour_id = $_POST["tour_id"];
-		$tour_name = $_POST["tour_name"];
 		$artist_name = $_POST["artistName"];
 		$target = $_POST["target"];
-		$startCamp = $_POST["startCamp"];
-		$endCamp = $_POST["endCamp"];
-		$tourDate = $_POST["tourDate"];
 		$maxIndex = $_POST["maxIndex"];
-		$index = $_POST["index"];
-		
-		if(!($maxIndex > 0))
-		{
-			$maxIndex = $index;
-		}
 
 		error_log("maxIndex: ".$maxIndex);
-		error_log("Index: ".$index);
 		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
+
+		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
+		if ($query2->num_rows() > 0)
+		{
+			$q2result = $query2->result();
+			foreach ($q2result as $row)
+			{
+				$tour_name = $row->tour_name;
+				$applyBy = $row->applyBy;
+				$startCamp = $row->startCamp;
+				$endCamp = $row->endCamp;
+				$tourDate = $row->tourDate;
+			}
+		}
 
 		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`) 
 					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate')");
