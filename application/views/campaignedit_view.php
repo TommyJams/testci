@@ -505,7 +505,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target, #video-link').qtip('destroy');
+      $('#artistName, #target, #vd-link').qtip('destroy');
 
     /*  var tPosition =
       {
