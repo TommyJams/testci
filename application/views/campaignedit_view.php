@@ -496,15 +496,16 @@
   function submitCampaignForm()
   {
       //blockForm('editcampaign','block');
-      $.post('/CFtour/insertCampaignDetail',$('#editcampaign').serialize(),'','json');
+      $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
   }
 
   function submitCampaignFormResponse(response)
   {
       //blockForm('editcampaign','unblock');
-      $('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
+      //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
+      $('#artistName, #target').qtip('destroy');
 
-      var tPosition =
+    /*  var tPosition =
       {
           'editcampaign-send'   : {'my':'right center','at':'left center'},
           'videolink'           : {'my':'bottom center','at':'top center'},
@@ -513,6 +514,12 @@
           'artistName'          : {'my':'top center','at':'bottom center'},
           'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
           'desc1'               : {'my':'top center','at':'bottom center'}
+      };*/
+
+      var tPosition =
+      {
+        'target'              : {'my':'bottom center','at':'top center'},
+        'artistName'          : {'my':'top center','at':'bottom center'}
       };
 
       if(typeof(response.info)!='undefined')
@@ -522,6 +529,7 @@
               for(var key in response.info)
               {
                   var id=response.info[key].fieldId;
+                  console.log(response.info[key].message);
                   $('#'+response.info[key].fieldId).qtip(
                   {
                           style:      { classes:(response.error==1 ? 'ui-tooltip-error' : 'ui-tooltip-success')},
@@ -531,7 +539,6 @@
               }
           }
       }
-
   }
 
   function insertLinks(link, linkType){

@@ -19,7 +19,7 @@ class CFtour extends CI_Controller{
 
 		$response=array('error'=>0,'info'=>null);
 
-		$values=array
+	/*	$values=array
 		(
 			'video-link'	=> $_POST['v-link'],
 			'sociallink-1'	=> $_POST['sociallink-1'],
@@ -27,6 +27,12 @@ class CFtour extends CI_Controller{
 			'sociallink-3'	=> $_POST['sociallink-3'],
 			'maxIndex'		=> $_POST['maxIndex'],
 			'index'			=> $_POST['index'],
+			'artistName'	=> $_POST['artistName'],
+			'target'		=> $_POST['target']	
+		);*/
+
+		$values=array
+		(
 			'artistName'	=> $_POST['artistName'],
 			'target'		=> $_POST['target']	
 		);
@@ -69,8 +75,10 @@ class CFtour extends CI_Controller{
 			$response['info'][]=array('fieldId'=>'sociallink-3','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
 		}	*/
 	
-		if($response['error']==1) createResponse($response);
+		if($response['error']==1) 
+			createResponse($response);
 
+		// Insert Campaign Details
 		else
 		{
 			$this->load->model('Model');
@@ -78,15 +86,6 @@ class CFtour extends CI_Controller{
       	
       		redirect(base_url()."campaign/$campaign_id");
       	}
-	}
-
-	public function insertCampaignDetail(){
-
-		$this->load->model('Model');
-      	$campaign_id = $this->Model->formDetails();
-      	
-      	redirect(base_url()."campaign/$campaign_id");
-      	//$this->campaignPage($campaign_id);
 	}
 
 	public function campaignEditPage(){
