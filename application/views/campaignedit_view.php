@@ -499,7 +499,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
     function submitCampaignForm()
     {
         //blockForm('editcampaign','block');
-        $.post('/CFtour/insertCampaignDetail',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
+        $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
     }
 
     function submitCampaignFormResponse(response)
@@ -534,6 +534,8 @@ $('body').on('click', '.btn-delete-pledge', function(){
                 }
             }
         }
+
+        
     }
 
     function insertLinks(link, linkType){
