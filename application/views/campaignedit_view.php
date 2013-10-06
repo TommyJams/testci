@@ -544,8 +544,7 @@
       else
       {
         console.log(response);
-        location = base_url().'campaign/response';
-        window.open(location);
+        window.location = "/campaign/response";
       }
   }
 
