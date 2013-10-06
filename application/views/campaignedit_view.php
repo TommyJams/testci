@@ -108,7 +108,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <form name="editcampaign" id="editcampaign" action="/CFtour/insertCampaignDetail" method="post">
+    <form name="editcampaign" id="editcampaign" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
         <?
@@ -487,9 +487,14 @@ $('body').on('click', '.btn-delete-pledge', function(){
             );
     });
 
+    $('#editcampaign-send').bind('submit',function(e) 
+    {
+      e.preventDefault();
+      submitCampaignForm();
+    });
+
     function submitCampaignForm()
     {
-        e.preventDefault();
         blockForm('editcampaign','block');
         $.post('CFtour/insertCampaignDetail',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
     }
