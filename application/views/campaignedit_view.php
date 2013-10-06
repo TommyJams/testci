@@ -126,8 +126,8 @@
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
             <div class="d-tj-video-edit-bdr">
-              <h2>
-                <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
+              <h2 id="vd-link">
+                <a  data-toggle="modal" href="#videoModal" title="VideoLink" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>  
               </h2>       
             </div>
