@@ -73,6 +73,7 @@ define('CONTACT_FORM_SMTP_PASSWORD','');
 define('CONTACT_FORM_SUBJECT','TommyJams Landing Page: Contact form');
 
 define('CONTACT_FORM_MSG_INVALID_DATA_NAME','Please enter your name.');
+define('CONTACT_FORM_MSG_INVALID_TARGET','Please enter your target.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MAIL','Please enter valid e-mail.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MESSAGE','Please enter your message.');
 	
