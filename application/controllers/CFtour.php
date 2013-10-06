@@ -34,7 +34,8 @@ class CFtour extends CI_Controller{
 		$values=array
 		(
 			'artistName'	=> $_POST['artistName'],
-			'target'		=> $_POST['target']	
+			'target'		=> $_POST['target'],
+			'min_target'	=> $_POST['min_target']
 		);
 
 		if(isGPC()) $values=array_map('stripslashes',$values);
@@ -49,6 +50,12 @@ class CFtour extends CI_Controller{
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
+		}
+
+		if($values['target'] < $values['min_target'])
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'min_target','message'=>CONTACT_FORM_MSG_TARGET_ERROR);
 		}
 	
 	/*	if(!validateEmail($values['video-link']))

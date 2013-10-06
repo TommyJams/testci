@@ -271,6 +271,7 @@
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" id="tour_id"     name="tour_id"    value="<? print($tour_id); ?>" /> 
       <input type="hidden" id="maxIndex"    name="maxIndex"   value="" />
+      <input type="hidden" id="min_target"  name="min_target" value="" />
       <input type="hidden" id="v-link"      name="v-link"     value="" />
       <input type="hidden" id="sociallink-1" name="sociallink-1" value="" />
       <input type="hidden" id="sociallink-2" name="sociallink-2" value="" />
