@@ -121,16 +121,16 @@ class Model extends CI_Model{
    				$scloud = $row->soundcloud;$rever = $row->reverbnation;$youtube = $row->youtube;
    				$myspace = $row->myspace;$image1 = $row->image1;$image2 = $row->image2;
    				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
-   				$tourDate = $row->tourDate;$gplus = $row->gplus;$campaign_desc = $row->desc;
+   				$tourDate = $row->tourDate;$gplus = $row->gplus;$campaign_desc = htmlspecialchars_decode($row->desc);
 
    				if(!isset($raised))
-          		{
-            		$raised = 0;
-          		}
-          		if(!isset($totalPledges))
-          		{
-            		$totalPledges = 0;
-          		}
+                  		{
+                    		$raised = 0;
+                  		}
+                  		if(!isset($totalPledges))
+                  		{
+                    		$totalPledges = 0;
+                  		}
 
    				// 3D array formation; Getting amount details
    				$pledges = null;
@@ -176,32 +176,32 @@ class Model extends CI_Model{
 				}
 
 				$campaignDetails = array(
-											'campaign_id' 	=> $campaign_id,
-											'videoLink'		=> $videoLink,
-											'raised' 		=> $raised,
-											'target' 		=> $target,
-											'totalPledges' 	=> $totalPledges,
-											'artist_id'   	=> $artist_id,
-											'artist_name' 	=> $artist_name,
-											'campaign_desc' => $campaign_desc,
-											'venues' 		=> $venues,
-											'pledges' 		=> $pledges,
-											'fb' 			=> $fb,
-											'twitter' 		=> $twitter,
-											'blog' 			=> $blog,
-											'website' 		=> $website,
-											'scloud' 		=> $scloud,
-											'rever' 		=> $rever,
-											'youtube' 		=> $youtube,
-											'myspace' 		=> $myspace,
-											'gplus' 		=> $gplus,
-											'image1' 		=> $image1,
-											'image2' 		=> $image2,
-											'image3' 		=> $image3,
-											'status' 		=> $status,
-											'tourDate' 		=> $tourDate,
-											'days_to_go'  	=> $days_to_go
-										);
+								'campaign_id' 	=> $campaign_id,
+								'videoLink'		=> $videoLink,
+								'raised' 		=> $raised,
+								'target' 		=> $target,
+								'totalPledges' 	=> $totalPledges,
+								'artist_id'   	=> $artist_id,
+								'artist_name' 	=> $artist_name,
+								'campaign_desc' => $campaign_desc,
+								'venues' 		=> $venues,
+								'pledges' 		=> $pledges,
+								'fb' 			=> $fb,
+								'twitter' 		=> $twitter,
+								'blog' 			=> $blog,
+								'website' 		=> $website,
+								'scloud' 		=> $scloud,
+								'rever' 		=> $rever,
+								'youtube' 		=> $youtube,
+								'myspace' 		=> $myspace,
+								'gplus' 		=> $gplus,
+								'image1' 		=> $image1,
+								'image2' 		=> $image2,
+								'image3' 		=> $image3,
+								'status' 		=> $status,
+								'tourDate' 		=> $tourDate,
+								'days_to_go'  	=> $days_to_go
+							);
 							
 				$response[] = $campaignDetails;
    			}
