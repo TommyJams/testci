@@ -487,12 +487,6 @@ $('body').on('click', '.btn-delete-pledge', function(){
             );
     });
 
-    $('#editcampaign-send').bind('submit',function(e) 
-    {
-      e.preventDefault();
-      submitCampaignForm();
-    });
-
     function submitCampaignForm()
     {
         blockForm('editcampaign','block');
@@ -533,6 +527,12 @@ $('body').on('click', '.btn-delete-pledge', function(){
             }
         }
     }
+
+    $('#editcampaign-send').bind('submit',function(e) 
+    {
+      e.preventDefault();
+      submitCampaignForm();
+    });
 
     function insertLinks(link, linkType){
 
