@@ -19,7 +19,7 @@ class CFfans extends CI_Controller{
 
       	$campaign_id = $this->uri->segment(2);
 		 
-		error_log($campaign_id);
+		error_log("Camp Id: ".$campaign_id);
 
         $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 		$this->load->view('campaign_view', $data);		

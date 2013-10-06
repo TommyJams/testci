@@ -85,7 +85,7 @@ class CFtour extends CI_Controller{
 		$this->load->model('Model');
       	$campaign_id = $this->Model->formDetails();
       	
-      	redirect("/campaign/$campaign_id");
+      	redirect(base_url()."campaign/$campaign_id");
       	//$this->campaignPage($campaign_id);
 	}
 
