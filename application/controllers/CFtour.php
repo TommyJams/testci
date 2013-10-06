@@ -56,7 +56,7 @@ class CFtour extends CI_Controller{
 		if(!IsYoutubeUrl($values['video-link']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'video-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
+			$response['info'][]=array('fieldId'=>'vd-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
 	
 	/*	if(!validateEmail($values['sociallink-1']))
@@ -85,8 +85,11 @@ class CFtour extends CI_Controller{
 		{
 			$this->load->model('Model');
       		$campaign_id = $this->Model->formDetails();
+
+      		$response['error']=0;
+      		$response['id']=$campaign_id;
       	
-      		createResponse($campaign_id);
+      		createResponse($response);
       		//redirect(base_url()."campaign/$campaign_id");
       	}
 	}
