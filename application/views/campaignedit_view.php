@@ -496,7 +496,7 @@
   function submitCampaignForm()
   {
       //blockForm('editcampaign','block');
-      $.post('/CFtour/insertCampaignDetail',$('#editcampaign').serialize(),,'json');
+      $.post('/CFtour/insertCampaignDetail',$('#editcampaign').serialize(),'','json');
   }
 
   function submitCampaignFormResponse(response)
