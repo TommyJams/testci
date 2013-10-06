@@ -104,14 +104,6 @@
 </div>
 <!--/Social modal 3-->
 
-<script type="text/javascript">
-    $('#editcampaign-send').bind('submit',function(e) 
-    {
-      e.preventDefault();
-      submitCampaignForm();
-    });
-</script>
-
 </head>
 <body>
 <div class="d-tj-bg-overlay">
@@ -535,6 +527,12 @@ $('body').on('click', '.btn-delete-pledge', function(){
             }
         }
     }
+
+    $('#editcampaign-send').bind('submit',function(e) 
+    {
+      e.preventDefault();
+      submitCampaignForm();
+    });
 
     function insertLinks(link, linkType){
 
