@@ -495,15 +495,14 @@ $('body').on('click', '.btn-delete-pledge', function(){
 
     function submitCampaignForm()
     {
-        blockForm('editcampaign','block');
+        //blockForm('editcampaign','block');
         $.post('CFtour/insertCampaignDetail',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
     }
 
     function submitCampaignFormResponse(response)
     {
-        e.preventDefault();
-        blockForm('editcampaign','unblock');
-        $('#videolink,#target,#artistName,#SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
+        //blockForm('editcampaign','unblock');
+        $('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
 
         var tPosition=
         {
