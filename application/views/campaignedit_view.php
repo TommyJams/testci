@@ -486,7 +486,7 @@
       e.preventDefault();
 
       var editorContent = $('#editor').html();
-      $('$editorContent').val(editorContent);
+      $('#editorContent').val(editorContent);
 
       submitCampaignForm();
     });
