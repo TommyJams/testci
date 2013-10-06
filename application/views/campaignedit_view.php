@@ -544,7 +544,7 @@
       else
       {
         console.log(response);
-        window.location = "/campaign/response";
+        window.location = "/campaign/'response'";
       }
   }
 
