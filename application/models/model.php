@@ -228,6 +228,8 @@ class Model extends CI_Model{
 		$form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
 
+        error_log("Editor Content: ".$editorContent);
+
 		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
 		if ($query2->num_rows() > 0)
 		{
