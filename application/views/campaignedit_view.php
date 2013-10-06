@@ -487,7 +487,7 @@ $('body').on('click', '.btn-delete-pledge', function(){
             );
     });
 
-    $('#editcampaign-send').bind('submit',function(e) 
+    $('#editcampaign').bind('submit',function(e) 
     {
       e.preventDefault();
       submitCampaignForm();
