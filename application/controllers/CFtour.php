@@ -62,7 +62,7 @@ class CFtour extends CI_Controller{
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
 	
-		if(!validateEmail($values['video-link']))
+		if(!checkURL($values['video-link']))
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'video-link','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
