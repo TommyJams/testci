@@ -270,18 +270,13 @@
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" id="tour_id"     name="tour_id"    value="<? print($tour_id); ?>" /> 
-      <input type="hidden" id="tour_name"   name="tour_name"  value="<? print($tour_name); ?>" />
-      <input type="hidden" id="applyBy"     name="applyBy"    value="<? print($applyBy); ?>" />
-      <input type="hidden" id="startCamp"   name="startCamp"  value="<? print($startCamp); ?>" />
-      <input type="hidden" id="endCamp"     name="endCamp"    value="<? print($endCamp); ?>" />
-      <input type="hidden" id="tourDate"    name="tourDate"   value="<? print($tourDate); ?>" />
-      <input type="hidden" id="min_target"  name="min_target" value="<? print($min_target); ?>" />
       <input type="hidden" id="maxIndex"    name="maxIndex"   value="" />
-      <input type="hidden" id="index"       name="index"      value="" />
       <input type="hidden" id="v-link"      name="v-link"     value="" />
       <input type="hidden" id="sociallink-1" name="sociallink-1" value="" />
       <input type="hidden" id="sociallink-2" name="sociallink-2" value="" />
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
+      <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
+      <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="submit" id="editcampaign-send" name="editcampaign-send" value="SUBMIT" >
       <? 
         } 
@@ -370,40 +365,36 @@
 <script src="/script/tj.js"></script> 
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script>
-$(document).ready(function(){
-  
-var x = 3;
-document.getElementById('index').value = x;
 
-$(".add-option").click(function(){
+  $(document).ready(function(){
+    
+    var maxIndex = 3;
+    $('#maxIndex').val(maxIndex);
 
-var maxIndex = x + 1; 
-var a = 'pledgeAmount' + maxIndex;
-var b = 'PLEDGE AMT' + maxIndex;
-var desc = 'desc' + maxIndex;
+    $(".add-option").click(function(){
 
-var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
-addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
-addoption +=' <div class="seperator" ></div></div></div>';
+      var a = 'pledgeAmount' + maxIndex;
+      var b = 'PLEDGE AMT' + maxIndex;
+      var desc = 'desc' + maxIndex;
 
-x++;
+      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+      addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
+      addoption +=' <div class="seperator" ></div></div></div>';
 
-console.log(maxIndex);
+      maxIndex++;
 
-document.getElementById('maxIndex').value = maxIndex;
+      $('#maxIndex').val(maxIndex);
 
-$("#add-option").append($(addoption).fadeIn('slow'));
- });
-
-   });
-   
-$('body').on('click', '.btn-delete-pledge', function(){
-    var $this = $(this);
-    //$this.closest('.pledge').fadeOut("slow");
-    $this.closest('.pledge').remove();
+      $("#add-option").append($(addoption).fadeIn('slow'));
     });
-  
-  
+
+    $('body').on('click', '.btn-delete-pledge', function(){
+      var $this = $(this);
+      //$this.closest('.pledge').fadeOut("slow");
+      $this.closest('.pledge').remove();
+    });
+    
+    
     $("a.openform1").click(function () {
         $.fancybox(
                 $('.form1').html(),
@@ -493,70 +484,75 @@ $('body').on('click', '.btn-delete-pledge', function(){
     $('#editcampaign').bind('submit',function(e) 
     {
       e.preventDefault();
+
+      var editorContent = $('#editor').html();
+      $('$editorContent').val(editorContent);
+
       submitCampaignForm();
     });
 
-    function submitCampaignForm()
+  });
+
+  function submitCampaignForm()
+  {
+      //blockForm('editcampaign','block');
+      $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
+  }
+
+  function submitCampaignFormResponse(response)
+  {
+      //blockForm('editcampaign','unblock');
+      $('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
+
+      var tPosition =
+      {
+          'editcampaign-send'   : {'my':'right center','at':'left center'},
+          'videolink'           : {'my':'bottom center','at':'top center'},
+          'SocialLink1'         : {'my':'bottom center','at':'top center'},
+          'target'              : {'my':'bottom center','at':'top center'},
+          'artistName'          : {'my':'top center','at':'bottom center'},
+          'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
+          'desc1'               : {'my':'top center','at':'bottom center'}
+      };
+
+      if(typeof(response.info)!='undefined')
+      { 
+          if(response.info.length)
+          { 
+              for(var key in response.info)
+              {
+                  var id=response.info[key].fieldId;
+                  $('#'+response.info[key].fieldId).qtip(
+                  {
+                          style:      { classes:(response.error==1 ? 'ui-tooltip-error' : 'ui-tooltip-success')},
+                          content:  { text:response.info[key].message },
+                          position:   { my:tPosition[id]['my'],at:tPosition[id]['at'] }
+                  }).qtip('show');        
+              }
+          }
+      }
+
+  }
+
+  function insertLinks(link, linkType){
+
+    if(linkType == 'video')
     {
-        //blockForm('editcampaign','block');
-        $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
+      $('input[name=v-link]').val(link);
     }
-
-    function submitCampaignFormResponse(response)
+    if(linkType == 'sociallink1')
     {
-        //blockForm('editcampaign','unblock');
-        $('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-
-        var tPosition =
-        {
-            'editcampaign-send'   : {'my':'right center','at':'left center'},
-            'videolink'           : {'my':'bottom center','at':'top center'},
-            'SocialLink1'         : {'my':'bottom center','at':'top center'},
-            'target'              : {'my':'bottom center','at':'top center'},
-            'artistName'          : {'my':'top center','at':'bottom center'},
-            'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
-            'desc1'               : {'my':'top center','at':'bottom center'}
-        };
-
-        if(typeof(response.info)!='undefined')
-        { 
-            if(response.info.length)
-            { 
-                for(var key in response.info)
-                {
-                    var id=response.info[key].fieldId;
-                    $('#'+response.info[key].fieldId).qtip(
-                    {
-                            style:      { classes:(response.error==1 ? 'ui-tooltip-error' : 'ui-tooltip-success')},
-                            content:  { text:response.info[key].message },
-                            position:   { my:tPosition[id]['my'],at:tPosition[id]['at'] }
-                    }).qtip('show');        
-                }
-            }
-        }
-
-        
+      $('input[name=sociallink-1]').val(link);
     }
-
-    function insertLinks(link, linkType){
-
-      if(linkType == 'video')
-      {
-        $('input[name=v-link]').val(link);
-      }
-      if(linkType == 'sociallink1')
-      {
-        $('input[name=sociallink-1]').val(link);
-      }
-      if(linkType == 'sociallink2')
-      {
-        $('input[name=sociallink-2]').val(link);
-      }
-      if(linkType == 'sociallink3')
-      {
-        $('input[name=sociallink-3]').val(link);
-      }
+    if(linkType == 'sociallink2')
+    {
+      $('input[name=sociallink-2]').val(link);
     }
+    if(linkType == 'sociallink3')
+    {
+      $('input[name=sociallink-3]').val(link);
+    }
+  }
 
 </script>
 </body>
