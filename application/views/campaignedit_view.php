@@ -541,6 +541,11 @@
               }
           }
       }
+      else
+      {
+        location = base_url()."campaign/response";
+        window.open(location);
+      }
   }
 
   function insertLinks(link, linkType){
