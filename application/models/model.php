@@ -218,23 +218,12 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
-	/*	$tour_id = $this->input->post("tour_id");
-		$tour_name = $this->input->post("tour_name");
+	    $tour_id = $this->input->post("tour_id");
 		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
-		$startCamp = $this->input->post("startCamp");
-		$endCamp = $this->input->post("endCamp");
-		$tourDate = $this->input->post("tourDate");
 		$maxIndex = $this->input->post("maxIndex");
-		$index = $this->input->post("index"); */
+        $editorContent = htmlspecialchars($this->input->post("editorContent"));
 
-		$tour_id = $_POST["tour_id"];
-		$artist_name = $_POST["artistName"];
-		$target = $_POST["target"];
-		$maxIndex = $_POST["maxIndex"];
-
-		error_log("maxIndex: ".$maxIndex);
-		
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
@@ -253,8 +242,8 @@ class Model extends CI_Model{
 			}
 		}
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`) 
-					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`) 
+					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
