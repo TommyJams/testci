@@ -31,6 +31,8 @@ class CFtour extends CI_Controller{
 	}
 
 	public function insertCampaignDetail(){
+		
+		$this->load->helper('functions');
 
 		$response=array('error'=>0,'info'=>null);
 
