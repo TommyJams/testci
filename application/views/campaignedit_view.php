@@ -277,7 +277,7 @@
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
-      <input type="submit" id="editcampaign-send" name="editcampaign-send" value="SUBMIT" >
+      <input type="submit" value="SUBMIT" >
       <? 
         } 
       ?>
