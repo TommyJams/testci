@@ -11,6 +11,7 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/style/jquery.qtip.css"/>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -367,6 +368,7 @@
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj.js"></script> 
+<script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script>
 $(document).ready(function(){
   
