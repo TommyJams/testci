@@ -130,7 +130,7 @@
 
 </head>
 <body>
-<div class="d-tj-bg-overlay">
+<div title="Add Background Images" class="social-list-facebook-edit d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <form name="editcampaign" id="editcampaign" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
