@@ -221,6 +221,7 @@ class Model extends CI_Model{
 	    $tour_id = $this->input->post("tour_id");
 		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
+		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
         $editorContent = htmlspecialchars($this->input->post("editorContent"));
         $vlink = $this->input->post("v-link");
@@ -228,12 +229,80 @@ class Model extends CI_Model{
         $sociallink2 = $this->input->post("sociallink-2");
         $sociallink3 = $this->input->post("sociallink-3");
 
+        // Loading helper functions
+        $this->load->helper('functions');
+        $this->load->helper('modelFunctions');
+
+		$response=array('error'=>0,'info'=>null);
+
+		$values=array
+		(
+			'artistName'	=> $artist_name,
+			'target'		=> $target,
+			'min_target'	=> $min_target,
+			'video-link'	=> $vlink,
+			'sociallink1'	=> $sociallink1,
+			'sociallink2'	=> $sociallink2,
+			'sociallink3'	=> $sociallink3
+		);
+
+		if(isGPC()) $values=array_map('stripslashes',$values);
+	
+		if(isEmpty($values['artistName']))
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
+		}
+
+		if( (isEmpty($values['target'])) || ($values['target'] < $values['min_target']) )
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
+		}
+	
+		if(!IsYoutubeUrl($values['video-link']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'vd-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
+		}
+
+		// Social Links Check
+		$count = 3;
+		while($count)
+		{
+			$sociallink = 'sociallink'.$count;
+			$i = IsSocialUrl($values["$sociallink"])
+		
+			if($i == 1)
+				$fb = $sociallink;
+			elseif($i == 2)
+				$twitter = $sociallink;
+			elseif($i == 3)
+				$soundcloud = $sociallink;
+			elseif($i == 4)
+				$bandcamp = $sociallink;
+			elseif($i == 5)
+				$website = $sociallink;
+			
+			// Website link is broken
+			elseif($i == 0)
+			{
+				$response['error']=1;	
+				$response['info'][]=array('fieldId'=>'socialLink1','message'=>CONTACT_FORM_MSG_INVALID_SOCIAL_LINK);
+			}	
+				 
+			$count--;
+		}
+	
+		// Returning and triggering callback to show qtip(s)
+		if($response['error']==1) 
+			createResponse($response);
 
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
 
-                error_log("Editor Content: ".$editorContent);
+        error_log("Editor Content: ".$editorContent);
 
 		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
 		if ($query2->num_rows() > 0)
@@ -249,8 +318,8 @@ class Model extends CI_Model{
 			}
 		}
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`) 
-					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website` ) 
+					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent', '$fb', '$twitter', '$soundcloud', '$bandcamp', '$website')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)

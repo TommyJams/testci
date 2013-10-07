@@ -24,6 +24,9 @@
 .help-form{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
+
+.d-tj-bg-overlay{min-height: 240px;}
+.d-tj-bg-overlay a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
 <div class="video-link" >
@@ -505,7 +508,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target, #vd-link').qtip('destroy');
+      $('#artistName, #target, #vd-link, #socialLink1').qtip('destroy');
 
     /*  var tPosition =
       {
@@ -522,9 +525,10 @@
       {
         'target'              : {'my':'bottom center','at':'top center'},
         'artistName'          : {'my':'top center','at':'bottom center'},
-        'vd-link'          : {'my':'top center','at':'bottom center'}
+        'vd-link'             : {'my':'top center','at':'bottom center'},
+        'socialLink1'         : {'my':'top center','at':'bottom center'}
       };
-
+      
       if(response.error==1 && typeof(response.info)!='undefined')
       { 
           if(response.info.length)
