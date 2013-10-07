@@ -264,8 +264,8 @@
         <div id="add-option" ></div>
         <div  class="add-option"><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a>
           <h2>
-            <a  data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
-              <i class=" btn-delete-pledge pull-right"><img src="/img/help.png" alt="" style=""></i>
+            <a  class=" btn-delete-pledge pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+              <img src="/img/help.png" alt="" style="">
             </a>  
           </h2>       
         </div> 
