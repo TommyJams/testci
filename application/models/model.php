@@ -280,15 +280,15 @@ class Model extends CI_Model{
 			$i = IsSocialUrl($values["$sociallink"]);
 		
 			if($i == 1)
-				$fb = "$sociallink";
+				$fb = $values["$sociallink"]);
 			elseif($i == 2)
-				$twitter = "$sociallink";
+				$twitter = $values["$sociallink"]);
 			elseif($i == 3)
-				$soundcloud = "$sociallink";
+				$soundcloud = $values["$sociallink"]);
 			elseif($i == 4)
-				$bandcamp = "$sociallink";
+				$bandcamp = $values["$sociallink"]);
 			elseif($i == 5)
-				$website = "$sociallink";
+				$website = $values["$sociallink"]);
 			
 			// Website link is broken
 			elseif($i == 0)
@@ -324,8 +324,8 @@ class Model extends CI_Model{
 			}
 		}
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website` ) 
-					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent', '$fb', '$twitter', '$soundcloud', '$bandcamp', '$website')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink` ) 
+					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent', '$fb', '$twitter', '$soundcloud', '$bandcamp', '$website', '$vlink')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
