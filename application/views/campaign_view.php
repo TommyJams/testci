@@ -117,13 +117,8 @@
           <!-- /social-->
           
           <div class="d-tj-offset-top-20">
+            <h4>CAMPAIGN DESCRIPTION</h4>
             <h5><? print($campaign_desc); ?></h5>
-            <img src="/img/guitar.png" alt=""  style="width: 100%;">
-            <h5 class="d-tj-offset-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h5>
           </div>
         </div>
         <!--/Artist--> 
