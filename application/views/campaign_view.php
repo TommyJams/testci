@@ -32,13 +32,9 @@
           $campaign_desc = $campaign->campaign_desc;
           $fb = $campaign->fb;
           $twitter = $campaign->twitter;
-          $blog = $campaign->blog;
-          $website = $campaign->website; 
           $scloud = $campaign->scloud;
-          $rever = $campaign->rever;
-          $youtube = $campaign->youtube;
-          $myspace = $campaign->myspace;
-          $gplus = $campaign->gplus;
+          $bandcamp = $campaign->bandcamp;
+          $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
         ?>
 
@@ -102,33 +98,17 @@
               { 
                 print("<li ><a href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'></a></li >"); 
               }
-              if($blog!="")
+              if($scloud!="")
               {
-                print("<li ><a href='$blog' title='Blog' alt='Blog' target='_blank' class='social-list-blog'></a></li >"); 
+                print("<li ><a href='$blog' title='SoundCloud' alt='Blog' target='_blank' class='social-list-scloud'></a></li >"); 
+              }
+              if($bandcamp!="")
+              {
+                print("<li ><a href='$bandcamp' title='BandCamp' alt='Blog' target='_blank' class='social-list-scloud'></a></li >"); 
               }
               if($website!="")
               {
-                print("<a href='$website' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
-              }
-              if($scloud!="")
-              {
-                print("<a href='$scloud' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
-              }
-              if($rever!="")
-              {
-                print("<a href='$rever' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
-              }     
-              if($youtube!="")
-              { 
-                print("<a href='$youtube' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/youtube.png' /></a>"); 
-              }             
-              if($myspace!="")
-              {
-                print("<a href='$myspace' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/myspace.png' /></a>"); 
-              }             
-              if($gplus!="")
-              { 
-                print("<a href='$gplus' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/gplus.png' /></a>"); 
+                print("<li ><a href='$website' title='Website' alt='Blog' target='_blank' class='social-list-twitter'></a></li >"); 
               }
             ?>
             </ul>

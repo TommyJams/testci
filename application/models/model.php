@@ -117,9 +117,9 @@ class Model extends CI_Model{
    				$artist_id = $row->artist_id;$artist_name = $row->artist_name;$deadline = $row->deadline;
    				$target = $row->target;$raised = $row->raised;$totalPledges = $row->totalPledges;
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
-   				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;$blog = $row->blog;
-   				$scloud = $row->soundcloud;$rever = $row->reverbnation;$youtube = $row->youtube;
-   				$myspace = $row->myspace;$image1 = $row->image1;$image2 = $row->image2;
+   				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
+   				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;
+   				$image1 = $row->image1;$image2 = $row->image2;
    				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$gplus = $row->gplus;$campaign_desc = htmlspecialchars_decode($row->desc);
 
