@@ -25,7 +25,7 @@
         else if(filter_var($url, FILTER_VALIDATE_URL))
             $i=5;
         else if(!filter_var($url, FILTER_VALIDATE_URL))
-            $i=0
+            $i=0;
 
         return($i);
     }
