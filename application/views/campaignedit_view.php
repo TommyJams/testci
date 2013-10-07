@@ -108,6 +108,26 @@
 </div>
 <!--/Social modal 3-->
 
+<!--Image modal 3-->
+<div class="addImage" style="display: none;">
+  <div class="modal-content socialModal">
+    <div class="modal-header">
+      <h4>Add  Link</h4>
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" value="" id="backgroundImage1" name="backgroundImage1" class="input-lg">
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" value="" id="backgroundImage2" name="backgroundImage2" class="input-lg">
+    </div>
+    <div class="modal-body modal-link">
+      <input type="text" value="" id="backgroundImage3" name="backgroundImage3" class="input-lg">
+    </div>
+    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
+  </div>
+</div>
+<!--/Image modal 3-->
+
 </head>
 <body>
 <div class="d-tj-bg-overlay">
@@ -398,6 +418,23 @@
       $this.closest('.pledge').remove();
     });
     
+    $("a.d-tj-bg-overlay").click(function () {
+        $.fancybox(
+                $('.addImage').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'beforeClose': function(){ 
+                      //  var x = $('.fancybox-inner').contents().find('#SocialLink1').val();
+                      //  insertLinks(x, 'sociallink1');
+                    }
+                 }
+            ); 
+    });  
     
     $("a.openform1").click(function () {
         $.fancybox(
