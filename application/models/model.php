@@ -229,6 +229,12 @@ class Model extends CI_Model{
         $sociallink2 = $this->input->post("sociallink-2");
         $sociallink3 = $this->input->post("sociallink-3");
 
+        $fb = "";
+        $twitter = "";
+        $soundcloud = "";
+        $bandcamp = "";
+        $website = "";
+
         // Loading helper functions
         $this->load->helper('functions');
         $this->load->helper('modelFunctions');
