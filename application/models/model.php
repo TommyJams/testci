@@ -121,7 +121,7 @@ class Model extends CI_Model{
    				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;
    				$image1 = $row->image1;$image2 = $row->image2;
    				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
-   				$tourDate = $row->tourDate;$gplus = $row->gplus;$campaign_desc = htmlspecialchars_decode($row->desc);
+   				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
    				if(!isset($raised))
                   		{
@@ -188,13 +188,9 @@ class Model extends CI_Model{
 								'pledges' 		=> $pledges,
 								'fb' 			=> $fb,
 								'twitter' 		=> $twitter,
-								'blog' 			=> $blog,
-								'website' 		=> $website,
+								'bandcamp' 		=> $bandcamp,
 								'scloud' 		=> $scloud,
-								'rever' 		=> $rever,
-								'youtube' 		=> $youtube,
-								'myspace' 		=> $myspace,
-								'gplus' 		=> $gplus,
+								'website' 		=> $website,
 								'image1' 		=> $image1,
 								'image2' 		=> $image2,
 								'image3' 		=> $image3,
