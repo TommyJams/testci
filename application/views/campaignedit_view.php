@@ -176,9 +176,9 @@
         <div class="social-links" >
           <h4 >UPLOAD SOCIAL LINKS</h4>
           <ul class=" list-unstyled social-list ">
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink1" target="_blank" class="social-list-facebook-edit openform1"></a></li>
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink2" target="_blank" class="social-list-twitter-edit openform2"></a></li>
-            <li ><a  data-toggle="modal" href="#" title="" alt="" name="socialLink3" target="_blank" class="social-list-blog-edit openform3"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" id="socialLink1" name="socialLink1" target="_blank" class="social-list-facebook-edit openform1"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" id="socialLink2" name="socialLink2" target="_blank" class="social-list-twitter-edit openform2"></a></li>
+            <li ><a  data-toggle="modal" href="#" title="" alt="" id="socialLink3" name="socialLink3" target="_blank" class="social-list-blog-edit openform3"></a></li>
           </ul>
           <div class="clearfix"></div>
         </div>

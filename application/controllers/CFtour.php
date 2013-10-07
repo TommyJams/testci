@@ -58,24 +58,26 @@ class CFtour extends CI_Controller{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'vd-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
-	
-	/*	if(!validateEmail($values['sociallink-1']))
+
+		if(!IsSocialUrl($values['sociallink-1']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'sociallink-1','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+			$response['info'][]=array('fieldId'=>'socialLink1','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
 
-		if(!validateEmail($values['sociallink-2']))
+		if(!IsSocialUrl($values['sociallink-2']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'sociallink-2','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
+			$response['info'][]=array('fieldId'=>'socialLink2','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
-		
-		if(!validateEmail($values['sociallink-3']))
+
+		if(!IsSocialUrl($values['sociallink-3']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'sociallink-3','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
-		}	*/
+			$response['info'][]=array('fieldId'=>'socialLink3','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
+		}
+
+		
 	
 		if($response['error']==1) 
 			createResponse($response);

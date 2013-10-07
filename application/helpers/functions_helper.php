@@ -55,9 +55,33 @@
         return (false);
     }*/
 
+    /**************************************************************/
+    /**************************************************************/
+
     function IsYoutubeUrl($url)
     {
         if(!preg_match("#^https?://(?:www\.)?youtube.com#", $url)) return(false);
+        else return(true);
+    }
+
+    /**************************************************************/
+    /**************************************************************/
+
+    function IsSocialUrl($url)
+    {
+        if(!preg_match("#^https?://(?:www\.)?facebook.com#", $url)) 
+        { 
+            if(!preg_match("#^https?://(?:www\.)?twitter.com#", $url))
+            {
+                if(!preg_match("#^https?://(?:www\.)?soundcloud.com#", $url)) 
+                {
+                    if(!preg_match("#^https?://(?:www\.)?bandcamp.com#", $url)) 
+                    {
+                        return(false);
+                    }  
+                }
+            }
+        }
         else return(true);
     }
 
