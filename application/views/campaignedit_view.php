@@ -262,11 +262,12 @@
           <div class="seperator" ></div>
         </div>
         <div id="add-option" ></div>
-        <div  class="add-option"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a>
+        <div  class="add-option"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a><h4>
+          <h5>
             <a  class=" btn-delete-pledge pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
               <img src="/img/help.png" alt="" style="">
             </a>  
-          </h4>       
+          </h5>       
         </div> 
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
