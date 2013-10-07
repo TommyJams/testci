@@ -266,7 +266,7 @@
           <div>
           <h2>
             <a  data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
-              <img src="/img/add.png" alt="" style="">
+              <i class="pull-right"><img src="/img/help.png" alt="" style=""></i>
             </a>  
           </h2>       
         </div> 
@@ -528,7 +528,7 @@
         'vd-link'             : {'my':'top center','at':'bottom center'},
         'socialLink1'         : {'my':'top center','at':'bottom center'}
       };
-      
+
       if(response.error==1 && typeof(response.info)!='undefined')
       { 
           if(response.info.length)
