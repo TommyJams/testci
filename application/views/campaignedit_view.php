@@ -130,8 +130,10 @@
 
 </head>
 <body>
-<div title="Add Background Images" class="social-list-facebook-edit d-tj-bg-overlay">
+<div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
+    <a data-toggle="modal" id="backgroundImage" href="#imageModal" title="Image" alt="" target="_blank" 
+                    class="social-list-facebook-edit back-image">UPLOAD<br>Background Images</a>
     <form name="editcampaign" id="editcampaign" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
@@ -418,7 +420,7 @@
       $this.closest('.pledge').remove();
     });
     
-    $("a.d-tj-bg-overlay").click(function () {
+    $("a.back-image").click(function () {
         $.fancybox(
                 $('.addImage').html(),
                 {
