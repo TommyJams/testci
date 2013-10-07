@@ -172,7 +172,7 @@
     ?>
   </div>
 </div>
-<script src="/script/jquery.js"></script> 
+<!-- <script src="/script/jquery.js"></script> -->
 <script src="/script/bootstrap.min.js"></script> 
 <script>
 		$(document).ready(function(){
@@ -194,7 +194,7 @@ $('#foo5').carouFredSel({
 				});
 	});
 </script> 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
