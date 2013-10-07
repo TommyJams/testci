@@ -271,7 +271,7 @@ class Model extends CI_Model{
 		while($count)
 		{
 			$sociallink = 'sociallink'.$count;
-			$i = IsSocialUrl($values["$sociallink"])
+			$i = IsSocialUrl($values["$sociallink"]);
 		
 			if($i == 1)
 				$fb = $sociallink;
