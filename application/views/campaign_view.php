@@ -145,13 +145,19 @@
             </div>
 
             <!-- FB Share Button -->
-            <div>
-                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
+            <div class=" d-tj-offset-top-30 pledge-btn" >
+                <a href="#" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
                 +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
                 Share on Facebook
                 </a>
             </div>
             <!-- /FB Share Button -->
+
+            <!-- Twitter Share Button -->
+            <div class=" d-tj-offset-top-30 pledge-btn" >
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+            </div>  
+            <!-- /Twitter Share Button -->
 
           </div>
         </div>
@@ -194,6 +200,7 @@ $('#foo5').carouFredSel({
 				});
 	});
 </script> 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
