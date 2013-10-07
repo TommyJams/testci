@@ -280,15 +280,15 @@ class Model extends CI_Model{
 			$i = IsSocialUrl($values["$sociallink"]);
 		
 			if($i == 1)
-				$fb = $sociallink;
+				$fb = "$sociallink";
 			elseif($i == 2)
-				$twitter = $sociallink;
+				$twitter = "$sociallink";
 			elseif($i == 3)
-				$soundcloud = $sociallink;
+				$soundcloud = "$sociallink";
 			elseif($i == 4)
-				$bandcamp = $sociallink;
+				$bandcamp = "$sociallink";
 			elseif($i == 5)
-				$website = $sociallink;
+				$website = "$sociallink";
 			
 			// Website link is broken
 			elseif($i == 0)
