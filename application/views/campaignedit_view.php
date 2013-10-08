@@ -24,9 +24,6 @@
 .help-form{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
-
-.d-tj-bg-overlay{min-height: 240px;}
-.d-tj-bg-overlay a{color:white;text-decoration:none}
 </style>
 <!--Video modal-->
 <div class="video-link" >
@@ -107,26 +104,6 @@
   </div>
 </div>
 <!--/Social modal 3-->
-
-<!--Image modal 3-->
-<div class="addImage" style="display: none;">
-  <div class="modal-content socialModal">
-    <div class="modal-header">
-      <h4>Add Background Images</h4>
-    </div>
-    <div class="modal-body modal-link">
-      <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
-    </div>
-    <div class="modal-body modal-link">
-      <input type="file" title="Background Image 2" value="" id="backgroundImage2" name="backgroundImage2" >
-    </div>
-    <div class="modal-body modal-link">
-      <input type="file" title="Background Image 3" value="" id="backgroundImage3" name="backgroundImage3" >
-    </div>
-    <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
-  </div>
-</div>
-<!--/Image modal 3-->
 
 </head>
 <body>
