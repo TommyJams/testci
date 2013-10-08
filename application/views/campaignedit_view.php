@@ -164,12 +164,11 @@
                 <textarea  type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></textarea>
               </h4>
               <h4 class="mail" >EMAIL :
-                <textarea  type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></textarea>
+                <textarea  rows="1" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></textarea>
               </h4>
               <h4 class="mail" >BACKGROUND IMAGES :
                 <textarea  type="text" id="bckimage" name="bckimage" >
-                    <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
-                    <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
+                  
                 </textarea>
               </h4>             
             </div>
