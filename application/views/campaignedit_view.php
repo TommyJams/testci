@@ -163,8 +163,7 @@
               <div class="clearfix"></div>
               <div class="background-images">
                 UPLOAD BACKGROUND IMAGES
-                <input class="form-control pull-left"  type="file" id="backimg1" name="backimg1"></input>
-                <input class="form-control pull-right" type="file" id="backimg2" name="backimg2"></input>
+                <input class="form-control input-lg pull-left"  type="file" id="backimg" name="backimg"></input>
               </div>
             </div>
           </div>
