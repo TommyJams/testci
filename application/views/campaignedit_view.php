@@ -163,7 +163,7 @@
               <div class="clearfix"></div>
               <div class="background-images">
                 UPLOAD BACKGROUND IMAGES
-                <input class="form-control"  type="file" id="backimg" name="backimg"></input>
+                <input type="file" id="backimg" name="backimg"></input>
               </div>
             </div>
           </div>
