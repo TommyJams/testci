@@ -336,7 +336,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .raise {
 	margin-bottom: 10px;
 }
-.tgt {
+.tgt, .phn, .mail {
 	margin-bottom: 15px;
 	margin-top:0 !important
 }
@@ -498,7 +498,7 @@ ul.social-list li a.social-list-blog-edit {
 	top: 33%;
 	left: 37%;
 }
-.tgt textarea {
+.tgt textarea, .phn textarea, .mail textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;

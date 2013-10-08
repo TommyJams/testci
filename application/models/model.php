@@ -248,6 +248,19 @@ class Model extends CI_Model{
 			'sociallink3'	=> $sociallink3
 		);
 
+		while($maxIndex)
+		{
+			$pledgeAmount = 'pledgeAmount'.$maxIndex;
+			$amount = $this->input->post("$pledgeAmount");
+
+			if($amount > 0)
+			{
+				
+			}
+			
+			$maxIndex--;
+		}
+
 		if(isGPC()) $values=array_map('stripslashes',$values);
 	
 		if(isEmpty($values['artistName']))
