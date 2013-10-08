@@ -115,13 +115,13 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="file" value="" id="backgroundImage1" name="backgroundImage1" class="input-lg">
+      <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
     </div>
     <div class="modal-body modal-link">
-      <input type="file" value="" id="backgroundImage2" name="backgroundImage2" class="input-lg">
+      <input type="file" title="Background Image 2" value="" id="backgroundImage2" name="backgroundImage2" >
     </div>
     <div class="modal-body modal-link">
-      <input type="file" value="" id="backgroundImage3" name="backgroundImage3" class="input-lg">
+      <input type="file" title="Background Image 3" value="" id="backgroundImage3" name="backgroundImage3" >
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
