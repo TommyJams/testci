@@ -421,23 +421,9 @@
       $this.closest('.pledge').remove();
     });
     
-    $("a.back-image").click(function () {
-        $.fancybox(
-                $('.addImage').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                    'beforeClose': function(){ 
-                      //  var x = $('.fancybox-inner').contents().find('#SocialLink1').val();
-                      //  insertLinks(x, 'sociallink1');
-                    }
-                 }
-            ); 
-    });  
+    $("div.d-tj-bg-overlay").click(function () {
+        console.log("clicked");
+    });
     
     $("a.openform1").click(function () {
         $.fancybox(
