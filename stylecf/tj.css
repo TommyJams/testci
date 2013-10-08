@@ -517,6 +517,7 @@ ul.social-list li a.social-list-blog-edit {
 .background-images input {
 	background: black;
 	border: 0px;
+	width: 100%;
 }
 .social-links {
 	border: 1px dashed #999999;
