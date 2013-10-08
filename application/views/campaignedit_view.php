@@ -160,16 +160,8 @@
               <h4 class="tgt" >TARGET :
                 <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
-              <h4 class="phn" >PHONE :
-                <input  class="form-control input-lg pull-right" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></input>
-              </h4>
-              <h4 class="mail" >EMAIL :
-                <input class="form-control input-lg pull-right" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
-              </h4>
-              <h4 class="mail" >BACKGROUND IMAGES :
-                <textarea  type="text" id="bckimage" name="bckimage" >
-                  
-                </textarea>
+              <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></input>
+              <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
               </h4>             
             </div>
           </div>
