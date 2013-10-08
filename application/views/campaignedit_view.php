@@ -161,13 +161,9 @@
                 <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
               <div class="seperator" ></div>
-              <h4>
-                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></input>
-              </h4>
+              <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></input>
               <div class="seperator" ></div>
-              <h4>
-                <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
-              </h4>             
+              <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
             </div>
           </div>
         </div>
