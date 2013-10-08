@@ -527,9 +527,14 @@ ul.social-list li a.social-list-blog-edit {
 	margin: 0;
 	color: #999999 !important;
 }
-.btn-delete-pledge, .open-help-form {
-	cursor:pointer
+.btn-delete-pledge {
+	cursor:pointer;
 }
+.open-help-form {
+	cursor:pointer;
+	padding-top: 10px;
+}
+
 /* Editor */
 #editor {
 	max-height: 230px;
