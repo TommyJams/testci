@@ -521,7 +521,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target, #vd-link, #socialLink1').qtip('destroy');
+      $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1').qtip('destroy');
 
     /*  var tPosition =
       {
@@ -539,7 +539,8 @@
         'target'              : {'my':'bottom center','at':'top center'},
         'artistName'          : {'my':'top center','at':'bottom center'},
         'vd-link'             : {'my':'top center','at':'bottom center'},
-        'socialLink1'         : {'my':'top center','at':'bottom center'}
+        'socialLink1'         : {'my':'top center','at':'bottom center'},
+        'pledgeAmount1'         : {'my':'top center','at':'bottom center'}
       };
 
       if(response.error==1 && typeof(response.info)!='undefined')
