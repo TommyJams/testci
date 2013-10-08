@@ -13,7 +13,10 @@ jQuery(function($){
 															   
 					// Components							
 					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					slides 					:  	'blank'
+					slides 					:  	[			// Slideshow Images
+														{image : '/img/grey-background', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'}
+			
+												]
 					
 				});
 		    });

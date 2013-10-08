@@ -263,6 +263,7 @@
           </h5>
           <div class="seperator" ></div>
         </div>
+        <div id="add-option" ></div>
         <div class="add-option pull-left"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a><h4>
         </div>
         <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
@@ -366,7 +367,7 @@
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
-<script src="/script/tj.js"></script> 
+<script src="/script/tj1.js"></script> 
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script>
 
