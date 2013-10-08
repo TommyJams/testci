@@ -160,6 +160,10 @@
               <input class="form-control input-lg pull-left" type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></input>
               <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
               <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
+              <div class="background-images">
+                <input class="form-control input-lg pull-left" type="file" id="backimg1" name="backimg2"></input>
+                <input class="form-control input-lg pull-left" type="file" id="backimg2" name="backimg2"></input>
+              </div>
             </div>
           </div>
         </div>

@@ -505,38 +505,10 @@ ul.social-list li a.social-list-blog-edit {
 	top: 33%;
 	left: 37%;
 }
-.tgt textarea, .phn textarea {
-	background: black;
+.background-images {
 	border: 1px dashed #999999;
-	font-size: 15px;
-	color:white;
-	width: 60%;
-	border-radius: 3px;
-	padding: 2px;
-	text-align: center;
-	resize: none;
-}
-/*.phn textarea {
-	background: black;
-	border: 1px dashed #999999;
-	font-size: 15px;
-	color:white;
-	width: 60%;
-	border-radius: 3px;
-	padding: 1px;
-	text-align: center;
-	resize: none;
-}*/
-.mail textarea {
-	background: black;
-	border: 1px dashed #999999;
-	font-size: 15px;
-	color:white;
-	width: 60%;
-	border-radius: 3px;
-	padding: 2px;
-	text-align: center;
-	resize: none;
+	padding: 10px;
+	width: 100%;
 }
 .social-links {
 	border: 1px dashed #999999;
