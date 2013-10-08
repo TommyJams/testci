@@ -162,7 +162,7 @@
               <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
               <div class="clearfix"></div>
               <div class="background-images">
-                <h4 >UPLOAD BACKGROUND IMAGES</h4>
+                UPLOAD BACKGROUND IMAGES
                 <input class="form-control input-lg pull-right" type="file" id="backimg1" name="backimg1"></input>
                 <input class="form-control input-lg pull-right" type="file" id="backimg2" name="backimg2"></input>
               </div>
