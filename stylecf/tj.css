@@ -429,6 +429,7 @@ ul.social-list li a.social-list-blog-edit {
 	border: 1px dashed #999999;
 	font-size: 15px;
 	color:#999999 !important;
+	margin-bottom: 15px;
 }
 .d-tj-pledge input {
 	background: black;
