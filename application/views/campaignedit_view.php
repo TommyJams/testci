@@ -161,10 +161,10 @@
                 <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
               <h4 class="phn" >PHONE :
-                <textarea  type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></textarea>
+                <input  class="form-control input-lg pull-right" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></input>
               </h4>
               <h4 class="mail" >EMAIL :
-                <textarea  rows="1" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></textarea>
+                <input class="form-control input-lg pull-right" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
               </h4>
               <h4 class="mail" >BACKGROUND IMAGES :
                 <textarea  type="text" id="bckimage" name="bckimage" >
