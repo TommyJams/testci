@@ -507,6 +507,7 @@ ul.social-list li a.social-list-blog-edit {
 }
 .background-images {
 	border: 1px dashed #999999;
+	border-radius: 3px;
 	padding: 10px 16px;
 	width: 100%;
 	color: #555555;
