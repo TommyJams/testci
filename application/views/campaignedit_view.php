@@ -112,7 +112,7 @@
 <div class="addImage" style="display: none;">
   <div class="modal-content socialModal">
     <div class="modal-header">
-      <h4>Add  Link</h4>
+      <h4>Add Background Images</h4>
     </div>
     <div class="modal-body modal-link">
       <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
@@ -286,7 +286,7 @@
         <div id="add-option" ></div>
         <div  class="add-option"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a><h4>
           <h5>
-            <a  class=" btn-delete-pledge pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+            <a  class=" open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
               <img src="/img/help.png" alt="" style="">
             </a>  
           </h5>       
@@ -510,7 +510,21 @@
             );
     });
 
-    $("a.open-help-form").click(function () {
+    $('body').on('click', '.open-help-form', function(){
+        $.fancybox(
+                $('.help-form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                 }
+            );  
+    });
+
+  /*  $("a.open-help-form").click(function () {
         $.fancybox(
                 $('.help-form').html(),
                 {
@@ -522,7 +536,7 @@
                     'hideOnContentClick': false,
                  }
             );
-    });
+    });*/
 
     $('#editcampaign').bind('submit',function(e) 
     {

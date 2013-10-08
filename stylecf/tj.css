@@ -518,7 +518,7 @@ ul.social-list li a.social-list-blog-edit {
 	margin: 0;
 	color: #999999 !important;
 }
-.btn-delete-pledge {
+.btn-delete-pledge, .open-help-form {
 	cursor:pointer
 }
 /* Editor */
