@@ -214,6 +214,10 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
+		// Loading helper functions
+        $this->load->helper('functions');
+        $this->load->helper('modelFunctions');
+
 	    $tour_id = $this->input->post("tour_id");
 		$artist_name = $this->input->post("artistName");
 		$target = $this->input->post("target");
@@ -231,10 +235,6 @@ class Model extends CI_Model{
         $bandcamp = "";
         $website = "";
 
-        // Loading helper functions
-        $this->load->helper('functions');
-        $this->load->helper('modelFunctions');
-
 		$response=array('error'=>0,'info'=>null);
 
 		$values=array
@@ -248,16 +248,19 @@ class Model extends CI_Model{
 			'sociallink3'	=> $sociallink3
 		);
 
+		// Pledge check -> Atleast one pledge should be filled and none should be negative
 		while($maxIndex)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
 
-			if($amount > 0)
+			if($amount < 0)
 			{
-				
+				$response['error']=1;
+				$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
+				break;
 			}
-			
+
 			$maxIndex--;
 		}
 
@@ -334,7 +337,7 @@ class Model extends CI_Model{
 		}
 
 		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink` ) 
-					VALUES('$tour_id', '$tour_name', '$artist_name', '$target', '$startCamp', '$endCamp', '$tourDate', '$editorContent', '$fb', '$twitter', '$soundcloud', '$bandcamp', '$website', '$vlink')");
+					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
@@ -356,7 +359,7 @@ class Model extends CI_Model{
 				if($amount > 0)
 				{
 					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
-								VALUES('$campaign_id', '$amount', '$desc')");
+								VALUES('".$this->db->escape_str($campaign_id)."', '".$this->db->escape_str($amount)."', '".$this->db->escape_str($desc)."')");
 				}
 				
 				$maxIndex--;
