@@ -289,11 +289,9 @@
         <div id="add-option" ></div>
         <div  class="add-option"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a><h4>
         </div>
-        <h5>
-          <a  class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+        <a  class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
             <img src="/img/help.png" alt="" style="">
-          </a>
-        </h5>
+        </a>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" id="tour_id"     name="tour_id"    value="<? print($tour_id); ?>" /> 
