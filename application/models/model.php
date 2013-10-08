@@ -123,6 +123,12 @@ class Model extends CI_Model{
    				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
+   				// Get yourtube ID
+   				$url = $videoLink;
+				$query_string = array();
+				parse_str(parse_url($url, PHP_URL_QUERY), $query_string);
+				$videoId = $query_string["v"];
+
    				if(!isset($raised))
                   		{
                     		$raised = 0;
@@ -177,7 +183,7 @@ class Model extends CI_Model{
 
 				$campaignDetails = array(
 								'campaign_id' 	=> $campaign_id,
-								'videoLink'		=> $videoLink,
+								'videoId'		=> $videoId,
 								'raised' 		=> $raised,
 								'target' 		=> $target,
 								'totalPledges' 	=> $totalPledges,

@@ -30,7 +30,7 @@
           $venues = $campaign->venues;
           $pledges = $campaign->pledges;
           $campaign_desc = $campaign->campaign_desc;
-          $vlink = $campaign->videoLink;
+          $vlink = $campaign->videoId;
           $fb = $campaign->fb;
           $twitter = $campaign->twitter;
           $scloud = $campaign->scloud;
@@ -45,7 +45,7 @@
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
           <iframe title="YouTube video player" class="d-tj-video" width="535" height="300" 
-          src="<? print($vlink); ?>" frameborder="0" allowfullscreen></iframe>
+          src="http://www.youtube.com/embed/<? print($vlink); ?>" frameborder="0" allowfullscreen></iframe>
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
