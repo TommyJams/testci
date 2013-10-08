@@ -420,11 +420,7 @@
       //$this.closest('.pledge').fadeOut("slow");
       $this.closest('.pledge').remove();
     });
-    
-    $("div.d-tj-bg-overlay").click(function () {
-        console.log("clicked");
-    });
-    
+
     $("a.openform1").click(function () {
         $.fancybox(
                 $('.form1').html(),
