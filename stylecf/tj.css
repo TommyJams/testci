@@ -514,6 +514,9 @@ ul.social-list li a.social-list-blog-edit {
 	width: 40%;
 	margin-left: 5%;
 	margin-right: 5%;
+	background: black;
+	font-size: 15px;
+	color:#999999 !important;
 }
 .social-links {
 	border: 1px dashed #999999;
