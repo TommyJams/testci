@@ -42,6 +42,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	left:0;
 	width:100%; /*height:100%;*/
 	z-index:-1;
+	cursor: pointer;
 }
 .d-tj-container {
 	max-width:970px;
@@ -486,7 +487,7 @@ ul.social-list li a.social-list-blog-edit {
 	min-height: 300px;
 	padding:30px
 }
-.d-tj-video-edit-bdr, .d-tj-bg-overlay {
+.d-tj-video-edit-bdr {
 	border: 1px dashed #999999;
 	font-size: 15px;
 	color:white;
