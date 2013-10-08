@@ -366,7 +366,7 @@
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
-<script src="/script/tj1.js"></script> 
+<script src="/script/tj.js"></script> 
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script>
 
