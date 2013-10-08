@@ -510,6 +510,11 @@ ul.social-list li a.social-list-blog-edit {
 	padding: 10px;
 	width: 100%;
 }
+.background-images .input-file {
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
 .social-links {
 	border: 1px dashed #999999;
 	padding: 10px;
