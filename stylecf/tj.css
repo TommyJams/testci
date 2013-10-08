@@ -1025,7 +1025,7 @@ input[type="button"], input[type="submit"] {
 	font-size:14px;
 }
 .d-tj-box .d-tj-black-box {
-	min-height: 0px !important;
+	min-height: 285px !important;
 	padding-top: 10px !important;
 }
 .d-tj-offset-top-40 {
