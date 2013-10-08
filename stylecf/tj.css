@@ -512,10 +512,10 @@ ul.social-list li a.social-list-blog-edit {
 	color: #555555;
 	font-size: 15px;
 }
-.background-images .input-lg {
-	width: 40%;
-	margin-left: 5%;
-	margin-right: 5%;
+.background-images input {
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 .social-links {
 	border: 1px dashed #999999;
