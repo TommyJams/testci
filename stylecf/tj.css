@@ -513,10 +513,10 @@ ul.social-list li a.social-list-blog-edit {
 	color: #555555;
 	font-size: 15px;
 }
-/*.background-images input {
+.background-images input {
 	background: black;
-	border: 1px dashed #999999; 
-}*/
+	border: 0px;
+}
 .social-links {
 	border: 1px dashed #999999;
 	padding: 10px;
