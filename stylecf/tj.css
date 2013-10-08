@@ -452,6 +452,7 @@ ul.social-list li a.social-list-blog-edit {
 	padding: 15px;
 	width: 60%;
 	padding: 10px;
+	float: left;
 }
 .add-option a {
 	color:white;
