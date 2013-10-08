@@ -119,8 +119,8 @@ class Model extends CI_Model{
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
    				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
    				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;
-   				$image1 = $row->image1;$image2 = $row->image2;
-   				$image3 = $row->image3;$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
+   				$image1 = $row->image1;
+   				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
    				if(!isset($raised))
@@ -192,8 +192,6 @@ class Model extends CI_Model{
 								'scloud' 		=> $scloud,
 								'website' 		=> $website,
 								'image1' 		=> $image1,
-								'image2' 		=> $image2,
-								'image3' 		=> $image3,
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
 								'days_to_go'  	=> $days_to_go
@@ -220,6 +218,9 @@ class Model extends CI_Model{
 
 	    $tour_id = $this->input->post("tour_id");
 		$artist_name = $this->input->post("artistName");
+		$phone = $this->input->post("phone");
+		$email = $this->input->post("email");
+		$backimg = $this->input->post("backimg");
 		$target = $this->input->post("target");
 		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
