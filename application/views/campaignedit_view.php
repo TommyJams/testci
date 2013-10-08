@@ -132,8 +132,6 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <a data-toggle="modal" id="backgroundImage" href="#imageModal" title="Image" alt="" target="_blank" 
-                    class="social-list-facebook-edit back-image">UPLOAD<br>Background Images</a>
     <form name="editcampaign" id="editcampaign" method="post">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
@@ -162,14 +160,17 @@
               <h4 class="tgt" >TARGET :
                 <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
-              <h4 class="phn" >PHONE  :
+              <h4 class="phn" >PHONE :
                 <textarea  type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></textarea>
               </h4>
-              <h4 class="mail" >EMAIL  :
+              <h4 class="mail" >EMAIL :
                 <textarea  type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></textarea>
               </h4>
               <h4 class="mail" >BACKGROUND IMAGES :
-                <textarea  type="text" id="bckimage" name="bckimage" ></textarea>
+                <textarea  type="text" id="bckimage" name="bckimage" >
+                    <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
+                    <input type="file" title="Background Image 1" value="" id="backgroundImage1" name="backgroundImage1" >
+                </textarea>
               </h4>             
             </div>
           </div>

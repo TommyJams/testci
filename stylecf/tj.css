@@ -530,6 +530,7 @@ ul.social-list li a.social-list-blog-edit {
 	padding: 2px;
 	text-align: center;
 	resize: none;
+	rows: 1;
 }
 .social-links {
 	border: 1px dashed #999999;
