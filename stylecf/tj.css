@@ -498,7 +498,7 @@ ul.social-list li a.social-list-blog-edit {
 	top: 33%;
 	left: 37%;
 }
-.tgt textarea, .phn textarea, .mail textarea {
+.tgt, .phn, .mail textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
