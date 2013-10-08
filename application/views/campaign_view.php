@@ -37,6 +37,8 @@
           $bandcamp = $campaign->bandcamp;
           $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
+
+          error_log("Video Link: ".$vlink);
         ?>
 
     <div class="d-tj-box " >
