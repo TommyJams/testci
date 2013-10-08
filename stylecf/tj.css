@@ -498,7 +498,7 @@ ul.social-list li a.social-list-blog-edit {
 	top: 33%;
 	left: 37%;
 }
-.tgt textarea {
+.tgt textarea, .phn textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
@@ -509,7 +509,7 @@ ul.social-list li a.social-list-blog-edit {
 	text-align: center;
 	resize: none;
 }
-.phn textarea {
+/*.phn textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
@@ -519,7 +519,7 @@ ul.social-list li a.social-list-blog-edit {
 	padding: 1px;
 	text-align: center;
 	resize: none;
-}
+}*/
 .mail textarea {
 	background: black;
 	border: 1px dashed #999999;
@@ -527,7 +527,7 @@ ul.social-list li a.social-list-blog-edit {
 	color:white;
 	width: 60%;
 	border-radius: 3px;
-	padding: 1px;
+	padding: 2px;
 	text-align: center;
 	resize: none;
 }

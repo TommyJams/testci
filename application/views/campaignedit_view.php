@@ -162,10 +162,10 @@
               <h4 class="tgt" >TARGET :
                 <textarea  type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></textarea>
               </h4>
-              <h4 class="phn" >PHONE :
+              <h4 class="phn" >PHONE  :
                 <textarea  type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER (10-DIGIT)"></textarea>
               </h4>
-              <h4 class="mail" >EMAIL :
+              <h4 class="mail" >EMAIL  :
                 <textarea  type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></textarea>
               </h4>
               <h4 class="mail" >BACKGROUND IMAGES :
