@@ -31,10 +31,10 @@ class CFfans extends CI_Controller{
 		$api_key = '248776888603319';
 		$secret  = '50f31c2706d846826bead008392e8969';
 
-		include_once './src/facebook.php';
+		include_once '/src/facebook.php';
 
 		$facebook = new Facebook($api_key, $secret);
-		$user = $facebook->require_login();
+		$user = $facebook->getUser();
 
 		$data['user'] = $user;
 
