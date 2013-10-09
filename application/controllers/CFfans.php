@@ -56,6 +56,8 @@ class CFfans extends CI_Controller{
   		$user_id = $facebook->getUser();
 
   		$data['user_id'] = $user_id;
+  		$data['facebook'] = $facebook;
+
 
 		$this->load->view('postlink_view', $data);
 
