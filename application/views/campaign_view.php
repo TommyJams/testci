@@ -158,16 +158,14 @@
     <div  class="d-tj-artist-container d-tj-offset-top-40">
       <div class="col-md-7 d-tj-artist" >
         <div>
-        <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
-        <div>
-          <input value="FACEBOOK" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
-            +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+          <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         </div>
-        <div>    
-          <a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
+        <div>
+          <ul class=" list-unstyled social-list clear-fix">
+            <li ><a href="#" class='social-list-facebook' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li >
+            <li><a href="https://twitter.com/share" class="social-list-twitter" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
+          </ul>
         </div>      
-          <!--<a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>-->
-      </div> 
       </div> 
     </div>
     <!-- /Social Share -->
