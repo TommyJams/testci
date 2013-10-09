@@ -156,7 +156,7 @@
 
     <!-- Social Share -->
     <div  class="d-tj-artist-container d-tj-offset-top-40">
-      <div class="col-md-7 d-tj-artist" >
+      
         <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         <!-- FB Share Button -->
         <div class=" d-tj-offset-top-30 pledge-btn" >
@@ -172,7 +172,7 @@
             <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
           </div>  
         <!-- /Twitter Share Button -->
-      </div>  
+        
     </div>
     <!-- /Social Share -->
 
