@@ -24,4 +24,20 @@ class CFfans extends CI_Controller{
         $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 		$this->load->view('campaign_view', $data);		
 	}
+
+	public function campaignEvent(){
+
+		// Get these from http://developers.facebook.com
+		$api_key = '248776888603319';
+		$secret  = '50f31c2706d846826bead008392e8969';
+
+		include_once './src/facebook.php';
+
+		$facebook = new Facebook($api_key, $secret);
+		$user = $facebook->require_login();
+
+		$data['user'] = $user;
+
+		$this->load->view('campaignevent_view', $data);
+	}
 }
