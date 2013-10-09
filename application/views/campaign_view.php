@@ -159,18 +159,14 @@
       <div class="col-md-7 d-tj-artist" >
         <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         <!-- FB Share Button -->
-        <div class=" d-tj-offset-top-30 pledge-btn" >
           <a href="#" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
             +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
             Share on Facebook
           </a>
-        </div>
         <!-- /FB Share Button -->
           
         <!-- Twitter Share Button -->
-          <div class=" d-tj-offset-top-30 pledge-btn" >
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-          </div>  
+            <a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>  
         <!-- /Twitter Share Button -->
       </div>  
     </div>
