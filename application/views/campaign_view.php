@@ -150,13 +150,9 @@
           </div>
         </div>
         <!--  /Pledge--> 
-      </div>
-      <div class="clearfix"></div>
-    </div>
 
-    <!-- Social Share -->
-    <div  class="d-tj-artist-container d-tj-offset-top-40">
-      <div class="col-md-7 d-tj-artist" >
+        <!-- Social Share -->
+        <div class="col-md-7 d-tj-artist" >
         <div>
           <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         </div>
@@ -167,8 +163,10 @@
           </ul>
         </div>      
       </div> 
+      <!-- /Social Share -->
+      </div>
+      <div class="clearfix"></div>
     </div>
-    <!-- /Social Share -->
     <? 
     } 
     ?>
