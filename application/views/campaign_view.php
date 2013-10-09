@@ -156,18 +156,15 @@
 
     <!-- Social Share -->
     <div  class="d-tj-artist-container d-tj-offset-top-40">
-      <div>
       <div class="col-md-7 d-tj-artist" >
+        <div>
         <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
-        <!-- FB Share Button -->
         <div>
           <input value="FACEBOOK" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
             +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
-        <!-- /FB Share Button -->
-          
-        <!-- Twitter Share Button -->
-            <a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>  
-        <!-- /Twitter Share Button -->
+          <input value="TWITTER" type="button" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">   
+            
+          <!--<a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>-->
       </div>
       </div> 
       </div> 
