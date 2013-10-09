@@ -11,7 +11,7 @@
         $ret_obj = $facebook->api('/me/events', 'POST',
                                     array(
                                       'name' => 'Campaign Event',
-                                      'start_time' => '2013-09-10'
+                                      'start_time' => '2013-10-10'
                                  ));
         echo '<pre>Post ID: ' . $ret_obj['id'] . '</pre>';
 
