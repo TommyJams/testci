@@ -36,8 +36,29 @@ class CFfans extends CI_Controller{
 		$facebook = new Facebook($api_key, $secret);
 		$user = $facebook->getUser();
 
+		$access_token = $facebook->getAccessToken();
+
 		$data['user'] = $user;
 
 		$this->load->view('campaignevent_view', $data);
+	}
+
+	public function postLink(){
+
+		require_once('/src/facebook.php');
+
+  		$config = array(
+    				'appId' => '248776888603319',
+    				'secret' => '50f31c2706d846826bead008392e8969',
+  		);
+
+  		$facebook = new Facebook($config);
+  		$user_id = $facebook->getUser();
+
+  		$data['user_id'] = $user_id;
+
+		$this->load->view('campaignevent_view', $data);
+
+
 	}
 }
