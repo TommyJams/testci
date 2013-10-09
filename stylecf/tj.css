@@ -382,6 +382,9 @@ ul.social-list li a:hover {
 ul.social-list li a.social-list-twitter {
 	background-image:url('/img/icon_twitter.png');
 }
+ul.social-list li a.twitter-share-button {
+	background-image:url('/img/icon_twitter.png');
+}
 ul.social-list li a.social-list-facebook {
 	background-image:url('/img/icon_facebook.png');
 }
