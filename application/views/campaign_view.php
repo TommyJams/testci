@@ -163,7 +163,7 @@
         <div>
           <ul class=" list-unstyled social-list clear-fix">
             <li ><a href="#" class='social-list-facebook' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li >
-            <li ><a href="https://twitter.com/share" class="social-list-twitter" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
+            <li ><a href="#" class="social-list-twitter"  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
           </ul>
         </div>      
       </div> 
