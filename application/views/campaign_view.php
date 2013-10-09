@@ -162,10 +162,11 @@
         <div>
           <input value="FACEBOOK" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
             +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
-          <input value="TWITTER" type="button" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">   
-            
+        </div>
+        <div>    
+          <input value="TWITTER" type="button" onclick="window.open('https://twitter.com/share');" class="twitter-share-button" data-lang="en">   
+        </div>      
           <!--<a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>-->
-      </div>
       </div> 
       </div> 
     </div>
