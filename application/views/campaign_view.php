@@ -153,35 +153,88 @@
       </div>
       <div class="clearfix"></div>
     </div>
+
+    <!-- Social Share -->
     <div  class="d-tj-artist-container d-tj-offset-top-40">
-        <div>
-        <!-- Social Share -->
-          <div class="col-md-7 d-tj-artist" >
-          <!-- FB Share Button -->
-            <div class=" d-tj-offset-top-30 pledge-btn" >
-                <a href="#" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
-                +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
-                Share on Facebook
-                </a>
-            </div>
-            <!-- /FB Share Button -->
-            <!-- Twitter Share Button -->
-            <div class=" d-tj-offset-top-30 pledge-btn" >
-              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-            </div>  
-            <!-- /Twitter Share Button -->
-          </div>  
-        <!-- /Social Share -->
+      <div class="col-md-7 d-tj-artist" >
+        <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
+        <!-- FB Share Button -->
+        <div class=" d-tj-offset-top-30 pledge-btn" >
+          <a href="#" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
+            +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+            Share on Facebook
+          </a>
         </div>
+        <!-- /FB Share Button -->
+          
+        <!-- Twitter Share Button -->
+          <div class=" d-tj-offset-top-30 pledge-btn" >
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+          </div>  
+        <!-- /Twitter Share Button -->
+      </div>  
+    </div>
+    <!-- /Social Share -->
+
+    <footer class="d-tj-footer">
+  <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
+    <div class="col-md-3 col-sm-12 col-xs-12 footer-top">
+      <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="/img/tj.jpg" height="50" alt=""> </a> </div>
+      <div class="col-md-12 f-social">
+        <ul class=" list-unstyled social-list clear-fix">
+          <li><a href="http://www.facebook.com/tommyjams.live" title="" alt="Facebook" target="_blank" class="social-list-facebook" data-original-title="Facebook"></a></li>
+          <li><a href="http://twitter.com/TommyJams" title="" alt="Twitter" target="_blank" class="social-list-twitter" data-original-title="Twitter"></a></li>
+          <li class="f-like">
+            <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftommyjams.live&amp;width=100&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false&amp;appId=625320827487862" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+          </li>
+        </ul>
       </div>
-    <footer class="footer-container">
-      <div class="col-md-6 col-sm-6 col-xs-6 footer-p">
-        <p>Copyright &copy; 2013 - All Rights Reserved</p>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 f-links ">
+      <div class="col-md-3 col-sm-3 col-xs-3 f-artist text-center">
+        <ul class="list-unstyled">
+          <li>
+            <h4>ARTIST</h4>
+          </li>
+          <li> <a>CROWDFUND</a> </li>
+          <li> <a>BOOK EVENTS</a> </li>
+        </ul>
       </div>
-      <div class="col-md-6 col-sm-6 social col-xs-6 footer-p" >
-        <div class="pull-right"> <a class=" social-icons" href="https://www.facebook.com/tommyjams.live" target="_blank" style="cursor:pointer;background:url(/img/fb-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://twitter.com/TommyJams" target="_blank" style="cursor:pointer;background:url(/img/tw-icon.png) no-repeat;"></a> <a class=" social-icons" href="http://www.tommyjams.com/blog" target="_blank" style="cursor:pointer;background:url(/img/blog-icon.png) no-repeat;"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-3 f-venues text-center">
+        <ul class="list-unstyled">
+          <li>
+            <h4 >VENUES</h4>
+          </li>
+          <li> <a>BOOK ARTIST</a> </li>
+        </ul>
       </div>
-    </footer>
+      <div class="col-md-3 col-sm-3 col-xs-3 f-fans text-center">
+        <ul class="list-unstyled">
+          <li>
+            <h4 >FANS</h4>
+          </li>
+          <li> <a>CAMPAIGN</a> </li>
+          <li> <a>RADIO ONE</a> </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3 f-help text-center">
+        <ul class="list-unstyled">
+          <li>
+            <h4 >HELP</h4>
+          </li>
+          <li> <a>CONTACT US</a> </li>
+          <li> <a>ABOUT US</a> </li>
+          <li> <a>PRESS</a> </li>
+          <li> <a>ADVERTISE</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="/img/m-s-ventures.png" /></a> </div>
+  </div>
+  <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
+    <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
     <? 
     } 
     ?>
