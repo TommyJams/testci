@@ -164,7 +164,7 @@
             +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
         </div>
         <div>    
-          <input value="TWITTER" type="button" onclick="window.open('https://twitter.com/share', 'width=626,height=436');" class="twitter-share-button" data-lang="en">   
+          <a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
         </div>      
           <!--<a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>-->
       </div> 
@@ -206,8 +206,8 @@ $('#foo5').carouFredSel({
 					scroll: 1
 				});
 	});
-</script> 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
