@@ -26,8 +26,8 @@
                        'scope' => 'publish_stream'
                        )); 
         echo 'Please <a href="' . $login_url . '">login.</a>';
-        error_log($e->getType());
-        error_log($e->getMessage());
+        error_log("Get Type".$e->getType());
+        error_log("Get Message".$e->getMessage());
       }   
     } else {
 
