@@ -151,7 +151,9 @@
         </div>
         <!--  /Pledge--> 
       </div>
-      <div  class="d-tj-artist-container d-tj-offset-top-40">
+      <div class="clearfix"></div>
+    </div>
+    <div  class="d-tj-artist-container d-tj-offset-top-40">
         <div>
         <!-- Social Share -->
           <div class="col-md-7 d-tj-artist" >
@@ -172,8 +174,6 @@
         <!-- /Social Share -->
         </div>
       </div>
-      <div class="clearfix"></div>
-    </div>
     <footer class="footer-container">
       <div class="col-md-6 col-sm-6 col-xs-6 footer-p">
         <p>Copyright &copy; 2013 - All Rights Reserved</p>
