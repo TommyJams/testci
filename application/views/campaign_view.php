@@ -169,8 +169,11 @@
       </div> 
     </div>
     <!-- /Social Share -->
-
-    <footer class="d-tj-footer">
+    <? 
+    } 
+    ?>
+  </div>
+  <footer class="d-tj-footer">
   <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
     <div class="col-md-3 col-sm-12 col-xs-12 footer-top">
       <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="/img/tj.jpg" height="50" alt=""> </a> </div>
@@ -229,10 +232,6 @@
     <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
   </div>
 </footer>
-    <? 
-    } 
-    ?>
-  </div>
 </div>
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script> 
