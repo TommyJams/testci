@@ -23,7 +23,7 @@
         // In this case, we'll get an exception, so we'll
         // just ask the user to login again here.
         $login_url = $facebook->getLoginUrl( array(
-                       'scope' => 'publish_stream'
+                       'scope' => 'create_event'
                        )); 
         echo 'Please <a href="' . $login_url . '">login.</a>';
         error_log("Get Type: ".$e->getType());
