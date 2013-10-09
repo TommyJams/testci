@@ -79,6 +79,8 @@ define('CONTACT_FORM_MSG_INVALID_SOCIAL_LINK','Please enter your valid social li
 define('CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT','Please enter valid pledge amount.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MAIL','Please enter valid e-mail.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MESSAGE','Please enter your message.');
+
+define('CAMPAIGN_FORM_MSG_INVALID_PHONE','Please enter valid phone number.');
 	
 define('CONTACT_FORM_SEND_MSG_OK','Thank you for contacting us.');
 define('CONTACT_FORM_SEND_MSG_ERROR','Sorry, we can\'t send this message.');

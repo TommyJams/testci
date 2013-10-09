@@ -123,7 +123,7 @@ class Model extends CI_Model{
    				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
-   				// Get yourtube ID
+   				// Get youtube video ID
    				$url = $videoLink;
 				$query_string = array();
 				parse_str(parse_url($url, PHP_URL_QUERY), $query_string);
@@ -236,11 +236,34 @@ class Model extends CI_Model{
         $sociallink2 = $this->input->post("sociallink-2");
         $sociallink3 = $this->input->post("sociallink-3");
 
+        // Initiating variables
         $fb = "";
         $twitter = "";
         $soundcloud = "";
         $bandcamp = "";
         $website = "";
+        $filename = "";
+
+        //Background Image Check
+        $upload_path = './images/artist/campaign';
+        $config['upload_path'] = $upload_path;
+		$config['allowed_types'] = 'gif|jpg|png|bmp';
+		$config['max_size']  = 1024 * 8;
+		$config['encrypt_name'] = TRUE;
+
+		$this->load->library('upload', $config); 
+
+		if (!$this->upload->do_upload())
+		{
+			$response['error'] = 1;
+			$msg = $this->upload->display_errors('', '');
+			$response['info'][]=array('fieldId'=>'backimg','message'=>'$msg');
+			createResponse($response);
+		}
+		else
+		{
+			$filename = $backimg;
+		}
 
 		$response=array('error'=>0,'info'=>null);
 
@@ -249,6 +272,8 @@ class Model extends CI_Model{
 			'artistName'	=> $artist_name,
 			'target'		=> $target,
 			'min_target'	=> $min_target,
+			'phone'			=> $phone,
+			'email'			=> $email,
 			'video-link'	=> $vlink,
 			'sociallink1'	=> $sociallink1,
 			'sociallink2'	=> $sociallink2,
@@ -289,6 +314,20 @@ class Model extends CI_Model{
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'vd-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
+		}
+
+		if(!validateEmail($values['email']))
+		{
+ 			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'email','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
+			createResponse($response);
+		}
+
+		if(strlen($phone) != 10)
+		{
+			$response['error']=1;	
+			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
+			createResponse($response);
 		}
 
 		// Social Links Check
@@ -343,8 +382,8 @@ class Model extends CI_Model{
 			}
 		}
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink` ) 
-					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1` ) 
+					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
