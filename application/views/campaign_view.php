@@ -159,15 +159,17 @@
       <div class="col-md-7 d-tj-artist" >
         <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         <!-- FB Share Button -->
-          <a href="#" type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
+        <div>
+          <button type="button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='
             +encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;">
-            Share on Facebook
-          </a>
+            FACEBOOK
+          </button>
         <!-- /FB Share Button -->
           
         <!-- Twitter Share Button -->
             <a style="font-size:60px;" href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>  
         <!-- /Twitter Share Button -->
+      </div>
       </div>  
     </div>
     <!-- /Social Share -->
