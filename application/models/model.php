@@ -250,27 +250,6 @@ class Model extends CI_Model{
         $form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
 
-        //Background Image Check
-    	$upload_path = './images/artist/campaign';
-        $config['upload_path'] = $upload_path;
-		$config['allowed_types'] = 'gif|jpg|png|bmp';
-		$config['max_size']  = 1024 * 8;
-		$config['encrypt_name'] = TRUE;
-
-		$this->load->library('upload', $config); 
-
-		if (!$this->upload->do_upload())
-		{
-			$response['error'] = 1;
-			$msg = $this->upload->display_errors('', '');
-			$response['info'][]=array('fieldId'=>'backimg','message'=>'$msg');
-			createResponse($response);
-		}
-		else
-		{
-			$filename = $backimg;
-		}
-
 		$response=array('error'=>0,'info'=>null);
 
 		$values=array
@@ -304,6 +283,7 @@ class Model extends CI_Model{
 			$maxIndex--;
 		}
 
+		// Campaign form fields check
 		if(isGPC()) $values=array_map('stripslashes',$values);
 	
 		if(isEmpty($values['artistName']))
@@ -348,6 +328,25 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'editor','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
 		}
 
+		//Background Image Check
+    	$upload_path = './images/artist/campaign';
+        $config['upload_path'] = $upload_path;
+		$config['allowed_types'] = 'gif|jpg|png|bmp';
+		$config['max_size']  = 1024 * 8;
+		$config['encrypt_name'] = TRUE;
+
+		$this->load->library('upload', $config); 
+
+		if (!$this->upload->do_upload())
+		{
+			$response['error'] = 1;
+			$response['info'][]=array('fieldId'=>'backimg','message'=>CAMPAIGN_FORM_MSG_INVALID_IMAGE);
+		}
+		else
+		{
+			$filename = $backimg;
+		}
+
 		// Social Links Check
 		$count = 3;
 		while($count)
@@ -380,9 +379,9 @@ class Model extends CI_Model{
 		if($response['error']==1) 
 			createResponse($response);
 
-		//
+		//Create Facebook event 
 
-	/*	require_once('/src/facebook.php');
+		require_once('/src/facebook.php');
 
   		$config = array(
     				'appId' => '204029036428158',
@@ -417,7 +416,10 @@ class Model extends CI_Model{
       		}   
     	} 
 
-		$eventID = $ret_obj['id']; */
+    	// Event ID gets create on successful event creation
+		$eventID = $ret_obj['id']; 
+
+		// ---------------Storing data into database--------------------- //
 
 		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
 		if ($query2->num_rows() > 0)
