@@ -15,13 +15,13 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
 
 		// Inserting values in CampaignCF
-      	//$campaign_id = $this->Model->formDetails();
+    //$campaign_id = $this->Model->formDetails();
 
-      	$campaign_id = $this->uri->segment(2);
+    $campaign_id = $this->uri->segment(2);
 		 
 		error_log("Camp Id: ".$campaign_id);
 
-        $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+    $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 		$this->load->view('campaign_view', $data);		
 	}
 
