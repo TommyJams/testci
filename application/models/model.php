@@ -382,8 +382,8 @@ class Model extends CI_Model{
 			createResponse($response);
 
 		// Calling controller for FB login
-		$CI =& get_instance();
-    	$login = $CI->load->controller('CFfans/campaignEvent');
+		//$CI =& get_instance();
+    	$login = $this->load->controller('CFfans/campaignEvent');
 
 		//Create Facebook event
 		/* 
