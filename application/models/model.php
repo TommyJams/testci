@@ -384,7 +384,8 @@ class Model extends CI_Model{
 		// Calling controller for FB login
 		//$CI =& get_instance();
     	
-    	$login = $this->load->controller('CFfans/campaignEvent');
+    	$this->load->controller('CFfans');
+    	$login = $this->CFfans->campaignEvent();
 
 		//Create Facebook event
 		/* 
