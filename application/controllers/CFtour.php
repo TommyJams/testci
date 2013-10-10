@@ -14,6 +14,8 @@ class CFtour extends CI_Controller{
 	}
 
 	public function validateDetails(){
+
+		error_log("Validate");
 		
 		$this->load->model('Model');
       	$campaign_id = $this->Model->formDetails();
