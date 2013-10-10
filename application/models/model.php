@@ -218,6 +218,14 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
+		// Initiating variables
+        $fb = "";
+        $twitter = "";
+        $soundcloud = "";
+        $bandcamp = "";
+        $website = "";
+        $filename = "";
+
 		// Loading helper functions
         $this->load->helper('functions');
         $this->load->helper('modelFunctions');
@@ -235,14 +243,6 @@ class Model extends CI_Model{
         $sociallink1 = $this->input->post("sociallink-1");
         $sociallink2 = $this->input->post("sociallink-2");
         $sociallink3 = $this->input->post("sociallink-3");
-
-        // Initiating variables
-        $fb = "";
-        $twitter = "";
-        $soundcloud = "";
-        $bandcamp = "";
-        $website = "";
-        $filename = "";
 
         //Background Image Check
     /*    $upload_path = './images/artist/campaign';
@@ -320,14 +320,12 @@ class Model extends CI_Model{
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'email','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
-			createResponse($response);
 		}
 
 		if(strlen($phone) != 10)
 		{
 			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
-			createResponse($response);
 		}
 
 		// Social Links Check
