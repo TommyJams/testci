@@ -280,6 +280,7 @@ class Model extends CI_Model{
 			'min_target'	=> $min_target,
 			'phone'			=> $phone,
 			'email'			=> $email,
+			'editorContent' => $editorContent,
 			'video-link'	=> $vlink,
 			'sociallink1'	=> $sociallink1,
 			'sociallink2'	=> $sociallink2,
@@ -339,6 +340,12 @@ class Model extends CI_Model{
 		{
 			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
+		}
+
+		if(isEmpty($values['editorContent']))
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'target','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
 		}
 
 		// Social Links Check
