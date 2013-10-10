@@ -278,6 +278,7 @@ class Model extends CI_Model{
 			{
 				$response['error']=1;
 				$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
+				break;
 			}
 
 			$maxIndex--;
@@ -328,7 +329,7 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'editor','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
 		}
 
-		//Background Image Check
+	/*	//Background Image Check
     	$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
@@ -345,7 +346,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-		}
+		}*/
 
 		// Social Links Check
 		$count = 3;
