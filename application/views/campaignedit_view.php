@@ -280,6 +280,7 @@
       <input type="hidden" id="sociallink-2" name="sociallink-2" value="" />
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
+      <input type="hidden" id="backimg" name="backimg" value="" />
       <input type="submit" value="SUBMIT" >
       <? 
         } 
@@ -484,26 +485,15 @@
             );  
     });
 
-  /*  $("a.open-help-form").click(function () {
-        $.fancybox(
-                $('.help-form').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                 }
-            );
-    });*/
-
     $('#editcampaign').bind('submit',function(e) 
     {
       e.preventDefault();
 
       var editorContent = $('#editor').html();
       $('#editorContent').val(editorContent);
+
+      //var backimg = $('#backimg').html();
+      //$('#backimg').val(backimg);
 
       submitCampaignForm();
     });
@@ -520,7 +510,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #backimg, #phone, #email, #editor').qtip('destroy');
+      $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #backimg, #phone, #email').qtip('destroy');
 
     /*  var tPosition =
       {
@@ -542,8 +532,7 @@
         'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
         'backimg'             : {'my':'bottom center','at':'top center'},
         'phone'               : {'my':'bottom center','at':'top center'},
-        'email'               : {'my':'bottom center','at':'top center'},
-        'editor'              : {'my':'bottom center','at':'top center'}
+        'email'               : {'my':'bottom center','at':'top center'}
       };
 
       if(response.error==1 && typeof(response.info)!='undefined')

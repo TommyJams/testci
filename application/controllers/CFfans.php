@@ -36,6 +36,7 @@ class CFfans extends CI_Controller{
 
       $data['user_id'] = $user_id;
       $data['facebook'] = $facebook;
+      $data['event_id'] = 0;
 
       $this->load->view('campaignevent_view', $data);     
 	}

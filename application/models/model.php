@@ -238,7 +238,7 @@ class Model extends CI_Model{
 		$artist_name = $this->input->post("artistName");
 		$phone = $this->input->post("phone");
 		$email = $this->input->post("email");
-		//$backimg = $this->input->post("backimg");
+		$backimg = $this->input->post("backimg");
 		$target = $this->input->post("target");
 		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
@@ -260,7 +260,6 @@ class Model extends CI_Model{
 			'min_target'	=> $min_target,
 			'phone'			=> $phone,
 			'email'			=> $email,
-			'editorContent' => $editorContent,
 			'video-link'	=> $vlink,
 			'sociallink1'	=> $sociallink1,
 			'sociallink2'	=> $sociallink2,
@@ -324,13 +323,7 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
 		}
 
-		if(isEmpty($values['editorContent']))
-		{
-			$response['error']=1;
-			$response['info'][]=array('fieldId'=>'editor','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
-		}
-
-	/*	//Background Image Check
+		//Background Image Check
     	$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
@@ -347,7 +340,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-		}*/
+		}
 
 		// Social Links Check
 		$count = 3;

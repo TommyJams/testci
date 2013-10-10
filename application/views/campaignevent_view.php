@@ -14,13 +14,14 @@
                                       'name' => 'Campaign Event',
                                       'start_time' => '2013-10-10'
                                  ));
+          
           echo '<pre>Post ID: ' . $ret_obj['id'] . '</pre>';
 
           // Give the user a logout link 
           $logout_url = $facebook->getLogoutUrl( array(
                        'scope' => 'create_event'
                        ));
-          
+
           echo '<br /><a href="' . $logout_url . '">logout</a>';
         } catch(FacebookApiException $e) {
           // If the user is logged out, you can have a 

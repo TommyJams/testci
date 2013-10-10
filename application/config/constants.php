@@ -81,7 +81,6 @@ define('CONTACT_FORM_MSG_INVALID_DATA_MAIL','Please enter valid e-mail.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MESSAGE','Please enter your message.');
 
 define('CAMPAIGN_FORM_MSG_INVALID_PHONE','Please enter valid phone number.');
-define('CAMPAIGN_FORM_MSG_INVALID_CONTENT','Please enter campaign description.');
 define('CAMPAIGN_FORM_MSG_INVALID_IMAGE','Please enter valid background image.');
 
 define('CONTACT_FORM_SEND_MSG_OK','Thank you for contacting us.');

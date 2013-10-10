@@ -15,6 +15,7 @@ class CFtour extends CI_Controller{
 
 	public function validateDetails(){
 		
+		$this->load->helper('functions');
 		$this->load->model('Model');
 
 		$response = $this->Model->formDetails();
