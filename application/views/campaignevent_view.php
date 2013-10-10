@@ -17,7 +17,11 @@
           echo '<pre>Post ID: ' . $ret_obj['id'] . '</pre>';
 
           // Give the user a logout link 
-          echo '<br /><a href="' . $facebook->getLogoutUrl() . '">logout</a>';
+          $logout_url = $facebook->getLogoutUrl( array(
+                       'scope' => 'create_event'
+                       ));
+          
+          echo '<br /><a href="' . $logout_url . '">logout</a>';
         } catch(FacebookApiException $e) {
           // If the user is logged out, you can have a 
           // user ID even though the access token is invalid.
