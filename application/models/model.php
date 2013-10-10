@@ -275,6 +275,12 @@ class Model extends CI_Model{
 
 		$values=array
 		(
+			'artistName'	=> $artist_name,
+			'target'		=> $target,
+			'min_target'	=> $min_target,
+			'phone'			=> $phone,
+			'email'			=> $email,
+			'video-link'	=> $vlink,
 			'sociallink1'	=> $sociallink1,
 			'sociallink2'	=> $sociallink2,
 			'sociallink3'	=> $sociallink3
@@ -299,13 +305,13 @@ class Model extends CI_Model{
 
 		if(isGPC()) $values=array_map('stripslashes',$values);
 	
-		if(isEmpty($artistName))
+		if(isEmpty($values['artistName']))
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
 		}
 
-		if(isEmpty($target))
+		if(isEmpty($values['target']))
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
@@ -317,13 +323,13 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
 	
-		if(!IsYoutubeUrl($vlink))
+		if(!IsYoutubeUrl($values['video-link']))
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'vd-link','message'=>CONTACT_FORM_MSG_INVALID_VIDEO_LINK);
 		}
 
-		if(!validateEmail($email))
+		if(!validateEmail($values['email']))
 		{
  			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'email','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
@@ -333,12 +339,6 @@ class Model extends CI_Model{
 		{
 			$response['error']=1;	
 			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
-		}
-
-		if(isEmpty($editorContent))
-		{
-			$response['error']=1;
-			$response['info'][]=array('fieldId'=>'target','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
 		}
 
 		// Social Links Check
