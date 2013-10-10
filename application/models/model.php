@@ -218,6 +218,8 @@ class Model extends CI_Model{
 
 	public function formDetails(){
 
+		error_log("In formDetails");
+
 		// Initiating variables
         $fb = "";
         $twitter = "";
@@ -230,6 +232,7 @@ class Model extends CI_Model{
         $this->load->helper('functions');
         $this->load->helper('modelFunctions');
 
+        // Get posted data
 	    $tour_id = $this->input->post("tour_id");
 		$artist_name = $this->input->post("artistName");
 		$phone = $this->input->post("phone");
