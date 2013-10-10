@@ -14,13 +14,6 @@ class CFfans extends CI_Controller{
 		// Loading Model class
 		$this->load->model('Model');
 
-		// Inserting values in CampaignCF
-
-    $response = $this->Model->formDetails();
-
-
-    //$campaign_id = $this->Model->formDetails();
-
     $campaign_id = $this->uri->segment(2);
 		 
 		error_log("Camp Id: ".$campaign_id);

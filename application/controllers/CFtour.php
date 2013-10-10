@@ -14,16 +14,21 @@ class CFtour extends CI_Controller{
 	}
 
 	public function validateDetails(){
-
-		error_log("Validate");
 		
 		$this->load->model('Model');
-      	$campaign_id = $this->Model->formDetails();
 
-      	$response['error']=0;
-      	$response['id']=$campaign_id;
-      	
-      	createResponse($response);
+		$response = $this->Model->formDetails();
+
+		error_log("Response: ".$response);
+
+		if($response['error']==1)
+			createResponse($response);
+		
+		else
+    	{
+      		$response['id']=$campaign_id;
+      		createResponse($response);
+      	}
 	}
 
 	public function campaignEditPage(){
