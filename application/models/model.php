@@ -381,8 +381,12 @@ class Model extends CI_Model{
 		if($response['error']==1) 
 			createResponse($response);
 
-		//Create Facebook event 
+		// Calling controller for FB login
+		$CI =& get_instance();
+    	$login = $CI->load->controller('CFfans/campaignEvent');
 
+		//Create Facebook event
+		/* 
 		require_once('/src/facebook.php');
 
   		$config = array(
@@ -410,64 +414,78 @@ class Model extends CI_Model{
       		} 
       		catch(FacebookApiException $e) 
       		{
-        		$login_url = $facebook->getLoginUrl( array(
-                       'scope' => 'create_event'
-                       )); 
-        		echo 'Please <a href="' . $login_url . '">login.</a>';
-        
+        		$login_url = $facebook->getLoginUrl( array('scope' => 'create_event'));
+
         		error_log("Get Type: ".$e->getType());
         		error_log("Get Message: ".$e->getMessage());
+
+        		$this->load->view('fbEvent_view'); 
+        		
+        		//echo 'Please <a href="' . $login_url . '">login.</a>';
       		}   
-    	} 
+    	}
+    	else 
+    	{
+    		// No user, so print a link for the user to login
+      		// To post to a user's wall, we need publish_stream permission
+      		// We'll use the current URL as the redirect_uri, so we don't
+      		// need to specify it here.
+      		$login_url = $facebook->getLoginUrl( array( 'scope' => 'create_event' ) );
+      		//echo 'Please <a href="' . $login_url . '">login.</a>';
+      		$this->load->view('fbEvent_view');
+    	} */ 
 
+   		
+   		// ---------------Storing data into database--------------------- //
 
-		// ---------------Storing data into database--------------------- //
-
-		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
-		if ($query2->num_rows() > 0)
-		{
-			$q2result = $query2->result();
-			foreach ($q2result as $row)
+   		if($login == 1)
+   		{
+			$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
+			if ($query2->num_rows() > 0)
 			{
-				$tour_name = $row->tour_name;
-				$applyBy = $row->applyBy;
-				$startCamp = $row->startCamp;
-				$endCamp = $row->endCamp;
-				$tourDate = $row->tourDate;
-			}
-		}
-
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
-					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
-
-		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
-		if ($query1->num_rows() > 0)
-		{
-			$q1result = $query1->result();
-			foreach ($q1result as $row)
-			{
-				$campaign_id = $row->campaign_id;
-			}
-
-			while($maxIndex)
-			{
-				$pledgeAmount = 'pledgeAmount'.$maxIndex;
-				$desc = 'desc'.$maxIndex;
-
-				$amount = $this->input->post("$pledgeAmount");
-				$desc = $this->input->post("$desc");
-
-				if($amount > 0)
+				$q2result = $query2->result();
+				foreach ($q2result as $row)
 				{
-					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
-								VALUES('".$this->db->escape_str($campaign_id)."', '".$this->db->escape_str($amount)."', '".$this->db->escape_str($desc)."')");
+					$tour_name = $row->tour_name;
+					$applyBy = $row->applyBy;
+					$startCamp = $row->startCamp;
+					$endCamp = $row->endCamp;
+					$tourDate = $row->tourDate;
+				}
+			}
+
+			$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
+						VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
+
+			$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
+			if ($query1->num_rows() > 0)
+			{
+				$q1result = $query1->result();
+				foreach ($q1result as $row)
+				{
+					$campaign_id = $row->campaign_id;
+				}
+
+				while($maxIndex)
+				{
+					$pledgeAmount = 'pledgeAmount'.$maxIndex;
+					$desc = 'desc'.$maxIndex;
+
+					$amount = $this->input->post("$pledgeAmount");
+					$desc = $this->input->post("$desc");
+
+					if($amount > 0)
+					{
+						$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
+									VALUES('".$this->db->escape_str($campaign_id)."', '".$this->db->escape_str($amount)."', '".$this->db->escape_str($desc)."')");
+					}
+					
+					$maxIndex--;
 				}
 				
-				$maxIndex--;
+				//Return values to controller
+				return $campaign_id;
 			}
-			
-			//Return values to controller
-			return $campaign_id;
 		}
 	}
 

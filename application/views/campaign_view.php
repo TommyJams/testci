@@ -163,9 +163,6 @@
           </ul>
         </div>      
       </div> 
-      <div class=" d-tj-offset-top-30 pledge-btn" >
-        <input type="button" value="CREATE A FACEBOOK EVENT" style="">
-      </div>
       <!-- /Social Share -->
       </div>
       <div class="clearfix"></div>
