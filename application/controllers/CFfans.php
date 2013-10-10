@@ -15,6 +15,10 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
 
 		// Inserting values in CampaignCF
+
+    $response = $this->Model->formDetails();
+
+
     //$campaign_id = $this->Model->formDetails();
 
     $campaign_id = $this->uri->segment(2);
@@ -37,51 +41,10 @@ class CFfans extends CI_Controller{
   		$facebook = new Facebook($config);
   		$user_id = $facebook->getUser();
 
-      if($user_id)
-      {
-        // We have a user ID, so probably a logged in user.
-        // If not, we'll get an exception, which we handle below.
-          try
-          {
-            $ret_obj = $facebook->api('/me/events', 'POST',
-                                    array(
-                                      'name' => 'Campaign Event',
-                                      'start_time' => '2013-10-10'
-                                 ));
+      $data['user_id'] = $user_id;
+      $data['facebook'] = $facebook;
 
-            $eventID = $ret_obj['id'];
-            error_log("Event ID: ". $eventID);
-          } 
-          catch(FacebookApiException $e) 
-          {
-            $login_url = $facebook->getLoginUrl( array('scope' => 'create_event'));
-
-            error_log("Get Type: ".$e->getType());
-            error_log("Get Message: ".$e->getMessage());
-
-            $this->load->view('fbEvent_view'); 
-            
-            //echo 'Please <a href="' . $login_url . '">login.</a>';
-          }   
-      }
-      else 
-      {
-          // No user, so print a link for the user to login
-          // To post to a user's wall, we need publish_stream permission
-          // We'll use the current URL as the redirect_uri, so we don't
-          // need to specify it here.
-          $login_url = $facebook->getLoginUrl( array( 'scope' => 'create_event' ) );
-          //echo 'Please <a href="' . $login_url . '">login.</a>';
-          $this->load->view('fbEvent_view');
-      }
-
-      $registrationParam = $this->uri->segment(3);
-
-      if($registrationParam=='login'){
-
-        $login = 1;
-        return $login;
-      }
+      $this->load->view('campaignevent_view', $data);     
 	}
 
 	public function postLink(){
@@ -99,9 +62,6 @@ class CFfans extends CI_Controller{
   		$data['user_id'] = $user_id;
   		$data['facebook'] = $facebook;
 
-
-		$this->load->view('postlink_view', $data);
-
-
+		  $this->load->view('postlink_view', $data);
 	}
 }
