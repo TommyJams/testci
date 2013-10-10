@@ -284,7 +284,7 @@ class Model extends CI_Model{
 		);
 
 		// Pledge check -> Atleast one pledge should be filled and none should be negative
-	/*	while($maxIndex)
+		while($maxIndex)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
@@ -293,11 +293,10 @@ class Model extends CI_Model{
 			{
 				$response['error']=1;
 				$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
-				break;
 			}
 
 			$maxIndex--;
-		}*/
+		}
 
 		if(isGPC()) $values=array_map('stripslashes',$values);
 	
@@ -307,7 +306,12 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
 		}
 
-		if( (isEmpty($values['target'])) || ($values['target'] < $values['min_target']) )
+		if(isEmpty($values['target']))
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
+		}
+		if($target < $min_target)
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
