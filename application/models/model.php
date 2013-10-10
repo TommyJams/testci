@@ -245,7 +245,7 @@ class Model extends CI_Model{
         $filename = "";
 
         //Background Image Check
-        $upload_path = './images/artist/campaign';
+    /*    $upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
 		$config['max_size']  = 1024 * 8;
@@ -263,7 +263,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-		}
+		}*/
 
 		$response=array('error'=>0,'info'=>null);
 
