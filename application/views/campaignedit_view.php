@@ -279,7 +279,6 @@
       <input type="hidden" id="sociallink-1" name="sociallink-1" value="" />
       <input type="hidden" id="sociallink-2" name="sociallink-2" value="" />
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
-      <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="submit" value="SUBMIT" >
       <? 
