@@ -227,6 +227,7 @@ class Model extends CI_Model{
         $bandcamp = "";
         $website = "";
         $filename = "";
+        $eventID = "";
 
 		// Loading helper functions
         $this->load->helper('functions');
