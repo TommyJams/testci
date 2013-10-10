@@ -237,7 +237,7 @@ class Model extends CI_Model{
 		$artist_name = $this->input->post("artistName");
 		$phone = $this->input->post("phone");
 		$email = $this->input->post("email");
-		$backimg = $this->input->post("backimg");
+		//$backimg = $this->input->post("backimg");
 		$target = $this->input->post("target");
 		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
