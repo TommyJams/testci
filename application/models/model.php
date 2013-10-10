@@ -362,6 +362,47 @@ class Model extends CI_Model{
 		if($response['error']==1) 
 			createResponse($response);
 
+		//
+
+		require_once('/src/facebook.php');
+
+  		$config = array(
+    				'appId' => '204029036428158',
+    				'secret' => '74203bd7fc3f0100d2c02ad74b28b308',
+  		);
+
+  		$facebook = new Facebook($config);
+  		$user_id = $facebook->getUser();
+
+  		if($user_id)
+  		{
+      	// We have a user ID, so probably a logged in user.
+      	// If not, we'll get an exception, which we handle below.
+      		try
+      		{
+        		$ret_obj = $facebook->api('/me/events', 'POST',
+                                    array(
+                                      'name' => 'Campaign Event',
+                                      'start_time' => '2013-10-10'
+                                 ));
+        		error_log("Event ID: ". $ret_obj['id']);
+      		} 
+      		catch(FacebookApiException $e) 
+      		{
+        		$login_url = $facebook->getLoginUrl( array(
+                       'scope' => 'create_event'
+                       )); 
+        		echo 'Please <a href="' . $login_url . '">login.</a>';
+        
+        		error_log("Get Type: ".$e->getType());
+        		error_log("Get Message: ".$e->getMessage());
+      		}   
+    	} 
+
+		//
+
+		$eventID = $ret_obj['id'];
+
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
@@ -382,8 +423,8 @@ class Model extends CI_Model{
 			}
 		}
 
-		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1` ) 
-					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."')");
+		$query = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
+					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
 
 		$query1 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query1->num_rows() > 0)
