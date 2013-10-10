@@ -247,6 +247,9 @@ class Model extends CI_Model{
         $sociallink2 = $this->input->post("sociallink-2");
         $sociallink3 = $this->input->post("sociallink-3");
 
+        $form_data = json_encode($this->input->post());
+		error_log("Form Data: ".$form_data);
+
         //Background Image Check
     /*    $upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
@@ -402,17 +405,9 @@ class Model extends CI_Model{
         		error_log("Get Type: ".$e->getType());
         		error_log("Get Message: ".$e->getMessage());
       		}   
-    	} */
+    	} 
 
-		//
-
-		//$eventID = $ret_obj['id'];
-
-		// Getting posted Form Data 
-		$form_data = json_encode($this->input->post());
-		error_log("Form Data: ".$form_data);
-
-        error_log("Editor Content: ".$editorContent);
+		$eventID = $ret_obj['id']; */
 
 		$query2 = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
 		if ($query2->num_rows() > 0)
