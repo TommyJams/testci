@@ -520,7 +520,7 @@
   {
       //blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
-      $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #backimg, #phone, #email').qtip('destroy');
+      $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #backimg, #phone, #email, #editor').qtip('destroy');
 
     /*  var tPosition =
       {
@@ -542,7 +542,8 @@
         'pledgeAmount1'       : {'my':'top center','at':'bottom center'},
         'backimg'             : {'my':'bottom center','at':'top center'},
         'phone'               : {'my':'bottom center','at':'top center'},
-        'email'               : {'my':'bottom center','at':'top center'}
+        'email'               : {'my':'bottom center','at':'top center'},
+        'editor'              : {'my':'bottom center','at':'top center'}
       };
 
       if(response.error==1 && typeof(response.info)!='undefined')

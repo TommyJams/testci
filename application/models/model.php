@@ -251,7 +251,7 @@ class Model extends CI_Model{
 		error_log("Form Data: ".$form_data);
 
         //Background Image Check
-    /*    $upload_path = './images/artist/campaign';
+    	$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
 		$config['max_size']  = 1024 * 8;
@@ -269,7 +269,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-		}*/
+		}
 
 		$response=array('error'=>0,'info'=>null);
 
@@ -345,7 +345,7 @@ class Model extends CI_Model{
 		if(isEmpty($values['editorContent']))
 		{
 			$response['error']=1;
-			$response['info'][]=array('fieldId'=>'target','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
+			$response['info'][]=array('fieldId'=>'editor','message'=>CAMPAIGN_FORM_MSG_INVALID_CONTENT);
 		}
 
 		// Social Links Check
