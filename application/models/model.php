@@ -426,6 +426,7 @@ class Model extends CI_Model{
 				$maxIndex--;
 			}
 			
+			$response['id']=$campaign_id;
 			return $response;
 		}
 	}

@@ -21,14 +21,7 @@ class CFtour extends CI_Controller{
 
 		error_log("Response: ".$response['error']);
 
-		if($response['error']==1)
-			createResponse($response);
-		
-		else
-    	{
-      		$response['id']=$campaign_id;
-      		createResponse($response);
-      	}
+      	createResponse($response);
 	}
 
 	public function campaignEditPage(){
