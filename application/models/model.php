@@ -267,7 +267,7 @@ class Model extends CI_Model{
 		);
 
 		// Pledge check -> Atleast one pledge should be filled and none should be negative
-		while($maxIndex)
+	/*	while($maxIndex)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
@@ -282,7 +282,7 @@ class Model extends CI_Model{
 
 			$maxIndex--;
 			break;
-		}
+		}*/
 
 		// Campaign form fields check
 		if(isGPC()) $values=array_map('stripslashes',$values);
