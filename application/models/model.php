@@ -292,6 +292,8 @@ class Model extends CI_Model{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
 
+			error_log("Pledge Amount: ".$amount);
+
 			if($amount < 0)
 			{
 				$response['error']=1;
