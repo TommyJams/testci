@@ -364,7 +364,7 @@ class Model extends CI_Model{
 
 		//
 
-		require_once('/src/facebook.php');
+	/*	require_once('/src/facebook.php');
 
   		$config = array(
     				'appId' => '204029036428158',
@@ -397,11 +397,11 @@ class Model extends CI_Model{
         		error_log("Get Type: ".$e->getType());
         		error_log("Get Message: ".$e->getMessage());
       		}   
-    	} 
+    	} */
 
 		//
 
-		$eventID = $ret_obj['id'];
+		//$eventID = $ret_obj['id'];
 
 		// Getting posted Form Data 
 		$form_data = json_encode($this->input->post());
