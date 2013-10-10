@@ -403,7 +403,9 @@ class Model extends CI_Model{
                                       'name' => 'Campaign Event',
                                       'start_time' => '2013-10-10'
                                  ));
-        		error_log("Event ID: ". $ret_obj['id']);
+
+        		$eventID = $ret_obj['id'];
+        		error_log("Event ID: ". $eventID);
       		} 
       		catch(FacebookApiException $e) 
       		{
@@ -417,8 +419,6 @@ class Model extends CI_Model{
       		}   
     	} 
 
-    	// Event ID gets create on successful event creation
-		$eventID = $ret_obj['id']; 
 
 		// ---------------Storing data into database--------------------- //
 
