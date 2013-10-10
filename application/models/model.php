@@ -294,7 +294,7 @@ class Model extends CI_Model{
 
 			error_log("Pledge Amount: ".$amount);
 
-			if($amount < 0)
+			if($amount < 0 || !isset($amount))
 			{
 				$response['error']=1;
 				$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
@@ -316,6 +316,7 @@ class Model extends CI_Model{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
+		
 		if($target < $min_target)
 		{
 			$response['error']=1;
