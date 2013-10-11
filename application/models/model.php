@@ -380,7 +380,14 @@ class Model extends CI_Model{
 		{
 			$sociallink = 'sociallink'.$count;
 
-			if(!isEmpty($sociallink))
+			error_log($sociallink);
+
+			if(isEmpty($sociallink))
+			{
+				error_log("Its Empty");
+				continue;
+			}
+			else
 			{
 				$i = IsSocialUrl($values["$sociallink"]);
 
