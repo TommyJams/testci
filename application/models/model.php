@@ -409,9 +409,13 @@ class Model extends CI_Model{
 		} */
 	
 		// Returning and triggering callback to show qtip(s)
-		if($response['error']==1) 
+		if($response['error']==1)
+		{
+			$response['id'] = 0;
 			return $response;
-
+		} 
+			
+			
    		// --------------------Storing data into database----------------------//
 
 		$query = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
@@ -467,6 +471,7 @@ class Model extends CI_Model{
 				$maxIndex--;
 			}
 
+			$response['id'] = $campaign_id;
 			return $response;
 		}
 	}
