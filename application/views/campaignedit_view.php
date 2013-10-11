@@ -554,7 +554,7 @@
       }
       else if(response.error == 0)
       {
-        console.log(response);
+        console.log(response.id);
         window.location = "/campaign/" + response.id;
       }
   }
