@@ -153,9 +153,12 @@
         </div>
       <div class="clearfix"></div>
     </div>
-
+    <? 
+    } 
+    ?>
     <!--  <div  class="d-tj-artist-container d-tj-offset-top-40">-->
       
+        <div>
         <!-- Social Share -->
         <div class="col-md-7 d-tj-artist" >
         <div>
@@ -169,10 +172,9 @@
         </div>      
       </div> 
       <!-- /Social Share -->
+    </div>
       
-    <? 
-    } 
-    ?>
+    
   </div>
   <footer class="d-tj-footer">
   <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
