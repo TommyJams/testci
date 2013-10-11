@@ -4,10 +4,19 @@ class Model extends CI_Model{
 
 	public function tourDetails(){
 
+              require_once('/src/facebook.php');
+
+              $config = array(
+              'appId' => '248776888603319',
+              'secret' => '50f31c2706d846826bead008392e8969',
+              );
+
+              $facebook = new Facebook($config);
+
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
 		{
-            $qresult = $query->result();
+                     $qresult = $query->result();
 			foreach ($qresult as $row)
 			{
    				$tour_id = $row->tour_id;
@@ -19,11 +28,11 @@ class Model extends CI_Model{
    				$target = $row->target;
 
    				// 3D array formation; Getting venue details
-                $venues = null;
+                            $venues = null;
    				$query1 = $this->db->query("SELECT * FROM venueCF WHERE tour_id = '$tour_id';");
    				if ($query1->num_rows() > 0)
 				{	
-                    $q1result = $query1->result();
+                                   $q1result = $query1->result();
 					foreach ($q1result as $rowInner)
 					{
 						$venue_name = $rowInner->venue_name;
@@ -33,23 +42,29 @@ class Model extends CI_Model{
 						$city = $rowInner->city;
 						$contact = $rowInner->contact;
 
-                        $venues[] = $rowInner;
+                                          $venues[] = $rowInner;
 					}
 				}
 
+                            $login_url = $facebook->getLoginUrl( array(
+                                  'scope' => 'create_event',
+                                  'redirect_uri' => base_url().'editcampaign/$tour_id'
+                            ));
+
 			//	$tourRow = array($tour_id, $tour_name, $applyBy, $startCamp, $endCamp, $tourDate, $target, $venues);
-                $tourRow = array(
+                            $tourRow = array(
                                     'tour_id' 	=> $tour_id, 
-                                    'tour_name' => $tour_name,
+                                    'tour_name'  => $tour_name,
                                     'applyBy' 	=> $applyBy, 
-                                    'startCamp' => $startCamp, 
+                                    'startCamp'  => $startCamp, 
                                     'endCamp' 	=> $endCamp, 
                                     'tourDate' 	=> $tourDate, 
                                     'target' 	=> $target,
-                                    'venues' 	=> $venues
+                                    'venues' 	=> $venues,
+                                    'login_url'  => $login_url
                                 );
 
-                $response[] = $tourRow;
+                            $response[] = $tourRow;
 			}
 
 			//Return values to controller

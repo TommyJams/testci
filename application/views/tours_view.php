@@ -31,6 +31,7 @@
       $tourDate = $tour->tourDate;
       $target = $tour->target;
       $venues = $tour->venues;
+      $login_url = $tour->login_url;
     ?>
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
@@ -67,7 +68,7 @@
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
             <h3>TARGET: <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
-              <input type="button" onclick="window.location.href='editcampaign/<?php echo $tour_id ?>'" value="APPLY NOW">
+              <input type="button" onclick="window.location.href='<?print($login_url);?>'" value="APPLY NOW">
             <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
             </div>
           </div>
@@ -187,7 +188,7 @@
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
-        <input class="apply-btn" style="" onclick="window.location.href='editcampaign/<?php echo $tour_id ?>'" type="button" value="APPLY Now">
+        <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
       </div>
     </div>
     <!-- /circle-connect-->
