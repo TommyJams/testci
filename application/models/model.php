@@ -2,7 +2,7 @@
 
 class Model extends CI_Model{
 
-       public $facebook = "";
+    //   public $facebook = "";
 
        function __construct()
        {
