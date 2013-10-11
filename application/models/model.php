@@ -330,12 +330,6 @@ class Model extends CI_Model{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
-
-		/*if($target < $min_target)
-		{
-			$response['error']=1;
-			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
-		}*/
 	
 		if(!IsYoutubeUrl($values['video-link']))
 		{
@@ -379,10 +373,7 @@ class Model extends CI_Model{
 		while($count)
 		{
 			$sociallink = 'sociallink'.$count;
-
 			$value = $values["$sociallink"];
-
-			error_log($value);
 
 			if(!isEmpty($value))
 			{

@@ -105,15 +105,15 @@
               }
               if($scloud!="")
               {
-                print("<li ><a href='$blog' title='SoundCloud' alt='Blog' target='_blank' class='social-list-scloud'></a></li >"); 
+                print("<li ><a href='$soundcloud' title='SoundCloud' alt='SoundCloud' target='_blank' class='social-list-scloud'></a></li >"); 
               }
               if($bandcamp!="")
               {
-                print("<li ><a href='$bandcamp' title='BandCamp' alt='Blog' target='_blank' class='social-list-bandcamp'></a></li >"); 
+                print("<li ><a href='$bandcamp' title='BandCamp' alt='BandCamp' target='_blank' class='social-list-bandcamp'></a></li >"); 
               }
               if($website!="")
               {
-                print("<li ><a href='$website' title='Website' alt='Blog' target='_blank' class='social-list-website'></a></li >"); 
+                print("<li ><a href='$website' title='Website' alt='Website' target='_blank' class='social-list-website'></a></li >"); 
               }
             ?>
             </ul>
