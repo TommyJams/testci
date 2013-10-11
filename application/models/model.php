@@ -128,7 +128,6 @@ class Model extends CI_Model{
 
 	public function campaignDetails($camp_id){
 
-		$videoId = "";
 		error_log($camp_id);
 		$days_to_go = 0;
 		$query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$camp_id';");
@@ -376,7 +375,7 @@ class Model extends CI_Model{
 		}*/
 
 		// Social Links Check
-		/*$count = 3;
+		$count = 3;
 		while($count)
 		{
 			$sociallink = 'sociallink'.$count;
@@ -407,7 +406,7 @@ class Model extends CI_Model{
 			}
 				 
 			$count--;
-		} */
+		} 
 	
 		// Returning and triggering callback to show qtip(s)
 		if($response['error']==1)
