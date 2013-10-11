@@ -367,7 +367,7 @@ class Model extends CI_Model{
 		}*/
 
 		// Social Links Check
-		$count = 3;
+		/*$count = 3;
 		while($count)
 		{
 			$sociallink = 'sociallink'.$count;
@@ -398,7 +398,7 @@ class Model extends CI_Model{
 			}
 				 
 			$count--;
-		}
+		} */
 	
 		// Returning and triggering callback to show qtip(s)
 		if($response['error']==1) 
