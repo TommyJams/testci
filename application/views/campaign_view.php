@@ -105,7 +105,7 @@
               }
               if($scloud!="")
               {
-                print("<li ><a href='$soundcloud' title='SoundCloud' alt='SoundCloud' target='_blank' class='social-list-scloud'></a></li >"); 
+                print("<li ><a href='$scloud' title='SoundCloud' alt='SoundCloud' target='_blank' class='social-list-scloud'></a></li >"); 
               }
               if($bandcamp!="")
               {
