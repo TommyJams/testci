@@ -160,6 +160,7 @@
       
         <div>
         <!-- Social Share -->
+        <div  class="d-tj-artist-container d-tj-offset-top-40">
         <div class="col-md-7 d-tj-artist" >
         <div>
           <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
@@ -171,6 +172,7 @@
           </ul>
         </div>      
       </div> 
+    </div>
       <!-- /Social Share -->
     </div>
       
