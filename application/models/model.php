@@ -285,12 +285,9 @@ class Model extends CI_Model{
 			$pledgecount--;
 		}
 
-		error_log("Pledge i final: ".$pledgei);
-		error_log("maxIndex: ".$maxIndex);
-
 		if($pledgei == $maxIndex)
 		{
-			error_log("Pledge check ");
+			error_log("Pledge check");
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
 		}
