@@ -154,7 +154,7 @@
       <div class="clearfix"></div>
     </div>
 
-      <div  class="d-tj-artist-container d-tj-offset-top-40">
+    <!--  <div  class="d-tj-artist-container d-tj-offset-top-40">-->
       
         <!-- Social Share -->
         <div class="col-md-7 d-tj-artist" >
@@ -169,9 +169,6 @@
         </div>      
       </div> 
       <!-- /Social Share -->
-      
-      <div class="clearfix"></div>
-    </div>
       
     <? 
     } 
