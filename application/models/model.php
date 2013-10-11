@@ -266,23 +266,28 @@ class Model extends CI_Model{
 			'sociallink3'	=> $sociallink3
 		);
 
-		// Pledge check -> Atleast one pledge should be filled and none should be negative
-	/*	while($maxIndex)
+		// Pledge check (Atleast one pledgeamount should be filled) 
+		$pledgei = 0;
+		while($maxIndex)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
 
 			error_log("Pledge Amount: ".$amount);
 
-			if($amount < 0 || isEmpty($amount))
+			if(isEmpty($amount))
 			{
-				$response['error']=1;
-				$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
+				$pledgei++;
 			}
 
 			$maxIndex--;
-			break;
-		}*/
+		}
+
+		if($pledgei == $maxIndex)
+		{
+			$response['error']=1;
+			$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
+		}
 
 		// Campaign form fields check
 		if(isGPC()) $values=array_map('stripslashes',$values);
@@ -323,8 +328,8 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'phone','message'=>CAMPAIGN_FORM_MSG_INVALID_PHONE);
 		}
 
-		//Background Image Check
-    	$upload_path = './images/artist/campaign';
+		//Background Image Check 
+    	/*$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
 		$config['max_size']  = 1024 * 8;
@@ -340,7 +345,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-		}
+		}*/
 
 		// Social Links Check
 		$count = 3;
