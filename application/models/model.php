@@ -4,7 +4,7 @@ class Model extends CI_Model{
 
     //   public $facebook = "";
 
-       function __construct()
+    /*   function __construct()
        {
               require_once('/src/facebook.php');
 
@@ -17,7 +17,7 @@ class Model extends CI_Model{
 
               // Call the Model constructor
               parent::__construct();
-       }
+       }*/
 
 	public function tourDetails(){
 
