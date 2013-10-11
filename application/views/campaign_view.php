@@ -152,10 +152,10 @@
         <!--  /Pledge--> 
 
         <!-- Social Share -->
-    <div  class="d-tj-offset-top-30">
-    <div class="row">
+        <div class="col-md-6 ">
+          <div class="row">
       
-        <div class="col-md-7 d-tj-artist" >
+        <div class="d-tj-artist" >
           <div>
             <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
           </div>
@@ -169,7 +169,7 @@
       </div>
     </div>  
       <!-- /Social Share --> 
-        </div>
+    </div>
       <div class="clearfix"></div>
     </div>
     <? 
