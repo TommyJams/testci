@@ -48,7 +48,7 @@ class Model extends CI_Model{
 
                             $login_url = $facebook->getLoginUrl( array(
                                   'scope' => 'create_event',
-                                  'redirect_uri' => base_url().'editcampaign/$tour_id'
+                                  'redirect_uri' => base_url().'editcampaign/'.$tour_id
                             ));
 
 			//	$tourRow = array($tour_id, $tour_name, $applyBy, $startCamp, $endCamp, $tourDate, $target, $venues);
