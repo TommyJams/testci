@@ -14,13 +14,13 @@
 
     function IsSocialUrl($url)
     {
-        if(!preg_match("#^https?://(?:www\.)?facebook.com#", $url))
+        if(preg_match("#^https?://(?:www\.)?facebook.com#", $url))
             $i=1;
-        else if(!preg_match("#^https?://(?:www\.)?twitter.com#", $url))
+        else if(preg_match("#^https?://(?:www\.)?twitter.com#", $url))
             $i=2;
-        else if(!preg_match("#^https?://(?:www\.)?soundcloud.com#", $url))
+        else if(preg_match("#^https?://(?:www\.)?soundcloud.com#", $url))
             $i=3;
-        else if(!preg_match("#^https?://(?:www\.)?bandcamp.com#", $url))
+        else if(preg_match("#^https?://(?:www\.)?bandcamp.com#", $url))
             $i=4;
         else if(filter_var($url, FILTER_VALIDATE_URL))
             $i=5;
