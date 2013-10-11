@@ -268,7 +268,8 @@ class Model extends CI_Model{
 
 		// Pledge check (Atleast one pledgeamount should be filled) 
 		$pledgei = 0;
-		while($maxIndex)
+		$pledgecount = $maxIndex
+		while($pledgecount)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
 			$amount = $this->input->post("$pledgeAmount");
@@ -281,7 +282,7 @@ class Model extends CI_Model{
 				error_log("Pledge i: ".$pledgei);
 			}
 
-			$maxIndex--;
+			$pledgecount--;
 		}
 
 		error_log("Pledge i final: ".$pledgei);
@@ -324,7 +325,7 @@ class Model extends CI_Model{
 		if(!validateEmail($values['email']))
 		{
  			$response['error']=1;	
-			$response['info'][]=array('fieldId'=>'email','message'=>NEWSLETTER_FORM_MSG_INVALID_DATA_MAIL);
+			$response['info'][]=array('fieldId'=>'email','message'=>CONTACT_FORM_MSG_INVALID_DATA_MAIL);
 		}
 
 		if(strlen($phone) != 10)
