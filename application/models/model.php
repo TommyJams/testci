@@ -268,7 +268,7 @@ class Model extends CI_Model{
 
 		// Pledge check (Atleast one pledgeamount should be filled) 
 		$pledgei = 0;
-		$pledgecount = $maxIndex
+		$pledgecount = $maxIndex;
 		while($pledgecount)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
