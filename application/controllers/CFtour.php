@@ -21,6 +21,7 @@ class CFtour extends CI_Controller{
 		$response = $this->Model->formDetails();
 
 		error_log("Response: ".$response['error']);
+		error_log("Response: ".$response['id']);
 
       	createResponse($response);
 	}
