@@ -431,14 +431,14 @@ class Model extends CI_Model{
               );
 
               $facebook = new Facebook($config);
-
-              $ret_obj = $facebook->api('/me/events', 'POST',
+              $uid = $facebook->getUser();
+              error_log('Facebook User:'.$uid);
+              $ret_obj = $facebook->api('/'.$uid.'/events', 'POST',
                                                  array(
                                                         'name' => 'Campaign Event',
                                                         'start_time' => '2013-10-11'
                                                  )
                                           );
-          
               error_log('Facebook Event:'.$ret_obj['id']);
 
 		$query2 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
