@@ -161,7 +161,7 @@
         <div>
         <!-- Social Share -->
         <div  class="d-tj-artist-container d-tj-offset-top-40">
-        <div class="col-md-7 d-tj-artist" >
+        
         <div>
           <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
         </div>
@@ -171,7 +171,7 @@
             <li ><a href="#" title="Share on Twitter"  class='social-list-twitter'  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
           </ul>
         </div>      
-      </div> 
+      
     </div>
       <!-- /Social Share -->
     </div>
