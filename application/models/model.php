@@ -272,6 +272,9 @@ class Model extends CI_Model{
 		while($pledgecount)
 		{
 			$pledgeAmount = 'pledgeAmount'.$maxIndex;
+
+			error_log($pledgeAmount);
+
 			$amount = $this->input->post("$pledgeAmount");
 
 			error_log("Pledge Amount: ".$amount);
