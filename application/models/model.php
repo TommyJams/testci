@@ -371,27 +371,31 @@ class Model extends CI_Model{
 		while($count)
 		{
 			$sociallink = 'sociallink'.$count;
-			$i = IsSocialUrl($values["$sociallink"]);
 
-			error_log($i);
-		
-			if($i == 1)
-				$fb = $values["$sociallink"];
-			elseif($i == 2)
-				$twitter = $values["$sociallink"];
-			elseif($i == 3)
-				$soundcloud = $values["$sociallink"];
-			elseif($i == 4)
-				$bandcamp = $values["$sociallink"];
-			elseif($i == 5)
-				$website = $values["$sociallink"];
-			
-			// Website link is broken
-			elseif($i == 0)
+			if(!isEmpty($sociallink))
 			{
-				$response['error']=1;	
-				$response['info'][]=array('fieldId'=>'socialLink1','message'=>CONTACT_FORM_MSG_INVALID_SOCIAL_LINK);
-			}	
+				$i = IsSocialUrl($values["$sociallink"]);
+
+				error_log($i);
+			
+				if($i == 1)
+					$fb = $values["$sociallink"];
+				elseif($i == 2)
+					$twitter = $values["$sociallink"];
+				elseif($i == 3)
+					$soundcloud = $values["$sociallink"];
+				elseif($i == 4)
+					$bandcamp = $values["$sociallink"];
+				elseif($i == 5)
+					$website = $values["$sociallink"];
+				
+				// Website link is broken
+				elseif($i == 0)
+				{
+					$response['error']=1;	
+					$response['info'][]=array('fieldId'=>'socialLink1','message'=>CONTACT_FORM_MSG_INVALID_SOCIAL_LINK);
+				}	
+			}
 				 
 			$count--;
 		}
