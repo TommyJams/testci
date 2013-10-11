@@ -271,7 +271,7 @@ class Model extends CI_Model{
 		$pledgecount = $maxIndex;
 		while($pledgecount)
 		{
-			$pledgeAmount = 'pledgeAmount'.$maxIndex;
+			$pledgeAmount = 'pledgeAmount'.$pledgecount;
 
 			error_log($pledgeAmount);
 
