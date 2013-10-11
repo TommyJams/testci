@@ -298,17 +298,17 @@ class Model extends CI_Model{
 			$response['info'][]=array('fieldId'=>'artistName','message'=>CONTACT_FORM_MSG_INVALID_DATA_NAME);
 		}
 
-		if(isEmpty($values['target']))
+		if( (isEmpty($values['target'])) || ($target < $min_target) )
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
 		}
 
-		if($target < $min_target)
+		/*if($target < $min_target)
 		{
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'target','message'=>CONTACT_FORM_MSG_INVALID_TARGET);
-		}
+		}*/
 	
 		if(!IsYoutubeUrl($values['video-link']))
 		{
