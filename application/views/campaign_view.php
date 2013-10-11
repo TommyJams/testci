@@ -107,11 +107,11 @@
               }
               if($bandcamp!="")
               {
-                print("<li ><a href='$bandcamp' title='BandCamp' alt='Blog' target='_blank' class='social-list-scloud'></a></li >"); 
+                print("<li ><a href='$bandcamp' title='BandCamp' alt='Blog' target='_blank' class='social-list-bandcamp'></a></li >"); 
               }
               if($website!="")
               {
-                print("<li ><a href='$website' title='Website' alt='Blog' target='_blank' class='social-list-twitter'></a></li >"); 
+                print("<li ><a href='$website' title='Website' alt='Blog' target='_blank' class='social-list-website'></a></li >"); 
               }
             ?>
             </ul>
@@ -152,10 +152,10 @@
         <!--  /Pledge--> 
 
         <!-- Social Share -->
-        <div class="col-md-6 ">
+        <div class="col-md-7 ">
           <div class="row">
       
-        <div class="d-tj-artist" >
+        <div class="d-tj-offset-top-40 d-tj-artist" >
           <div>
             <h3 style="margin-top: 5px;">SHARE ON SOCIAL MEDIA</h3>
           </div>
