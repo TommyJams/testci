@@ -278,6 +278,7 @@ class Model extends CI_Model{
 			if(isEmpty($amount))
 			{
 				$pledgei++;
+				error_log("Pledge i: ".$pledgei);
 			}
 
 			$maxIndex--;
