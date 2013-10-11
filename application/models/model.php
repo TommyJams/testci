@@ -128,6 +128,7 @@ class Model extends CI_Model{
 
 	public function campaignDetails($camp_id){
 
+		$videoId = "";
 		error_log($camp_id);
 		$days_to_go = 0;
 		$query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$camp_id';");
@@ -415,7 +416,7 @@ class Model extends CI_Model{
 			return $response;
 		} 
 			
-			
+
    		// --------------------Storing data into database----------------------//
 
 		$query = $this->db->query("SELECT * FROM toursCF WHERE tour_id='$tour_id';");
