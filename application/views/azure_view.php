@@ -207,34 +207,34 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
+									<a href="http://tommyjams.com/blog/events/event/atharva-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
+										<table style='text-align:center; width: 100%;'>
+											<tr style="height: 50px; width: 100%">
+												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Atharva @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">14-Oct</td>
+											</tr>
+										</table>
+									</a>
+								</li>
+                                <li>
+									<a href="http://tommyjams.com/blog/events/event/raahie-xtreme-sports-bar/" target="_blank" class="" style="width: 100%">
+										<table style='text-align:center; width: 100%;'>
+											<tr style="height: 50px; width: 100%">
+												<td style="width: 20%;"><img src="image/eventTiles/xtreme.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Raahie @ Xtreme Sports Bar</td>
+												<td style="width: 20%; vertical-align:middle;">11-Oct</td>
+											</tr>
+										</table>
+									</a>
+								</li>
+								<li>
 									<a href="http://tommyjams.com/blog/events/event/suraj-mani-and-the-tattva-trippers-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
 												<td style="width: 60%; vertical-align:middle;">Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</td>
 												<td style="width: 20%; vertical-align:middle;">5-Oct</td>
-											</tr>
-										</table>
-									</a>
-								</li>
-                                <li>
-									<a href="http://tommyjams.com/blog/events/event/mind-map-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
-										<table style='text-align:center; width: 100%;'>
-											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Mind Map @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">5-Oct</td>
-											</tr>
-										</table>
-									</a>
-								</li>
-								<li>
-									<a href="http://tommyjams.com/blog/events/event/yogi-shubham-roy-the-ways-of-the-world-green-haat/" target="_blank" class="" style="width: 100%">
-										<table style='text-align:center; width: 100%;'>
-											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/greenhaat.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Yogi, Shubham Roy and The Ways of the World @ Green Haat</td>
-												<td style="width: 20%; vertical-align:middle;">20-Sep</td>
 											</tr>
 										</table>
 									</a>
