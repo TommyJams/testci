@@ -45,21 +45,35 @@
 <div class="help-form" >
   <div class="modal-content socialModal">
     <div class="modal-header">
+        <h4>Hekp</h4>
+    </div>
 
-      <div>
+      <div class="modal-body modal-link">
         <h4>
           <a class="btn blk-btn">Pledge Amount 1</a> INR. 300
           <a class="btn blk-btn">Benefit</a> Free Mug 
         <h4>
       </div>  
-      <div>
+      <div class="modal-body modal-link">
         <h4>
           <a class="btn blk-btn">Pledge Amount 2</a> INR. 500
           <a class="btn blk-btn">Benefit</a> Free Mug 
         <h4>
       </div>
+      <div class="modal-body modal-link">
+        <h4>
+          <a class="btn blk-btn">Pledge Amount 3</a> INR. 1000
+          <a class="btn blk-btn">Benefit</a> Free Mug 
+        <h4>
+      </div>
+      <div class="modal-body modal-link">
+        <h4>
+          <a class="btn blk-btn">Pledge Amount 4</a> INR. 2000
+          <a class="btn blk-btn">Benefit</a> Free Mug 
+        <h4>
+      </div>
 
-    </div>
+    
     <div class="modal-footer">
       <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
     </div>
