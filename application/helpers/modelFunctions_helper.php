@@ -5,7 +5,13 @@
 
  	function IsYoutubeUrl($url)
     {
-        if(!preg_match("#^https?://(?:www\.)?youtube.com#", $url)) return(false);
+        $query_string = array();
+        parse_str(parse_url($url, PHP_URL_QUERY), $query_string);
+        $videoId = $query_string["v"];
+
+        error_log("Youtube ID: ".$videoId);
+
+        if( (!preg_match("#^https?://(?:www\.)?youtube.com#", $url)) || (!$query_string["v"]) ) return(false);
         else return(true);
     }
 
