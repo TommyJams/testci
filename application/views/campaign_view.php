@@ -37,6 +37,7 @@
           $bandcamp = $campaign->bandcamp;
           $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
+          $backimg = $campaign->image1;
 
           error_log("Video Link: ".$vlink);
         ?>

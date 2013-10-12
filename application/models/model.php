@@ -218,7 +218,8 @@ class Model extends CI_Model{
 								'image1' 		=> $image1,
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
-								'days_to_go'  	=> $days_to_go
+								'days_to_go'  	=> $days_to_go,
+								'image1'		=> $image1
 							);
 							
 				$response[] = $campaignDetails;
@@ -266,6 +267,7 @@ class Model extends CI_Model{
 
         $form_data = json_encode($this->input->post());
 		error_log("Form Data: ".$form_data);
+		error_log("Image: ".$backimg);
 
 		$response=array('error'=>0,'info'=>null);
 
@@ -345,7 +347,7 @@ class Model extends CI_Model{
 		}
 
 		//Background Image Check 
-    	/*$upload_path = './images/artist/campaign';
+    	$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
 		$config['max_size']  = 1024 * 8;
@@ -360,8 +362,10 @@ class Model extends CI_Model{
 		}
 		else
 		{
+			$field_name = "backimg";
+			$this->upload->do_upload($field_name);
 			$filename = $backimg;
-		}*/
+		}
 
 		// Social Links Check
 		$count = 3;

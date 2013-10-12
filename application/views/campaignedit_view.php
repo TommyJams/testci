@@ -507,7 +507,7 @@
     });
 
   });
-
+  
   function submitCampaignForm()
   {
       //blockForm('editcampaign','block');
