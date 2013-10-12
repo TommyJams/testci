@@ -4,17 +4,6 @@ class Model extends CI_Model{
 
        function __construct()
        {
-              /*require_once('/src/facebook.php');
-
-              $config = array(
-              'appId' => '248776888603319',
-              'secret' => '50f31c2706d846826bead008392e8969',
-              );
-
-              $this->facebook = new Facebook($config);*/
-
-              error_log("Entered Model Constructor!");
-
               // Call the Model constructor
               parent::__construct();
 
@@ -23,9 +12,6 @@ class Model extends CI_Model{
               $CI->config->load("facebook",TRUE);
               $config = $CI->config->item('facebook');
               $this->load->library('fbphpsdk/Facebook', $config);
-
-              /*$uid = $this->facebook->getUser();
-              error_log('Facebook Model Constructor:'.$uid);*/
        }
 
 	public function tourDetails(){
@@ -442,13 +428,13 @@ class Model extends CI_Model{
               try {
                      $uid = $this->facebook->getUser();
                      error_log('Facebook User:'.$uid);
-                     /*$ret_obj = $this->facebook->api('/me/events', 'POST',
+                     $ret_obj = $this->facebook->api('/me/events', 'POST',
                                                         array(
                                                                'name' => 'Campaign Event',
                                                                'start_time' => '2013-10-11'
                                                         )
                                                  );
-                     error_log('Facebook Event:'.$ret_obj['id']);*/
+                     error_log('Facebook Event:'.$ret_obj['id']);
               }
               catch(FacebookApiException $e) {
                      // If the user is logged out, you can have a 
