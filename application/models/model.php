@@ -24,8 +24,8 @@ class Model extends CI_Model{
               $config = $CI->config->item('facebook');
               $this->load->library('fbphpsdk/Facebook', $config);
 
-              $uid = $this->facebook->getUser();
-              error_log('Facebook Model Constructor:'.$uid);
+              /*$uid = $this->facebook->getUser();
+              error_log('Facebook Model Constructor:'.$uid);*/
        }
 
 	public function tourDetails(){
