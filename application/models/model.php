@@ -15,6 +15,8 @@ class Model extends CI_Model{
 
               $this->facebook = new Facebook($config);
 
+              error_log("Entered Model Constructor!");
+
               // Call the Model constructor
               parent::__construct();
        }
