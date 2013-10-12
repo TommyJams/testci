@@ -45,28 +45,28 @@
 <div class="help-form" >
   <div class="modal-content socialModal">
     <div class="modal-header">
-        <h4>Hekp</h4>
+        <h4>Help</h4>
     </div>
 
-      <div class="modal-body modal-link">
+      <div >
         <h4>
           <a class="btn blk-btn">Pledge Amount 1</a> INR. 300
           <a class="btn blk-btn">Benefit</a> Free Mug 
         <h4>
       </div>  
-      <div class="modal-body modal-link">
+      <div >
         <h4>
           <a class="btn blk-btn">Pledge Amount 2</a> INR. 500
           <a class="btn blk-btn">Benefit</a> Free Mug 
         <h4>
       </div>
-      <div class="modal-body modal-link">
+      <div >
         <h4>
           <a class="btn blk-btn">Pledge Amount 3</a> INR. 1000
           <a class="btn blk-btn">Benefit</a> Free Mug 
         <h4>
       </div>
-      <div class="modal-body modal-link">
+      <div >
         <h4>
           <a class="btn blk-btn">Pledge Amount 4</a> INR. 2000
           <a class="btn blk-btn">Benefit</a> Free Mug 
