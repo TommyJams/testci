@@ -255,7 +255,7 @@ class Model extends CI_Model{
 		$artist_name = $this->input->post("artistName");
 		$phone = $this->input->post("phone");
 		$email = $this->input->post("email");
-		$backimg = $this->input->post("backimg");
+		$userfile = $this->input->post("userfile");
 		$target = $this->input->post("target");
 		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
@@ -365,9 +365,7 @@ class Model extends CI_Model{
 		}
 		else
 		{
-			$field_name = "backimg";
-			$this->upload->do_upload($field_name);
-			$filename = $backimg;
+			$filename = $userfile;
 		}
 
 		// Social Links Check

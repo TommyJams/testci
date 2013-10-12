@@ -117,7 +117,7 @@
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <form name="editcampaign" id="editcampaign" method="post">
+    <form name="editcampaign" id="editcampaign" method="post" enctype="multipart/form-data">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
         <?
@@ -148,7 +148,7 @@
               <div class="clearfix"></div>
               <div class="background-images">
                 UPLOAD BACKGROUND IMAGE
-                <input type="file" id="backimg" name="backimg"></input>
+                <input type="file" id="userfile" name="userfile"></input>
               </div>
             </div>
           </div>
