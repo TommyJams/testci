@@ -47,22 +47,22 @@
     <div class="modal-header">
         <h4>Help</h4>
     </div>
-    <div >
+    <div class="col-md-6 ">
         <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 1: INR. 300 Benefit: Free Mug </a> 
         <h4>
     </div>  
-    <div >
+    <div class="col-md-6 ">
         <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 500 Benefit: Free Mug </a> 
         <h4>
     </div>
-    <div >
+    <div class="col-md-6 ">
         <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 3: INR. 1000 Benefit: Free Mug </a> 
         <h4>
     </div>
-    <div >
+    <div class="col-md-6 ">
         <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 4: INR. 2000 Benefit: Free Mug </a> 
         <h4>
