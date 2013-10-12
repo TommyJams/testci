@@ -2,23 +2,27 @@
 
 class Model extends CI_Model{
 
-        public $facebook = "";
-
        function __construct()
        {
-              require_once('/src/facebook.php');
+              /*require_once('/src/facebook.php');
 
               $config = array(
               'appId' => '248776888603319',
               'secret' => '50f31c2706d846826bead008392e8969',
               );
 
-              $this->facebook = new Facebook($config);
+              $this->facebook = new Facebook($config);*/
 
               error_log("Entered Model Constructor!");
 
               // Call the Model constructor
               parent::__construct();
+
+              // Load facebook sdk
+              $CI = & get_instance();
+              $CI->config->load("facebook",TRUE);
+              $config = $CI->config->item('facebook');
+              $this->load->library('fbphpsdk/Facebook', $config);
        }
 
 	public function tourDetails(){

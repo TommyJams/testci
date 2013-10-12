@@ -2,11 +2,19 @@
 
 class CFtour extends CI_Controller{
 
+    function __construct()
+    {
+          // Call the parent constructor
+          parent::__construct();
+
+          // Load model
+          $this->load->model('Model');
+    }
+
 	public function tourPage(){
 
-		$this->load->model('Model');
-
         $this->load->helper('functions');
+
         $data['tours'] = json_encode($this->Model->tourDetails());
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
@@ -16,12 +24,8 @@ class CFtour extends CI_Controller{
 	public function validateDetails(){
 		
 		$this->load->helper('functions');
-		$this->load->model('Model');
 
 		$response = $this->Model->formDetails();
-
-		//error_log("Response: ".$response['error']);
-		//error_log("Response: ".$response['id']);
 
       	createResponse($response);
 	}
@@ -30,7 +34,6 @@ class CFtour extends CI_Controller{
 
         $tour_id = $this->uri->segment(2);
 
-        $this->load->model('Model');
         $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
 
 		$this->load->view('campaignedit_view', $data);
