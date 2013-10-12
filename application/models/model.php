@@ -365,7 +365,9 @@ class Model extends CI_Model{
 		}
 		else
 		{
-			$filename = $userfile;
+			$data = $this->upload->data();
+			$filename = $data['file_name'];
+			//$filename = $userfile;
 		}
 
 		// Social Links Check

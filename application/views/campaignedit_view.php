@@ -500,12 +500,16 @@
       var editorContent = $('#editor').html();
       $('#editorContent').val(editorContent);
 
-      //var backimg = $('#backimg').html();
-      //$('#backimg').val(backimg);
+      $.ajaxFileUpload({
+          secureuri      : false,
+          fileElementId  : 'userfile',
+          dataType       : 'json'
+        });
 
       submitCampaignForm();
-    });
 
+    });
+    
   });
   
   function submitCampaignForm()
