@@ -500,16 +500,10 @@
       var editorContent = $('#editor').html();
       $('#editorContent').val(editorContent);
 
-      $.ajaxFileUpload({
-          secureuri      : false,
-          fileElementId  : 'userfile',
-          dataType       : 'json'
-        });
-
       submitCampaignForm();
 
     });
-    
+
   });
   
   function submitCampaignForm()
