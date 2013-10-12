@@ -48,20 +48,20 @@
         <h4>Help</h4>
     </div>
     <div class="row">
-        <div class="col-md-4 ">
+        <div position="center">
             <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 1: INR. 300 Benefit: Free Mug </a> 
             <h4>
         </div>
     </div>      
     <div class="row">
-        <div class="col-md-4 ">
+        <div >
             <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 500 Benefit: Free Mug </a> 
             <h4>
         </div>
     </div>
-    <div class="row">
+    <div >
         <div class="col-md-4 ">
             <h4>
             <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 1000 Benefit: Free Mug </a> 
