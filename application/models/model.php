@@ -361,7 +361,7 @@ class Model extends CI_Model{
 		if (!$this->upload->do_upload())
 		{
 			$response['error'] = 1;
-			$response['info'][]=array('fieldId'=>'backimg','message'=>CAMPAIGN_FORM_MSG_INVALID_IMAGE);
+			$response['info'][]=array('fieldId'=>'userfile','message'=>CAMPAIGN_FORM_MSG_INVALID_IMAGE);
 		}
 		else
 		{
