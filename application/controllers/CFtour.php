@@ -38,7 +38,7 @@ class CFtour extends CI_Controller{
 		$data = $this->upload->data();
 		$filename = $data['file_name'];
 
-		error_log("File name: ".$filename)
+		error_log("File name: ".$filename);
 
 		$response['filename'] = $filename;
 
