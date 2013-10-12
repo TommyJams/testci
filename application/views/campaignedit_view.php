@@ -493,6 +493,29 @@
             );  
     });
 
+    $("#userfile").bind("change", function (e)
+    {
+      //get the file path
+      var file = $("#userfile").val();
+
+      console.log(file);
+
+      $.ajaxFileUpload({
+          url            : '/CFtour/validateFile/',
+          secureuri      : false,
+          fileElementId  : 'userfile',
+          dataType       : 'json',
+          data           : {'type': type},
+          data           : {'type': type},
+          success        : function (data, status)
+                           {
+                              console.log(data.filename);
+                              $('#backimg').val(data.filename);
+                           }
+          
+        });
+    });
+
     $('#editcampaign').bind('submit',function(e) 
     {
       e.preventDefault();

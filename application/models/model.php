@@ -255,7 +255,7 @@ class Model extends CI_Model{
 		$artist_name = $this->input->post("artistName");
 		$phone = $this->input->post("phone");
 		$email = $this->input->post("email");
-		$userfile = $this->input->post("userfile");
+		$backimg = $this->input->post("backimg");
 		$target = $this->input->post("target");
 		$min_target = $this->input->post("min_target");
 		$maxIndex = $this->input->post("maxIndex");
@@ -281,7 +281,8 @@ class Model extends CI_Model{
 			'video-link'	=> $vlink,
 			'sociallink1'	=> $sociallink1,
 			'sociallink2'	=> $sociallink2,
-			'sociallink3'	=> $sociallink3
+			'sociallink3'	=> $sociallink3,
+			'backimg'		=> $backimg
 		);
 
 		// Pledge check (Atleast one pledgeamount should be filled) 
@@ -347,27 +348,15 @@ class Model extends CI_Model{
 		}
 
 		//Background Image Check 
-    	$upload_path = './images/artist/campaign';
-        $config['upload_path'] = $upload_path;
-		$config['allowed_types'] = 'gif|jpg|png|bmp';
-		$config['max_width'] = 0;
-		$config['max_height'] = 0;
-		$config['max_filename'] = 0;
-		$config['encrypt_name'] = TRUE;
-		$config['remove_spaces'] = TRUE;
-
-		$this->load->library('upload', $config); 
-
-		if (!$this->upload->do_upload())
+		if(isEmpty($values['backimg']))
 		{
 			$response['error'] = 1;
 			$response['info'][]=array('fieldId'=>'userfile','message'=>CAMPAIGN_FORM_MSG_INVALID_IMAGE);
 		}
 		else
 		{
-			$data = $this->upload->data();
-			$filename = $data['file_name'];
-			//$filename = $userfile;
+			$filename = $backimg;
+			error_log("In BackImage Check: ".$filename);
 		}
 
 		// Social Links Check

@@ -21,6 +21,32 @@ class CFtour extends CI_Controller{
 		$this->load->view('tours_view', $data);
 	}
 
+	public function validateFile(){
+
+		//Background Image Check 
+    	$upload_path = './images/artist/campaign';
+        $config['upload_path'] = $upload_path;
+		$config['allowed_types'] = 'gif|jpg|png|bmp';
+		$config['max_width'] = 0;
+		$config['max_height'] = 0;
+		$config['max_filename'] = 0;
+		$config['encrypt_name'] = TRUE;
+		$config['remove_spaces'] = TRUE;
+
+		$this->load->library('upload', $config); 
+
+		$data = $this->upload->data();
+		$filename = $data['file_name'];
+
+		error_log("File name: ".$filename)
+
+		$response['filename'] = $filename;
+
+		$this->load->helper('functions');
+		createResponse($response);
+	}
+	
+
 	public function validateDetails(){
 		
 		$this->load->helper('functions');
