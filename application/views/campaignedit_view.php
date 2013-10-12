@@ -47,33 +47,26 @@
     <div class="modal-header">
         <h4>Help</h4>
     </div>
-
-      <div >
+    <div >
         <h4>
-          <a class="btn blk-btn">Pledge Amount 1</a> INR. 300
-          <a class="btn blk-btn">Benefit</a> Free Mug 
+            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 1: INR. 300 Benefit: Free Mug </a> 
         <h4>
-      </div>  
-      <div >
+    </div>  
+    <div >
         <h4>
-          <a class="btn blk-btn">Pledge Amount 2</a> INR. 500
-          <a class="btn blk-btn">Benefit</a> Free Mug 
+            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 500 Benefit: Free Mug </a> 
         <h4>
-      </div>
-      <div >
+    </div>
+    <div >
         <h4>
-          <a class="btn blk-btn">Pledge Amount 3</a> INR. 1000
-          <a class="btn blk-btn">Benefit</a> Free Mug 
+            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 3: INR. 1000 Benefit: Free Mug </a> 
         <h4>
-      </div>
-      <div >
+    </div>
+    <div >
         <h4>
-          <a class="btn blk-btn">Pledge Amount 4</a> INR. 2000
-          <a class="btn blk-btn">Benefit</a> Free Mug 
+            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 4: INR. 2000 Benefit: Free Mug </a> 
         <h4>
-      </div>
-
-    
+    </div>
     <div class="modal-footer">
       <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
     </div>
