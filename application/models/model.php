@@ -350,7 +350,6 @@ class Model extends CI_Model{
     	$upload_path = './images/artist/campaign';
         $config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png|bmp';
-		$config['max_size']  = 1024 * 8;
 		$config['encrypt_name'] = TRUE;
 
 		$this->load->library('upload', $config); 
