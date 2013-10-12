@@ -436,9 +436,9 @@ class Model extends CI_Model{
 		$query1 = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `phone`, `email`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
 					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($phone)."', '".$this->db->escape_str($email)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
 
-              /*$uid = $this->facebook->getUser();
+              $uid = $this->facebook->getUser();
               error_log('Facebook User:'.$uid);
-              $ret_obj = $this->facebook->api('/'.$uid.'/events', 'POST',
+              /*$ret_obj = $this->facebook->api('/'.$uid.'/events', 'POST',
                                                  array(
                                                         'name' => 'Campaign Event',
                                                         'start_time' => '2013-10-11'
