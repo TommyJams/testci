@@ -34,6 +34,7 @@ class CFtour extends CI_Controller{
 		$config['remove_spaces'] = TRUE;
 
 		$this->load->library('upload', $config); 
+		$this->upload->do_upload();
 
 		$data = $this->upload->data();
 		$filename = $data['file_name'];
