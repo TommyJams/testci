@@ -505,8 +505,6 @@
           secureuri      : false,
           fileElementId  : 'userfile',
           dataType       : 'json',
-          data           : {'type': type},
-          data           : {'type': type},
           success        : function (data, status)
                            {
                               console.log(data.filename);
