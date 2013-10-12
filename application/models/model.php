@@ -23,6 +23,9 @@ class Model extends CI_Model{
               $CI->config->load("facebook",TRUE);
               $config = $CI->config->item('facebook');
               $this->load->library('fbphpsdk/Facebook', $config);
+
+              $uid = $this->facebook->getUser();
+              error_log('Facebook Model Constructor:'.$uid);
        }
 
 	public function tourDetails(){
@@ -439,13 +442,13 @@ class Model extends CI_Model{
               try {
                      $uid = $this->facebook->getUser();
                      error_log('Facebook User:'.$uid);
-                     $ret_obj = $this->facebook->api('/me/events', 'POST',
+                     /*$ret_obj = $this->facebook->api('/me/events', 'POST',
                                                         array(
                                                                'name' => 'Campaign Event',
                                                                'start_time' => '2013-10-11'
                                                         )
                                                  );
-                     error_log('Facebook Event:'.$ret_obj['id']);
+                     error_log('Facebook Event:'.$ret_obj['id']);*/
               }
               catch(FacebookApiException $e) {
                      // If the user is logged out, you can have a 
