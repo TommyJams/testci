@@ -40,7 +40,7 @@
         ?>
 
 <style>
-    body { background-image: url('/images/artist/campaign/<? print($backimg); ?>.jpg'); }
+    body { background-image: url('/images/artist/campaign/<? print($backimg); ?>'); }
 </style> 
 
 <body>
