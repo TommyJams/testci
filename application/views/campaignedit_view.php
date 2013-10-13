@@ -271,8 +271,8 @@
           </h5>
           <div class="seperator" ></div>
         </div>
-        <div id="add-option-new" ></div>
-        <div class="add-option-new-hover pull-left"><h4><a ><img src="/img/add-option.png" alt="" style=""></a><h4>
+        <div id="add-option" ></div>
+        <div class="add-option-new pull-left"><a class="add-option-new-hover pull-left"><img src="/img/add-option.png" alt="" style=""></a>
         </div>
         <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
             <img src="/img/help.png" alt="" style="">
@@ -385,7 +385,7 @@
     var maxIndex = 3;
     $('#maxIndex').val(maxIndex);
 
-    $(".add-option-new").click(function(){
+    $(".add-option").click(function(){
 
       maxIndex++;
 
