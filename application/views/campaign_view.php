@@ -24,7 +24,7 @@
 <body background="<? print($backimg); ?>">
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <?  $campaign = (json_decode($campaign));
+    <?  
         foreach($campaign as $campaign) { ?>
         <?    
           $raised = $campaign->raised;
