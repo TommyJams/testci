@@ -15,8 +15,13 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<?  $campaign = (json_decode($campaign));
+  foreach($campaign as $campaign) { ?>
+  <?
+    $backimg = $campaign->image1;}
+  ?>
 </head>
-<body>
+<body background="<? print($backimg); ?>">
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <?  $campaign = (json_decode($campaign));
@@ -37,9 +42,6 @@
           $bandcamp = $campaign->bandcamp;
           $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
-          $backimg = $campaign->image1;
-
-          error_log("Video Link: ".$vlink);
         ?>
 
     <div class="d-tj-box " >
@@ -136,8 +138,8 @@
           </div>
           <div>
             <ul class=" list-unstyled social-list clear-fix">
-              <li ><a href="#" title="Share on Facebook" class='social-list-facebook' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li >
-              <li ><a href="#" title="Share on Twitter"  class='social-list-twitter'  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
+              <li ><a href="#" title="Share on Facebook" class='social-list-facebook-share' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li >
+              <li ><a href="#" title="Share on Twitter"  class='social-list-twitter-share'  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
             </ul>
           </div>      
         </div>   
