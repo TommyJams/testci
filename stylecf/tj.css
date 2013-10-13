@@ -428,15 +428,15 @@ ul.social-list li a.social-list-twitter-edit {
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-facebook-edit {
-	background-image:url('/img/social-add.png');
+	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-googleplus-edit {
-	background-image:url('/img/social-add.png');
+	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;
 }
 ul.social-list li a.social-list-blog-edit {
-	background-image:url('/img/social-add.png');
+	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;
 }
 /* Offsets */

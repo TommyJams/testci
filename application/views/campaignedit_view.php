@@ -244,7 +244,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <i class=" btn-delete-pledge pull-right">-</i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc1" name="desc1" placeholder="Please write description" rows="4"></textarea>
@@ -272,7 +272,7 @@
           <div class="seperator" ></div>
         </div>
         <div id="add-option" ></div>
-        <div class="add-option pull-left"><h4><a ><img src="/img/add.png" alt="" style=""> ADD OPTION</a><h4>
+        <div class="add-option pull-left"><h4><a ><img src="/img/add-new-edit.png" alt="" style=""></a><h4>
         </div>
         <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
             <img src="/img/help.png" alt="" style="">
