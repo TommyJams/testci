@@ -25,19 +25,19 @@
       <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/2.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/3.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India. </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/31.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
           <h5>TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/66.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
       </div>
