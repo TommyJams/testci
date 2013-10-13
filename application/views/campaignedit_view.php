@@ -244,7 +244,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <i class=" btn-delete-pledge pull-right"><img src="/img/delete.png" alt="" style=""></i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete1.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc1" name="desc1" placeholder="Please write description" rows="4"></textarea>
@@ -254,7 +254,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
-            <i class=" btn-delete-pledge pull-right">-</i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete2.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc2" name="desc2" placeholder="Please write description" rows="4" ></textarea>
@@ -264,7 +264,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
-            <i class=" btn-delete-pledge pull-right">-</i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete3.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc3" name="desc3" placeholder="Please write description" rows="4" ></textarea>
