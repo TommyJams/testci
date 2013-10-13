@@ -15,16 +15,12 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-<?  $campaign = (json_decode($campaign));
-  foreach($campaign as $campaign) { ?>
-  <?
-    $backimg = $campaign->image1;}
-  ?>
+
 </head>
 <body background="<? print($backimg); ?>">
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <?  
+    <?  $campaign = (json_decode($campaign));
         foreach($campaign as $campaign) { ?>
         <?    
           $raised = $campaign->raised;
@@ -42,6 +38,7 @@
           $bandcamp = $campaign->bandcamp;
           $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
+          $backimg = $campaign->image1;
         ?>
 
     <div class="d-tj-box " >
