@@ -37,7 +37,7 @@
           $artist_name = $campaign->artist_name;
           $backimg = $campaign->image1;
         ?>
-<body background="<? print($backimg); ?>">
+<body background="/images/artist/campaign/<? print($backimg); ?>">
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <div class="d-tj-box " >
