@@ -15,7 +15,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <?  $campaign = (json_decode($campaign));
         foreach($campaign as $campaign) { ?>
@@ -39,7 +38,12 @@
 
           error_log("Back Image Name: ".$backimg);
         ?>
-<body background="testimage.jpg">
+
+<style>
+    body { background-image: url('/testimage.jpg'); }
+</style> 
+
+<body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <div class="d-tj-box " >
