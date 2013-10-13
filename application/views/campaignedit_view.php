@@ -399,7 +399,7 @@
 
       $('#maxIndex').val(maxIndex);
 
-      $("#add-option").append($(addoption).fadeIn('slow'));
+      $("#add-option-new").append($(addoption).fadeIn('slow'));
     });
 
     $('body').on('click', '.btn-delete-pledge', function(){
