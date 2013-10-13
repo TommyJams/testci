@@ -82,19 +82,19 @@
       <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/2.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.jpg)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/3.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.jpg)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India. </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/31.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.jpg)"></div>
           <h5>TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/66.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.jpg)"></div>
           <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
         </div>
       </div>
@@ -163,25 +163,25 @@
       <div class="visible-lg visible-md d-tj-bg-strip" ></div>
       <div class="row " >
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/2.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.jpg)"></div>
           <h5>
           Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/3.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.jpg)"></div>
           <h5>
           Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/31.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c.jpg)"></div>
           <h5>
           Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/temp/66.jpg)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.jpg)"></div>
           <h5>
           Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
           </h4>
