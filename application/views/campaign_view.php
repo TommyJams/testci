@@ -17,10 +17,7 @@
     <![endif]-->
 
 </head>
-<body background="<? print($backimg); ?>">
-<div class="d-tj-bg-overlay">
-  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-    <?  $campaign = (json_decode($campaign));
+<?  $campaign = (json_decode($campaign));
         foreach($campaign as $campaign) { ?>
         <?    
           $raised = $campaign->raised;
@@ -40,7 +37,9 @@
           $artist_name = $campaign->artist_name;
           $backimg = $campaign->image1;
         ?>
-
+<body background="<? print($backimg); ?>">
+<div class="d-tj-bg-overlay">
+  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
@@ -262,10 +261,10 @@ $('#foo5').carouFredSel({
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
-<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
+<!--<script type="text/javascript" src="/script/jquery.supersized.min.js"></script>-->
+<!--<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script>--> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.js"></script> 
-<script src="/script/tj.js"></script>
+<script src="/script/tj1.js"></script>
 </body>
 </html>
