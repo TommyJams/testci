@@ -39,7 +39,7 @@
 
           error_log("Back Image Name: ".$backimg);
         ?>
-<body background="/images/artist/campaign/testimage.jpg">
+<body background="testimage.jpg">
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <div class="d-tj-box " >
