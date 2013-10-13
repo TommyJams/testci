@@ -175,7 +175,7 @@
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c.png)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
           <h5>
           Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
           </h4>
