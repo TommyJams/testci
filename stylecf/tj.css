@@ -362,6 +362,19 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .pledge-btn input:hover {
 	color:white;
 }
+.add-option-new a {
+	width:186px;
+	height:62px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.add-option-new a:hover {
+	background-position:0px -62px;
+}
+.add-option-new  a.add-option-new-hover {
+	background-image:url('/img/add-option.png');
+}
 ul.social-list {
 	padding-top: 20px;
 }

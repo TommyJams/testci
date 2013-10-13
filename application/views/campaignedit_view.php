@@ -244,7 +244,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <i class=" btn-delete-pledge pull-right"><img src="/img/delete1.png" alt="" style=""></i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc1" name="desc1" placeholder="Please write description" rows="4"></textarea>
@@ -254,7 +254,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
-            <i class=" btn-delete-pledge pull-right"><img src="/img/delete2.png" alt="" style=""></i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc2" name="desc2" placeholder="Please write description" rows="4" ></textarea>
@@ -264,15 +264,15 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
-            <i class=" btn-delete-pledge pull-right"><img src="/img/delete3.png" alt="" style=""></i></h4>
+            <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc3" name="desc3" placeholder="Please write description" rows="4" ></textarea>
           </h5>
           <div class="seperator" ></div>
         </div>
-        <div id="add-option" ></div>
-        <div class="add-option pull-left"><h4><a ><img src="/img/add-new-edit.png" alt="" style=""></a><h4>
+        <div id="add-option-new" ></div>
+        <div class="add-option-new-hover pull-left"><h4><a ><img src="/img/add-option.png" alt="" style=""></a><h4>
         </div>
         <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
             <img src="/img/help.png" alt="" style="">
@@ -385,7 +385,7 @@
     var maxIndex = 3;
     $('#maxIndex').val(maxIndex);
 
-    $(".add-option").click(function(){
+    $(".add-option-new").click(function(){
 
       maxIndex++;
 
@@ -393,7 +393,7 @@
       var b = 'PLEDGE AMT' + maxIndex;
       var desc = 'desc' + maxIndex;
 
-      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right">-</i></h4><div class="clearfix"></div>';
+      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
       addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
       addoption +=' <div class="seperator" ></div></div></div>';
 
