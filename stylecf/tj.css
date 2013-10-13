@@ -379,11 +379,21 @@ ul.social-list li a {
 ul.social-list li a:hover {
 	background-position:0px -39px;
 }
+ul.social-list-share li a {
+	width:238px;
+	height:40px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+ul.social-list-share li a:hover {
+	background-position:0px -40px;
+}
 ul.social-list li a.social-list-twitter {
 	background-image:url('/img/icon_twitter.png');
 }
 ul.social-list li a.social-list-facebook {
-	background-image:url('/img/icon_facebook_share.png');
+	background-image:url('/img/icon_facebook.png');
 }
 ul.social-list li a.social-list-scloud {
 	background-image:url('/img/icon_scloud.png');
@@ -400,10 +410,10 @@ ul.social-list li a.social-list-googleplus {
 ul.social-list li a.social-list-blog {
 	background-image:url('/img/icon_blog.png');
 }
-ul.social-list li a.social-list-twitter-share {
+ul.social-list-share li a.social-list-twitter-share {
 	background-image:url('/img/icon_twitter_share.png');
 }
-ul.social-list li a.social-list-facebook-share {
+ul.social-list-share li a.social-list-facebook-share {
 	background-image:url('/img/icon_facebook_share.png');
 }
 ul.social-list li a.social-list-twitter-edit {
