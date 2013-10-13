@@ -369,6 +369,13 @@ ul.social-list li {
 	float:left;
 	margin-right:2px;
 }
+ul.social-list-share {
+	padding-top: 20px;
+}
+ul.social-list-share li {
+	float:left;
+	margin-right:2px;
+}
 ul.social-list li a {
 	width:39px;
 	height:39px;
