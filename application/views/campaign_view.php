@@ -239,9 +239,7 @@
 </div>
 
 <div id="supersized">
-  <a target="_blank">
-    <img src="/images/artist/campaign/<? print($backimg); ?>" style="width: 1423px;">
-  </a>
+  <img src="/images/artist/campaign/<? print($backimg); ?>" style="width:100%; height:100%;">
 </div>
 
 <script src="/script/jquery.js"></script> 
