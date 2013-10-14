@@ -269,7 +269,7 @@
           slide   : 
           [
               {
-                  image : '/images/artist/campaign/' + '<? print($backimg); ?>'
+                  image : '/images/artist/campaign/' + <? print($backimg); ?>
               }
           ]
       }
