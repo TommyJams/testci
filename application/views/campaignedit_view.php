@@ -364,15 +364,17 @@
 </footer>
 </div>
 
+<img src="" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">
+
 <!---<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 <script src="/script/jquery.min.js"></script>
 <script src="/script/external/jquery.hotkeys.js"></script>  
 <script src="/script/bootstrap.min.js"></script>
 <script src="/script/external/google-code-prettify/prettify.js"></script> 
 <script src="/script/bootstrap-wysiwyg.js"></script> 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> --> 
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
-<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
+<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> -->
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj1.js"></script> 
@@ -510,6 +512,7 @@
                            {
                               console.log(data.filename);
                               $('#backimg').val(data.filename);
+
                            }
           
         });
