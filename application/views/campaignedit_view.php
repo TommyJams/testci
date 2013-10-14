@@ -588,7 +588,13 @@
               }
 
               if(fieldExists)
-                $('#'+id).scrollIntoView(true);
+              {
+                var offset = $('#'+id).offset();
+                offset.top -= 100;
+                $('html, body').animate({
+                  scrollTop: offset.top
+                });
+              }
           }
       }
       else if(response.error == 0)
