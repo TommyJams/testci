@@ -243,15 +243,15 @@
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
 <script>
-		$(document).ready(function(){
-			$(".d-tj-slide-img").hover(
-               function () {
-                $(this).find('.d-tj-slide-hover-img').removeClass('hide');
-                },
-  				function () {
-   				$(this).find('.d-tj-slide-hover-img').addClass('hide');
-				 }
-);	
+	$(document).ready(function(){
+		$(".d-tj-slide-img").hover(
+             function () {
+              $(this).find('.d-tj-slide-hover-img').removeClass('hide');
+              },
+				function () {
+ 				$(this).find('.d-tj-slide-hover-img').addClass('hide');
+			 }
+  )};	
 
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
