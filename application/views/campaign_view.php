@@ -238,9 +238,7 @@
 </footer>
 </div>
 
-<div id="supersized">
-  <img src="/images/artist/campaign/<? print($backimg); ?>">
-</div>
+<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized">
 
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
