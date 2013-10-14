@@ -366,7 +366,6 @@
 
 <img src="" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="/script/jquery.min.js"></script>
 <script src="/script/external/jquery.hotkeys.js"></script>  
 <script src="/script/bootstrap.min.js"></script>
