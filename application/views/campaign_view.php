@@ -16,26 +16,26 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<?  $campaign = (json_decode($campaign));
-        foreach($campaign as $campaign) { ?>
-        <?    
-          $raised = $campaign->raised;
-          $totalPledges = $campaign->totalPledges;
-          $target = $campaign->target;
-          $days_to_go = $campaign->days_to_go;
-          $tourDate = $campaign->tourDate;
-          $venues = $campaign->venues;
-          $pledges = $campaign->pledges;
-          $campaign_desc = $campaign->campaign_desc;
-          $vlink = $campaign->videoId;
-          $fb = $campaign->fb;
-          $twitter = $campaign->twitter;
-          $scloud = $campaign->scloud;
-          $bandcamp = $campaign->bandcamp;
-          $website = $campaign->website; 
-          $artist_name = $campaign->artist_name;
-          $backimg = $campaign->image1;
-        ?>
+  $campaign = (json_decode($campaign));
+  foreach($row as $campaign)
+  {
+    $raised = $row->raised;
+    $totalPledges = $row->totalPledges;
+    $target = $row->target;
+    $days_to_go = $row->days_to_go;
+    $tourDate = $row->tourDate;
+    $venues = $row->venues;
+    $pledges = $row->pledges;
+    $campaign_desc = $row->campaign_desc;
+    $vlink = $row->videoId;
+    $fb = $row->fb;
+    $twitter = $row->twitter;
+    $scloud = $row->scloud;
+    $bandcamp = $row->bandcamp;
+    $website = $row->website; 
+    $artist_name = $row->artist_name;
+    $backimg = $row->image1;
+  }
 
 <body>
 <div class="d-tj-bg-overlay">
