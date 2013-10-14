@@ -238,7 +238,11 @@
 </footer>
 </div>
 
-<input type="hidden" id="bgImageLink" value="/images/artist/campaign/<? print($backimg); ?>">
+<div id="supersized">
+  <a target="_blank">
+    <img src="/images/artist/campaign/<? print($backimg); ?>" style="width: 1423px;">
+  </a>
+</div>
 
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
@@ -261,32 +265,6 @@
 					scroll: 1
 				});
 	});*/
-
-  var options=
-  {
-      supersized    :
-      {
-          slide   : 
-          [
-              {
-                  image : '/images/artist/campaign/' + <? print($backimg); ?>
-              }
-          ]
-      }
-  }
-
-  /**************************************************************************/
-  /*  Supersized                                */
-  /**************************************************************************/
-  $.supersized(
-  {
-      slides          : options.supersized.slide,
-      autoplay        : false,
-      thumb_links     : false,
-      start_slide     : 1,
-      thumbnail_navigation  : false
-  });
-
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
