@@ -47,8 +47,9 @@
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
-          <iframe id="video-iframe" title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" frameborder="0" allowfullscreen></iframe>
-        </div>
+          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 250px; width: 80%;" 
+          src="http://www.youtube.com/embed/<? print($vlink); ?>" frameborder="0" allowfullscreen></iframe>
+        </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>    
@@ -253,8 +254,6 @@
  				$(this).find('.d-tj-slide-hover-img').addClass('hide');
 			 }
     );
-
-    $('#video-iframe').attr("http://www.youtube.com/embed/<? print($vlink); ?>");
   });
 
 </script>
