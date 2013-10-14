@@ -574,7 +574,7 @@
               {
                   var id=response.info[key].fieldId;
                   
-                  if($('#'+id).offset() < offset)
+                  if($('#'+id).offset().top < offset.top)
                     offset = $('#'+id).offset();
 
                   qtipExists = true;
