@@ -372,8 +372,8 @@
 <script src="/script/bootstrap.min.js"></script>
 <script src="/script/external/google-code-prettify/prettify.js"></script> 
 <script src="/script/bootstrap-wysiwyg.js"></script> 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> -->
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
@@ -569,15 +569,16 @@
       { 
           if(response.info.length)
           { 
-              var fieldExists = false;
+              var qtipExists = false;
+              var offset = $('.d-tj-footer').offset();
               for(var key in response.info)
               {
-                  if(fieldExists==false)
-                  {
-                    var id=response.info[key].fieldId;
-                    fieldExists = true;
-                  }
+                  var id=response.info[key].fieldId;
                   
+                  if($('#'+id).offset() < offset)
+                    offset = $('#'+id).offset();
+
+                  qtipExists = true;
 
                   $('#'+response.info[key].fieldId).qtip(
                   {
@@ -587,9 +588,8 @@
                   }).qtip('show');
               }
 
-              if(fieldExists)
+              if(qtipExists)
               {
-                var offset = $('#'+id).offset();
                 offset.top -= 100;
                 $('html, body').animate({
                   scrollTop: offset.top
