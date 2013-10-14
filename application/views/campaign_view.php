@@ -16,6 +16,7 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
+<?
   $campaign = (json_decode($campaign));
   foreach($row as $campaign)
   {
@@ -36,7 +37,7 @@
     $artist_name = $row->artist_name;
     $backimg = $row->image1;
   }
-
+?>
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
