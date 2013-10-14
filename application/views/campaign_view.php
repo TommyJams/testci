@@ -15,10 +15,10 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-</head>
+
 <?
   $campaign = (json_decode($campaign));
-  foreach($row as $campaign)
+  foreach($campaign as $row)
   {
     $raised = $row->raised;
     $totalPledges = $row->totalPledges;
@@ -38,6 +38,9 @@
     $backimg = $row->image1;
   }
 ?>
+
+</head>
+
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
