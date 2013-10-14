@@ -15,31 +15,28 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-<?  
-    $campaign = (json_decode($campaign));
-
-    $raised = $campaign->raised;
-    $totalPledges = $campaign->totalPledges;
-    $target = $campaign->target;
-    $days_to_go = $campaign->days_to_go;
-    $tourDate = $campaign->tourDate;
-    $venues = $campaign->venues;
-    $pledges = $campaign->pledges;
-    $campaign_desc = $campaign->campaign_desc;
-    $vlink = $campaign->videoId;
-    $fb = $campaign->fb;
-    $twitter = $campaign->twitter;
-    $scloud = $campaign->scloud;
-    $bandcamp = $campaign->bandcamp;
-    $website = $campaign->website; 
-    $artist_name = $campaign->artist_name;
-    $backimg = $campaign->image1;
-?>
-
 </head>
-<style>
-  body { background-image: url('/images/artist/campaign/<? print($backimg); ?>'); }
-</style>
+<?  $campaign = (json_decode($campaign));
+        foreach($campaign as $campaign) { ?>
+        <?    
+          $raised = $campaign->raised;
+          $totalPledges = $campaign->totalPledges;
+          $target = $campaign->target;
+          $days_to_go = $campaign->days_to_go;
+          $tourDate = $campaign->tourDate;
+          $venues = $campaign->venues;
+          $pledges = $campaign->pledges;
+          $campaign_desc = $campaign->campaign_desc;
+          $vlink = $campaign->videoId;
+          $fb = $campaign->fb;
+          $twitter = $campaign->twitter;
+          $scloud = $campaign->scloud;
+          $bandcamp = $campaign->bandcamp;
+          $website = $campaign->website; 
+          $artist_name = $campaign->artist_name;
+          $backimg = $campaign->image1;
+        ?>
+
 <body>
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
