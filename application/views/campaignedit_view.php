@@ -496,7 +496,7 @@
             );  
     });
 
-    $("#userfile").change(function() {
+    $('body').on('change','#userfile', function() {
       //get the file path
       var file = $("#userfile").val();
 
