@@ -254,7 +254,7 @@
 			 }
     );
 
-    $('#video-iframe').attr('src',"http://www.youtube.com/embed/<? print($vlink); ?>");
+    $('#video-iframe').attr("http://www.youtube.com/embed/<? print($vlink); ?>");
   });
 
 </script>
