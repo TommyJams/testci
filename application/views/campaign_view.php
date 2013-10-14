@@ -239,7 +239,7 @@
 </div>
 
 <div id="supersized">
-  <img src="/images/artist/campaign/<? print($backimg); ?>" style="width:100%; height:100%;">
+  <img src="/images/artist/campaign/<? print($backimg); ?>">
 </div>
 
 <script src="/script/jquery.js"></script> 
@@ -255,14 +255,14 @@
 				 }
 );	
 
-/*$('#foo5').carouFredSel({
+$('#foo5').carouFredSel({
 	
 					width: '100%',
 					prev: '#prev5',
 					next: '#next5',
 					scroll: 1
 				});
-	});*/
+	});
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
