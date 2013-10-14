@@ -569,17 +569,26 @@
       { 
           if(response.info.length)
           { 
+              var fieldExists = false;
               for(var key in response.info)
               {
-                  var id=response.info[key].fieldId;
-                  console.log(response.info[key].message);
+                  if(fieldExists==false)
+                  {
+                    var id=response.info[key].fieldId;
+                    fieldExists = true;
+                  }
+                  
+
                   $('#'+response.info[key].fieldId).qtip(
                   {
                           style:      { classes:(response.error==1 ? 'ui-tooltip-error' : 'ui-tooltip-success')},
                           content:  { text:response.info[key].message },
                           position:   { my:tPosition[id]['my'],at:tPosition[id]['at'] }
-                  }).qtip('show');        
+                  }).qtip('show');
               }
+
+              if(fieldExists)
+                $('#'+id).scrollIntoView(true);
           }
       }
       else if(response.error == 0)
