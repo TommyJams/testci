@@ -512,7 +512,7 @@
                            {
                               console.log(data.filename);
                               $('#backimg').val(data.filename);
-                              $('#supersized').attr('src','/images/artist/campaign/<? print($backimg); ?>');
+                              $('#supersized').attr('src','/images/artist/campaign/' + data.filename);
                            }
           
         });
