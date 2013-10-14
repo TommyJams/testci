@@ -238,10 +238,10 @@
 </footer>
 </div>
 
-<img src="/images/artist/campaign/<? print($backimg); ?>" class="campaignBG">
+<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized">
 
 <script src="/script/jquery.js"></script> 
-<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/bootstrap.min.js"></script>
 <script>
 		$(document).ready(function(){
 			$(".d-tj-slide-img").hover(
