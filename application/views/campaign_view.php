@@ -35,13 +35,7 @@
           $website = $campaign->website; 
           $artist_name = $campaign->artist_name;
           $backimg = $campaign->image1;
-
-          error_log("Back Image Name: ".$backimg);
         ?>
-
-<style>
-    body { background-image: url('/images/artist/campaign/<? print($backimg); ?>'); }
-</style> 
 
 <body>
 <div class="d-tj-bg-overlay">
@@ -243,6 +237,9 @@
   </div>
 </footer>
 </div>
+
+<img src="/images/artist/campaign/<? print($backimg); ?>" class="campaignBG">
+
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script> 
 <script>
