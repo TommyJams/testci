@@ -240,7 +240,8 @@
 </footer>
 </div>
 
-<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized">
+<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized" style="-webkit-backface-visibility: hidden;
+-webkit-transform: translateZ(-999);">
 
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
