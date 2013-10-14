@@ -176,9 +176,6 @@
     </div>
       <div class="clearfix"></div>
     </div>
-    <? 
-    } 
-    ?>
     <!--  <div  class="d-tj-artist-container d-tj-offset-top-40">-->
         
   </div>
