@@ -374,6 +374,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .add-option-new  a.add-option-new-hover {
 	background-image:url('/img/add-option.png');
+	cursor: pointer;
 }
 ul.social-list {
 	padding-top: 20px;
