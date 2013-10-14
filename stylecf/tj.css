@@ -904,6 +904,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 .d-tj-video {
 	width:660px;
 	margin-bottom:15px
+	z-index: 9999;
+	position: absolute;
 }
 .d-tj-container {
 	max-width: 720px !important;
