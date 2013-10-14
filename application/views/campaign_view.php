@@ -289,8 +289,8 @@
 
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script type="text/javascript" src="/script/jquery.supersized.min.js"></script>
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="/script/jquery.supersized.min.js"></script>-->
 <!--<script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script>
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.js"></script> --> 
