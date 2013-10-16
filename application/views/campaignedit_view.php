@@ -364,7 +364,7 @@
 </footer>
 </div>
 
-<img src="" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">
+<!--<img src="" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">-->
 
 <script src="/script/jquery.min.js"></script>
 <script src="/script/external/jquery.hotkeys.js"></script>  
