@@ -495,6 +495,8 @@ campaign_view -> hack
                     'beforeClose'       : function(){ 
                                             var x = $('.fancybox-inner').contents().find('#videolink').val();
                                             insertLinks(x, 'video');
+
+                                            $('#videolink').val(x);
                                           }
                  }
             );
