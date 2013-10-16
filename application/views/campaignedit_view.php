@@ -497,7 +497,7 @@ campaign_view -> hack
                                             insertLinks(x, 'video');
 
                                             $('#vd-link').html("CHANGE<br>VIDEO LINK");
-                                            $('#videolink').val(x);
+                                            $('.video-link').contents().find('#videolink').val(x);
                                           }
                  }
             );
