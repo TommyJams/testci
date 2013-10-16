@@ -78,7 +78,7 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" value="http://" id="SocialLink1" name="SocialLink" class="input-lg">
+      <input type="text" value="http://" id="SocialLink1" name="SocialLink" class="input-lg" onkeypress="handleKeyPress(event)">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
@@ -92,7 +92,7 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" value="http://" id="SocialLink2" name="SocialLink" class="input-lg">
+      <input type="text" value="http://" id="SocialLink2" name="SocialLink" class="input-lg" onkeypress="handleKeyPress(event)">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
@@ -106,7 +106,7 @@
       <h4>Add  Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" value="http://" id="SocialLink3" name="SocialLink" class="input-lg">
+      <input type="text" value="http://" id="SocialLink3" name="SocialLink" class="input-lg" onkeypress="handleKeyPress(event)">
     </div>
     <div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a></div>
   </div>
@@ -365,7 +365,14 @@
 </div>
 
 <img src="" id="supersized">
-<!--style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);"-->
+<!--
+style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);"
+was a hack to prevent position fixed of background to be made redundant by the iframe of youtube. This seems to be a webkit bug.
+
+We have removed it now because keeping it causes issues with fancybox not showing up on chrome. So in essence
+campaignedit_view -> no hack
+campaign_view -> hack
+-->
 
 <script src="/script/jquery.min.js"></script>
 <script src="/script/external/jquery.hotkeys.js"></script>  
@@ -419,6 +426,9 @@
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
+                    'keys'              : {
+                                            close : [13, 27]  //enter, escape key
+                                          },
                     'beforeClose': function(){ 
                         var x = $('.fancybox-inner').contents().find('#SocialLink1').val();
                         insertLinks(x, 'sociallink1');
@@ -437,6 +447,9 @@
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
+                    'keys'              : {
+                                            close : [13, 27]  //enter, escape key
+                                          },
                     'beforeClose': function(){ 
                         var x = $('.fancybox-inner').contents().find('#SocialLink2').val();
                         insertLinks(x, 'sociallink2');
@@ -455,6 +468,9 @@
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
+                    'keys'              : {
+                                            close : [13, 27]  //enter, escape key
+                                          },
                     'beforeClose': function(){ 
                         var x = $('.fancybox-inner').contents().find('#SocialLink3').val();
                         insertLinks(x, 'sociallink3');
