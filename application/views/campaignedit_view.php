@@ -32,7 +32,7 @@
       <h4>Add  Video Link</h4>
     </div>
     <div class="modal-body modal-link">
-      <input type="text" value="http://" id="videolink" name="videolink" class="input-lg">
+      <input type="text" value="http://" id="videolink" name="videolink" class="input-lg" onkeypress="handleKeyPress(event)">
     </div>
     <div class="modal-footer">
       <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Submit</a> 
@@ -483,12 +483,11 @@
             );
     });
 
-    $('#videolink').on({
-      keydown: function(e){
-        if(e.keyCode == 13)
-          $.fancybox.close();
-      }
-    });
+    function handleKeyPress(e)
+    {
+      if(e.keyCode == 13)
+        $.fancybox.close();
+    }
 
     $('body').on('click', '.open-help-form', function(){
         $.fancybox(
