@@ -472,10 +472,13 @@
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'beforeClose': function(){ 
-                        var x = $('.fancybox-inner').contents().find('#videolink').val();
-                        insertLinks(x, 'video');
-                      }
+                    'keys'              : {
+                                            close : [13, 27]  //enter, escape key
+                                          },
+                    'beforeClose'       : function(){ 
+                                            var x = $('.fancybox-inner').contents().find('#videolink').val();
+                                            insertLinks(x, 'video');
+                                          }
                  }
             );
     });
