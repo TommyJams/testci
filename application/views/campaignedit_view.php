@@ -483,6 +483,13 @@
             );
     });
 
+    $('#videolink').on({
+      keydown: function(e){
+        if(e.keyCode == 13)
+          $.fancybox.close();
+      }
+    });
+
     $('body').on('click', '.open-help-form', function(){
         $.fancybox(
                 $('.help-form').html(),
