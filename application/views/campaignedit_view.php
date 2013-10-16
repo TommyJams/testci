@@ -135,6 +135,7 @@
           <div class="col-sm-12 col-xs-12 col-md-7 d-tj-video-edit">
             <div class="d-tj-video-edit-bdr">
               <h2>
+                http://<br>
                 <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>     
               </h2>       
