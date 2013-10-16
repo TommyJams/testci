@@ -483,12 +483,6 @@
             );
     });
 
-    function handleKeyPress(e)
-    {
-      if(e.keyCode == 13)
-        $.fancybox.close();
-    }
-
     $('body').on('click', '.open-help-form', function(){
         $.fancybox(
                 $('.help-form').html(),
@@ -536,7 +530,13 @@
     });
 
   });
-  
+
+  function handleKeyPress(e)
+    {
+      if(e.keyCode == 13)
+        $.fancybox.close();
+    }
+
   function submitCampaignForm()
   {
       //blockForm('editcampaign','block');
