@@ -4,17 +4,19 @@ class Model extends CI_Model{
 
        function __construct()
        {
-              // Call the Model constructor
-              parent::__construct();
+            // Call the Model constructor
+            parent::__construct();
 
-              // Load facebook sdk
-              $CI = & get_instance();
-              $CI->config->load("facebook",TRUE);
-              $config = $CI->config->item('facebook');
-              $this->load->library('fbphpsdk/Facebook', $config);
+            // Load facebook sdk
+            $CI = & get_instance();
+            $CI->config->load("facebook",TRUE);
+            $config = $CI->config->item('facebook');
+            $this->load->library('fbphpsdk/Facebook', $config);
 
-              $uid = $this->facebook->getUser();
-              error_log('Facebook User constructor: '.$uid);
+            //!!!!!Hack!!!!!
+            //Need to have this here since without this the app timesout and getuser during campaign creation fails.
+            $uid = $this->facebook->getUser();
+            error_log('Facebook User constructor: '.$uid);
        }
 
 	public function tourDetails(){
