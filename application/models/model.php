@@ -521,5 +521,9 @@ class Model extends CI_Model{
 			return $response; 
 		}       
 	}
+
+    public function validateFBCode($code){
+        return true;
+    }
 }
 ?>

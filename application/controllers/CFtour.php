@@ -67,9 +67,18 @@ class CFtour extends CI_Controller{
         {
             error_log('Authentication Code exists');
 
-            $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
+            //Validate the code first
+            $validCode = $this->Model->validateFBCode($_GET['code']);
 
-            $this->load->view('campaignedit_view', $data);
+            if($validCode == false)
+            {
+                redirect(base_url().'tours');
+            }
+            else
+            {
+                $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
+                $this->load->view('campaignedit_view', $data);
+            }
         }
         else if(isset($_GET['error']))
         {
