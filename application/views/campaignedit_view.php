@@ -138,10 +138,8 @@
                 <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>
               </h2>
-              <h5>
-                <div id="vd-link-selected">
-                </div>
-              </h5>
+              <div id="vd-link-selected">
+              </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
@@ -501,7 +499,7 @@ campaign_view -> hack
                                             insertLinks(x, 'video');
 
                                             $('#vd-link').html("CHANGE<br>VIDEO LINK");
-                                            $('#vd-link-selected').html("Selected Link: " + x);
+                                            $('#vd-link-selected').html("Uploaded Link: " + x);
                                           }
                  }
             );
