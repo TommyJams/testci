@@ -1100,6 +1100,9 @@ h4 {
 	left: 35%;
 	font-size: 16px;
 }
+.d-tj-video-edit .vd-link-selected {
+	font-size: 15px;
+}
 .d-tj-video-edit {
 	min-height: 240px;
 }
