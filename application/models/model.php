@@ -12,6 +12,9 @@ class Model extends CI_Model{
               $CI->config->load("facebook",TRUE);
               $config = $CI->config->item('facebook');
               $this->load->library('fbphpsdk/Facebook', $config);
+
+              $uid = $this->facebook->getUser();
+              error_log('Facebook User constructor: '.$uid);
        }
 
 	public function tourDetails(){
@@ -419,8 +422,8 @@ class Model extends CI_Model{
 		}
 
         try {
-            $uid = $this->facebook->getUserFromAccessToken();
-            
+            $uid = $this->facebook->getUser();
+            error_log('Facebook User: '.$uid);
             if($uid)
             {
                 $ret_obj = $this->facebook->api('/me/events', 'POST',
