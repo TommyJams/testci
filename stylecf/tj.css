@@ -538,6 +538,10 @@ ul.social-list li a.social-list-blog-edit {
 	color:white;
 	border-radius: 3px;
 }
+.d-tj-video-edit-bdr .vd-link-selected {
+	font-size: 15px;
+	text-transform: none;
+}
 .d-tj-video-edit input {
 	height: 242px;
 	position: relative;
@@ -1099,9 +1103,6 @@ h4 {
 	top: 32%;
 	left: 35%;
 	font-size: 16px;
-}
-.d-tj-video-edit .vd-link-selected {
-	font-size: 15px;
 }
 .d-tj-video-edit {
 	min-height: 240px;
