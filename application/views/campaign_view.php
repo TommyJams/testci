@@ -39,6 +39,10 @@
   }
 ?>
 
+<meta property="og:title" content="Tour with TommyJams" />
+<meta property="og:image" content="/images/artist/campaign/<? print($backimg); ?>"/>
+<meta property="og:description" content="Hi! TommyJams is helping me tour across the country and play at a venue near you. Support by pre-booking the tickets here!" />
+
 </head>
 
 <body>
