@@ -418,28 +418,38 @@ class Model extends CI_Model{
 			}
 		}
 
+        try {
+            $uid = $this->facebook->getUser();
+            
+            if($uid)
+            {
+                $ret_obj = $this->facebook->api('/me/events', 'POST',
+                                                array(
+                                                       'name' => 'Campaign Event',
+                                                       'start_time' => '2013-10-11'
+                                                )
+                                         );
+                if(isset($ret_obj['id']))
+                {
+                    $eventID = $ret_obj['id'];
+                }
+            }
+            else
+            {
+                error_log('Facebook User not authenticated');
+            }
+        }
+        catch(FacebookApiException $e) {
+             // If the user is logged out, you can have a 
+             // user ID even though the access token is invalid.
+             // In this case, we'll get an exception, so we'll
+             // just ask the user to login again here.
+             error_log($e->getType());
+             error_log($e->getMessage());
+        }
+
 		$query1 = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `phone`, `email`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
 					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($phone)."', '".$this->db->escape_str($email)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
-
-              try {
-                     $uid = $this->facebook->getUser();
-                     error_log('Facebook User:'.$uid);
-                     $ret_obj = $this->facebook->api('/me/events', 'POST',
-                                                        array(
-                                                               'name' => 'Campaign Event',
-                                                               'start_time' => '2013-10-11'
-                                                        )
-                                                 );
-                     error_log('Facebook Event:'.$ret_obj['id']);
-              }
-              catch(FacebookApiException $e) {
-                     // If the user is logged out, you can have a 
-                     // user ID even though the access token is invalid.
-                     // In this case, we'll get an exception, so we'll
-                     // just ask the user to login again here.
-                     error_log($e->getType());
-                     error_log($e->getMessage());
-              }
 
 		$query2 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query2->num_rows() > 0)
