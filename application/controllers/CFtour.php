@@ -63,7 +63,15 @@ class CFtour extends CI_Controller{
 
         parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 
-        error_log("Error: ".$_GET['error']."   Reason: ".$_GET['error_reason']);
+        if(isset($_GET['error']))
+        {
+            error_log('Authentication Error: '.$_GET['error']);
+            redirect(base_url().'tours');
+        }
+        else if(isset($_GET['code']))
+        {
+            error_log('Authentication Successful!');
+        }
 
         $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
 
