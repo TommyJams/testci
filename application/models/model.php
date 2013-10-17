@@ -419,7 +419,7 @@ class Model extends CI_Model{
 		}
 
         try {
-            $uid = $this->facebook->getUser();
+            $uid = $this->facebook->getUserFromAccessToken();
             
             if($uid)
             {
