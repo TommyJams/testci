@@ -523,6 +523,9 @@ class Model extends CI_Model{
 	}
 
     public function validateFBCode($code){
+
+        //Do not know how to exchange the code for token here
+        //Will figure out later.
         return true;
     }
 }
