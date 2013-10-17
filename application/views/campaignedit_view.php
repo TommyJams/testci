@@ -137,8 +137,8 @@
               <h2>
                 <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>
-                <div class="vd-link-selected"/>
               </h2>
+              <div class="vd-link-selected"/>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
