@@ -61,6 +61,10 @@ class CFtour extends CI_Controller{
 
         $tour_id = $this->uri->segment(2);
 
+        parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
+
+        error_log("Error: ".$_GET['error']."   Reason: ".$_GET['error_reason']);
+
         $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
 
 		$this->load->view('campaignedit_view', $data);
