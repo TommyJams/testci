@@ -41,7 +41,7 @@
 
 <meta property="og:title" content="Tour with TommyJams" />
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
-<meta property="og:description" content="Hi! TommyJams is helping <?print($artist_name);?> tour across the country and play at a venue near you. Support by pre-booking the tickets here! Target Sales: <? print($target); ?>" />
+<meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
 
 </head>
 
