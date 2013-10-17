@@ -63,19 +63,24 @@ class CFtour extends CI_Controller{
 
         parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 
-        if(isset($_GET['error']))
+        if(isset($_GET['code']))
+        {
+            error_log('Authentication Code exists');
+
+            $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
+
+            $this->load->view('campaignedit_view', $data);
+        }
+        else if(isset($_GET['error']))
         {
             error_log('Authentication Error: '.$_GET['error']);
             redirect(base_url().'tours');
         }
-        else if(isset($_GET['code']))
+        else
         {
-            error_log('Authentication Successful!');
+            error_log('No Authentication done');
+            redirect(base_url().'tours');
         }
-
-        $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
-
-		$this->load->view('campaignedit_view', $data);
 	}
 }
 ?>
