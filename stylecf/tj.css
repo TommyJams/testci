@@ -438,7 +438,6 @@ ul.social-list-share li a.social-list-facebook-share {
 	background-image:url('/img/icon_facebook_share.png');
 }
 .social-list-fb-event {
-	background: #ffcc00 ;
 	width: 100%;
 	display: inline-block;
 }
@@ -460,6 +459,7 @@ a.social-list-fb-event-title:hover {
 	background-repeat: no-repeat;
 }
 .social-list-fb-event-name {
+	background: #ffcc00 ;
 	height: 39px;
 }
 ul.social-list li a.social-list-twitter-edit {
