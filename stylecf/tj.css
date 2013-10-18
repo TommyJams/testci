@@ -440,7 +440,7 @@ ul.social-list-share li a.social-list-facebook-share {
 .social-list-fb-event {
 	background: #ffcc00 ;
 	width: 100%;
-	display: block;
+	display: inline-block;
 }
 a.social-list-fb-event-title {
 	text-transform: uppercase;
