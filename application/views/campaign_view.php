@@ -163,8 +163,8 @@
                   <img src='<? print($fbEventPic); ?>' style='margin: 10px; margin-left: 0px; width: 120px; height: 120px;'/>
                 </div>
                 <div class='pull-left' style='margin-top: 10px;'>
-                  <a style='background: #ffcc00; height: 50%;'>join</a>
-                  <a style='background: #ffcc00; 10px; height: 50%;'>facepile</a>
+                  <a style='background: #ffcc00; font-size: 24px; padding: 10px; margin: 10px; display: block;'>join</a>
+                  <a style='background: #ffcc00; font-size: 24px; padding: 10px; margin: 10px; display: block;'>facepile</a>
                 </div>
               </div>
               <div class="clearfix"></div>
