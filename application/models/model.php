@@ -24,7 +24,7 @@ class Model extends CI_Model{
 		$query = $this->db->query("SELECT * FROM toursCF;");
 		if ($query->num_rows() > 0)
 		{
-                     $qresult = $query->result();
+            $qresult = $query->result();
 			foreach ($qresult as $row)
 			{
    				$tour_id = $row->tour_id;
@@ -137,7 +137,9 @@ class Model extends CI_Model{
 			foreach ($qresult as $row)
 			{
 				$campaign_id = $row->campaign_id;$tour_id = $row->tour_id;$tour_name = $row->tour_name;
-   				$artist_id = $row->artist_id;$artist_name = $row->artist_name;$deadline = $row->deadline;
+   				$artist_id = $row->artist_id;$artist_name = $row->artist_name;
+                                $phone = $row->phone; $email = $row->email; $fbEvent = $row->event_id;
+                                $deadline = $row->deadline;
    				$target = $row->target;$raised = $row->raised;$totalPledges = $row->totalPledges;
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
    				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
@@ -204,6 +206,41 @@ class Model extends CI_Model{
 					$days_to_go = $days;
 				}
 
+                            $fql = "SELECT name, pic, location, description 
+                                 FROM event
+                                 WHERE eid = ".$fbEvent;
+
+                            $param  =   array(
+                             'method'    => 'fql.query',
+                             'query'     => $fql,
+                             'callback'  => ''
+                            );
+
+                            $fqlResult   =   $this->facebook->api($param);
+
+                            //looping through retrieved data
+                            foreach( $fqlResult as $keys => $values ){
+
+                             /*   
+                              * getting start date,
+                              * 'l, F d, Y' pattern string will give us
+                              * something like: Thursday, July 30, 2015
+                              *
+                             $start_date = date( 'l, F d, Y', $values['start_time'] );
+
+                             /*
+                              * getting 'start' time
+                              * 'g:i a' will give us something
+                              * like 6:30 pm
+                              *
+                             $start_time = date( 'g:i a', $values['start_time'] );*/
+
+                             $fbEventName = $values['name'];
+                             $fbEventPic = $values['pic'];
+                             $fbEventLocation = $values['location'];
+                             $fbEventDescription = $values['description'];
+                            }
+
 				$campaignDetails = array(
 								'campaign_id' 	=> $campaign_id,
 								'videoId'		=> $videoId,
@@ -212,7 +249,7 @@ class Model extends CI_Model{
 								'totalPledges' 	=> $totalPledges,
 								'artist_id'   	=> $artist_id,
 								'artist_name' 	=> $artist_name,
-								'campaign_desc' => $campaign_desc,
+								'campaign_desc'      => $campaign_desc,
 								'venues' 		=> $venues,
 								'pledges' 		=> $pledges,
 								'fb' 			=> $fb,
@@ -224,9 +261,13 @@ class Model extends CI_Model{
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
 								'days_to_go'  	=> $days_to_go,
-								'image1'		=> $image1
+								'image1'		=> $image1,
+                                                        'fbEventName'        => $fbEventName,
+                                                        'fbEventPic'         => $fbEventPic,
+                                                        'fbEventLocation'    => $fbEventLocation,
+                                                        'fbEventDescription' => $fbEventDescription
 							);
-							
+
 				$response[] = $campaignDetails;
    			}
    		

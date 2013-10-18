@@ -36,6 +36,10 @@
     $website = $row->website; 
     $artist_name = $row->artist_name;
     $backimg = $row->image1;
+    $fbEventName = $row->fbEventName;
+    $fbEventPic = $row->fbEventPic;
+    $fbEventLocation = $row->fbEventLocation;
+    $fbEventDescription = $row->fbEventDescription;
   }
 ?>
 
@@ -43,6 +47,44 @@
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
 <meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
 
+
+    <!-- Just adding some style -->
+    <style type='text/css'>
+    body{
+        font-family: "Proxima Nova Regular","Helvetica Neue",Arial,Helvetica,sans-serif;
+    }
+    
+    .clearBoth{
+        clear: both;
+    }
+    
+    .event{
+        background-color: #E3E3E3;
+        margin: 0 0 5px 0;
+        padding: 5px;
+    }
+    
+    .eventImage{
+        margin: 0 8px 0 0;
+    }
+    
+    .eventInfo{
+        padding:5px 0;
+    }
+    
+    .eventName{
+        font-size: 26px;
+    }
+    
+    .floatLeft{
+        float:left;
+    }
+    
+    .pageHeading{
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+    </style>
 </head>
 
 <body>
@@ -144,6 +186,19 @@
             <ul class=" list-unstyled social-list-share clear-fix">
               <li ><a href="#" title="Share on Facebook" class='social-list-facebook-share' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li >
               <li ><a href="#" title="Share on Twitter"  class='social-list-twitter-share'  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li >
+              <li >
+                <div class='event'>
+                  <div class='floatLeft eventImage'>
+                    <img src={<? print($fbEventPic); ?>} width='150px' />
+                  </div>
+                  <div class='floatLeft'>";
+                    <div class='eventName'>{<? print($fbEventName); ?>}</div>";
+                    <div class='eventInfo'>{<? print($fbEventLocation); ?>}</div>";
+                    <div class='eventInfo'>{<? print($fbEventDescription); ?>}</div>";
+                  </div>
+                  <div class='clearBoth'></div>
+                </div>
+              </li>
             </ul>
             <div class="clearfix"></div>
           </div>
