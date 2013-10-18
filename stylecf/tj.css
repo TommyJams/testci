@@ -445,7 +445,7 @@ a.social-list-fb-event-title {
 	text-transform: uppercase;
 	color: #000;
 	width: 100%;
-	height: 40px;
+	height: 39px;
 	display:block;
 	background: #ffcc00 ;
 }
@@ -462,7 +462,7 @@ a.social-list-fb-event-title:hover {
 .social-list-fb-event-name {
 	height: 39px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 25px;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
 	margin-left: 10px;
