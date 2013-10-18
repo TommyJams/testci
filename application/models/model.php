@@ -460,8 +460,10 @@ class Model extends CI_Model{
             {
                 $ret_obj = $this->facebook->api('/me/events', 'POST',
                                                 array(
-                                                       'name' => 'Campaign Event',
-                                                       'start_time' => '2013-10-11'
+                                                       'name' => $artist_name.' tours with TommyJams',
+                                                       'start_time' => $tourDate,
+                                                       'picture' => base_url().'images/artist/campaign/'.$backimg,
+                                                       'description' => $artist_name.' tours with TommyJams'
                                                 )
                                          );
                 if(isset($ret_obj['id']))
