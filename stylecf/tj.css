@@ -458,15 +458,15 @@ a.social-list-fb-event-title:hover {
 	height: 39px;
 	display: block;
 	background-repeat: no-repeat;
-	margin-left: 10px;
+	margin-top: 10px;
 }
 .social-list-fb-event-name {
 	height: 39px;
 	text-align: center;
-	vertical-align: middle;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
+	margin-left: 10px;
 }
 ul.social-list li a.social-list-twitter-edit {
 	background-image:url('/img/social-add-new.png');

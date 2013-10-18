@@ -160,7 +160,7 @@
                   <div class='social-list-fb-event-name pull-left'><? print($fbEventName); ?></div>
                 </a>
                 <div class='pull-left'>
-                  <img src='<? print($fbEventPic); ?>' style='margin: 10px; width: 120px; height: 120px;'/>
+                  <img src='<? print($fbEventPic); ?>' style='margin: 10px; margin-left: 0px; width: 120px; height: 120px;'/>
                 </div>
                 <div class='pull-left'>
                   <a style='background: #ffcc00; height: 50%;'>join</a>
