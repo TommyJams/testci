@@ -444,6 +444,9 @@ ul.social-list-share li .social-list-fb-event {
 ul.social-list-share li a.social-list-fb-event-title {
 	text-transform: uppercase;
 	color: #000;
+	width: 100%;
+	height: 40px;
+	display:block;
 }
 ul.social-list-share li a.social-list-fb-event-title:hover {
 	color: #FFF;
