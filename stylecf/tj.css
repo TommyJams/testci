@@ -437,6 +437,24 @@ ul.social-list-share li a.social-list-twitter-share {
 ul.social-list-share li a.social-list-facebook-share {
 	background-image:url('/img/icon_facebook_share.png');
 }
+ul.social-list-share li .social-list-fb-event {
+	background: #ffcc00 ;
+	width: 100%;
+}
+ul.social-list-share li a.social-list-fb-event-title {
+	text-transform: uppercase;
+	color: #000;
+}
+ul.social-list-share li a.social-list-fb-event-title:hover {
+	color: #FFF;
+}
+ul.social-list-share li .social-list-fb-event-icon {
+	background-image: url('/img/icon_facebook.png');
+	width: 39px;
+	height: 39px;
+	display: block;
+	background-repeat: no-repeat;
+}
 ul.social-list li a.social-list-twitter-edit {
 	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;

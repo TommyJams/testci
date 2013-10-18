@@ -206,39 +206,29 @@ class Model extends CI_Model{
 					$days_to_go = $days;
 				}
 
-                            $fql = "SELECT name, pic, location, description 
-                                 FROM event
-                                 WHERE eid = ".$fbEvent;
+                            $fbEventName = "";
+                            $fbEventPic = "";
+                            $fbEventURL = "";
 
-                            $param  =   array(
-                             'method'    => 'fql.query',
-                             'query'     => $fql,
-                             'callback'  => ''
-                            );
+                            if($fbEvent)
+                            {
+                                   $fql = "SELECT name, pic FROM event WHERE eid = ".$fbEvent;
 
-                            $fqlResult   =   $this->facebook->api($param);
+                                   $param  =   array(
+                                          'method'    => 'fql.query',
+                                          'query'     => $fql,
+                                          'callback'  => ''
+                                   );
 
-                            //looping through retrieved data
-                            foreach( $fqlResult as $keys => $values ){
+                                   $fqlResult = $this->facebook->api($param);
 
-                             /*   
-                              * getting start date,
-                              * 'l, F d, Y' pattern string will give us
-                              * something like: Thursday, July 30, 2015
-                              *
-                             $start_date = date( 'l, F d, Y', $values['start_time'] );
+                                   //looping through retrieved data
+                                   foreach( $fqlResult as $keys => $values ){
+                                       $fbEventName = $values['name'];
+                                       $fbEventPic = $values['pic'];
+                                   }
 
-                             /*
-                              * getting 'start' time
-                              * 'g:i a' will give us something
-                              * like 6:30 pm
-                              *
-                             $start_time = date( 'g:i a', $values['start_time'] );*/
-
-                             $fbEventName = $values['name'];
-                             $fbEventPic = $values['pic'];
-                             $fbEventLocation = $values['location'];
-                             $fbEventDescription = $values['description'];
+                                   $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                             }
 
 				$campaignDetails = array(
@@ -264,8 +254,7 @@ class Model extends CI_Model{
 								'image1'		=> $image1,
                                                         'fbEventName'        => $fbEventName,
                                                         'fbEventPic'         => $fbEventPic,
-                                                        'fbEventLocation'    => $fbEventLocation,
-                                                        'fbEventDescription' => $fbEventDescription
+                                                        'fbEventURL'         => $fbEventURL
 							);
 
 				$response[] = $campaignDetails;
