@@ -467,6 +467,23 @@ a.social-list-fb-event-title:hover {
 	font-weight: 400;
 	margin-left: 10px;
 }
+.social-list-fb-event-pic {
+	margin: 10px;
+	margin-left: 0px;
+	width: 120px;
+	height: 120px;
+}
+.social-list-fb-event-link {
+	background: #ffcc00;
+	font-size: 24px;
+	padding: 10px;
+	margin-top: 10px;
+	display: block;
+	color: #000;
+}
+.social-list-fb-event-link:hover {
+	color: #FFF;
+}
 ul.social-list li a.social-list-twitter-edit {
 	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;
