@@ -189,12 +189,12 @@
               <li >
                 <div class='event'>
                   <div class='floatLeft eventImage'>
-                    <img src={<? print($fbEventPic); ?>} width='150px' />
+                    <img src='<? print($fbEventPic); ?>' width='150px' />
                   </div>
                   <div class='floatLeft'>";
-                    <div class='eventName'>{<? print($fbEventName); ?>}</div>";
-                    <div class='eventInfo'>{<? print($fbEventLocation); ?>}</div>";
-                    <div class='eventInfo'>{<? print($fbEventDescription); ?>}</div>";
+                    <div class='eventName'><? print($fbEventName); ?></div>";
+                    <div class='eventInfo'><? print($fbEventLocation); ?></div>";
+                    <div class='eventInfo'><? print($fbEventDescription); ?></div>";
                   </div>
                   <div class='clearBoth'></div>
                 </div>
