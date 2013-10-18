@@ -447,6 +447,7 @@ a.social-list-fb-event-title {
 	width: 100%;
 	height: 40px;
 	display:block;
+	background: #ffcc00 ;
 }
 a.social-list-fb-event-title:hover {
 	color: #FFF;
@@ -457,10 +458,11 @@ a.social-list-fb-event-title:hover {
 	height: 39px;
 	display: block;
 	background-repeat: no-repeat;
+	margin-left: 10px;
 }
 .social-list-fb-event-name {
-	background: #ffcc00 ;
 	height: 39px;
+	text-align: center;
 }
 ul.social-list li a.social-list-twitter-edit {
 	background-image:url('/img/social-add-new.png');
