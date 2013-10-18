@@ -440,6 +440,7 @@ ul.social-list-share li a.social-list-facebook-share {
 .social-list-fb-event {
 	background: #ffcc00 ;
 	width: 100%;
+	display: block;
 }
 a.social-list-fb-event-title {
 	text-transform: uppercase;
@@ -457,6 +458,9 @@ a.social-list-fb-event-title:hover {
 	height: 39px;
 	display: block;
 	background-repeat: no-repeat;
+}
+.social-list-fb-event-name {
+	height: 39px;
 }
 ul.social-list li a.social-list-twitter-edit {
 	background-image:url('/img/social-add-new.png');

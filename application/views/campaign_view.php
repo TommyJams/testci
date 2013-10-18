@@ -155,13 +155,12 @@
             ?>
               <div class="seperator" ></div>
               <div class='social-list-fb-event'>
-                <a class='social-list-fb-event-title pull-left' href='<? print($fbEventURL); ?>'>
-                  <div class='social-list-fb-event-icon'></div>
-                  <? print($fbEventName); ?>
+                <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>'>
+                  <div class='social-list-fb-event-icon pull-left'></div>
+                  <div class='social-list-fb-event-name pull-right'><? print($fbEventName); ?></div>
                 </a>
-                <div class='clearfix'></div>
                 <div class='pull-left'>
-                  <img src='<? print($fbEventPic); ?>' width='120px' style='margin-top: 10px;'/>
+                  <img src='<? print($fbEventPic); ?>' style='margin-top: 10px; width: 120px; height: 120px;'/>
                 </div>
                 <div class='pull-right'>
                   <a style='margin-top: 10px;'>join</a>
