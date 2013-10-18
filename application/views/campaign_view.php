@@ -147,32 +147,30 @@
             <ul class=" list-unstyled social-list-share clear-fix">
               <li><a href="#" title="Share on Facebook" class='social-list-facebook-share' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
               <li><a href="#" title="Share on Twitter"  class='social-list-twitter-share'  onclick="window.open('https://twitter.com/share?u='+encodeURIComponent(location.href), 'width=626,height=436'); return false;" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a></li>
-              <?
-              if($fbEventURL)
-              {
-              ?>
-                <li>
-                  <div class="seperator" ></div>
-                  <div class='social-list-fb-event'>
-                    <a class='social-list-fb-event-title pull-left' href='<? print($fbEventURL); ?>'>
-                      <div class='social-list-fb-event-icon'></div>
-                      <? print($fbEventName); ?>
-                    </a>
-                    <div class='clearfix'></div>
-                    <div class='pull-left'>
-                      <img src='<? print($fbEventPic); ?>' width='150px' />
-                    </div>
-                    <div class='pull-right'>
-                      <a>join</a>
-                      <a>facepile</a>
-                    </div>
-                  </div>
-                </li>
-              <?
-              }
-              ?>
             </ul>
             <div class="clearfix"></div>
+            <?
+            if($fbEventURL)
+            {
+            ?>
+              <div class="seperator" ></div>
+              <div class='social-list-fb-event'>
+                <a class='social-list-fb-event-title pull-left' href='<? print($fbEventURL); ?>'>
+                  <div class='social-list-fb-event-icon'></div>
+                  <? print($fbEventName); ?>
+                </a>
+                <div class='clearfix'></div>
+                <div class='pull-left'>
+                  <img src='<? print($fbEventPic); ?>' width='120px' style='margin-top: 10px;'/>
+                </div>
+                <div class='pull-right'>
+                  <a style='margin-top: 10px;'>join</a>
+                  <a style='margin-top: 10px;'>facepile</a>
+                </div>
+              </div>
+            <?
+            }
+            ?>
           </div>
         </div>   
       <!-- /Social Share -->

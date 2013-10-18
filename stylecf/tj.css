@@ -437,21 +437,21 @@ ul.social-list-share li a.social-list-twitter-share {
 ul.social-list-share li a.social-list-facebook-share {
 	background-image:url('/img/icon_facebook_share.png');
 }
-ul.social-list-share li .social-list-fb-event {
+.social-list-fb-event {
 	background: #ffcc00 ;
 	width: 100%;
 }
-ul.social-list-share li a.social-list-fb-event-title {
+a.social-list-fb-event-title {
 	text-transform: uppercase;
 	color: #000;
 	width: 100%;
 	height: 40px;
 	display:block;
 }
-ul.social-list-share li a.social-list-fb-event-title:hover {
+a.social-list-fb-event-title:hover {
 	color: #FFF;
 }
-ul.social-list-share li .social-list-fb-event-icon {
+.social-list-fb-event-icon {
 	background-image: url('/img/icon_facebook.png');
 	width: 39px;
 	height: 39px;
