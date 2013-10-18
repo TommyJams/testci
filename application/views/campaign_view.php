@@ -162,7 +162,7 @@
                 <div class='pull-left'>
                   <img src='<? print($fbEventPic); ?>' style='margin: 10px; margin-left: 0px; width: 120px; height: 120px;'/>
                 </div>
-                <div class='pull-left'>
+                <div class='pull-left' style='margin-top: 10px;'>
                   <a style='background: #ffcc00; height: 50%;'>join</a>
                   <a style='background: #ffcc00; 10px; height: 50%;'>facepile</a>
                 </div>
