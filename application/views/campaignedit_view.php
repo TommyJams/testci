@@ -586,11 +586,11 @@ campaign_view -> hack
 
     });
 
-}   
+});    
 
   function usePledgeVal(type)
   {
-    //var maxIndex = 3;
+    var maxIndex = 3;
     if(type == "PledgeVal1")
     {
         maxIndex++;
@@ -753,8 +753,6 @@ campaign_view -> hack
       $('input[name=sociallink-3]').val(link);
     }
   }
-
-  ); 
 
 </script>
 </body>
