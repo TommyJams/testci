@@ -53,17 +53,29 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div class="col-md-3 ">
-            <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">
-            <input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"> 
+        <div class="row">
+            <ul>
+                <li>
+                    <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn"> 
+                    <input id="benefit1" value="Free Mug" class="btn blk-btn">
+                </li>
+            </ul>   
         </div> 
-        <div class="col-md-3 ">
-            <input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn">
-            <input id="benefit2" value="Free Mug" onclick="defaultPledgeBenefit('Benefit2')" class="btn blk-btn"> 
+        <div class="row">
+            <ul>
+                <li>
+                    <input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn"> 
+                    <input id="benefit2" value="Free Mug" class="btn blk-btn">
+                </li>
+            </ul>   
         </div>
-        <div class="col-md-3 ">
-            <input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn">
-            <input id="benefit3" value="Free Mug" onclick="defaultPledgeBenefit('Benefit3')" class="btn blk-btn"> 
+        <div class="row">
+            <ul>
+                <li>
+                    <input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn"> 
+                    <input id="benefit3" value="Free Mug" class="btn blk-btn">
+                </li>
+            </ul>   
         </div>        
     </div> 
   </div>   
@@ -264,7 +276,7 @@
           <div class="seperator" ></div>
         </div>
 
-        <div id="add-option-new" ></div>
+        <div id="add-option" ></div>
 
         <div class="pledge">
           <h4>
@@ -277,7 +289,7 @@
           <div class="seperator" ></div>
         </div>
 
-        <div id="add-option-new" ></div>
+        <div id="add-option" ></div>
 
         <div class="pledge">
           <h4>
@@ -289,6 +301,8 @@
           </h5>
           <div class="seperator" ></div>
         </div>
+
+        <div id="add-option" ></div>
 
         <div id="add-option-new" ></div>
 
@@ -573,7 +587,6 @@ campaign_view -> hack
 
   function defaultPledgeAmount(value)
   {
-    var maxIndex = 3;
     if(value == "PledgeAmnt1")
     {
         var pledgeamnt = $("#pledgeAmnt1").val();
@@ -590,9 +603,6 @@ campaign_view -> hack
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
-        //$("#add-option-new").append($(addoption).fadeIn('slow'));
-
-        //var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
         /*var pledgevalue = $(this).parent().first(".form-control").attr("id");
         console.log(pledgevalue);
 
@@ -603,8 +613,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + index;
         console.log(a);*/
 
-        //$("#".a).val(pledgeamnt);
-        $("#add-option-new").append($(addoption).fadeIn('slow'));
+        $("#add-option").append($(addoption).fadeIn('slow'));
 
         $.fancybox.close();
     }
@@ -619,28 +628,6 @@ campaign_view -> hack
         $("#pledgeAmount3").val("'+ pledgeamnt +'");
     }
   }
-  function defaultPledgeBenefit(value)
-  {
-    if(value == "Benefit1")
-    {
-        var benefit = $("#benefit1").val();
-        console.log(benefit);
-
-        $("#desc1").val(benefit);
-        $.fancybox.close();
-    }
-    else if(value == "Benefit2")
-    {
-        var pledgeamnt = $("#benefit2").val();
-        $("#desc2").val("'+ benefit +'");
-    }
-    else if(value == "Benefit3")
-    {
-        var pledgeamnt = $("#benefit3").val();
-        $("#desc3").val("'+ benefit +'");
-    }
-  }
-
 
   function handleKeyPress(e)
     {
