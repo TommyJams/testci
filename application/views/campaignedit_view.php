@@ -53,11 +53,11 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-      <div class="col-md-2 ">
+      <div class="col-md-3 ">
           <h4>Pledge Amount 1<h4>
-            <a class="btn blk-btn">INR. 300 </a>
+            <input id="pledgeAmnt1" value="INR. 300" ><a href="javascript:;" onclick="defaultPledgeAmount(PledgeAmnt1);" class="btn blk-btn"> INR. 300 </a>
           <h4>Benefit 1<h4> 
-            <a class="btn blk-btn">Free Mug </a> 
+            <input id="benefit1" value="Free Mug" ><a href="javascript:;" onclick="defaultPledgeBenefit(Benefit1)" class="btn blk-btn"> Free Mug </a> 
       </div>      
       <div class="col-md-2 ">
           <h4>Pledge Amount 2<h4>
@@ -565,6 +565,46 @@ campaign_view -> hack
     });
 
   });
+
+  function defaultPledgeAmount(value)
+  {
+    if(value == "PledgeAmnt1")
+    {
+        var pledgeamnt = $("#pledgeAmnt1").val();
+        $("#pledgeAmount1").val("'+ pledgeamnt +'");
+        $("#pledgeAmnt1").val("");
+    }
+    else if(value == "PledgeAmnt2")
+    {
+        var pledgeamnt = $("#pledgeAmnt2").val();
+        $("#pledgeAmount2").val("'+ pledgeamnt +'");
+    }
+    else if(value == "PledgeAmnt3")
+    {
+        var pledgeamnt = $("#pledgeAmnt2").val();
+        $("#pledgeAmount3").val("'+ pledgeamnt +'");
+    }
+  }
+  function defaultPledgeBenefit(value)
+  {
+    if(value == "Benefit1")
+    {
+        var benefit = $("#benefit1").val();
+        $("#desc1").val("'+ benefit +'");
+        $("#benefit1").val("");
+    }
+    else if(value == "Benefit2")
+    {
+        var pledgeamnt = $("#benefit2").val();
+        $("#desc2").val("'+ benefit +'");
+    }
+    else if(value == "Benefit3")
+    {
+        var pledgeamnt = $("#benefit3").val();
+        $("#desc3").val("'+ benefit +'");
+    }
+  }
+
 
   function handleKeyPress(e)
     {
