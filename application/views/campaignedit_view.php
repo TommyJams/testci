@@ -410,7 +410,7 @@ campaign_view -> hack
       maxIndex++;
 
       var a = 'pledgeAmount' + maxIndex;
-      var b = 'PLEDGE AMT' + '' + maxIndex;
+      var b = 'PLEDGE AMT ' + maxIndex;
       var desc = 'desc' + maxIndex;
 
       var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
