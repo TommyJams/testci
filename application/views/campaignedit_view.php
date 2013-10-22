@@ -54,11 +54,13 @@
   <div class="row">
     <div class="modal-body modal-link">
         <div class="row">
-            
-                    <a id="pledgeval1" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">INR. 300 | Free Mug </a>
+            <ul>
+                <li>
+                    <input type="submit" id="pledgeval1" value="INR. 300 | Free Mug" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">
                     <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
                     <input type="hidden" id="benefit1" value="Free Mug" >
-                   
+                </li>
+            </ul>                       
         </div> 
         <div class="row">
             <ul>
