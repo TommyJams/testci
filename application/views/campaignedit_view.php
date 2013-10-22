@@ -268,10 +268,15 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
-                <img src="/img/help.png" alt="" style="">
-            </a>
-            <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
+            <ul>
+                <li>
+                    <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form"><img src="/img/help.png" alt="" style=""></a>
+                </li>
+                <li>
+                    <i class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></i>
+                </li>
+            </ul>  
+          </h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc1" name="desc1" placeholder="Please write description" rows="4"></textarea>
@@ -306,14 +311,9 @@
         </div>
 
         <div id="add-option" ></div>
-
         <div id="add-option-new" ></div>
-
-        <div class="add-option-new pull-left"><a class="add-option-new-hover"></a>
-        </div>
-        <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
-            <img src="/img/help.png" alt="" style="">
-        </a>
+        <div class="add-option-new pull-left"><a class="add-option-new-hover"></a></div>
+        
         <div class="clearfix"></div>
       </div>
       <div class=" d-tj-offset-top-30 pledge-btn" >

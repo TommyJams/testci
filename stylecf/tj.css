@@ -630,8 +630,19 @@ ul.social-list li a.social-list-blog-edit {
 	color: #555555;
 	font-size: 15px;
 }
-.btn-delete-pledge {
-	cursor:pointer;
+.btn-delete-pledge a {
+	width:20px;
+	height:20px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.btn-delete-pledge a:hover {
+	background-position:0px -20px;
+}
+.btn-delete-pledge  a.btn-delete-pledge-hover {
+	background-image:url('/img/delete-option.png');
+	cursor: pointer;
 }
 .open-help-form {
 	cursor:pointer;
