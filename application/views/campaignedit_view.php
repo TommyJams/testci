@@ -56,7 +56,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <a id="pledgeval1" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">INR. 500 | Free Mug </a>
+                    <a id="pledgeval1" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">INR. 300 | Free Mug </a>
                     <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
                     <input type="hidden" id="benefit1" value="Free Mug" >
                 </li>
@@ -65,7 +65,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeval2" value="INR. 500 | Free Mug" onclick="usePledgeVal('PledgeVal2');" class="btn blk-btn">
+                    <a id="pledgeval2" onclick="usePledgeVal('PledgeVal2');" class="btn blk-btn">INR. 500 | Free Mug </a>
                     <input type="hidden" id="pledgeAmnt2" value="INR. 500" > 
                     <input type="hidden" id="benefit2" value="Free Mug" >
                 </li>
@@ -74,7 +74,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeval3" value="INR. 1000 | Free Mug" onclick="usePledgeVal('PledgeVal3');" class="btn blk-btn">
+                    <a id="pledgeval3" onclick="usePledgeVal('PledgeVal3');" class="btn blk-btn">INR. 1000 | Free Mug </a>
                     <input type="hidden" id="pledgeAmnt3" value="INR. 1000" > 
                     <input type="hidden" id="benefit3" value="Free Mug" >
                 </li>
