@@ -83,19 +83,19 @@
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5 >Money</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India. </h5>
+          <h5 >Cross-city tours</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
-          <h5>TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5>Greater Connect with Audience</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5 >Promotion</h5>
         </div>
       </div>
     </div>
@@ -165,25 +165,25 @@
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
           <h5>
-          Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
+           Evaluate and Launch tour
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
           <h5>
-          Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
+            Launch Campaign
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
           <h5>
-          Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
+          Sell Tickets
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
           <h5>
-          Megha & Neehar featured this Sunday on the ONE Bengaluru ONE Music show.
+          Tour!
           </h4>
         </div>
       </div>

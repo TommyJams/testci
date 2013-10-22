@@ -26,19 +26,19 @@
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5 >Money</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India. </h5>
+          <h5 >Cross-city tours</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
-          <h5>TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5>Greater Connect with Audience</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
-          <h5 >TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.</h5>
+          <h5 >Promotion</h5>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
         <h3>WHO CAMPAIGNS ?</h3> 
         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5>
         <div class="text-center ">
-        <input class="apply-btn" style="" type="button" value="LEARN MORE">
+        <input class="apply-btn" style="" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
       </div>   
       </div>
     </div>
