@@ -565,13 +565,27 @@ campaign_view -> hack
 
   function defaultPledgeAmount(value)
   {
+    var maxIndex = 3;
     if(value == "PledgeAmnt1")
     {
         var pledgeamnt = $("#pledgeAmnt1").val();
+        var benefit = $("#benefit1").val();
         console.log(pledgeamnt);
 
+        maxIndex++;
+
+        var a = 'pledgeAmount' + maxIndex;
+        //var b = 'PLEDGE AMT ' + maxIndex;
+        var desc = 'desc' + maxIndex;
+
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
+        addoption +=' <div class="seperator" ></div></div></div>';
+
+        //$("#add-option-new").append($(addoption).fadeIn('slow'));
+
         //var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
-        var pledgevalue = $(this).parent().first(".form-control").attr("id");
+        /*var pledgevalue = $(this).parent().first(".form-control").attr("id");
         console.log(pledgevalue);
 
         var  str = pledgevalue.replace ( /[^\d.]/g, '' );
@@ -579,9 +593,10 @@ campaign_view -> hack
         console.log(pledgeid);
 
         var a = 'pledgeAmount' + index;
-        console.log(a);
+        console.log(a);*/
 
-        $("#".a).val(pledgeamnt);
+        //$("#".a).val(pledgeamnt);
+
         $.fancybox.close();
     }
     else if(value == "PledgeAmnt2")
