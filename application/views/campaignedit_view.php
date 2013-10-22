@@ -49,9 +49,10 @@
     </div>
 
         <div class="pledgeVal1">
-            <h4>
-            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 1: INR. 300 Benefit: Free Mug </a> 
-            <h4>
+            <h4 title="Click to use this value">Pledge Amount 1:<h4>
+            <a class="btn blk-btn">INR. 300 </a>
+            <h4 title="Click to use this value">Benefit:<h4> 
+            <a>Free Mug </a> 
         </div>      
         <div class="pledgeVal2">
             <h4>
