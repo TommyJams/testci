@@ -570,7 +570,9 @@ campaign_view -> hack
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
 
-        var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
+        //var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
+        var pledgevalue = $(this).find().closest(".pledge").attr("id");
+        console.log(pledgevalue);
 
         var  str = pledgevalue.replace ( /[^\d.]/g, '' );
         var index = parseInt(str);
