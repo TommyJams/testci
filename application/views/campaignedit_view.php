@@ -261,7 +261,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+            <a class="span12 pagination-centered" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
                 <img src="/img/help.png" alt="" style="">
             </a>
             <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
