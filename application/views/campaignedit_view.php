@@ -55,9 +55,11 @@
     <div class="modal-body modal-link">
       <div class="col-md-3 ">
           <h4>Pledge Amount 1<h4>
-            <a id="pledgeAmnt1" value="INR. 300" href="javascript:;" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">INR. 300</a>
-          <h4>Benefit 1<h4> 
-            <a id="benefit1" value="Free Mug" href="javascript:;" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn">Free Mug</a> 
+            <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">
+        <!--<a id="pledgeAmnt1" value="INR. 300" href="javascript:;" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">INR. 300</a>-->
+          <h4>Benefit 1<h4>
+            <input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"> 
+        <!--<a id="benefit1" value="Free Mug" href="javascript:;" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn">Free Mug</a>--> 
       </div>      
       <div class="col-md-2 ">
           <h4>Pledge Amount 2<h4>
