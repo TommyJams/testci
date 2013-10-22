@@ -56,7 +56,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeval1" value="INR. 300 | Free Mug" onclick="$.fancybox.close('PledgeVal1');" class="d-tj-artist">
+                    <input id="pledgeval1" value="INR. 300 | Free Mug" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">
                     <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
                     <input type="hidden" id="benefit1" value="Free Mug" >
                 </li>
@@ -65,7 +65,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeval2" value="INR. 500 | Free Mug" onclick="$.fancybox.close('PledgeVal2');" class="btn blk-btn">
+                    <input id="pledgeval2" value="INR. 500 | Free Mug" onclick="usePledgeVal('PledgeVal2');" class="btn blk-btn">
                     <input type="hidden" id="pledgeAmnt2" value="INR. 500" > 
                     <input type="hidden" id="benefit2" value="Free Mug" >
                 </li>
@@ -74,7 +74,7 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeval3" value="INR. 1000 | Free Mug" onclick="$.fancybox.close('PledgeVal3');" class="btn blk-btn">
+                    <input id="pledgeval3" value="INR. 1000 | Free Mug" onclick="usePledgeVal('PledgeVal3');" class="btn blk-btn">
                     <input type="hidden" id="pledgeAmnt3" value="INR. 1000" > 
                     <input type="hidden" id="benefit3" value="Free Mug" >
                 </li>
@@ -550,71 +550,7 @@ campaign_view -> hack
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
-                    'beforeClose'       : function(type){ 
-                                            if(type == "PledgeVal1")
-                                            {
-                                                maxIndex++;
-                                                console.log(maxIndex);
-
-                                                var pledgeamnt = $("#pledgeAmnt1").val();
-                                                var benefit = $("#benefit1").val();
-                                                var a = 'pledgeAmount' + maxIndex;
-                                                var desc = 'desc' + maxIndex;
-
-                                                var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
-                                                addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
-                                                addoption +=' <div class="seperator" ></div></div></div>';
-
-                                                /*var pledgevalue = $(this).parent().first(".form-control").attr("id");
-                                                console.log(pledgevalue);
-
-                                                var  str = pledgevalue.replace ( /[^\d.]/g, '' );
-                                                var index = parseInt(str);
-                                                console.log(pledgeid);
-
-                                                var a = 'pledgeAmount' + index;
-                                                console.log(a);*/
-
-                                                $("#add-option").append($(addoption).fadeIn('slow'));
-                                                $.fancybox.close();
-                                            }
-                                            else if(type == "PledgeVal2")
-                                            {
-                                                maxIndex++;
-                                                console.log(maxIndex);
-
-                                                var pledgeamnt = $("#pledgeAmnt2").val();
-                                                var benefit = $("#benefit2").val();
-                                                var a = 'pledgeAmount' + maxIndex;
-                                                var desc = 'desc' + maxIndex;
-
-                                                var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
-                                                addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
-                                                addoption +=' <div class="seperator" ></div></div></div>';
-
-                                                $("#add-option").append($(addoption).fadeIn('slow'));
-                                                $.fancybox.close();
-                                            }
-                                            else if(type == "PledgeVal3")
-                                            {
-                                                maxIndex++;
-                                                console.log(maxIndex);
-
-                                                var pledgeamnt = $("#pledgeAmnt3").val();
-                                                var benefit = $("#benefit3").val();
-                                                var a = 'pledgeAmount' + maxIndex;
-                                                var desc = 'desc' + maxIndex;
-
-                                                var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
-                                                addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
-                                                addoption +=' <div class="seperator" ></div></div></div>';
-
-                                                $("#add-option").append($(addoption).fadeIn('slow'));
-                                                $.fancybox.close();
-                                            }
-                                            $('#maxIndex').val(maxIndex);
-                                          }
-                }
+                 }
             );  
     });
 
@@ -716,7 +652,6 @@ campaign_view -> hack
         $("#add-option").append($(addoption).fadeIn('slow'));
         $.fancybox.close();
     }
-    $('#maxIndex').val(maxIndex);
   }
 
   function handleKeyPress(e)
