@@ -570,7 +570,7 @@ campaign_view -> hack
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
 
-        var $this = $('.help-form');
+        var $this = $('.pledge');
         //$this.closest('.pledge').val();
         $this.closest("#pledgeAmount1").val(pledgeamnt);
         //$("#pledgeAmount1").val(pledgeamnt);
