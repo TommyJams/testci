@@ -48,21 +48,23 @@
         <h4>Help</h4>
     </div>
 
-        <div class="pledgeVal1">
-            <h4 title="Click to use this value">Pledge Amount 1:<h4>
+        <div class="col-md-5 ">
+            <h4>Pledge Amount 1<h4>
             <a class="btn blk-btn">INR. 300 </a>
-            <h4 title="Click to use this value">Benefit:<h4> 
+            <h4>Benefit<h4> 
             <a class="btn blk-btn">Free Mug </a> 
         </div>      
-        <div class="pledgeVal2">
-            <h4>
-            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 500 Benefit: Free Mug </a> 
-            <h4>
+        <div class="col-md-5 ">
+            <h4>Pledge Amount 2<h4>
+            <a class="btn blk-btn">INR. 500 </a>
+            <h4>Benefit<h4> 
+            <a class="btn blk-btn">Free Mug </a>
         </div>
-        <div class="pledgeVal3">
-            <h4>
-            <a title="Click to use this value" class="btn blk-btn">Pledge Amount 2: INR. 1000 Benefit: Free Mug </a> 
-            <h4>
+        <div class="col-md-5 ">
+            <h4>Pledge Amount 3<h4>
+            <a class="btn blk-btn">INR. 1000 </a>
+            <h4>Benefit<h4> 
+            <a class="btn blk-btn">Free Mug </a>
         </div>
 
     <div class="modal-footer">
