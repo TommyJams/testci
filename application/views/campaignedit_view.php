@@ -263,6 +263,9 @@
           </h5>
           <div class="seperator" ></div>
         </div>
+
+        <div id="add-option-new" ></div>
+
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
@@ -273,6 +276,9 @@
           </h5>
           <div class="seperator" ></div>
         </div>
+
+        <div id="add-option-new" ></div>
+
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
@@ -283,7 +289,9 @@
           </h5>
           <div class="seperator" ></div>
         </div>
+
         <div id="add-option-new" ></div>
+
         <div class="add-option-new pull-left"><a class="add-option-new-hover"></a>
         </div>
         <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
@@ -406,6 +414,23 @@ campaign_view -> hack
     $('#maxIndex').val(maxIndex);
 
     $(".add-option-new").click(function(){
+
+      maxIndex++;
+
+      var a = 'pledgeAmount' + maxIndex;
+      var b = 'PLEDGE AMT ' + maxIndex;
+      var desc = 'desc' + maxIndex;
+
+      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+      addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
+      addoption +=' <div class="seperator" ></div></div></div>';
+
+      $('#maxIndex').val(maxIndex);
+
+      $("#add-option-new").append($(addoption).fadeIn('slow'));
+    });
+
+    $(".").click(function(){
 
       maxIndex++;
 
@@ -596,6 +621,7 @@ campaign_view -> hack
         console.log(a);*/
 
         //$("#".a).val(pledgeamnt);
+        $("#add-option-new").append($(addoption).fadeIn('slow'));
 
         $.fancybox.close();
     }
