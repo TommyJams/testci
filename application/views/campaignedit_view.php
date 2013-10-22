@@ -571,7 +571,7 @@ campaign_view -> hack
         console.log(pledgeamnt);
 
         //var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
-        var pledgevalue = $(this).closest(".form-control").attr("id");
+        var pledgevalue = $(this).parent().first(".form-control").attr("id");
         console.log(pledgevalue);
 
         var  str = pledgevalue.replace ( /[^\d.]/g, '' );
