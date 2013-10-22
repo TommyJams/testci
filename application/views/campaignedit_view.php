@@ -42,7 +42,7 @@
 <!--/Video modal--> 
 
 <!--Help modal-->
-<div class="help-form" >
+<div class="help-form-1" >
   <div class="modal-content socialModal">
 
   <div class="row">
@@ -54,7 +54,7 @@
   <div class="row">
     <div class="modal-body modal-link">
         <div class="col-md-3 ">
-            <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">
+            <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1', '1');" class="btn blk-btn">
             <input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"> 
         </div> 
         <div class="col-md-3 ">
@@ -413,9 +413,35 @@ campaign_view -> hack
       var b = 'PLEDGE AMT ' + maxIndex;
       var desc = 'desc' + maxIndex;
 
-      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form"><img src="/img/help.png" alt="" style=""></a><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
       addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
       addoption +=' <div class="seperator" ></div></div></div>';
+
+      var d = 'help-form-' + maxIndex;
+
+      var addhelpform = '<div class="'+ d +'" style="display: none;">';
+      addhelpform +='<div class="modal-content socialModal">';
+      addhelpform +='<div class="row"><div class="modal-header"><h4>Help</h4></div></div>';
+      addhelpform +='<div class="row"><div class="modal-body modal-link">';
+      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1', 'maxIndex');" class="btn blk-btn"><input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"></div>';
+      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn"><input id="benefit2" value="Free Mug" onclick="defaultPledgeBenefit('Benefit2')" class="btn blk-btn"></div>';
+      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn"><input id="benefit3" value="Free Mug" onclick="defaultPledgeBenefit('Benefit3')" class="btn blk-btn"></div>';
+      addhelpform +='</div></div>';
+      addhelpform +='<div class="row"><div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a></div></div></div></div>';    
+
+      $('body').on('click', '.open-help-form', function(){
+        $.fancybox(
+                $('.'.d).html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                 }
+            );  
+    });
 
       $('#maxIndex').val(maxIndex);
 
@@ -563,25 +589,25 @@ campaign_view -> hack
 
   });
 
-  function defaultPledgeAmount(value)
+  function defaultPledgeAmount(type, value)
   {
-    if(value == "PledgeAmnt1")
+    if(type == "PledgeAmnt1")
     {
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
 
-        //var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
-        var pledgevalue = $(this).parent().first(".form-control").attr("id");
-        console.log(pledgevalue);
-
-        var  str = pledgevalue.replace ( /[^\d.]/g, '' );
-        var index = parseInt(str);
-        console.log(pledgeid);
-
-        var a = 'pledgeAmount' + index;
+        var a = 'pledgeAmount' + value;
         console.log(a);
 
         $("#".a).val(pledgeamnt);
+
+     /*   var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
+        addoption +=' <div class="seperator" ></div></div></div>';
+
+      $('#maxIndex').val(maxIndex);
+
+      $("#add-option-new").append($(addoption).fadeIn('slow'));*/
         $.fancybox.close();
     }
     else if(value == "PledgeAmnt2")
