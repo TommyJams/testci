@@ -419,13 +419,15 @@ campaign_view -> hack
 
       var d = 'help-form-' + maxIndex;
 
+      console.log(d);
+      var e = 'PledgeAmnt1';
+      var f = 'Benefit1';
+
       var addhelpform = '<div class="'+ d +'" style="display: none;">';
       addhelpform +='<div class="modal-content socialModal">';
       addhelpform +='<div class="row"><div class="modal-header"><h4>Help</h4></div></div>';
       addhelpform +='<div class="row"><div class="modal-body modal-link">';
-      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1', 'maxIndex');" class="btn blk-btn"><input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"></div>';
-      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn"><input id="benefit2" value="Free Mug" onclick="defaultPledgeBenefit('Benefit2')" class="btn blk-btn"></div>';
-      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn"><input id="benefit3" value="Free Mug" onclick="defaultPledgeBenefit('Benefit3')" class="btn blk-btn"></div>';
+      addhelpform +='<div class="col-md-3 "><input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('e', 'maxIndex');" class="btn blk-btn"><input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('f')" class="btn blk-btn"></div>';
       addhelpform +='</div></div>';
       addhelpform +='<div class="row"><div class="modal-footer"><a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a></div></div></div></div>';    
 
