@@ -570,7 +570,7 @@ campaign_view -> hack
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
 
-        $('.pledge').closest("#pledgeAmount1").val(pledgeamnt);
+        $("#pledgeAmount1").val(pledgeamnt);
         $.fancybox.close();
     }
     else if(value == "PledgeAmnt2")
@@ -591,9 +591,7 @@ campaign_view -> hack
         var benefit = $("#benefit1").val();
         console.log(benefit);
 
-        var $this = $(this);
-        //$this.closest('.pledge').val();
-        $this.closest("#desc1").val(benefit);
+        $("#desc1").val(benefit);
         $.fancybox.close();
     }
     else if(value == "Benefit2")
