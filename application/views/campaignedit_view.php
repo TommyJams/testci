@@ -53,26 +53,18 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-      <div class="col-md-3 ">
-          <h4>Pledge Amount 1<h4>
+        <div class="col-md-3 ">
             <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">
-        <!--<a id="pledgeAmnt1" value="INR. 300" href="javascript:;" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn">INR. 300</a>-->
-          <h4>Benefit 1<h4>
             <input id="benefit1" value="Free Mug" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn"> 
-        <!--<a id="benefit1" value="Free Mug" href="javascript:;" onclick="defaultPledgeBenefit('Benefit1')" class="btn blk-btn">Free Mug</a>--> 
-      </div>      
-      <div class="col-md-2 ">
-          <h4>Pledge Amount 2<h4>
-            <a class="btn blk-btn">INR. 500 </a>
-          <h4>Benefit 2<h4> 
-            <a class="btn blk-btn">Free Mug </a>
-      </div>
-      <div class="col-md-2 ">
-          <h4>Pledge Amount 3<h4>
-            <a class="btn blk-btn">INR. 1000 </a>
-          <h4>Benefit 3<h4> 
-            <a class="btn blk-btn">Free Mug </a>
-      </div>
+        </div> 
+        <div class="col-md-3 ">
+            <input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn">
+            <input id="benefit2" value="Free Mug" onclick="defaultPledgeBenefit('Benefit2')" class="btn blk-btn"> 
+        </div>
+        <div class="col-md-3 ">
+            <input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn">
+            <input id="benefit3" value="Free Mug" onclick="defaultPledgeBenefit('Benefit3')" class="btn blk-btn"> 
+        </div>        
     </div> 
   </div>   
     
@@ -261,7 +253,7 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <a class="span12 pagination-centered" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
+            <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form">
                 <img src="/img/help.png" alt="" style="">
             </a>
             <i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4>
@@ -577,8 +569,11 @@ campaign_view -> hack
     {
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
-        $("#pledgeAmount1").val("'+ pledgeamnt +'");
-        $("#pledgeAmnt1").val("");
+
+        var $this = $(this);
+        //$this.closest('.pledge').val();
+        $this.closest("#pledgeAmount1").val(pledgeamnt);
+        //$("#pledgeAmount1").val(pledgeamnt);
     }
     else if(value == "PledgeAmnt2")
     {
@@ -597,8 +592,10 @@ campaign_view -> hack
     {
         var benefit = $("#benefit1").val();
         console.log(benefit);
-        $("#desc1").val("'+ benefit +'");
-        $("#benefit1").val("");
+
+        var $this = $(this);
+        //$this.closest('.pledge').val();
+        $this.closest("#desc1").val(benefit);
     }
     else if(value == "Benefit2")
     {
