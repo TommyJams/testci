@@ -56,24 +56,27 @@
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeAmnt1" value="INR. 300" onclick="defaultPledgeAmount('PledgeAmnt1');" class="btn blk-btn"> 
-                    <input id="benefit1" value="Free Mug" class="btn blk-btn">
+                    <input id="pledgeval1" value="INR. 300 | Free Mug" onclick="usePledgeVal('PledgeVal1');" class="btn blk-btn">
+                    <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
+                    <input type="hidden" id="benefit1" value="Free Mug" >
                 </li>
             </ul>   
         </div> 
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeAmnt2" value="INR. 500" onclick="defaultPledgeAmount('PledgeAmnt2');" class="btn blk-btn"> 
-                    <input id="benefit2" value="Free Mug" class="btn blk-btn">
+                    <input id="pledgeval2" value="INR. 500 | Free Mug" onclick="usePledgeVal('PledgeVal2');" class="btn blk-btn">
+                    <input type="hidden" id="pledgeAmnt2" value="INR. 500" > 
+                    <input type="hidden" id="benefit2" value="Free Mug" >
                 </li>
             </ul>   
         </div>
         <div class="row">
             <ul>
                 <li>
-                    <input id="pledgeAmnt3" value="INR. 1000" onclick="defaultPledgeAmount('PledgeAmnt3');" class="btn blk-btn"> 
-                    <input id="benefit3" value="Free Mug" class="btn blk-btn">
+                    <input id="pledgeval3" value="INR. 1000 | Free Mug" onclick="usePledgeVal('PledgeVal3');" class="btn blk-btn">
+                    <input type="hidden" id="pledgeAmnt3" value="INR. 1000" > 
+                    <input type="hidden" id="benefit3" value="Free Mug" >
                 </li>
             </ul>   
         </div>        
@@ -585,18 +588,17 @@ campaign_view -> hack
 
   });
 
-  function defaultPledgeAmount(value)
+  function usePledgeVal(type)
   {
-    if(value == "PledgeAmnt1")
+    if(type == "PledgeVal1")
     {
         var pledgeamnt = $("#pledgeAmnt1").val();
         var benefit = $("#benefit1").val();
-        console.log(pledgeamnt);
 
         maxIndex++;
+        console.log(maxIndex);
 
         var a = 'pledgeAmount' + maxIndex;
-        //var b = 'PLEDGE AMT ' + maxIndex;
         var desc = 'desc' + maxIndex;
 
         var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
@@ -614,18 +616,43 @@ campaign_view -> hack
         console.log(a);*/
 
         $("#add-option").append($(addoption).fadeIn('slow'));
-
         $.fancybox.close();
     }
-    else if(value == "PledgeAmnt2")
+    else if(type == "PledgeVal2")
     {
         var pledgeamnt = $("#pledgeAmnt2").val();
-        $("#pledgeAmount2").val("'+ pledgeamnt +'");
+        var benefit = $("#benefit2").val();
+        console.log(pledgeamnt);
+
+        maxIndex++;
+
+        var a = 'pledgeAmount' + maxIndex;
+        var desc = 'desc' + maxIndex;
+
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
+        addoption +=' <div class="seperator" ></div></div></div>';
+
+        $("#add-option").append($(addoption).fadeIn('slow'));
+        $.fancybox.close();
     }
-    else if(value == "PledgeAmnt3")
+    else if(type == "PledgeVal3")
     {
-        var pledgeamnt = $("#pledgeAmnt2").val();
-        $("#pledgeAmount3").val("'+ pledgeamnt +'");
+        var pledgeamnt = $("#pledgeAmnt3").val();
+        var benefit = $("#benefit3").val();
+        console.log(pledgeamnt);
+
+        maxIndex++;
+
+        var a = 'pledgeAmount' + maxIndex;
+        var desc = 'desc' + maxIndex;
+
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
+        addoption +=' <div class="seperator" ></div></div></div>';
+
+        $("#add-option").append($(addoption).fadeIn('slow'));
+        $.fancybox.close();
     }
   }
 
