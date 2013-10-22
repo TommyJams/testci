@@ -269,7 +269,7 @@
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <a class="open-help-form pull-middle" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form"><img src="/img/help.png" alt="" style=""></a>
-            <i class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></i>
+            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
           </h4> 
           <div class="clearfix"></div>
           <h5>
@@ -303,8 +303,8 @@
           </h5>
           <div class="seperator" ></div>
         </div>
-
         <div id="add-option" ></div>
+
         <div id="add-option-new" ></div>
         <div class="add-option-new pull-left"><a class="add-option-new-hover"></a></div>
 
