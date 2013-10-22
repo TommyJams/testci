@@ -21,7 +21,7 @@
 
 <style>
 .video-link{display:none}
-.help-form-1{display:none}
+.help-form{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
