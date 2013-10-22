@@ -48,7 +48,7 @@
         <h4>Help</h4>
     </div>
 
-      <div>
+      <div class="modal-header">
         <div class="col-md-3 ">
             <h4>Pledge Amount 1<h4>
             <a class="btn blk-btn">INR. 300 </a>
