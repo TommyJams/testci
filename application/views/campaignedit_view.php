@@ -570,7 +570,16 @@ campaign_view -> hack
         var pledgeamnt = $("#pledgeAmnt1").val();
         console.log(pledgeamnt);
 
-        $("#pledgeAmount1").val(pledgeamnt);
+        var pledgevalue = $(this).parents("form").find(".pledge").attr("id");
+
+        var  str = pledgevalue.replace ( /[^\d.]/g, '' );
+        var index = parseInt(str);
+        console.log(pledgeid);
+
+        var a = 'pledgeAmount' + index;
+        console.log(a);
+
+        $("#".a).val(pledgeamnt);
         $.fancybox.close();
     }
     else if(value == "PledgeAmnt2")
