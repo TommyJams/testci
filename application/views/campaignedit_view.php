@@ -586,18 +586,15 @@ campaign_view -> hack
 
     });
 
-  });
-
   function usePledgeVal(type)
   {
     if(type == "PledgeVal1")
     {
-        var pledgeamnt = $("#pledgeAmnt1").val();
-        var benefit = $("#benefit1").val();
-
         maxIndex++;
         console.log(maxIndex);
 
+        var pledgeamnt = $("#pledgeAmnt1").val();
+        var benefit = $("#benefit1").val();
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
@@ -620,12 +617,11 @@ campaign_view -> hack
     }
     else if(type == "PledgeVal2")
     {
+        maxIndex++;
+        console.log(maxIndex);
+
         var pledgeamnt = $("#pledgeAmnt2").val();
         var benefit = $("#benefit2").val();
-        console.log(pledgeamnt);
-
-        maxIndex++;
-
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
@@ -638,12 +634,11 @@ campaign_view -> hack
     }
     else if(type == "PledgeVal3")
     {
+        maxIndex++;
+        console.log(maxIndex);
+
         var pledgeamnt = $("#pledgeAmnt3").val();
         var benefit = $("#benefit3").val();
-        console.log(pledgeamnt);
-
-        maxIndex++;
-
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
@@ -755,6 +750,8 @@ campaign_view -> hack
       $('input[name=sociallink-3]').val(link);
     }
   }
+
+  });
 
 </script>
 </body>
