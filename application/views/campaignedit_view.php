@@ -430,23 +430,6 @@ campaign_view -> hack
       $("#add-option-new").append($(addoption).fadeIn('slow'));
     });
 
-    $(".").click(function(){
-
-      maxIndex++;
-
-      var a = 'pledgeAmount' + maxIndex;
-      var b = 'PLEDGE AMT ' + maxIndex;
-      var desc = 'desc' + maxIndex;
-
-      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><i class=" btn-delete-pledge pull-right"><img src="/img/delete-option.png" alt="" style=""></i></h4><div class="clearfix"></div>';
-      addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
-      addoption +=' <div class="seperator" ></div></div></div>';
-
-      $('#maxIndex').val(maxIndex);
-
-      $("#add-option-new").append($(addoption).fadeIn('slow'));
-    });
-
     $('body').on('click', '.btn-delete-pledge', function(){
       var $this = $(this);
       //$this.closest('.pledge').fadeOut("slow");
