@@ -53,7 +53,7 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div>
+        <div class="bs-example">
           <table class="table table-hover" >
             <thead>
               <tr>
