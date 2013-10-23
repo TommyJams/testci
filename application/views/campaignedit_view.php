@@ -53,18 +53,15 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div class="row" onclick="usePledgeVal('PledgeVal1');">
-          <button type="button" class="btn btn-primary btn-lg">Block level button</button>
-          <div class="col-xs-6 col-sm-6 col-md-4">
-            INR. 300
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-8">
-            Free Mug
+
+        <div class="row" onclick="usePledgeVal('PledgeVal1');">       
+          <div class="col-md-4">
+            <button type="button" class="btn btn-primary btn-lg">Block level button</button>
             <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
             <input type="hidden" id="benefit1" value="Free Mug" >
           </div>
-
         </div>
+          
         <div class="row">
             <ul>
                 <li>
