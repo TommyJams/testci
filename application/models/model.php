@@ -210,6 +210,7 @@ class Model extends CI_Model{
                             $fbEventPic = "";
                             $fbEventURL = "";
                             $fbEventStatus = "JOIN NOW";
+                            $fbEventJoinees = "";
                             $fbLoginURL = "";
 
                             if($fbEvent)
@@ -250,7 +251,7 @@ class Model extends CI_Model{
                                    }
 
                                    //getting list of all attendees
-                                   $fbJoinees = $fqlJoineesResult;
+                                   $fbEventJoinees = $fqlJoineesResult;
 
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                                    $fbLoginURL = $this->facebook->getLoginUrl( array(
