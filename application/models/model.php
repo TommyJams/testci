@@ -610,8 +610,7 @@ class Model extends CI_Model{
                 // Call the Graph API to RSVP to the event
                 try
                 {
-                        $event_rsvp = $this->facebook->api($fbEvent.'/attending', array(
-                                        'method'        => 'POST',
+                        $event_rsvp = $this->facebook->api($fbEvent.'/attending', 'POST', array(
                                         'access_token'  => $access_token
                                 ));
                         error_log('RSVP to '.$fbEvent.':'.$event_rsvp);
