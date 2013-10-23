@@ -491,7 +491,7 @@ a.social-list-fb-event-title:hover {
 	background: #ffcc00;
 	margin-top: 10px;
 	margin-left: 5px;
-	display: block;
+	display: inline-block;
 }
 .social-list-fb-event-img {
 	width: 55px;

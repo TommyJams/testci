@@ -167,16 +167,15 @@
                 </div>
                 <div class='pull-left'>
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
+                  <div class='pull-left' style='clear:left;'>
+                    <?
+                    foreach($fbEventJoinees as $row)
+                    {
+                      print("<a href='https://facebook.com/$row' class='.social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                    }
+                    ?>
+                  </div>
                 </div>
-                <div class='pull-left'>
-                  <?
-                  foreach($fbEventJoinees as $row)
-                  {
-                    print("<a href='https://facebook.com/$row' class='.social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
-                  }
-                  ?>
-                </div>
-              </div>
               <div class="clearfix"></div>
             <?
             }
