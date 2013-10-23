@@ -53,7 +53,7 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div class="bs-example">
+        <div>
           <table class="table table-hover" >
             <thead>
               <tr>
@@ -62,17 +62,17 @@
               </tr>
             </thead>
             <tbody>
-            <tr onclick="usePledgeVal('PledgeVal1');">
+            <tr title="Click to use this value" onclick="usePledgeVal('PledgeVal1');">
               <td id="pledgeAmnt1">INR. 500 </td>
               <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
             </tr>
     
-            <tr onclick="usePledgeVal('PledgeVal2');">
+            <tr title="Click to use this value" onclick="usePledgeVal('PledgeVal2');">
               <td id="pledgeAmnt2">INR. 1000 </td>
               <td id="benefit2">GET A FREE SIGNED T-SHIRT</td>
             </tr>
 
-            <tr onclick="usePledgeVal('PledgeVal3');">
+            <tr title="Click to use this value" onclick="usePledgeVal('PledgeVal3');">
               <td id="pledgeAmnt3">INR. 2500 </td>
               <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
             </tr>
