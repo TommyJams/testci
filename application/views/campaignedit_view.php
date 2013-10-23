@@ -601,7 +601,7 @@ campaign_view -> hack
         var desc = 'desc' + maxIndex;
 
         var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
-        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" >benefit</textarea></h5>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
         /*var pledgevalue = $(this).parent().first(".form-control").attr("id");
@@ -628,7 +628,7 @@ campaign_view -> hack
         var desc = 'desc' + maxIndex;
 
         var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
-        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >benefit</textarea></h5>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
         $("#add-option").append($(addoption).fadeIn('slow'));
@@ -645,7 +645,7 @@ campaign_view -> hack
         var desc = 'desc' + maxIndex;
 
         var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
-        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >benefit</textarea></h5>';
+        addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
         $("#add-option").append($(addoption).fadeIn('slow'));
