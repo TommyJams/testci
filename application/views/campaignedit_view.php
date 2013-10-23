@@ -55,13 +55,11 @@
     <div class="modal-body modal-link">
 
         <div class="row" onclick="usePledgeVal('PledgeVal1');">       
-          <div class="col-md-4">
-            <button type="button" class="btn btn-primary btn-lg">Block level button</button>
+            <button type="button" class="btn btn-primary btn-lg">INR. 300, Get a free signed T-shirt</button>
             <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
             <input type="hidden" id="benefit1" value="Free Mug" >
-          </div>
         </div>
-          
+
         <div class="row">
             <ul>
                 <li>
