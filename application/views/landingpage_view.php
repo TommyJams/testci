@@ -280,7 +280,6 @@
 </div>
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/main1.js"></script> 
 <script>
 		$(document).ready(function(){
