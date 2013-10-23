@@ -597,13 +597,23 @@ class Model extends CI_Model{
                 $appId = '248776888603319';
                 $secret = '50f31c2706d846826bead008392e8969';
                 $my_url = base_url().'campaign/'.$campaign_id;
+
                 // Get access token
-                $token_url = "https://graph.facebook.com/oauth/access_token?client_id="
+                /*$token_url = "https://graph.facebook.com/oauth/access_token?client_id="
                 . $appId . "&redirect_uri=" . urlencode($my_url)
                 . "&client_secret=" . $secret
                 . "&code=" . $code;
-                $access_token = file_get_contents($token_url);
+                $access_token = file_get_contents($token_url);*/
 
+                $this->facebook->api('oauth/access_token', array(
+                    'client_id'     => $appId,
+                    'client_secret' => $secret,
+                    'type'          => 'client_cred',
+                    'code'          => $code,
+                ));
+                $access_token = $this->facebook->getAccessToken();
+
+                error_log('AccessToken: '.$access_token);
                 // Call the Graph API to RSVP to the event
                 $event_rsvp = "https://graph.facebook.com/$fbEvent/attending?method=post&" . $access_token;
                 $rsvped = json_decode(file_get_contents($event_rsvp));
