@@ -475,6 +475,8 @@ a.social-list-fb-event-title:hover {
 }
 .social-list-fb-event-link {
 	background: #ffcc00;
+	font-size: 24px;
+	padding: 10px;
 	margin-top: 10px;
 	display: block;
 	color: #000;
@@ -483,6 +485,11 @@ a.social-list-fb-event-title:hover {
 }
 .social-list-fb-event-link:hover {
 	color: #FFF;
+}
+.social-list-fb-event-href {
+	background: #ffcc00;
+	margin-top: 10px;
+	display: block;
 }
 .social-list-fb-event-img {
 	width: 55px;
