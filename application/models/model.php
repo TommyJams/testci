@@ -215,8 +215,8 @@ class Model extends CI_Model{
                             if($fbEvent)
                             {
                                    $fql = "SELECT name, pic FROM event WHERE eid = ".$fbEvent;
-                                   //$fqlStatus = $fql;
-                                   $fqlStatus = "SELECT rsvp_status FROM event_member WHERE eid = ".$fbEvent;
+                                   $fqlStatus = $fql;
+                                   //$fqlStatus = "SELECT rsvp_status FROM event_member WHERE eid = ".$fbEvent;
 
                                    $param  =  array(
                                           'method'    => 'fql.query',
