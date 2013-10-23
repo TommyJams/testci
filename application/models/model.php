@@ -255,7 +255,6 @@ class Model extends CI_Model{
                                        $fbEventJoinees[] = $values['uid'];
                                    }
 
-                                   error_log($fbEventJoinees);
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                                    $fbLoginURL = $this->facebook->getLoginUrl( array(
                                                                                    'scope' => 'rsvp_event',

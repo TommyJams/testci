@@ -158,7 +158,7 @@
             ?>
               <div class="seperator" ></div>
               <div class='social-list-fb-event'>
-                <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>' target='blank'>
+                <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>' target='_blank'>
                   <div class='social-list-fb-event-icon pull-left'></div>
                   <div class='social-list-fb-event-name pull-left'><? print($fbEventName); ?></div>
                 </a>
@@ -167,7 +167,12 @@
                 </div>
                 <div class='pull-left'>
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
-                  <a href='' class='social-list-fb-event-link'><? foreach($fbEventJoinees as $row){ print($row); }?></a>
+                  <?
+                  foreach($fbEventJoinees as $row)
+                  {
+                    print("<a href='https://facebook.com/$row' class='social-list-fb-event-link' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                  }
+                  ?>
                 </div>
               </div>
               <div class="clearfix"></div>
