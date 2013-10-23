@@ -54,11 +54,38 @@
   <div class="row">
     <div class="modal-body modal-link">
 
-        <div class="row" onclick="usePledgeVal('PledgeVal1');">       
+        <div class="row" onclick="usePledgeVal('PledgeVal1');">
+          <div>       
             <button type="button" class="btn btn-primary btn-lg">INR. 300, Get a free signed T-shirt</button>
             <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
             <input type="hidden" id="benefit1" value="Free Mug" >
+          </div>  
         </div>
+
+        <div>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>Pledge Amount</th>
+              <th>BENEFIT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <td>Jacob</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <td colspan="2">Larry the Bird</td>
+              <td>twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
         <div class="row">
             <ul>
