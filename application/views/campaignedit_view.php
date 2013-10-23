@@ -54,7 +54,7 @@
   <div class="row">
     <div class="modal-body modal-link">
         <div class="row" onclick="usePledgeVal('PledgeVal1');">
-          <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+          <button type="button" class="btn btn-primary btn-lg">Block level button</button>
           <div class="col-xs-6 col-sm-6 col-md-4">
             INR. 300
           </div>
