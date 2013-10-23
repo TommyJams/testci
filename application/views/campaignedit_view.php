@@ -274,8 +274,7 @@
           </h5>
           <div class="seperator" ></div>
         </div>
-
-        <div id="add-option" ></div>
+        <div id="add-option-1" ></div>
 
         <div class="pledge">
           <h4>
@@ -289,8 +288,7 @@
           </h5>
           <div class="seperator" ></div>
         </div>
-
-        <div id="add-option" ></div>
+        <div id="add-option-2" ></div>
 
         <div class="pledge">
           <h4>
@@ -304,7 +302,7 @@
           </h5>
           <div class="seperator" ></div>
         </div>
-        <div id="add-option" ></div>
+        <div id="add-option-3" ></div>
 
         <div id="add-option-new" ></div>
         <div class="add-option-new pull-left"><a class="add-option-new-hover"></a></div>
@@ -614,7 +612,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + index;
         console.log(a);*/
 
-        $("#add-option").append($(addoption).fadeIn('slow'));
+        $("#add-option-1").append($(addoption).fadeIn('slow'));
         $.fancybox.close();
     }
     else if(type == "PledgeVal2")
@@ -631,7 +629,7 @@ campaign_view -> hack
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
-        $("#add-option").append($(addoption).fadeIn('slow'));
+        $("#add-option-2").append($(addoption).fadeIn('slow'));
         $.fancybox.close();
     }
     else if(type == "PledgeVal3")
@@ -648,7 +646,7 @@ campaign_view -> hack
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
-        $("#add-option").append($(addoption).fadeIn('slow'));
+        $("#add-option-3").append($(addoption).fadeIn('slow'));
         $.fancybox.close();
     }
     $('#maxIndex').val(maxIndex);
