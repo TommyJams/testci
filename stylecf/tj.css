@@ -672,6 +672,7 @@ ul.social-list li a.social-list-blog-edit {
 	display:block;
 	background-repeat:no-repeat;
 	background-position:0px 0px;
+	margin-right:5px;
 }
 .open-help-form a:hover {
 	background-position:0px -20px;
