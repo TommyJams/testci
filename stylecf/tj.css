@@ -480,6 +480,8 @@ a.social-list-fb-event-title:hover {
 	margin-top: 10px;
 	display: block;
 	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 .social-list-fb-event-link:hover {
 	color: #FFF;

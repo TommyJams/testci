@@ -215,9 +215,8 @@ class Model extends CI_Model{
                             if($fbEvent)
                             {
                                    $fql = "SELECT name, pic FROM event WHERE eid = ".$fbEvent;
-                                   //$fqlStatus = $fql;
                                    $fqlStatus = "SELECT rsvp_status FROM event_member WHERE eid = $fbEvent AND uid=me()";
-                                //   $fqlStatus = "SELECT rsvp_status FROM event_member WHERE eid=$fbEvent AND uid=me()";
+                                   $fqlJoinees = "SELECT uid FROM event_member WHERE eid = $fbEvent AND rsvp_status='attending'";
 
                                    $param  =  array(
                                           'method'    => 'fql.query',
@@ -229,20 +228,29 @@ class Model extends CI_Model{
                                           'query'     => $fqlStatus,
                                           'callback'  => ''
                                    );
+                                   $paramJoinees  =  array(
+                                          'method'    => 'fql.query',
+                                          'query'     => $fqlJoinees,
+                                          'callback'  => ''
+                                   );
 
                                    $fqlResult = $this->facebook->api($param);
                                    $fqlStatusResult = $this->facebook->api($paramStatus);
-                                   error_log($fqlStatus);
+                                   $fqlJoineesResult = $this->facebook->api($paramJoinees);
+
                                    //looping through retrieved data
                                    foreach( $fqlResult as $keys => $values ){
                                        $fbEventName = $values['name'];
                                        $fbEventPic = $values['pic'];
                                    }
 
-                                   //getting response status
+                                   //getting response status for current user
                                    foreach( $fqlStatusResult as $keys => $values ){
                                        $fbEventStatus = $values['rsvp_status'];
                                    }
+
+                                   //getting list of all attendees
+                                   $fbJoinees = $fqlJoineesResult;
 
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                                    $fbLoginURL = $this->facebook->getLoginUrl( array(
@@ -276,6 +284,7 @@ class Model extends CI_Model{
                                                                 'fbEventPic'            => $fbEventPic,
                                                                 'fbEventURL'            => $fbEventURL,
                                                                 'fbEventStatus'         => $fbEventStatus,
+                                                                'fbEventJoinees'        => $fbEventJoinees,
                                                                 'fbLoginURL'            => $fbLoginURL
 							);
 
