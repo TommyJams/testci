@@ -210,7 +210,7 @@ class Model extends CI_Model{
                             $fbEventPic = "";
                             $fbEventURL = "";
                             $fbEventStatus = "JOIN NOW";
-                            $fbEventJoinees[] = "";
+                            $fbEventJoinees = array();
                             $fbLoginURL = "";
 
                             if($fbEvent)

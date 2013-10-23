@@ -169,9 +169,17 @@
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
                   <div class='pull-left' style='clear:left;'>
                     <?
+                    $countFaces = 0;
                     foreach($fbEventJoinees as $row)
                     {
-                      print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                      if($countFaces < 5)
+                        print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                      $countFaces++;
+                    }
+                    if($countFaces > 5)
+                    {
+                      $countFaces -= 5;
+                      print("<a href='' class='social-list-fb-event-href' > and $countFaces others</a>");
                     }
                     ?>
                   </div>
