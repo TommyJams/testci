@@ -101,7 +101,7 @@
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
       <div class="text-center pull-right" >
-        <input class="apply-btn"  type="button" value="MORE CAMPAIGNS">
+        <input class="apply-btn" onClick="window.location.href='/fans'" type="button" value="MORE CAMPAIGNS">
       </div>
       <div class="clearfix"></div>
     </div>
