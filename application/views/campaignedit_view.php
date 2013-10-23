@@ -539,7 +539,7 @@ campaign_view -> hack
                 {
                     'width'             : 950,
                     'height'            : 1100,
-                    'autoScale'         : true,
+                    'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
                     'hideOnContentClick': false,
