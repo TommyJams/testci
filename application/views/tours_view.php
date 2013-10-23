@@ -191,6 +191,7 @@
         <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
       </div>
     </div>
+    </div>
     <!-- /circle-connect-->
     <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
@@ -251,7 +252,6 @@
       <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
     </div>
   </footer>
-  </div>
 </div>
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script> 
