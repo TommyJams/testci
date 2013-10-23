@@ -168,7 +168,7 @@
                 <div class='pull-left'>
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
                 </div>
-                <div class='pull-left' width='100%'>
+                <div class='pull-left'>
                   <?
                   foreach($fbEventJoinees as $row)
                   {
