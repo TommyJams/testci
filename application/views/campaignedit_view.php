@@ -619,8 +619,8 @@ campaign_view -> hack
         //var pledgeamnt = $("#pledgeAmnt1").val();
         //var benefit = $("#benefit1").val();
 
-        var pledgeamnt = $("#pledge1 #pledgeAmnt1").text();
-        var benefit = $("#pledge1 #benefit1").text();
+        var pledgeamnt = $("#pledgeAmnt1").text();
+        var benefit = $("#benefit1").text();
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
