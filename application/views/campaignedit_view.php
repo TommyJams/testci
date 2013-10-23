@@ -630,8 +630,8 @@ campaign_view -> hack
         maxIndex++;
         console.log(maxIndex);
 
-        var pledgeamnt = $("#pledgeAmnt2").val();
-        var benefit = $("#benefit2").val();
+        var pledgeamnt = $("#pledgeAmnt2").text();
+        var benefit = $("#benefit2").text();
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
@@ -647,8 +647,8 @@ campaign_view -> hack
         maxIndex++;
         console.log(maxIndex);
 
-        var pledgeamnt = $("#pledgeAmnt3").val();
-        var benefit = $("#benefit3").val();
+        var pledgeamnt = $("#pledgeAmnt3").text();
+        var benefit = $("#benefit3").text();
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
