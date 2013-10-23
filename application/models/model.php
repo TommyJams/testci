@@ -209,6 +209,7 @@ class Model extends CI_Model{
                             $fbEventName = "";
                             $fbEventPic = "";
                             $fbEventURL = "";
+                            $fbLoginURL = "";
 
                             if($fbEvent)
                             {
@@ -229,6 +230,10 @@ class Model extends CI_Model{
                                    }
 
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
+                                   $fbLoginURL = $this->facebook->getLoginUrl( array(
+                                                                                   'scope' => 'rsvp_event',
+                                                                                   'redirect_uri' => base_url().'campaign/'.$campaign_id
+                                                                            ));
                             }
 
 				$campaignDetails = array(
@@ -254,7 +259,8 @@ class Model extends CI_Model{
 								'image1'		=> $image1,
                                                         'fbEventName'        => $fbEventName,
                                                         'fbEventPic'         => $fbEventPic,
-                                                        'fbEventURL'         => $fbEventURL
+                                                        'fbEventURL'         => $fbEventURL,
+                                                        'fbLoginURL'         => $fbLoginURL
 							);
 
 				$response[] = $campaignDetails;

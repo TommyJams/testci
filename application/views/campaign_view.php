@@ -39,6 +39,7 @@
     $fbEventName = $row->fbEventName;
     $fbEventPic = $row->fbEventPic;
     $fbEventURL = $row->fbEventURL;
+    $fbLoginURL = $row->fbLoginURL;
   }
 ?>
 
@@ -163,8 +164,8 @@
                   <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic'/>
                 </div>
                 <div class='pull-left'>
-                  <a href='' class='social-list-fb-event-link'>JOIN EVENT</a>
-                  <a href='' class='social-list-fb-event-link'>FACEPILE</a>
+                  <a href='javascript:;' class='social-list-fb-event-link' onClick=''>JOIN EVENT</a>
+                  <a href='javascript:;' class='social-list-fb-event-link' onClick=''>FACEPILE</a>
                 </div>
               </div>
               <div class="clearfix"></div>
