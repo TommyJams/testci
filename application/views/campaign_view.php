@@ -176,13 +176,14 @@
                     ?>
                   </div>
                 </div>
+              </div>
               <div class="clearfix"></div>
             <?
             }
             ?>
           </div>
         </div>   
-      <!-- /Social Share -->
+        <!-- /Social Share -->
         </div>
         </div>
         <!--/Artist--> 
