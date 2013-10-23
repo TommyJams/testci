@@ -63,7 +63,7 @@
         </div>
 
         <div>
-          <table class="table table-hover">
+          <table>
             <thead>
             <tr>
               <th>Pledge Amount</th>
@@ -71,18 +71,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Mark</td>
-              <td>Otto</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-              <td>Thornton</td>
-            </tr>
-            <tr>
-              <td colspan="2">Larry the Bird</td>
-              <td>twitter</td>
-            </tr>
+            <div class="row" onclick="usePledgeVal('PledgeVal1');">
+                <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
+                <input type="hidden" id="benefit1" value="Free Mug" >
+                <table class="table table-hover" >
+                  <tr>
+                    <td>INR. 500 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
+                  </tr>
+                </table>   
+            </div>
           </tbody>
         </table>
       </div>
