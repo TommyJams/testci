@@ -281,58 +281,10 @@
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script> 
+<script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>script/main1.js"></script> 
 <script>
 		$(document).ready(function(){
-
-    var options=
-    {
-      twitter:
-      {
-        name    : 'tommyjams',
-        count   : 10
-      }
-    }
-
-    $.getJSON('twitterproxy/twitterhandle', function(data) 
-    {
-    if(data.length)
-    {
-      var list=$('<ul>');
-      $(data).each(function(index,value)
-      {
-        list.append($('<li>').append($('<p>').html(linkify(value.text))));
-      });
-
-      $('#latest-tweets').append(list);
-
-      $('#latest-tweets ul').carouFredSel(
-      {
-        circular    : true,
-        direction   : 'up',
-        items: 
-        {
-          visible   : 1,
-          minimum   : 1
-        },
-        scroll: 
-        {
-          items   : 1,
-          duration  : 750,
-          fx      : 'cover'
-        }
-      }); 
-      
-      setTwitterDimension();
-    }
-  }); 
-
-    $(window).resize(function() 
-  {
-    setTwitterDimension();
-    setImageListDimension();
-    //googleMap.setCenter(googleMarker.getPosition());
-  });
 			
 			$(".d-tj-campaign-slide-img").hover(
                function () {
