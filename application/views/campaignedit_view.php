@@ -53,56 +53,40 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-
         <div>
           <table>
             <thead>
             <tr>
               <th>PLEDGE AMOUNT (IN Rs.)</th>
-              <th></th>
-              <th></th>
-              <th></th>
               <th>BENEFIT</th>
             </tr>
           </thead>
           </table>
         </div>
         <div>
-          <tbody>
-                <table id="pledge1" class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
-                  <tr>
-                    <td id="pledgeAmnt1">INR. 500 </td>
-                    <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
-                  </tr>
-                </table>   
-          </tbody>
+              <table id="pledge1" class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
+                <tr>
+                  <td id="pledgeAmnt1">INR. 500 </td>
+                  <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
+                </tr>
+              </table>   
         </div>
         <div>
-          <tbody>
-                <input type="hidden" id="pledgeAmnt2" value="INR. 1000" > 
-                <input type="hidden" id="benefit2" value="Free Mug" >
-                <table class="table table-hover" onclick="usePledgeVal('PledgeVal2');" >
-                  <tr>
-                    <td>INR. 1000 </td>
-                    <td>GET A FREE SIGNED T-SHIRT</td>
-                  </tr>
-                </table>   
-          </tbody>
+              <table id="pledge2" class="table table-hover" onclick="usePledgeVal('PledgeVal2');" >
+                <tr>
+                  <td id="pledgeAmnt2">INR. 1000 </td>
+                  <td id="benefit2">GET A FREE SIGNED T-SHIRT</td>
+                </tr>
+              </table>   
         </div>
         <div>
-          <tbody>
-                <input type="hidden" id="pledgeAmnt3" value="INR. 2500" > 
-                <input type="hidden" id="benefit3" value="Free Mug" >
-                <table class="table table-hover" onclick="usePledgeVal('PledgeVal3');" >
-                  <tr>
-                    <td>INR. 2500 </td>
-                    <td>GET A FREE SIGNED T-SHIRT</td>
-                  </tr>
-                </table>   
-          </tbody>
-        </div>
-
-               
+              <table id="pledge3" class="table table-hover" onclick="usePledgeVal('PledgeVal3');" >
+                <tr>
+                  <td id="pledgeAmnt3">INR. 2500 </td>
+                  <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
+                </tr>
+              </table>   
+        </div>         
     </div> 
   </div>   
     
