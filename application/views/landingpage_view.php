@@ -280,7 +280,8 @@
 </div>
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script> 
+<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script> 
 <script>
 		$(document).ready(function(){
 
@@ -325,6 +326,13 @@
       setTwitterDimension();
     }
   }); 
+
+    $(window).resize(function() 
+  {
+    setTwitterDimension();
+    setImageListDimension();
+    //googleMap.setCenter(googleMarker.getPosition());
+  });
 			
 			$(".d-tj-campaign-slide-img").hover(
                function () {
