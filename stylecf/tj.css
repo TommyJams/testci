@@ -470,8 +470,7 @@ a.social-list-fb-event-title:hover {
 .social-list-fb-event-pic {
 	margin: 10px;
 	margin-left: 0px;
-	width: 120px;
-	height: 120px;
+	width: 30%;
 }
 .social-list-fb-event-link {
 	background: #ffcc00;
@@ -485,6 +484,7 @@ a.social-list-fb-event-title:hover {
 	clear: right;
 }
 .social-list-fb-event-link:hover {
+	text-decoration: none;
 	color: #FFF;
 }
 .social-list-fb-event-href {

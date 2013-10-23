@@ -162,10 +162,8 @@
                   <div class='social-list-fb-event-icon pull-left'></div>
                   <div class='social-list-fb-event-name pull-left'><? print($fbEventName); ?></div>
                 </a>
-                <div class='pull-left'>
-                  <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic'/>
-                </div>
-                <div class='pull-left'>
+                <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic pull-left'/>
+                <div class='pull-left' style='max-width: 70%;'>
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
                   <div class='pull-left' style='clear:left;'>
                     <?
