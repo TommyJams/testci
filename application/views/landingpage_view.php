@@ -9,6 +9,9 @@
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>script/main1.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -279,10 +282,7 @@
   </footer>
 </div>
 <script src="/script/jquery.js"></script> 
-<script src="/script/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>script/main1.js"></script> 
+<script src="/script/bootstrap.min.js"></script> 
 <script>
 		$(document).ready(function(){
 			
