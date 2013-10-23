@@ -537,7 +537,7 @@ campaign_view -> hack
         $.fancybox(
                 $('.help-form').html(),
                 {
-                    'width'             : 950,
+                    'width'             : 1000,
                     'height'            : 1100,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
