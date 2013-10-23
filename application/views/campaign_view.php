@@ -164,8 +164,8 @@
                   <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic'/>
                 </div>
                 <div class='pull-left'>
-                  <a href='javascript:;' class='social-list-fb-event-link' onClick=''>JOIN EVENT</a>
-                  <a href='javascript:;' class='social-list-fb-event-link' onClick=''>FACEPILE</a>
+                  <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'>JOIN EVENT</a>
+                  <a href='' class='social-list-fb-event-link'>FACEPILE</a>
                 </div>
               </div>
               <div class="clearfix"></div>

@@ -232,7 +232,7 @@ class Model extends CI_Model{
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                                    $fbLoginURL = $this->facebook->getLoginUrl( array(
                                                                                    'scope' => 'rsvp_event',
-                                                                                   'redirect_uri' => base_url().'campaign/'.$campaign_id
+                                                                                   'redirect_uri' => base_url().'campaign/'.$campaign_id.'/rsvp'
                                                                             ));
                             }
 
@@ -575,11 +575,44 @@ class Model extends CI_Model{
 		}       
 	}
 
-    public function validateFBCode($code){
+        public function validateFBCode($code){
+                //Do not know how to exchange the code for token here
+                //Will figure out later.
+                return true;
+        }
 
-        //Do not know how to exchange the code for token here
-        //Will figure out later.
-        return true;
-    }
+        public function joinFBEvent($code, $campaign_id){
+                
+                // Get Campaign Details
+                $query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$campaign_id';");
+                if ($query->num_rows() > 0)
+                {
+                        $qresult = $query->result();
+                        foreach ($qresult as $row)
+                        {
+                                $fbEvent = $row->event_id;
+                        }
+                }
+
+                $appId = '248776888603319';
+                $secret = '50f31c2706d846826bead008392e8969';
+                $my_url = base_url().'campaign/'.$campaign_id.'/rsvp';
+                // Get access token
+                $token_url = "https://graph.facebook.com/oauth/access_token?client_id="
+                . $appId . "&redirect_uri=" . urlencode($my_url)
+                . "&client_secret=" . $secret
+                . "&code=" . $code;
+                $access_token = file_get_contents($token_url);
+
+                // Call the Graph API to RSVP to the event
+                $event_rsvp = "https://graph.facebook.com/$fbEvent/attending?method=post&" . $access_token;
+                $rsvped = json_decode(file_get_contents($event_rsvp));
+                if($rsvped) {
+                        error_log('RSVPed to event'.$fbEvent);
+                }
+
+                return true;
+        }
+
 }
 ?>

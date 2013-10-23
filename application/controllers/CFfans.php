@@ -15,11 +15,51 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
 
     $campaign_id = $this->uri->segment(2);
-		 
+    $rsvp = $this->uri->segment(3);
+
 		error_log("Camp Id: ".$campaign_id);
 
-    $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
-		$this->load->view('campaign_view', $data);		
+    if(isset($rsvp) && $rsvp == 'rsvp')
+    {
+      parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
+
+      /*if(isset($_GET['code']))
+      {
+          error_log('Authentication Code exists');
+
+          //Validate the code first
+          $validCode = $this->Model->validateFBCode($_GET['code']);
+
+          if($validCode == false)
+          {
+              redirect(base_url().'tours');
+          }
+          else
+          {
+              $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
+              $this->load->view('campaignedit_view', $data);
+          }
+      }
+      else if(isset($_GET['error']))
+      {
+          error_log('Authentication Error: '.$_GET['error']);
+          redirect(base_url().'tours');
+      }
+      else
+      {
+          error_log('No Authentication done');
+          redirect(base_url().'tours');
+      }*/
+
+      $data['fbEvent'] = json_encode($this->Model->joinFBEvent($_GET['code'],$campaign_id));
+      $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+      $this->load->view('campaign_view', $data);
+    }
+    else
+    {
+      $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+  		$this->load->view('campaign_view', $data);
+    }
 	}
 
 	public function campaignEvent(){
