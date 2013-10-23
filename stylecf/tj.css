@@ -644,9 +644,19 @@ ul.social-list li a.social-list-blog-edit {
 	background-image:url('/img/delete-option.png');
 	cursor: pointer;
 }
-.open-help-form {
-	cursor:pointer;
-	padding-top: 10px;
+.open-help-form  a {
+	width:15px;
+	height:15px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.open-help-form a:hover {
+	background-position:0px -15px;
+}
+.open-help-form  a.open-help-form-hover {
+	background-image:url('/img/delete-option.png');
+	cursor: pointer;
 }
 
 /* Editor */
