@@ -70,19 +70,31 @@
               <th>BENEFIT</th>
             </tr>
           </thead>
+          </table>
+        </div>
+          <div>
           <tbody>
-            <div class="row" onclick="usePledgeVal('PledgeVal1');">
                 <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
                 <input type="hidden" id="benefit1" value="Free Mug" >
-                <table class="table table-hover" >
+                <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
+                  <tr>
+                    <td>INR. 500 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
+                  </tr>
+                </table>
+                <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
+                  <tr>
+                    <td>INR. 500 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
+                  </tr>
+                </table>
+                <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
                   <tr>
                     <td>INR. 500 </td>
                     <td>GET A FREE SIGNED T-SHIRT</td>
                   </tr>
                 </table>   
-            </div>
           </tbody>
-        </table>
       </div>
 
         <div class="row">
