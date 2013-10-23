@@ -79,12 +79,6 @@
           </table>            
     </div> 
   </div>   
-    
-  <div class="row">  
-    <div class="modal-footer">
-      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
-    </div>
-  </div>
 
   </div>
 </div>
