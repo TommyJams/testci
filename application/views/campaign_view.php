@@ -139,8 +139,7 @@
             <h5><? print($campaign_desc); ?></h5>
           </div>
 
-        </div>
-        </div>
+        </div>  
 
         <!-- Social Share -->
         <div class="d-tj-offset-top-30 d-tj-artist" >
