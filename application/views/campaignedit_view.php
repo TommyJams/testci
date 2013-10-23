@@ -54,14 +54,12 @@
   <div class="row">
     <div class="modal-body modal-link">
         <div class="row">
-            <ul>
-                <li>
-                    <input type="submit" id="pledgeval1" value="INR. 300 | Free Mug" onclick="usePledgeVal('PledgeVal1');" >
-                    <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
-                    <input type="hidden" id="benefit1" value="Free Mug" >
-                </li>
-            </ul>                       
-        </div> 
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <input id="pledgeval1" value="INR. 300 | Free Mug" onclick="usePledgeVal('PledgeVal1');" >
+            <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
+            <input type="hidden" id="benefit1" value="Free Mug" >
+          </div>
+        </div>
         <div class="row">
             <ul>
                 <li>
