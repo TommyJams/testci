@@ -54,40 +54,23 @@
   <div class="row">
     <div class="modal-body modal-link">
 
-        <div class="row" onclick="usePledgeVal('PledgeVal1');">
-          <div>       
-            <button type="button" class="btn btn-primary btn-lg">INR. 300, Get a free signed T-shirt</button>
-            <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
-            <input type="hidden" id="benefit1" value="Free Mug" >
-          </div>  
-        </div>
-
         <div>
           <table>
             <thead>
             <tr>
-              <th>Pledge Amount</th>
+              <th>PLEDGE AMOUNT (IN Rs.)</th>
+              <th></th>
+              <th></th>
+              <th></th>
               <th>BENEFIT</th>
             </tr>
           </thead>
           </table>
         </div>
-          <div>
+        <div>
           <tbody>
-                <input type="hidden" id="pledgeAmnt1" value="INR. 300" > 
+                <input type="hidden" id="pledgeAmnt1" value="INR. 500" > 
                 <input type="hidden" id="benefit1" value="Free Mug" >
-                <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
-                  <tr>
-                    <td>INR. 500 </td>
-                    <td>GET A FREE SIGNED T-SHIRT</td>
-                  </tr>
-                </table>
-                <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
-                  <tr>
-                    <td>INR. 500 </td>
-                    <td>GET A FREE SIGNED T-SHIRT</td>
-                  </tr>
-                </table>
                 <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
                   <tr>
                     <td>INR. 500 </td>
@@ -95,26 +78,33 @@
                   </tr>
                 </table>   
           </tbody>
-      </div>
-
-        <div class="row">
-            <ul>
-                <li>
-                    <a id="pledgeval2" onclick="usePledgeVal('PledgeVal2');" class="btn blk-btn">INR. 500 | Free Mug </a>
-                    <input type="hidden" id="pledgeAmnt2" value="INR. 500" > 
-                    <input type="hidden" id="benefit2" value="Free Mug" >
-                </li>
-            </ul>   
         </div>
-        <div class="row">
-            <ul>
-                <li>
-                    <a id="pledgeval3" onclick="usePledgeVal('PledgeVal3');" class="btn blk-btn">INR. 1000 | Free Mug </a>
-                    <input type="hidden" id="pledgeAmnt3" value="INR. 1000" > 
-                    <input type="hidden" id="benefit3" value="Free Mug" >
-                </li>
-            </ul>   
-        </div>        
+        <div>
+          <tbody>
+                <input type="hidden" id="pledgeAmnt2" value="INR. 1000" > 
+                <input type="hidden" id="benefit2" value="Free Mug" >
+                <table class="table table-hover" onclick="usePledgeVal('PledgeVal2');" >
+                  <tr>
+                    <td>INR. 1000 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
+                  </tr>
+                </table>   
+          </tbody>
+        </div>
+        <div>
+          <tbody>
+                <input type="hidden" id="pledgeAmnt3" value="INR. 2500" > 
+                <input type="hidden" id="benefit3" value="Free Mug" >
+                <table class="table table-hover" onclick="usePledgeVal('PledgeVal3');" >
+                  <tr>
+                    <td>INR. 2500 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
+                  </tr>
+                </table>   
+          </tbody>
+        </div>
+
+               
     </div> 
   </div>   
     
