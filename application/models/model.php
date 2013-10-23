@@ -209,24 +209,37 @@ class Model extends CI_Model{
                             $fbEventName = "";
                             $fbEventPic = "";
                             $fbEventURL = "";
+                            $fbEventStatus = "JOIN NOW";
                             $fbLoginURL = "";
 
                             if($fbEvent)
                             {
                                    $fql = "SELECT name, pic FROM event WHERE eid = ".$fbEvent;
+                                   $fqlStatus = "SELECT rsvp_status FROM event_member WHERE eid=".$fbEvent." AND uid=me()";
 
-                                   $param  =   array(
+                                   $param  =  array(
                                           'method'    => 'fql.query',
                                           'query'     => $fql,
                                           'callback'  => ''
                                    );
+                                   $paramStatus  =  array(
+                                          'method'    => 'fql.query',
+                                          'query'     => $fqlStatus,
+                                          'callback'  => ''
+                                   );
 
                                    $fqlResult = $this->facebook->api($param);
+                                   $fqlStatusResult = $this->facebook->api($paramStatus);
 
                                    //looping through retrieved data
                                    foreach( $fqlResult as $keys => $values ){
                                        $fbEventName = $values['name'];
                                        $fbEventPic = $values['pic'];
+                                   }
+
+                                   //getting response status
+                                   foreach( $fqlStatusResult as $keys => $values ){
+                                       $fbEventStatus = $values['rsvp_status'];
                                    }
 
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
@@ -255,12 +268,13 @@ class Model extends CI_Model{
 								'image1' 		=> $image1,
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
-								'days_to_go'  	=> $days_to_go,
+								'days_to_go'  	        => $days_to_go,
 								'image1'		=> $image1,
-                                                        'fbEventName'        => $fbEventName,
-                                                        'fbEventPic'         => $fbEventPic,
-                                                        'fbEventURL'         => $fbEventURL,
-                                                        'fbLoginURL'         => $fbLoginURL
+                                                                'fbEventName'           => $fbEventName,
+                                                                'fbEventPic'            => $fbEventPic,
+                                                                'fbEventURL'            => $fbEventURL,
+                                                                'fbEventStatus'         => $fbEventStatus,
+                                                                'fbLoginURL'            => $fbLoginURL
 							);
 
 				$response[] = $campaignDetails;

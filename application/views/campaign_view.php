@@ -39,6 +39,7 @@
     $fbEventName = $row->fbEventName;
     $fbEventPic = $row->fbEventPic;
     $fbEventURL = $row->fbEventURL;
+    $fbEventStatus = $row->fbEventStatus;
     $fbLoginURL = $row->fbLoginURL;
   }
 ?>
@@ -156,7 +157,7 @@
             ?>
               <div class="seperator" ></div>
               <div class='social-list-fb-event'>
-                <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>'>
+                <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>' target='blank'>
                   <div class='social-list-fb-event-icon pull-left'></div>
                   <div class='social-list-fb-event-name pull-left'><? print($fbEventName); ?></div>
                 </a>
@@ -164,7 +165,7 @@
                   <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic'/>
                 </div>
                 <div class='pull-left'>
-                  <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'>JOIN EVENT</a>
+                  <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
                   <a href='' class='social-list-fb-event-link'>FACEPILE</a>
                 </div>
               </div>
