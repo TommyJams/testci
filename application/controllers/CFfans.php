@@ -21,36 +21,6 @@ class CFfans extends CI_Controller{
 
     if(isset($_GET['code']))
     {
-      
-
-      /*if(isset($_GET['code']))
-      {
-          error_log('Authentication Code exists');
-
-          //Validate the code first
-          $validCode = $this->Model->validateFBCode($_GET['code']);
-
-          if($validCode == false)
-          {
-              redirect(base_url().'tours');
-          }
-          else
-          {
-              $data['getTourDetail'] = json_encode($this->Model->getTourDetail($tour_id));
-              $this->load->view('campaignedit_view', $data);
-          }
-      }
-      else if(isset($_GET['error']))
-      {
-          error_log('Authentication Error: '.$_GET['error']);
-          redirect(base_url().'tours');
-      }
-      else
-      {
-          error_log('No Authentication done');
-          redirect(base_url().'tours');
-      }*/
-
       $data['fbEvent'] = json_encode($this->Model->joinFBEvent($_GET['code'],$campaign_id));
     }
 

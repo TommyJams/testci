@@ -260,6 +260,7 @@ class Model extends CI_Model{
                                                                                    'scope' => 'rsvp_event',
                                                                                    'redirect_uri' => base_url().'campaign/'.$campaign_id
                                                                             ));
+                                   error_log('fbEventStatus:'.fbEventStatus);
                             }
 
 				$campaignDetails = array(
