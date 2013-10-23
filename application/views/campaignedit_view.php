@@ -647,6 +647,7 @@ campaign_view -> hack
         $("#add-option").append($(addoption).fadeIn('slow'));
         $.fancybox.close();
     }
+    $('#maxIndex').val(maxIndex);
   }
 
   function handleKeyPress(e)
