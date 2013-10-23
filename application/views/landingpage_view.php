@@ -105,92 +105,83 @@
     </div>
     <!-- /tour--> 
     
-    <!--bottom 2 col-->
-    
-    <div class="d-tj-offset-top-40  d-tj-col-2">
-      <div class="row">
-        <div class="col-md-6 d-tj-col-1" >
-          <div class="col-md-12 d-tj-col-1-bg" >
-            <div class="d-tj-events" >
-              <h3>EVENTS</h3>
-              <div class="event-ticker">
-                <ul>
-                  <li>
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</h5>
+    <!-- Networking Bar -->
+                    <div class="footer layout-50 clear-fix">
+                            
+                        <!-- Left column -->
+                        <div class="layout-50-left">
+                            
+                            <h3><a href="http://tommyjams.com/blog/events/event" target="_blank" class="">Events</a></h3>
+              <!-- events list -->
+              <ul class="no-list clear-fix">
+                <li>
+                  <a href="http://tommyjams.com/blog/events/event/atharva-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
+                    <table style='text-align:center; width: 100%;'>
+                      <tr style="height: 50px; width: 100%">
+                        <td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
+                        <td style="width: 60%; vertical-align:middle;">Atharva @ Phoenix Marketcity</td>
+                        <td style="width: 20%; vertical-align:middle;">14-Oct</td>
+                      </tr>
+                    </table>
+                  </a>
+                </li>
+                                <li>
+                  <a href="http://tommyjams.com/blog/events/event/raahie-xtreme-sports-bar/" target="_blank" class="" style="width: 100%">
+                    <table style='text-align:center; width: 100%;'>
+                      <tr style="height: 50px; width: 100%">
+                        <td style="width: 20%;"><img src="image/eventTiles/xtreme.jpg" alt=""/></td>
+                        <td style="width: 60%; vertical-align:middle;">Raahie @ Xtreme Sports Bar</td>
+                        <td style="width: 20%; vertical-align:middle;">11-Oct</td>
+                      </tr>
+                    </table>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://tommyjams.com/blog/events/event/suraj-mani-and-the-tattva-trippers-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
+                    <table style='text-align:center; width: 100%;'>
+                      <tr style="height: 50px; width: 100%">
+                        <td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
+                        <td style="width: 60%; vertical-align:middle;">Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</td>
+                        <td style="width: 20%; vertical-align:middle;">5-Oct</td>
+                      </tr>
+                    </table>
+                  </a>
+                </li>
+                            </ul>
+              <!-- /events list -->
+
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>5-Oct</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
+                        <!-- /Left column -->
+
+                        <!-- Right column -->
+
+                        <div class="layout-50-right">
+                            
+              <h3>Network With Us</h3>
+                            
+                            <!-- Latest tweets -->
+                            <div id="latest-tweets"></div>
+                            <!-- /Latest tweets -->
+                            
+                            <!-- Social icons list -->
+                            <ul class="no-list social-list clear-fix">
+                                <li><a href="http://www.facebook.com/tommyjams.live" title="Facebook" alt="Facebook" target="_blank" class="social-list-facebook"></a></li>
+                                <li><a href="http://twitter.com/TommyJams" title="Twitter" alt="Twitter" target="_blank" class="social-list-twitter"></a></li>
+                <li><a href="http://www.tommyjams.com/blog" title="Blog" alt="Blog" target="_blank" class="social-list-blog"></a></li>
+                <!--<li><div id="fbLikeContainer">
+                    <div class="fb-like" data-href="http://www.facebook.com/tommyjams.live" data-send="false" data-layout="button_count" data-width="75" data-show-faces="false" data-font="arial" data-colorscheme="dark">
                     </div>
-                  </li>
-                  <li>
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Mind Map @ Phoenix Marketcity</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>5-Oct</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/greenhaat.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Yogi, Shubham Roy and The Ways of the World @ Green Haat</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>20-Sep</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-tj-col-1 d-tj-network" >
-          <div class="col-md-12 d-tj-col-1-bg" >
-            <div class="d-tj-network-content" >
-              <h3>NETWORK WITH US</h3>
-              <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
-                <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
-                <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
-                  <div class="network-ticker">
-                    <!-- Latest tweets -->
-                      <div id="latest-tweets"></div>
-                    <!-- /Latest tweets -->
                   </div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-md-12 d-tj-offset-top-20 d-tj-pr10" >
-                <ul class=" list-unstyled social-list clear-fix">
-                  <li><a href="http://www.facebook.com/tommyjams.live" title="" alt="Facebook" target="_blank" class="social-list-facebook" data-original-title="Facebook"></a></li>
-                 <li><a href="http://twitter.com/TommyJams" title="" alt="Twitter" target="_blank" class="social-list-twitter" data-original-title="Twitter"></a></li>
-                  <li><a href="http://www.tommyjams.com/blog" title="" alt="Blog" target="_blank" class="social-list-blog" data-original-title="Blog"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/bottom 2 col--> 
+                </li>-->
+                            </ul>
+                            <!-- /Social icons list -->
+
+                        </div>
+            
+                        <!-- /Right column -->
+                        
+                    </div>
+                    <!-- Networking Bar -->
     
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
