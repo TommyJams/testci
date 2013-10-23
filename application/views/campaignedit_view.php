@@ -53,39 +53,31 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div>
-          <table>
+        <div class="bs-example">
+          <table class="table table-hover" >
             <thead>
-            <tr>
-              <th>PLEDGE AMOUNT (IN Rs.)</th>
-              <th>BENEFIT</th>
+              <tr>
+                <th>PLEDGE AMOUNT</th>
+                <th>BENEFIT</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr onclick="usePledgeVal('PledgeVal1');">
+              <td id="pledgeAmnt1">INR. 500 </td>
+              <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
             </tr>
-          </thead>
-          </table>
-        </div>
-        <div>
-              <table id="pledge1" class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
-                <tr>
-                  <td id="pledgeAmnt1">INR. 500 </td>
-                  <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
-                </tr>
-              </table>   
-        </div>
-        <div>
-              <table id="pledge2" class="table table-hover" onclick="usePledgeVal('PledgeVal2');" >
-                <tr>
-                  <td id="pledgeAmnt2">INR. 1000 </td>
-                  <td id="benefit2">GET A FREE SIGNED T-SHIRT</td>
-                </tr>
-              </table>   
-        </div>
-        <div>
-              <table id="pledge3" class="table table-hover" onclick="usePledgeVal('PledgeVal3');" >
-                <tr>
-                  <td id="pledgeAmnt3">INR. 2500 </td>
-                  <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
-                </tr>
-              </table>   
+    
+            <tr onclick="usePledgeVal('PledgeVal2');">
+              <td id="pledgeAmnt2">INR. 1000 </td>
+              <td id="benefit2">GET A FREE SIGNED T-SHIRT</td>
+            </tr>
+
+            <tr onclick="usePledgeVal('PledgeVal3');">
+              <td id="pledgeAmnt3">INR. 2500 </td>
+              <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
+            </tr>
+          </tbody>  
+          </table>   
         </div>         
     </div> 
   </div>   
