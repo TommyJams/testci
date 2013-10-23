@@ -79,6 +79,12 @@
           </table>            
     </div> 
   </div>   
+    
+  <div class="row">  
+    <div class="modal-footer">
+      <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
+    </div>
+  </div>
 
   </div>
 </div>
@@ -274,7 +280,9 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
-            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4>
+            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
+            <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
+          </h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc2" name="desc2" placeholder="Please write description" rows="4" ></textarea>
@@ -287,7 +295,9 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
-            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4>
+            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
+            <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
+          </h4>
           <div class="clearfix"></div>
           <h5>
             <textarea class="form-control" id="desc3" name="desc3" placeholder="Please write description" rows="4" ></textarea>
@@ -425,7 +435,7 @@ campaign_view -> hack
       var b = 'PLEDGE AMT ' + maxIndex;
       var desc = 'desc' + maxIndex;
 
-      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4><div class="clearfix"></div>';
+      var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
       addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
       addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -590,7 +600,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -617,7 +627,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -634,7 +644,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input  class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ pledgeamnt +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="'+ benefit +'" rows="4" ></textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
