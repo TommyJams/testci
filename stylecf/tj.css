@@ -496,6 +496,11 @@ a.social-list-fb-event-title:hover {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000;
+	vertical-align: bottom;
+}
+.social-list-fb-event-href:hover {
+	text-decoration: none;
+	color: #FFF;
 }
 .social-list-fb-event-img {
 	width: 55px;
