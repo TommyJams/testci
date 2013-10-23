@@ -53,7 +53,6 @@
 
   <div class="row">
     <div class="modal-body modal-link">
-        <div class="bs-example">
           <table class="table table-hover" >
             <thead>
               <tr>
@@ -77,8 +76,7 @@
               <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
             </tr>
           </tbody>  
-          </table>   
-        </div>         
+          </table>            
     </div> 
   </div>   
     
