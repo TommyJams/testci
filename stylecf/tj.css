@@ -471,6 +471,7 @@ a.social-list-fb-event-title:hover {
 	margin: 10px;
 	margin-left: 0px;
 	max-width: 30%;
+	min-width: 120px;
 	height: 120px;
 }
 .social-list-fb-event-link {

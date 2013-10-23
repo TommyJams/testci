@@ -163,12 +163,12 @@
                   <div class='social-list-fb-event-name pull-left'><? print($fbEventName); ?></div>
                 </a>
                 <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic pull-left'/>
-                <div class='pull-left' style='max-width: 60%;'>
+                <div class='pull-left' style='max-width: 65%;'>
                   <a href='<? print($fbLoginURL); ?>' class='social-list-fb-event-link'><? print($fbEventStatus); ?></a>
                   <div class='pull-left' style='clear:left;'>
                     <?
                     $countFaces = 0;
-                    $facesToShow = 2;
+                    $facesToShow = 3;
                     foreach($fbEventJoinees as $row)
                     {
                       if($countFaces < $facesToShow)
