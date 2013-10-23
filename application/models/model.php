@@ -603,18 +603,22 @@ class Model extends CI_Model{
                     'client_id'     => $appId,
                     'client_secret' => $secret,
                     'type'          => 'client_cred',
-                    'code'          => $code,
+                    'code'          => $code
                 ));
                 $access_token = $this->facebook->getAccessToken();
 
                 // Call the Graph API to RSVP to the event
                 try
                 {
-                        $event_rsvp = $this->facebook->api($fbEvent.'/attending?access_token='.$access_token, 'POST');
+                        $event_rsvp = $this->facebook->api($fbEvent.'/attending', array(
+                                        'method'        => 'POST',
+                                        'access_token'  => $access_token
+                                ));
                         error_log('RSVP:'.$event_rsvp);
                 }
                 catch(FacebookApiException $e)
                 {
+                        error_log('Exception!');
                 }
 
                 return true;
