@@ -69,10 +69,12 @@
         </div>
         <div>
           <tbody>
+                <input type="hidden" id="pledgeAmnt1" value="INR. 500" > 
+                <input type="hidden" id="benefit1" value="Free Mug" >
                 <table class="table table-hover" onclick="usePledgeVal('PledgeVal1');" >
                   <tr>
-                    <td id="pledgeAmnt1">INR. 500 </td>
-                    <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
+                    <td>INR. 500 </td>
+                    <td>GET A FREE SIGNED T-SHIRT</td>
                   </tr>
                 </table>   
           </tbody>
