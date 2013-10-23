@@ -655,7 +655,7 @@ ul.social-list li a.social-list-blog-edit {
 	background-position:0px -15px;
 }
 .open-help-form  a.open-help-form-hover {
-	background-image:url('/img/delete-option.png');
+	background-image:url('/img/help.png');
 	cursor: pointer;
 }
 
