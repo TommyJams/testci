@@ -598,13 +598,7 @@ class Model extends CI_Model{
                 $secret = '50f31c2706d846826bead008392e8969';
                 $my_url = base_url().'campaign/'.$campaign_id;
 
-                // Get access token
-                /*$token_url = "https://graph.facebook.com/oauth/access_token?client_id="
-                . $appId . "&redirect_uri=" . urlencode($my_url)
-                . "&client_secret=" . $secret
-                . "&code=" . $code;
-                $access_token = file_get_contents($token_url);*/
-
+                //Get Access Token
                 $this->facebook->api('oauth/access_token', array(
                     'client_id'     => $appId,
                     'client_secret' => $secret,
@@ -613,12 +607,14 @@ class Model extends CI_Model{
                 ));
                 $access_token = $this->facebook->getAccessToken();
 
-                error_log('AccessToken: '.$access_token);
                 // Call the Graph API to RSVP to the event
-                $event_rsvp = "https://graph.facebook.com/$fbEvent/attending?method=post&" . $access_token;
-                $rsvped = json_decode(file_get_contents($event_rsvp));
-                if($rsvped) {
-                        error_log('RSVPed to event'.$fbEvent);
+                try
+                {
+                        $event_rsvp = $this->facebook->api($fbEvent.'/attending?access_token='.$access_token, 'POST');
+                        error_log('RSVP:'.$event_rsvp);
+                }
+                catch(FacebookApiException $e)
+                {
                 }
 
                 return true;
