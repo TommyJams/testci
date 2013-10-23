@@ -614,7 +614,7 @@ class Model extends CI_Model{
                                         'method'        => 'POST',
                                         'access_token'  => $access_token
                                 ));
-                        error_log('RSVP:'.$event_rsvp);
+                        error_log('RSVP to '.$fbEvent.':'.$event_rsvp);
                 }
                 catch(FacebookApiException $e)
                 {
