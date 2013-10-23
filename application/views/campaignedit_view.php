@@ -268,7 +268,9 @@
         <div class="pledge">
           <h4>
             <input  class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
-            <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
+            <div>
+              <a class="open-help-form pull-right" data-toggle="modal" href="#helpModal" target="_blank" class="social-list-facebook-edit open-help-form"><img src="/img/help.png" alt="" style=""></a>
+            </div>
             <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
           </h4> 
           <div class="clearfix"></div>
