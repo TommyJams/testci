@@ -419,9 +419,11 @@ campaign_view -> hack
 <script type="text/javascript" src="/script/ajaxfileupload.js"></script>
 <script>
 
+  var maxIndex = 3;
+
   $(document).ready(function(){
     
-    var maxIndex = 3;
+    console.log(maxIndex);
     $('#maxIndex').val(maxIndex);
 
     $(".add-option-new").click(function(){
@@ -584,7 +586,6 @@ campaign_view -> hack
 
   function usePledgeVal(type)
   {
-    var maxIndex = 3;
     if(type == "PledgeVal1")
     {
         maxIndex++;
