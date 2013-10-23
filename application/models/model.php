@@ -232,7 +232,7 @@ class Model extends CI_Model{
 
                                    $fqlResult = $this->facebook->api($param);
                                    $fqlStatusResult = $this->facebook->api($paramStatus);
-
+                                   error_log($fqlStatus);
                                    //looping through retrieved data
                                    foreach( $fqlResult as $keys => $values ){
                                        $fbEventName = $values['name'];
