@@ -170,15 +170,16 @@
                   <div class='pull-left' style='clear:left;'>
                     <?
                     $countFaces = 0;
+                    $facesToShow = 2;
                     foreach($fbEventJoinees as $row)
                     {
-                      if($countFaces < 5)
+                      if($countFaces < $facesToShow)
                         print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
                       $countFaces++;
                     }
-                    if($countFaces > 5)
+                    if($countFaces > $facesToShow)
                     {
-                      $countFaces -= 5;
+                      $countFaces -= $facesToShow;
                       print("<a href='' class='social-list-fb-event-href' > and $countFaces others</a>");
                     }
                     ?>

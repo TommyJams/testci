@@ -490,7 +490,7 @@ a.social-list-fb-event-title:hover {
 .social-list-fb-event-href {
 	background: #ffcc00;
 	margin-top: 10px;
-	margin-left: 5px;
+	margin-right: 10px;
 	display: inline-block;
 }
 .social-list-fb-event-img {
