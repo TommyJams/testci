@@ -171,12 +171,11 @@
                     <?
                     foreach($fbEventJoinees as $row)
                     {
-                      print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                      print("<a href='https://facebook.com/$row' class='.social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
                     }
                     ?>
                   </div>
                 </div>
-              </div>
               <div class="clearfix"></div>
             <?
             }
