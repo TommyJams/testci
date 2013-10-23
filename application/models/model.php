@@ -232,7 +232,7 @@ class Model extends CI_Model{
                                    $fbEventURL = 'https://www.facebook.com/events/'.$fbEvent;
                                    $fbLoginURL = $this->facebook->getLoginUrl( array(
                                                                                    'scope' => 'rsvp_event',
-                                                                                   'redirect_uri' => base_url().'campaign/'.$campaign_id.'/rsvp'
+                                                                                   'redirect_uri' => base_url().'campaign/'.$campaign_id
                                                                             ));
                             }
 
@@ -596,7 +596,7 @@ class Model extends CI_Model{
 
                 $appId = '248776888603319';
                 $secret = '50f31c2706d846826bead008392e8969';
-                $my_url = base_url().'campaign/'.$campaign_id.'/rsvp';
+                $my_url = base_url().'campaign/'.$campaign_id;
                 // Get access token
                 $token_url = "https://graph.facebook.com/oauth/access_token?client_id="
                 . $appId . "&redirect_uri=" . urlencode($my_url)

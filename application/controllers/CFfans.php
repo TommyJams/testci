@@ -15,13 +15,13 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
 
     $campaign_id = $this->uri->segment(2);
-    $rsvp = $this->uri->segment(3);
+    parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 
 		error_log("Camp Id: ".$campaign_id);
 
-    if(isset($rsvp) && $rsvp == 'rsvp')
+    if(isset($_GET['code']))
     {
-      parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
+      
 
       /*if(isset($_GET['code']))
       {
@@ -52,14 +52,10 @@ class CFfans extends CI_Controller{
       }*/
 
       $data['fbEvent'] = json_encode($this->Model->joinFBEvent($_GET['code'],$campaign_id));
-      $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
-      $this->load->view('campaign_view', $data);
     }
-    else
-    {
-      $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
-  		$this->load->view('campaign_view', $data);
-    }
+
+    $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+		$this->load->view('campaign_view', $data);
 	}
 
 	public function campaignEvent(){
