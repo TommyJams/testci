@@ -324,5 +324,6 @@
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jcarousellite_1.0.1c4.js"></script> 
 <script src="/script/tj.js"></script>
+<script type="text/javascript" src="/script/main1.js"></script>
 </body>
 </html>
