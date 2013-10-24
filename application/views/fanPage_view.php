@@ -26,7 +26,8 @@
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
-          <h5 >Money</h5>
+          <h5 >Decrease Costs<br>
+            No more paying for entry tickets, get entry into all the shows once you pledge your support.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
