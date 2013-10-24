@@ -173,7 +173,7 @@
                 <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
                 <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
                     <!-- Latest tweets -->
-                      <div id="latest-tweets"></div>
+                       <div id="latest-tweets"></div>
                     <!-- /Latest tweets -->
                 </div>
               </div>
