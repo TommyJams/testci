@@ -170,19 +170,19 @@
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
-          <h5>
+          <h5 style="color: #000000;">
             Launch Campaign
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
-          <h5>
+          <h5 style="color: #000000;">
           Sell Tickets
           </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
-          <h5>
+          <h5 style="color: #000000;">
           Tour!
           </h4>
         </div>
