@@ -223,9 +223,13 @@
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-network-content" >
               <h3>NETWORK WITH US</h3>
+              <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
+                <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
                 <!-- Latest tweets -->
                   <div id="latest-tweets"></div>
                 <!-- /Latest tweets -->
+              </div>
+              </div>  
               <div class="clearfix"></div>
               <div class="col-md-12 d-tj-offset-top-20 d-tj-pr10" >
                 <ul class=" list-unstyled social-list clear-fix">
