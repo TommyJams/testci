@@ -113,12 +113,16 @@
                 $artist_name = $campaign->artist_name;
                 $funded = $campaign->funded;
                 $days_to_go = $campaign->days_to_go;
+                $image = $campaign->image;
+
+                if(!isset($image))
+                  $image = "2.jpg";
               ?>
             <li>
               <div>
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
                 <div class="d-tj-slide-body " >
-                  <div class="d-tj-campaign-slide-img" style="background-image:url(/img/temp/66.jpg)">
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
                     <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png"   alt=""/> </div>
                   </div>
                   <div class="d-tj-progress">
