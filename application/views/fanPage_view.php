@@ -69,7 +69,7 @@
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
                 <div class="d-tj-slide-body " >
                   <div class="d-tj-campaign-slide-img" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
-                    <div class="d-tj-campaign-slide-hover-img hide"> <img src="img/tick.png" alt=""/> </div>
+                    <div class="d-tj-campaign-slide-hover-img hide">  </div>
                   </div>
                   <div class="d-tj-progress">
                     <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
