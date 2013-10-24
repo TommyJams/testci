@@ -206,6 +206,7 @@
         </div>
       </div>
     </div>
+  </div>
     
     <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
