@@ -171,8 +171,6 @@
             <div class="d-tj-network-content" >
               <h3>NETWORK WITH US</h3>
               <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
-                <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
-                
                     <!-- Latest tweets -->
                        <div id="latest-tweets"></div>
                     <!-- /Latest tweets -->
