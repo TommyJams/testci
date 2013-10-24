@@ -97,6 +97,8 @@ class Model extends CI_Model{
    				$target = $row->target;
    				$raised = $row->raised;
    				$endCamp = $row->endCamp;
+   				$image = $row->image1;
+
 
 		   		$todayDate = date("Y-m-d");	
 
@@ -115,7 +117,8 @@ class Model extends CI_Model{
 										'artist_id'   => $artist_id,
 										'artist_name' => $artist_name,
 										'funded'      => $funded,
-										'days_to_go'  => $days_to_go
+										'days_to_go'  => $days_to_go,
+										'image'      => $image
 									);
 							
 				$response[] = $campaignRow;
