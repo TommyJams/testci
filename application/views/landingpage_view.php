@@ -252,8 +252,8 @@
     
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
-      <div class="d-tj-network-content">
-      <h3>AS SEEN IN</h3>
+      <div >
+      <h3 style="color:white;margin-left:20px;">AS SEEN IN</h3>
       <div class="footer layout-10 clear-fix">                
           <a href="/radioone" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
