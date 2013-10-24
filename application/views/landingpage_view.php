@@ -231,17 +231,6 @@
                 <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
                 <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
                   <div class="network-ticker">
-                    <ul>
-                      <li>
-                        <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
-                      </li>
-                      <li>
-                        <h5 >sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
-                      </li>
-                      <li>
-                        <h5 >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -369,47 +358,20 @@
   /**************************************************************************/
   /*  Twitter                                 */
   /**************************************************************************/
-  
-  //$.getJSON('http://api.twitter.com/1.1/statuses/user_timeline.json?screen_name='+options.twitter.name+'&count='+options.twitter.count+'&callback=?', function(data) 
-  $.getJSON('twitterproxy/twitterhandle', function(data) 
+
+  $.getJSON('twitterproxy/twitterhandle', function(data)
     {
-    if(data.length)
-    {
-      var list=$('<ul>');
-
-      console.log(list);
-
-      $(data).each(function(index,value)
+      if(data.length)
       {
-        list.append($('<li>').append($('<p>').html(linkify(value.text))));
-      });
+        var list=$('<ul>');
 
-      $('#latest-tweets').append(list);
+        $(data).each(function(index,value)
+        {
+          list.append($('<li>').append($('<h5>').html(linkify(value.text))));
+        });
 
-      $('#latest-tweets ul').carouFredSel(
-      {
-        circular    : true,
-        direction   : 'up',
-        items: 
-        {
-          visible   : 1,
-          minimum   : 1
-        },
-        scroll: 
-        {
-          items   : 1,
-          duration  : 750,
-          fx      : 'cover'
-        }
-      }); 
-      
-      setTwitterDimension();
-    }
-  });   
-    
-  $(window).resize(function() 
-  {
-    setTwitterDimension();
+        $('.network-ticker').append(list);
+      }
   });
   
   /**************************************************************************/
