@@ -22,7 +22,7 @@
 {
   margin-bottom:20px;
   background-repeat:no-repeat;
-  background-position:center left;
+  background-position:left;
   background-image:url('../image/icon_tweet.png');
 }
 
