@@ -381,7 +381,6 @@ ul.social-list {
 }
 ul.social-list li {
 	float:left;
-	margin-right:2px;
 }
 ul.social-list-share {
 	padding-top: 20px;
@@ -401,7 +400,7 @@ ul.social-list li a:hover {
 	background-position:0px -39px;
 }
 ul.social-list-share li a {
-	width:238px;
+	width:248px;
 	height:40px;
 	display:block;
 	background-repeat:no-repeat;
