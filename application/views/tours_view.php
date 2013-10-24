@@ -89,28 +89,28 @@
           <h5 style="color: #000000;">
            <b>Evaluate</b><br>
           Check out the touring venues, see how much money you need to raise via the campaign, and evaluate whether you are up for the effort
-          </h5>
+          </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
           <h5 style="color: #000000;">
             <b>Launch Campaign</b><br>
             Click the Apply Now button for the respective tour, create a video to be added as your campaign video, fill in all your details, and launch your campaign
-          </h5>
+          </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
           <h5 style="color: #000000;">
           <b>Sell Tickets</b><br>
           Share the campaign with your fans, find innovative ways to promote the campaign, and sell enough tickets to reach the campaign target.
-          </h5>
+          </h4>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
           <h5 style="color: #000000;">
           <b>Tour</b><br>
           Sit back and relax, while we take you on the tour of your life.
-          </h5>
+          </h4>
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
