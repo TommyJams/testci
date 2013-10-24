@@ -111,7 +111,7 @@ class Model extends CI_Model{
 					$days_to_go = $days;
 				}
 
-				$funded = (( $raised/$target ) * 100);
+				$funded = intval(( $raised/$target ) * 100);
 				$campaignRow = array(
 										'campaign_id' => $campaign_id,
 										'artist_id'   => $artist_id,
