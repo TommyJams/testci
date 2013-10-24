@@ -80,7 +80,7 @@
     ?>
     
     <!--cirle connect-->
-    <div class="d-tj-black-box d-tj-offset-top-30 d-tj-circle" >
+    <div class="d-tj-black-box d-tj-offset-top-40 d-tj-circle" >
       <h3>How it works?</h3>
       <div class="visible-lg visible-md d-tj-bg-strip" ></div>
       <div class="row " >
