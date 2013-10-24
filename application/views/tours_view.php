@@ -164,7 +164,7 @@
       <div class="row " >
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
-          <h5>
+          <h5 style="color: #000000;">
            Evaluate and Launch tour
           </h4>
         </div>
