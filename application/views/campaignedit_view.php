@@ -355,7 +355,7 @@
           <li>
             <h4>ARTIST</h4>
           </li>
-          <li> <a href="/tours">CROWDFUND</a> </li>
+          <li> <a href="/tours">TOURS</a> </li>
           <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>
