@@ -78,27 +78,48 @@
     <? 
     } 
     ?>
-    <div class="d-tj-black-box d-tj-offset-top-40 d-tj-why">
-      <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
-      <div class="row d-tj-offset-top-40">
+    
+    <!--cirle connect-->
+    <div class="d-tj-black-box d-tj-offset-top-30 d-tj-circle" >
+      <h3>How it works?</h3>
+      <div class="visible-lg visible-md d-tj-bg-strip" ></div>
+      <div class="row " >
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
-          <h5 >Money</h5>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
+          <h5 style="color: #000000;">
+           <b>Evaluate</b><br>
+          Check out the touring venues, see how much money you need to raise via the campaign, and evaluate whether you are up for the effort
+          </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
-          <h5 >Cross-city tours</h5>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
+          <h5 style="color: #000000;">
+            <b>Launch Campaign</b><br>
+            Click the Apply Now button for the respective tour, create a video to be added as your campaign video, fill in all your details, and launch your campaign
+          </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
-          <h5>Greater Connect with Audience</h5>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
+          <h5 style="color: #000000;">
+          <b>Sell Tickets</b><br>
+          Share the campaign with your fans, find innovative ways to promote the campaign, and sell enough tickets to reach the campaign target.
+          </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
-          <h5 >Promotion</h5>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
+          <h5 style="color: #000000;">
+          <b>Tour</b><br>
+          Sit back and relax, while we take you on the tour of your life.
+          </h5>
         </div>
       </div>
+      <div class="text-center d-tj-offset-top-10 " >
+        <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
+      </div>
     </div>
+    </div>
+    <!-- /circle-connect-->
+
     <!-- tour-->
     <div class="d-tj-3-col d-tj-offset-top-30" >
       <div class="d-tj-slide">
@@ -156,43 +177,37 @@
       </div>
     </div>
     <!-- /tour--> 
+
+    <div class="d-tj-black-box d-tj-offset-top-40 d-tj-why">
+      <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
+      <div class="row d-tj-offset-top-40">
+        <div class="col-md-3 col-sm-6 text-center">
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
+          <h5 ><b>Money</b><br>
+            Earn what you deserve. Tired of haggling with the venues over your fee? Simply connect with your fans, and keep all the money that you raise!
+          </h5>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center">
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
+          <h5 ><b>Cross-city tours</b><br>
+            It’s your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality.
+          </h5>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center">
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
+          <h5><b>Audience</b><br>
+            Engage with your audience, share merchandise along with your tickets, connect with them on the day of your performance by using innovative ideas such as singing a song and getting a photograph with the band.
+          </h5>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center">
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
+          <h5 ><b>Promotion</b><br>
+            Be promoted by multiple channels in multiple cities as all the forces come together to make your tour a reality.
+          </h5>
+        </div>
+      </div>
+    </div>
     
-    <!--cirle connect-->
-    <div class="d-tj-black-box d-tj-offset-top-30 d-tj-circle" >
-      <h3>EVENTS</h3>
-      <div class="visible-lg visible-md d-tj-bg-strip" ></div>
-      <div class="row " >
-        <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
-          <h5 style="color: #000000;">
-           Evaluate and Launch tour
-          </h4>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
-          <h5 style="color: #000000;">
-            Launch Campaign
-          </h4>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
-          <h5 style="color: #000000;">
-          Sell Tickets
-          </h4>
-        </div>
-        <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
-          <h5 style="color: #000000;">
-          Tour!
-          </h4>
-        </div>
-      </div>
-      <div class="text-center d-tj-offset-top-10 " >
-        <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
-      </div>
-    </div>
-    </div>
-    <!-- /circle-connect-->
     <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
       <div class="col-md-3 col-sm-12 col-xs-12 footer-top">

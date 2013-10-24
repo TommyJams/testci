@@ -32,7 +32,7 @@
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
           <h5 ><b>Freebies</b><br>
-            Get freebies every time you pledge. It’s your chance to directly talk to that favorite guitarist of yours.</h5>
+            Get freebies every time you pledge. It is your chance to directly talk to that favorite guitarist of yours.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
