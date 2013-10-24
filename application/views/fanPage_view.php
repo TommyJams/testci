@@ -170,7 +170,7 @@
       <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="img/m-s-ventures.png" style=""/></a> </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
-      <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
+      <p align="center">COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
     </div>
   </footer>
 </div>
