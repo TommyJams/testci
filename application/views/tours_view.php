@@ -83,7 +83,7 @@
     <div class="d-tj-black-box d-tj-offset-top-40 d-tj-circle" >
       <h3>How it works?</h3>
       <div class="visible-lg visible-md d-tj-bg-strip" ></div>
-      <div class="row " >
+      <div class="row d-tj-offset-top-40" >
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
           <h5 style="color: #000000;">
