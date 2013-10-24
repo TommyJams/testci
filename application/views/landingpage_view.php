@@ -372,6 +372,14 @@
 
         $('.network-ticker').append(list);
       }
+
+      $(".network-ticker").jCarouselLite({
+        vertical: true,
+        hoverPause:true,
+        visible: 1,
+        auto:2000,
+        speed:1000
+      });
   });
   
   /**************************************************************************/
@@ -391,16 +399,7 @@
 			next: '#next5',
 			scroll: 1
 		});
-	
 
-	$(".network-ticker").jCarouselLite({
-	
-		vertical: true,
-		hoverPause:true,
-		visible: 1,
-		auto:2000,
-		speed:1000
-	});
 	$(".event-ticker").jCarouselLite({
 		vertical: true,
 		hoverPause:true,
