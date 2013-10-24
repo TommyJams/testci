@@ -244,7 +244,7 @@
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
       <div class="footer layout-10 clear-fix">                
-          <a href="beta/radioone.php" target="_blank">                  
+          <a href="/radioone" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
           </a>              
           <a href="http://mewsic.in" target="_blank">
