@@ -17,6 +17,60 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<style>
+#latest-tweets
+{
+  margin-bottom:20px;
+  background-repeat:no-repeat;
+  background-position:center left;
+  background-image:url('../image/icon_tweet.png');
+}
+
+  #latest-tweets ul
+  {
+    margin:0px;
+    padding:0px;
+    margin-left:70px;
+    list-style-type:none;
+  }
+
+  #latest-tweets,
+  #latest-tweets ul li,
+  #latest-tweets ul li p
+  {
+    display:block;
+  }
+  
+  #latest-tweets ul li
+  {
+    clear:both;
+    display:table-row;
+  }
+    
+  #latest-tweets ul li p
+  {
+    margin:0px;
+    padding:0px;
+    display:table-cell;
+    vertical-align:middle;
+  }
+      
+  #latest-tweets ul li p a:hover
+  {
+    text-decoration:underline;
+  }
+  
+  #latest-tweets ul li p a
+  {
+    color:#FFCC00;
+  }
+
+  #latest-tweets ul li p
+  {
+    background-color:#000000;
+  }
+
+</style>    
 
 </head>
 <body>
