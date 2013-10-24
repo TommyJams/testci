@@ -263,9 +263,8 @@
     
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
-      <div class="d-tj-events">
-        <h3>AS SEEN IN</h3>
-      </div> 
+      <div class="d-tj-network-content">
+      <h3>AS SEEN IN</h3>
       <div class="footer layout-10 clear-fix">                
           <a href="/radioone" target="_blank">                  
             <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
@@ -287,6 +286,7 @@
           <a href="http://yourstory.in" target="_blank">                  
             <img src="image/icon/icon-partner/icon7.png" alt="" style="margin-left: 10px;"/>                
           </a>
+      </div> 
       </div> 
     </div>
     <!--/bottom 1 col--> 
