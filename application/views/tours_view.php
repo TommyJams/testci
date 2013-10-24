@@ -117,7 +117,6 @@
         <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
       </div>
     </div>
-    </div>
     <!-- /circle-connect-->
 
     <!-- tour-->
@@ -190,7 +189,7 @@
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
           <h5 ><b>Cross-city tours</b><br>
-            It’s your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality.
+            It is your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality.
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
