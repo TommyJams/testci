@@ -353,6 +353,9 @@
     if(data.length)
     {
       var list=$('<ul>');
+
+      console.log(list);
+      
       $(data).each(function(index,value)
       {
         list.append($('<li>').append($('<p>').html(linkify(value.text))));

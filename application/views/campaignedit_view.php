@@ -355,8 +355,8 @@
           <li>
             <h4>ARTIST</h4>
           </li>
-          <li> <a>CROWDFUND</a> </li>
-          <li> <a>BOOK EVENTS</a> </li>
+          <li> <a href="/tours">CROWDFUND</a> </li>
+          <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-venues text-center">
@@ -364,7 +364,7 @@
           <li>
             <h4 >VENUES</h4>
           </li>
-          <li> <a>BOOK ARTIST</a> </li>
+          <li> <a href="/index">BOOK ARTIST</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-fans text-center">
@@ -372,8 +372,8 @@
           <li>
             <h4 >FANS</h4>
           </li>
-          <li> <a>CAMPAIGN</a> </li>
-          <li> <a>RADIO ONE</a> </li>
+          <li> <a href="/fans">CAMPAIGN</a> </li>
+          <li> <a href="/radioone">RADIO ONE</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-help text-center">
@@ -381,10 +381,10 @@
           <li>
             <h4 >HELP</h4>
           </li>
-          <li> <a>CONTACT US</a> </li>
-          <li> <a>ABOUT US</a> </li>
-          <li> <a>PRESS</a> </li>
-          <li> <a>ADVERTISE</a> </li>
+          <li> <a href="/help">CONTACT US</a> </li>
+          <li> <a href="/aboutus">ABOUT US</a> </li>
+          <li> <a href="/press">PRESS</a> </li>
+          <li> <a href="/advertise">ADVERTISE</a> </li>
         </ul>
       </div>
     </div>
