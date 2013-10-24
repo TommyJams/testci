@@ -360,15 +360,7 @@
 
       $('#latest-tweets').append(list);
 
-      $("#latest-tweets ul").jCarouselLite({
-        vertical: true,
-        hoverPause:true,
-        visible: 1,
-        auto:2000,
-        speed:1000
-  });
-
-   /*   $('#latest-tweets ul').carouFredSel(
+      $('#latest-tweets ul').carouFredSel(
       {
         circular    : true,
         direction   : 'up',
@@ -383,7 +375,7 @@
           duration  : 750,
           fx      : 'cover'
         }
-      }); */
+      }); 
       
       setTwitterDimension();
     }
