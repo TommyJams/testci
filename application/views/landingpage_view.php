@@ -227,9 +227,25 @@
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-network-content" >
               <h3>NETWORK WITH US</h3>
-                <!-- Latest tweets -->
-                  <div id="latest-tweets"></div>
-                <!-- /Latest tweets -->
+                <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
+                <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
+                <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
+                  <div class="network-ticker">
+                    <ul>
+                      <li>
+                        <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
+                      </li>
+                      <li>
+                        <h5 >sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
+                      </li>
+                      <li>
+                        <h5 >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</h5>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
               <div class="clearfix"></div>
               <div class="col-md-12 d-tj-offset-top-20 d-tj-pr10" >
                 <ul class=" list-unstyled social-list clear-fix">
@@ -247,6 +263,7 @@
     
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
+      <div class="d-tj-network-content">
       <h3>AS SEEN IN</h3>
       <div class="footer layout-10 clear-fix">                
           <a href="/radioone" target="_blank">                  
@@ -269,7 +286,8 @@
           <a href="http://yourstory.in" target="_blank">                  
             <img src="image/icon/icon-partner/icon7.png" alt="" style="margin-left: 10px;"/>                
           </a>
-      </div>  
+      </div> 
+      </div> 
     </div>
     <!--/bottom 1 col--> 
         
