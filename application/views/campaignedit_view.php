@@ -43,8 +43,6 @@
 <!--/Video modal--> 
 
 <!--venue modal-->
-<div class="venue-form" >
-
 <? $tourDetail = (json_decode($getTourDetail));
   foreach($tourDetail as $tourDetail) 
   { 
@@ -61,6 +59,7 @@
     $link = $venue->link;
     $contact = $venue->contact;
   ?>
+    <div class="venue-form<? print($venue_id); ?>" >
       <div class="modal-content socialModal">
         <div class="modal-header">
           <h4><? print($venue_name); ?></h4>
@@ -74,9 +73,9 @@
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
         </div>
       </div>
-
+    </div>  
 <? } ?>
-</div>
+
 <!--/venue modal--> 
 
 <!--Help modal-->
@@ -216,12 +215,13 @@
         <? foreach($venues as $venue){ ?>
           <?
             $venue_name = $venue->venue_name;
+            $venue_id = $venue->venue_id;
             $city = $venue->city;
             $image = $venue->image;
           ?>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
           <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
-            <a class="social-list-facebook-edit open-venue-form" data-toggle="modal" href="#eventModal" target="_blank" >
+            <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" target="_blank" >
             <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></a>
           </div>
           <div class="col-md-1"></div>
@@ -585,20 +585,6 @@ campaign_view -> hack
             );  
     });
 
-    $('body').on('click', '.open-venue-form', function(){
-        $.fancybox(
-                $('.venue-form').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                 }
-            );  
-    });
-
     $('body').on('change','#userfile', function() {
       //get the file path
       var file = $("#userfile").val();
@@ -631,7 +617,24 @@ campaign_view -> hack
 
     });
 
-});    
+});  
+
+  function venueBox(id)
+  {
+    var a = 'venue-form' + id;
+
+    $.fancybox(
+        $('.'+a).html(),
+        {
+            'width'             : 950,
+            'height'            : 1100,
+            'autoScale'         : false,
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'hideOnContentClick': false,
+         }
+    );  
+  }  
 
   function usePledgeVal(type)
   {
