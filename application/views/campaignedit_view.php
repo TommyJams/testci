@@ -44,8 +44,15 @@
 
 <!--venue modal-->
 <div class="venue-form" >
-<? foreach($venues as $venue){ ?>
-  <?
+
+<? $tourDetail = (json_decode($getTourDetail));
+  foreach($tourDetail as $getTourDetail) 
+  { 
+    $venuesDetail = $tourDetail->venuesDetail; 
+  } 
+  
+  foreach($venuesDetail as $venue)
+  { 
     $venue_name = $venue->venue_name;
     $venue_id = $venue->venue_id;
     $city = $venue->city;
@@ -54,14 +61,13 @@
     $link = $venue->link;
     $contact = $venue->contact;
   ?>
-    
       <div class="modal-content socialModal">
         <div class="modal-header">
           <h4><? print($venue_name); ?></h4>
         </div>
         <div class="modal-body modal-link">
 
-          
+
 
         </div>
         <div class="modal-footer">

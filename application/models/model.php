@@ -188,7 +188,6 @@ class Model extends CI_Model{
 					foreach ($q2result as $rowVenue)
 					{
 						$venue_name = $rowVenue->venue_name;
-						$venue_id = $rowInner->venue_id;
 						$image = $rowVenue->image;
 						$venue_desc = $rowVenue->desc;
 						$link = $rowVenue->link;	
