@@ -769,9 +769,13 @@ div[data-role="editor-toolbar"] {
 }
 .socialModal table tbody tr{
 	cursor: pointer;
+	margin-bottom: 2px;
 }
 .socialModal table tbody tr:hover{
 	color: #000;
+}
+.socialModal table tbody td{
+	border-top: 0px;
 }
 .modal-link input {
 	width: 100%;
