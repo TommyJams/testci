@@ -491,6 +491,9 @@ class Model extends CI_Model{
 			}
 		}
 
+		$picture = base_url().'images/artist/campaign/'.$backimg;
+		error_log($picture);
+
         try {
             $uid = $this->facebook->getUser();
             error_log('Facebook User: '.$uid);
@@ -500,7 +503,7 @@ class Model extends CI_Model{
                                                 array(
                                                        'name' => $artist_name.' tours with TommyJams',
                                                        'start_time' => $tourDate,
-                                                       'picture' => base_url().'images/artist/campaign/'.$backimg,
+                                                       'picture' => $picture,
                                                        'description' => $artist_name.' tours with TommyJams'
                                                 )
                                          );
