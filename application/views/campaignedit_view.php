@@ -150,15 +150,15 @@
               </div>
               <h2>
                 <a  data-toggle="modal" id="vd-link" href="#videoModal" title="Video Link" alt="" target="_blank" 
-                    class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>
+                    class="social-list-facebook-edit open-video-link"><font color="grey">UPLOAD<br>VIDEO LINK</font></a>
               </h2>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
-              <input class="form-control input-lg pull-left" type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></input>
-              <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-              <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
+              <input style="color:white" class="form-control input-lg pull-left" type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></input>
+              <input style="color:white" class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+              <input style="color:white" class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
               <div class="clearfix"></div>
               <div class="background-images">
                 UPLOAD BACKGROUND IMAGE
@@ -523,7 +523,7 @@ campaign_view -> hack
                                             var x = $('.fancybox-inner').contents().find('#videolink').val();
                                             insertLinks(x, 'video');
 
-                                            $('#vd-link').html("<p><font title='Change Video Link' color='grey'>CHANGE<br>VIDEO LINK</font></p>");
+                                            $('#vd-link').html("<p><font color='grey'>CHANGE<br>VIDEO LINK</font></p>");
                                             $('.vd-link-selected').html("Link: " + x);
                                           }
                  }

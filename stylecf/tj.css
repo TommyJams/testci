@@ -198,9 +198,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour-right h3 {
 	margin-left:0px !important;
 }
-.d-tj-tour-right input {
-	color:white;
-}
 .d-tj-tour h4 {
 	font-family: 'Dosis';
 	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif */
