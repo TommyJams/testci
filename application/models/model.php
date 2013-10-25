@@ -491,9 +491,6 @@ class Model extends CI_Model{
 			}
 		}
 
-		$picture = base_url().'images/artist/campaign/'.$backimg;
-		error_log($picture);
-
         try {
             $uid = $this->facebook->getUser();
             error_log('Facebook User: '.$uid);
@@ -510,6 +507,7 @@ class Model extends CI_Model{
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
+                    $picture = base_url().'images/artist/campaign/'.$backimg;
 
                     $this->facebook->api('/me/'.$eventID.'/picture', 'POST',
                                                 array(
