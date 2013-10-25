@@ -142,7 +142,7 @@
               <div class=" col-md-12" style="padding: 5px;">
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
                 <div class="d-tj-slide-body " style="">
-                  <div class="d-tj-slide-img" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
+                  <div class="d-tj-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
                     <div class="d-tj-slide-hover-img hide">  </div>
                   </div>
                   <div class="d-tj-progress">

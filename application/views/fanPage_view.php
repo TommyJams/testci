@@ -68,7 +68,7 @@
         <div class="col-md-3 col-sm-4 col-xs-6 d-tj-offset-top-30 c-tile">
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
                 <div class="d-tj-slide-body " >
-                  <div class="d-tj-campaign-slide-img" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
+                  <div class="d-tj-campaign-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
                     <div class="d-tj-campaign-slide-hover-img hide">  </div>
                   </div>
                   <div class="d-tj-progress">
