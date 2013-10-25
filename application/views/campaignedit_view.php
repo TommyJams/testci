@@ -68,13 +68,15 @@
           <div class="row">
             <div class="col-md-12">
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <p style="color:black;font-family:dosis;font-size:18px;"><? print($desc); ?></p>  
+                  <p style="color:grey;font-family:dosis;font-size:18px;"><? print($desc); ?></p>  
             </div>
           </div>
           <div class="row">
-            <h4>Venue Location: <? print($city); ?></h4>
-            <h4>Venue Contact: <? print($contact); ?></h4>
-            <h4>Venue Link: <? print($link); ?></h4> 
+            <div class="col-md-12">
+              <h4>Venue Location: <? print($city); ?></h4>
+              <h4>Venue Contact: <? print($contact); ?></h4>
+              <h4>Venue Link: <? print($link); ?></h4>
+            </div> 
           </div>
 
       </div>
