@@ -520,7 +520,7 @@ class Model extends CI_Model{
 					// save remote file to the server to $tempImagePath
 					file_put_contents( $tempImagePath, file_get_contents( $externalImage ));
 					// upload the image to the event
-					$facebook->api("/'.$eventID.'/picture", "POST", 
+					$this->$facebook->api("/'.$eventID.'/picture", "POST", 
 					  array('source' => '@'. realpath($tempImagePath) )
 					);
 					// remove temp image
