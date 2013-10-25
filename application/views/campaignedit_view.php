@@ -67,10 +67,10 @@
 
           <div class="row">
             <div class="col-md-4">
-                <div style="background:black">
+                
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
                   <? print($desc); ?>
-                </div>
+                
             </div>
           </div>
           <div class="row">
