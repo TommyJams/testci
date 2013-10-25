@@ -46,7 +46,7 @@
 <div class="venue-form" >
 
 <? $tourDetail = (json_decode($getTourDetail));
-  foreach($tourDetail as $getTourDetail) 
+  foreach($tourDetail as $tourDetail) 
   { 
     $venuesDetail = $tourDetail->venuesDetail; 
   } 
