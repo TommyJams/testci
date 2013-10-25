@@ -69,11 +69,8 @@
             <div class="col-md-3">
               <div class="d-tj-black-box">
                 <div style="background:black">
-                <img src="img/temp/<? print($image); ?>" alt="">
+                  <img src="/img/temp/<? print($image); ?>.jpg" alt="">
                 </div>
-                <h4>
-                  <span ><? print($venue_name); ?></span> <? print($city); ?>
-                </h4>
               </div>
             </div>
             <div class="col-md-3">
