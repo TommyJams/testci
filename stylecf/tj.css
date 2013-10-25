@@ -761,6 +761,14 @@ div[data-role="editor-toolbar"] {
 }
 .socialModal table {
 	text-align: center;
+	color: #FFF;
+}
+.socialModal table th{
+	text-align: center;
+	color: #444;
+}
+.socialModal table tr{
+	cursor: pointer;
 }
 .modal-link input {
 	width: 100%;
