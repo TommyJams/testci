@@ -508,11 +508,12 @@ class Model extends CI_Model{
                     $eventID = $ret_obj['id'];
                     $picture = base_url().'images/artist/campaign/'.$backimg;
 
-                    $this->facebook->api('/'.$eventID.'/picture', 'POST',
+                    $fb_event = $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 array(
                                                        'source' => $picture,
                                                 )
                                          );
+                    error_log("FB EVENT: ".$fb_event);
                 }
             }
             else
