@@ -508,6 +508,7 @@ class Model extends CI_Model{
                     $eventID = $ret_obj['id'];
                     //$picture = base_url().'images/artist/campaign/'.$backimg;
                     $externalImage = 'http://lorempixel.com/400/200/';
+                    $picture = 'images/artist/campaign/temp.jpg';
 
                     file_put_contents( $picture, file_get_contents( $externalImage ));
 
