@@ -65,9 +65,23 @@
         </div>
         <div class="modal-body modal-link">
 
+          <div class="row">
+            <div class="col-md-3">
+              <div class="d-tj-black-box">
+                <? print($venue_name); ?>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h4><? print($desc); ?></h4>
+            </div>
+          </div>
+          <div class="row">
+            <h4>Venue Location: <? print($city); ?></h4>
+            <h4>Venue Contact: <? print($contact); ?></h4>
+            <h4>Venue Link: <? print($link); ?></h4> 
+          </div>
 
-
-        </div>
+      </div>
         <div class="modal-footer">
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
         </div>
