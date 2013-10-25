@@ -99,6 +99,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	background-position: center;
 	height: 160px;
 	margin: auto;
+	cursor:pointer;
 }
 .d-tj-campaign-slide ul li {
 	margin-right:10px;
