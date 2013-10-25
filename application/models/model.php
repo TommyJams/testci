@@ -511,7 +511,7 @@ class Model extends CI_Model{
                 {
                     $eventID = $ret_obj['id'];
 
-                    $this->facebook->api('/'.$eventID.'/picture', 'POST',
+                    $this->facebook->api('/me/'.$eventID.'/picture', 'POST',
                                                 array(
                                                        'source' => $picture,
                                                 )
@@ -552,7 +552,10 @@ class Model extends CI_Model{
 				$desc = 'desc'.$maxIndex;
 
 				$amount = $this->input->post("$pledgeAmount");
+				error_log("Amount: ".$amount);
+
 				$desc = $this->input->post("$desc");
+				error_log("Benefit: ".$desc);
 
 				if(!isEmpty($amount))
 				{
