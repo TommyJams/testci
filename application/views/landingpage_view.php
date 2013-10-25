@@ -81,7 +81,11 @@
       <div class="row">
         <div class="col-md-6 d-tj-book-events" >
           <div class="col-md-12 d-tj-book-events-bg" >
-            <div class="d-tj-book-events-top"  > </div>
+            <div class="d-tj-book-events-top"  > 
+              <h4>
+                Looking to book events immediately ?
+              </h4>
+            </div>
             <div class="text-center d-tj-offset-top-20">
               <input onClick="window.location.href='/index'" type="button" value="BOOK EVENTS">
             </div>
@@ -89,7 +93,11 @@
         </div>
         <div class="col-md-6 d-tj-c-tour" >
           <div class="col-md-12 d-tj-c-tour-bg" >
-            <div class="d-tj-c-tour-top"  > </div>
+            <div class="d-tj-c-tour-top"  > 
+              <h4>
+                Looking to campaign for cross-city tours ?
+              </h4>
+            </div>
             <div class="text-center d-tj-offset-top-20">
               <input onClick="window.location.href='/tours'" type="button" value="GRAB TOURS" >
             </div>
@@ -100,7 +108,7 @@
     <!--/top 2 col--> 
     <!-- tour-->
     <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
-      <h3>CROWDFUNDING CAMPAIGNS</h3>
+      <h3>ARTIST TOURS</h3>
       <div class="d-tj-campaign-slide">
         <div class="list_carousel responsive" style="position:relative">
           <ul id="d-tj-c-slide">
@@ -159,6 +167,11 @@
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
       <div class="text-center pull-right" >
+        <h5>All the campaigns are initiated by the artists directly for the tours that they want to venture on. Every time you pledge your support, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+            <b>Start pledging now!</b><br><br>
+            In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.
+        </h5>
+        <input class="apply-btn" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
         <input class="apply-btn" onClick="window.location.href='/fans'" type="button" value="MORE CAMPAIGNS">
       </div>
       <div class="clearfix"></div>
@@ -301,7 +314,7 @@
             <li>
               <h4>ARTIST</h4>
             </li>
-            <li> <a href="/tours">TOURS</a> </li>
+            <li> <a href="/tours">GRAB TOURS</a> </li>
           <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>

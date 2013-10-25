@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-md-12">
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <h4 ><? print($desc); ?></h4>  
+                  <h4 style="margin-right:4px"><? print($desc); ?></h4>  
             </div>
           </div>
           <div class="row">
@@ -400,7 +400,7 @@
           <li>
             <h4>ARTIST</h4>
           </li>
-          <li> <a href="/tours">TOURS</a> </li>
+          <li> <a href="/tours">GRAB TOURS</a> </li>
           <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>

@@ -182,7 +182,7 @@
     <!-- /tour--> 
 
     <div class="d-tj-black-box d-tj-offset-top-30 d-tj-why">
-      <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
+      <h3 style="margin-top: 0px;">WHY CAMPAIGN ?</h3>
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
@@ -232,7 +232,7 @@
             <li>
               <h4>ARTIST</h4>
             </li>
-            <li> <a href="/tours">CROWDFUND</a> </li>
+            <li> <a href="/tours">GRAB TOURS</a> </li>
           <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>

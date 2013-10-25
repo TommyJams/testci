@@ -22,17 +22,17 @@
   <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a> 
     <!--top 2 col-->
    <div class="d-tj-black-box d-tj-offset-top-40 d-tj-why">
-      <h3 style="margin-top: 0px;">WHY CROWDFUND ?</h3>
+      <h3 style="margin-top: 0px;">WHY PRE-BUY TICKETS ?</h3>
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
           <h5 ><b>Decrease Costs</b><br>
-            No more paying for entry tickets, get entry into all the shows once you pledge your support.</h5>
+            No more paying for entry tickets at the venue. Pledge any amount you feel like, and get entry into all the shows in the tour. If the campaign fails, you get your money back!.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
           <h5 ><b>Freebies</b><br>
-            Get freebies every time you pledge. It is your chance to directly talk to that favorite guitarist of yours.</h5>
+            Get freebies every time you pledge. It is your chance to directly interact with that favorite guitarist of yours.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
@@ -109,7 +109,8 @@
         <h3>WHO CAMPAIGNS ?</h3> 
         <h5>All the campaigns are initiated by the artists directly for the tours that they want to venture on. Every time you pledge your support, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
             <b>Start pledging now!</b><br><br>
-            In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.</h5>
+            In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.
+        </h5>
         <div class="text-center ">
         <input class="apply-btn" style="" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
       </div>   
@@ -138,7 +139,7 @@
             <li>
               <h4>ARTIST</h4>
             </li>
-            <li> <a href="/tours">TOURS</a> </li>
+            <li> <a href="/tours">GRAB TOURS</a> </li>
           <li> <a href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>
