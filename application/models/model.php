@@ -506,7 +506,7 @@ class Model extends CI_Model{
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
-                    $picture = '/images/artist/campaign/'.$backimg;
+                    $picture = 'images/artist/campaign/'.$backimg;
 
                     error_log("Event Pic: ".$picture);
 
