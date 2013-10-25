@@ -198,6 +198,9 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour-right h3 {
 	margin-left:0px !important;
 }
+.d-tj-tour-right input {
+	color:white;
+}
 .d-tj-tour h4 {
 	font-family: 'Dosis';
 	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif */
@@ -551,14 +554,14 @@ ul.social-list li a.social-list-blog-edit {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
-	color:#999999 !important;
+	color:#white !important;
 	width:50%
 }
 .d-tj-pledge textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
-	color:#999999 !important;
+	color:#white !important;
 	resize: none;
 }
 .add-option {

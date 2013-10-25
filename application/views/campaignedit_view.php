@@ -156,9 +156,9 @@
           </div>
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <div class="d-tj-black-box d-tj-tour-right" >
-              <input style="color:white" class="form-control input-lg pull-left" type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></input>
-              <input style="color:white" class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-              <input style="color:white" class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
+              <input class="form-control input-lg pull-left" type="text" id="target" name="target" placeholder="ENTER TARGET AMOUNT [MIN: Rs <? print($min_target); ?>]"></input>
+              <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+              <input class="form-control input-lg pull-left" type="text" id="email" name="email" placeholder="ENTER EMAIL ADDRESS"></input>
               <div class="clearfix"></div>
               <div class="background-images">
                 UPLOAD BACKGROUND IMAGE
