@@ -66,11 +66,9 @@
         <div class="modal-body modal-link">
 
           <div class="row">
-            <div class="col-md-4">
-                
+            <div class="col-md-12">
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <? print($desc); ?>
-                
+                  <? print($desc); ?>  
             </div>
           </div>
           <div class="row">
