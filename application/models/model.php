@@ -511,7 +511,7 @@ class Model extends CI_Model{
                 {
                     $eventID = $ret_obj['id'];
 
-                    $this->facebook->api('/$eventID/picture', 'POST',
+                    $this->facebook->api('/"$eventID"/picture', 'POST',
                                                 array(
                                                        'source' => $picture,
                                                 )
