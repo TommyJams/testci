@@ -85,6 +85,9 @@
               <h4 class="text-center">
                 Looking to book events immediately ?
               </h4>
+              <h4>
+                <img style="font-size:22px" align="middle" src="/img/test_icon.png" alt="" >
+              </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
               <input onClick="window.location.href='/index'" type="button" value="BOOK EVENTS">
@@ -98,7 +101,7 @@
                 Looking to campaign for cross-city tours ?
               </h4>
               <h4>
-                <img src="/img/test_icon.png" alt="" >
+                <img style="font-size:22px" align="middle" src="/img/test_icon.png" alt="" >
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
