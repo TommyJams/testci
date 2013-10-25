@@ -511,7 +511,7 @@ class Model extends CI_Model{
                 {
                     $eventID = $ret_obj['id'];
 
-                    $this->facebook->api('/"$eventID"/picture', 'POST',
+                    $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 array(
                                                        'source' => $picture,
                                                 )
@@ -544,6 +544,8 @@ class Model extends CI_Model{
 				$campaign_id = $row->campaign_id;
 			}
 
+			error_log("Max Index Value: ".$maxIndex);
+
 			while($maxIndex)
 			{
 				$pledgeAmount = 'pledgeAmount'.$maxIndex;
@@ -552,7 +554,7 @@ class Model extends CI_Model{
 				$amount = $this->input->post("$pledgeAmount");
 				$desc = $this->input->post("$desc");
 
-				if($amount > 0)
+				if(!isEmpty($amount))
 				{
 					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
 								VALUES('".$this->db->escape_str($campaign_id)."', '".$this->db->escape_str($amount)."', '".$this->db->escape_str($desc)."')");
