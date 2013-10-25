@@ -510,7 +510,7 @@ class Model extends CI_Model{
 
                     $fb_event = $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 array(
-                                                       'source' => $picture,
+                                                       'picture' => $picture,
                                                 )
                                          );
                     error_log("FB EVENT: ".$fb_event);
