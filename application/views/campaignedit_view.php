@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-md-12">
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <p style="color:grey;font-family:dosis;font-size:18px;"><? print($desc); ?></p>  
+                  <p style="color:grey;font-family:dosis;font-size:18px;"><b><? print($desc); ?></b></p>  
             </div>
           </div>
           <div class="row">
