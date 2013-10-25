@@ -501,6 +501,7 @@ campaign_view -> hack
                 {
                     'width'             : 950,
                     'height'            : 1100,
+                    'topRatio'          : 0.3,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
@@ -522,6 +523,7 @@ campaign_view -> hack
                  { 
                     'width'             : 950,
                     'height'            : 1100,
+                    'topRatio'          : 0.3,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
@@ -543,6 +545,7 @@ campaign_view -> hack
                  { 
                     'width'             : 950,
                     'height'            : 1100,
+                    'topRatio'          : 0.3,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
@@ -564,6 +567,7 @@ campaign_view -> hack
                 {
                     'width'             : 950,
                     'height'            : 1100,
+                    'topRatio'          : 0.3,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
@@ -588,6 +592,7 @@ campaign_view -> hack
                 {
                     'width'             : 950,
                     'height'            : 1100,
+                    'topRatio'          : 0.3,
                     'autoScale'         : false,
                     'transitionIn'      : 'none',
                     'transitionOut'     : 'none',
@@ -639,6 +644,7 @@ campaign_view -> hack
         {
             'width'             : 950,
             'height'            : 1100,
+            'topRatio'          : 0.3,
             'autoScale'         : false,
             'transitionIn'      : 'none',
             'transitionOut'     : 'none',
