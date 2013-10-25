@@ -52,24 +52,24 @@
           <table class="table table-hover" >
             <thead>
               <tr >
-                <th>PLEDGE AMOUNT</th>
+                <th>PLEDGE AMOUNT(In INR.)</th>
                 <th>BENEFIT</th>
               </tr>
             </thead>
             <tbody>
             <tr style="background-color: #000000;" title="Click to use this value" onclick="usePledgeVal('PledgeVal1');">
-              <td id="pledgeAmnt1">INR. 500 </td>
-              <td id="benefit1">GET A FREE T-SHIRT</td>
+              <td id="pledgeAmnt1">500 </td>
+              <td id="benefit1">Get a free band mug</td>
             </tr>
     
             <tr style="background-color: #000000;" title="Click to use this value" onclick="usePledgeVal('PledgeVal2');">
-              <td id="pledgeAmnt2">INR. 1000 </td>
-              <td id="benefit2">GET A FREE SIGNED T-SHIRT</td>
+              <td id="pledgeAmnt2">1000 </td>
+              <td id="benefit2">Get a free signed t-shirt</td>
             </tr>
 
             <tr style="background-color: #000000;" title="Click to use this value" onclick="usePledgeVal('PledgeVal3');">
-              <td id="pledgeAmnt3">INR. 2500 </td>
-              <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
+              <td id="pledgeAmnt3">2500 </td>
+              <td id="benefit3">Have dinner with the band</td>
             </tr>
           </tbody>  
           </table>
