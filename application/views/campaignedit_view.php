@@ -257,7 +257,7 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input  style="color:white" class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
+            <input this.style="color:white" class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
             <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
           </h4> 
@@ -523,7 +523,7 @@ campaign_view -> hack
                                             var x = $('.fancybox-inner').contents().find('#videolink').val();
                                             insertLinks(x, 'video');
 
-                                            $('#vd-link').html("<p style='background-color:grey;'>CHANGE<br>VIDEO LINK</p>");
+                                            $('#vd-link').html("<p><font color='grey'>CHANGE<br>VIDEO LINK</font></p>");
                                             $('.vd-link-selected').html("Link: " + x);
                                           }
                  }
