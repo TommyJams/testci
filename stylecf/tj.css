@@ -778,7 +778,7 @@ div[data-role="editor-toolbar"] {
 	color: #000;
 }
 .socialModal table tbody td{
-	border-top: 0px;
+	border-top: 2px solid #ffcc00;
 }
 .modal-link input {
 	width: 100%;
