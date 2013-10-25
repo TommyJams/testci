@@ -149,7 +149,7 @@
               <div class="vd-link-selected">
               </div>
               <h2>
-                <a  data-toggle="modal" id="vd-link" href="#videoModal" title="VideoLink" alt="" target="_blank" 
+                <a  data-toggle="modal" id="vd-link" href="#videoModal" title="Video Link" alt="" target="_blank" 
                     class="social-list-facebook-edit open-video-link">UPLOAD<br>VIDEO LINK</a>
               </h2>
             </div>
@@ -257,7 +257,7 @@
       <div class="d-tj-pledge">
         <div class="pledge">
           <h4>
-            <input this.style="color:white" class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
+            <input class="form-control input-lg pull-left" type="text" id="pledgeAmount1" name="pledgeAmount1" placeholder="PLEDGE AMT 1">
             <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
             <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
           </h4> 
@@ -272,7 +272,7 @@
 
         <div class="pledge">
           <h4>
-            <input  style="color:white" class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
+            <input class="form-control input-lg pull-left" type="text" id="pledgeAmount2" name="pledgeAmount2" placeholder="PLEDGE AMT 2">
             <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
             <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
           </h4>
@@ -287,7 +287,7 @@
 
         <div class="pledge">
           <h4>
-            <input  style="color:white" class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
+            <input class="form-control input-lg pull-left" type="text" id="pledgeAmount3" name="pledgeAmount3" placeholder="PLEDGE AMT 3">
             <div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div>
             <div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div>
           </h4>
@@ -428,7 +428,7 @@ campaign_view -> hack
       var b = 'PLEDGE AMT ' + maxIndex;
       var desc = 'desc' + maxIndex;
 
-      var addoption = '<div class="pledge"><h4><input  style="color:white" class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
+      var addoption = '<div class="pledge"><h4><input class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" placeholder="'+ b +'"><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
       addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="Please write description" rows="4" ></textarea></h5>';
       addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -523,7 +523,7 @@ campaign_view -> hack
                                             var x = $('.fancybox-inner').contents().find('#videolink').val();
                                             insertLinks(x, 'video');
 
-                                            $('#vd-link').html("<p><font color='grey'>CHANGE<br>VIDEO LINK</font></p>");
+                                            $('#vd-link').html("<p title='Change Video Link'><font color='grey'>CHANGE<br>VIDEO LINK</font></p>");
                                             $('.vd-link-selected').html("Link: " + x);
                                           }
                  }
@@ -593,7 +593,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  style="color:white" class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -620,7 +620,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  style="color:white" class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
@@ -637,7 +637,7 @@ campaign_view -> hack
         var a = 'pledgeAmount' + maxIndex;
         var desc = 'desc' + maxIndex;
 
-        var addoption = '<div class="pledge"><h4><input  style="color:white" class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
+        var addoption = '<div class="pledge"><h4><input class="form-control input-lg pull-left" type="text" id="'+ a +'" name="'+ a +'" value="'+ pledgeamnt +'" placeholder=""><div class=" btn-delete-pledge pull-right"><a class="btn-delete-pledge-hover"></a></div><div class="open-help-form pull-right"><a class="open-help-form-hover" class="social-list-facebook-edit open-help-form" data-toggle="modal" href="#helpModal" target="_blank" ></a></div></h4><div class="clearfix"></div>';
         addoption +='<h5> <textarea class="form-control" id="'+ desc +'" name="'+ desc +'" placeholder="" rows="4" >'+ benefit +'</textarea></h5>';
         addoption +=' <div class="seperator" ></div></div></div>';
 
