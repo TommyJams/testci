@@ -30,7 +30,7 @@
             No more paying for entry tickets at the venue. Pledge any amount you feel like, and get entry into all the shows in the tour. If the campaign fails, you get your money back!.</h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
-          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
+          <div class="d-tj-thumb img-circle" style="background-image:url(img/up/5.png)"></div>
           <h5 ><b>Freebies</b><br>
             Get freebies every time you pledge. It is your chance to directly interact with that favorite guitarist of yours.</h5>
         </div>
