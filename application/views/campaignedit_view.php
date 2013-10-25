@@ -75,7 +75,7 @@
             <div class="col-md-12">
               <h4>Location: <? print($city); ?></h4>
               <h4>Contact: <? print($contact); ?></h4>
-              <a href="http://<? print($link);?>"><h4>Link</h4></a> 
+              <a target="_blank" href="http://<? print($link);?>"><h4>Link</h4></a> 
             </div> 
           </div>
 
@@ -233,7 +233,7 @@
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
           <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
             <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" target="_blank" >
-            <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></a>
+            <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px;"></a>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
