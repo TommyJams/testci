@@ -44,6 +44,7 @@ class Model extends CI_Model{
 					foreach ($q1result as $rowInner)
 					{
 						$venue_name = $rowInner->venue_name;
+						$venue_id = $rowInner->venue_id;
 						$image = $rowInner->image;
 						$desc = $rowInner->desc;
 						$link = $rowInner->link;
@@ -187,6 +188,7 @@ class Model extends CI_Model{
 					foreach ($q2result as $rowVenue)
 					{
 						$venue_name = $rowVenue->venue_name;
+						$venue_id = $rowInner->venue_id;
 						$image = $rowVenue->image;
 						$venue_desc = $rowVenue->desc;
 						$link = $rowVenue->link;	

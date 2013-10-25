@@ -22,6 +22,7 @@
 <style>
 .video-link{display:none}
 .help-form{display:none}
+.venue-form{display:none}
 .d-tj-video-edit-bdr{min-height: 240px;}
 .d-tj-video-edit-bdr a{color:white;text-decoration:none}
 </style>
@@ -40,6 +41,37 @@
   </div>
 </div>
 <!--/Video modal--> 
+
+<!--venue modal-->
+<div class="venue-form" >
+<? foreach($venues as $venue){ ?>
+  <?
+    $venue_name = $venue->venue_name;
+    $venue_id = $venue->venue_id;
+    $city = $venue->city;
+    $image = $venue->image;
+    $desc = $venue->desc;
+    $link = $venue->link;
+    $contact = $venue->contact;
+  ?>
+    
+      <div class="modal-content socialModal">
+        <div class="modal-header">
+          <h4><? print($venue_name); ?></h4>
+        </div>
+        <div class="modal-body modal-link">
+
+          
+
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
+        </div>
+      </div>
+
+<? } ?>
+</div>
+<!--/venue modal--> 
 
 <!--Help modal-->
 <div class="help-form" >
@@ -182,7 +214,10 @@
             $image = $venue->image;
           ?>
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
+          <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
+            <a class="social-list-facebook-edit open-venue-form" data-toggle="modal" href="#eventModal" target="_blank" >
+            <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></a>
+          </div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
             <h4 ><? print($venue_name); ?> <br>
@@ -533,6 +568,20 @@ campaign_view -> hack
     $('body').on('click', '.open-help-form', function(){
         $.fancybox(
                 $('.help-form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                 }
+            );  
+    });
+
+    $('body').on('click', '.open-venue-form', function(){
+        $.fancybox(
+                $('.venue-form').html(),
                 {
                     'width'             : 950,
                     'height'            : 1100,
