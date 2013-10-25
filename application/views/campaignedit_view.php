@@ -44,15 +44,11 @@
 <!--Help modal-->
 <div class="help-form" >
   <div class="modal-content socialModal">
-
-  <div class="row">
-    <div class="modal-header">
-        <h4>Help</h4>
-    </div>
+  <div class="modal-header">
+    <h4>Help</h4>
   </div>
 
-  <div class="row">
-    <div class="modal-body modal-link">
+  <div class="modal-body modal-link">
           <table class="table table-hover" >
             <thead>
               <tr >
@@ -63,7 +59,7 @@
             <tbody>
             <tr style="background-color: #000000;" title="Click to use this value" onclick="usePledgeVal('PledgeVal1');">
               <td id="pledgeAmnt1">INR. 500 </td>
-              <td id="benefit1">GET A FREE SIGNED T-SHIRT</td>
+              <td id="benefit1">GET A FREE T-SHIRT</td>
             </tr>
     
             <tr style="background-color: #000000;" title="Click to use this value" onclick="usePledgeVal('PledgeVal2');">
@@ -76,14 +72,11 @@
               <td id="benefit3">GET A FREE SIGNED T-SHIRT</td>
             </tr>
           </tbody>  
-          </table>            
-    </div> 
+          </table>
   </div>   
     
-  <div class="row">  
-    <div class="modal-footer">
+  <div class="modal-footer">
       <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close Help</a> 
-    </div>
   </div>
 
   </div>
