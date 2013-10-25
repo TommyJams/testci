@@ -67,15 +67,15 @@
 
           <div class="row">
             <div class="col-md-12">
-                  <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <h4 style="margin-left:4px"><? print($desc); ?></h4>  
+                  <img src="/img/temp/<? print($image); ?>" style="margin-right:10px" align="left" alt="" height="150" width="150">
+                  <h4><? print($desc); ?></h4>  
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <h4>Venue Location: <? print($city); ?></h4>
-              <h4>Venue Contact: <? print($contact); ?></h4>
-              <h4>Venue Link: <? print($link); ?></h4>
+              <h4>Location: <? print($city); ?></h4>
+              <h4>Contact: <? print($contact); ?></h4>
+              <a href="<? print($link);?>"><h4>Link</h4></a> 
             </div> 
           </div>
 
