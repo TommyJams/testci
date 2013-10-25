@@ -123,12 +123,13 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	min-width:200px;
 	height: 161px;
 	margin: auto;
+	cursor:pointer;
 }
 .d-tj-slide-hover-img {
 	position: absolute;
 	left: 38%;
 	top: 40%;
-	cursor:pointer
+	cursor:pointer;
 }
 .d-tj-campaign-slide-hover-img {
 	position: absolute;
