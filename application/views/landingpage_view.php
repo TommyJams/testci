@@ -136,8 +136,10 @@
               <div>
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
                 <div class="d-tj-slide-body " >
-                  <div class="d-tj-campaign-slide-img" target="_blank" onclick="window.location.href='<?print(base_url().'campaign/'.$campaign_id);?>'" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
-                    <div class="d-tj-campaign-slide-hover-img">  </div>
+                  <div class="d-tj-campaign-slide-img" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
+                    <div class="d-tj-campaign-slide-hover-img">
+                      <a href="<?print(base_url().'campaign/'.$campaign_id);?>" target="_blank"></a>
+                    </div>
                   </div>
                   <div class="d-tj-progress">
                     <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
