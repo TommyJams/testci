@@ -82,11 +82,11 @@
         <div class="col-md-6 d-tj-book-events" >
           <div class="col-md-12 d-tj-book-events-bg" >
             <div class="d-tj-book-events-top"  > 
-              <h4 class="text-center">
+              <h4 style="font-size:22px" class="text-center">
                 Looking to book events immediately ?
               </h4>
-              <h4>
-                <img style="font-size:22px" align="middle" src="/img/test_icon.png" alt="" >
+              <h4 class="text-center">
+                <img src="/img/test_icon.png" alt="" >
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
@@ -97,11 +97,11 @@
         <div class="col-md-6 d-tj-c-tour" >
           <div class="col-md-12 d-tj-c-tour-bg" >
             <div class="d-tj-c-tour-top"  > 
-              <h4 class="text-center">
+              <h4 style="font-size:22px" class="text-center">
                 Looking to campaign for cross-city tours ?
               </h4>
-              <h4>
-                <img style="font-size:22px" align="middle" src="/img/test_icon.png" alt="" >
+              <h4 class="text-center">
+                <img src="/img/test_icon.png" alt="" >
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
