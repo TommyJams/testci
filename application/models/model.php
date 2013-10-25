@@ -510,6 +510,12 @@ class Model extends CI_Model{
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
+
+                    $this->facebook->api('/$eventID/picture', 'POST',
+                                                array(
+                                                       'source' => $picture,
+                                                )
+                                         );
                 }
             }
             else
