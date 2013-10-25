@@ -500,7 +500,6 @@ class Model extends CI_Model{
                                                 array(
                                                        'name' => $artist_name.' tours with TommyJams',
                                                        'start_time' => $tourDate,
-                                                       'picture' => $picture,
                                                        'description' => $artist_name.' tours with TommyJams'
                                                 )
                                          );
