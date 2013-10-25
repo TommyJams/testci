@@ -496,22 +496,20 @@ class Model extends CI_Model{
             error_log('Facebook User: '.$uid);
             if($uid)
             {
-            	$externalImage = 'http://lorempixel.com/400/200/';
-				$tempImagePath = 'tmp/temp_image_path.jpg';
-				// save remote file to the server to $tempImagePath
-				file_put_contents( $tempImagePath, file_get_contents( $externalImage ));
-
                 $ret_obj = $this->facebook->api('/me/events', 'POST',
                                                 array(
                                                        'name' => $artist_name.' tours with TommyJams',
                                                        'start_time' => $tourDate,
-                                                       'description' => $artist_name.' tours with TommyJams',
-                                                       '@file.jpg'    => '@'.realpath($tempImagePath)
+                                                       'description' => $artist_name.' tours with TommyJams'
                                                 )
                                          );
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
+
+                    $cover['cover_url'] = "base_url().'images/artist/campaign/'.$backimg;";
+					$eventUpdate = $this->facebook->api( "/".$eventID, 'post', $cover );
+
                     /*$picture = 'images/artist/campaign/'.$backimg;
 
                     error_log("Event Pic: ".$picture);
