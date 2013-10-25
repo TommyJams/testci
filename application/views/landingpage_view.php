@@ -179,8 +179,8 @@
         </h5>
       </div>
         <div class="text-center" >
-        <input class="apply-btn" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
-        <input class="apply-btn" onClick="window.location.href='/fans'" type="button" value="MORE CAMPAIGNS">
+          <input class="apply-btn" onClick="window.location.href='/fans'" type="button" value="ALL CAMPAIGNS">
+          <input class="apply-btn" onClick="window.location.href='/tours'" type="button" value="START CAMPAIGN">
       </div>
       <div class="clearfix"></div>
     </div>
