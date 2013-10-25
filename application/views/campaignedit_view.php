@@ -66,12 +66,12 @@
         <div class="modal-body modal-link">
 
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div style="background:black">
                   <img src="/img/temp/<? print($image); ?>" alt="" height="150" width="150">
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-8">
               <h4><? print($desc); ?></h4>
             </div>
           </div>
