@@ -523,7 +523,7 @@ campaign_view -> hack
                                             var x = $('.fancybox-inner').contents().find('#videolink').val();
                                             insertLinks(x, 'video');
 
-                                            $('#vd-link').html("<p title='Change Video Link'><font color='grey'>CHANGE<br>VIDEO LINK</font></p>");
+                                            $('#vd-link').html("<p><font title='Change Video Link' color='grey'>CHANGE<br>VIDEO LINK</font></p>");
                                             $('.vd-link-selected').html("Link: " + x);
                                           }
                  }
