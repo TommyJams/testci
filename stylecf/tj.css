@@ -970,7 +970,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .fancybox-wrap {
 	width: 600px !important;
-	top: 200px !important;
+	top: 100px !important;
 }
 .fancybox-inner {
 	width: 570px !important;

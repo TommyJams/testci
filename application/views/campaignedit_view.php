@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-md-12">
                   <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
-                  <h4 style="margin-right:4px"><? print($desc); ?></h4>  
+                  <h4 style="margin-left:4px"><? print($desc); ?></h4>  
             </div>
           </div>
           <div class="row">
