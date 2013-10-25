@@ -554,14 +554,14 @@ ul.social-list li a.social-list-blog-edit {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
-	color:#white !important;
+	color:white !important;
 	width:50%
 }
 .d-tj-pledge textarea {
 	background: black;
 	border: 1px dashed #999999;
 	font-size: 15px;
-	color:#white !important;
+	color:white !important;
 	resize: none;
 }
 .add-option {
