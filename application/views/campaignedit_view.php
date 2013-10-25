@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-md-4">
                 <div style="background:black">
-                  <img src="/img/temp/<? print($image); ?>" alt="" height="150" width="150">
+                  <img src="/img/temp/<? print($image); ?>" align="left" alt="" height="150" width="150">
                 </div>
             </div>
             <div class="col-md-8">
