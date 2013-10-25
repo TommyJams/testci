@@ -110,23 +110,23 @@
             <?           
               if($fb!="")
               {
-                print("<li ><a href='$fb' title='Facebook' alt='Facebook' target='_blank' class='social-list-facebook'></a></li >");
+                print("<li ><a style='margin-right:2px;' href='$fb' title='Facebook' alt='Facebook' target='_blank' class='social-list-facebook'></a></li >");
               }
               if($twitter!="")
               { 
-                print("<li ><a href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'></a></li >"); 
+                print("<li ><a style='margin-right:2px;' href='$twitter' title='Twitter' alt='Twitter' target='_blank' class='social-list-twitter'></a></li >"); 
               }
               if($scloud!="")
               {
-                print("<li ><a href='$scloud' title='SoundCloud' alt='SoundCloud' target='_blank' class='social-list-scloud'></a></li >"); 
+                print("<li ><a style='margin-right:2px;' href='$scloud' title='SoundCloud' alt='SoundCloud' target='_blank' class='social-list-scloud'></a></li >"); 
               }
               if($bandcamp!="")
               {
-                print("<li ><a href='$bandcamp' title='BandCamp' alt='BandCamp' target='_blank' class='social-list-bandcamp'></a></li >"); 
+                print("<li ><a style='margin-right:2px;' href='$bandcamp' title='BandCamp' alt='BandCamp' target='_blank' class='social-list-bandcamp'></a></li >"); 
               }
               if($website!="")
               {
-                print("<li ><a href='$website' title='Website' alt='Website' target='_blank' class='social-list-website'></a></li >"); 
+                print("<li ><a style='margin-right:2px;' href='$website' title='Website' alt='Website' target='_blank' class='social-list-website'></a></li >"); 
               }
             ?>
             </ul>
