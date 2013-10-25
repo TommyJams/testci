@@ -506,14 +506,25 @@ class Model extends CI_Model{
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
-                    $picture = 'images/artist/campaign/'.$backimg;
+                    /*$picture = 'images/artist/campaign/'.$backimg;
 
                     error_log("Event Pic: ".$picture);
 
                     $fb_event = $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 		array( 'source' => '@'. realpath($picture) )
                                          			);
-                    error_log("FB EVENT: ".$fb_event);
+                    error_log("FB EVENT: ".$fb_event);*/
+
+                    $externalImage = 'http://lorempixel.com/400/200/';
+					$tempImagePath = 'tmp/temp_image_path.jpg';
+					// save remote file to the server to $tempImagePath
+					file_put_contents( $tempImagePath, file_get_contents( $externalImage ));
+					// upload the image to the event
+					$facebook->api("/'.$eventID.'/picture", "POST", 
+					  array('source' => '@'. realpath($tempImagePath) )
+					);
+					// remove temp image
+					unlink($tempImagePath);
                 }
             }
             else
