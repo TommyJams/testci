@@ -507,8 +507,12 @@ class Model extends CI_Model{
                 {
                     $eventID = $ret_obj['id'];
 
-                    $cover['cover_url'] = "base_url().'images/artist/campaign/'.$backimg;";
+                    $cover = base_url().'images/artist/campaign/'.$backimg;
+                    error_log("Event Pic: ".$cover);
+
 					$eventUpdate = $this->facebook->api( "/".$eventID, 'post', $cover );
+
+					error_log("Event Val: ".$eventUpdate);
 
                     /*$picture = 'images/artist/campaign/'.$backimg;
 
