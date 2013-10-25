@@ -496,11 +496,17 @@ class Model extends CI_Model{
             error_log('Facebook User: '.$uid);
             if($uid)
             {
+            	$externalImage = 'http://lorempixel.com/400/200/';
+				$tempImagePath = 'tmp/temp_image_path.jpg';
+				// save remote file to the server to $tempImagePath
+				file_put_contents( $tempImagePath, file_get_contents( $externalImage ));
+
                 $ret_obj = $this->facebook->api('/me/events', 'POST',
                                                 array(
                                                        'name' => $artist_name.' tours with TommyJams',
                                                        'start_time' => $tourDate,
-                                                       'description' => $artist_name.' tours with TommyJams'
+                                                       'description' => $artist_name.' tours with TommyJams',
+                                                       '@file.jpg'    => '@'.realpath($tempImagePath)
                                                 )
                                          );
                 if(isset($ret_obj['id']))
@@ -513,7 +519,7 @@ class Model extends CI_Model{
                     $fb_event = $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 		array( 'source' => '@'. realpath($picture) )
                                          			);
-                    error_log("FB EVENT: ".$fb_event);*/
+                    error_log("FB EVENT: ".$fb_event);
 
                     $externalImage = 'http://lorempixel.com/400/200/';
 					$tempImagePath = 'tmp/temp_image_path.jpg';
@@ -524,7 +530,7 @@ class Model extends CI_Model{
 					  array('source' => '@'. realpath($tempImagePath) )
 					);
 					// remove temp image
-					unlink($tempImagePath);
+					unlink($tempImagePath);*/
                 }
             }
             else
