@@ -68,7 +68,8 @@
           <div class="row">
             <div class="col-md-3">
               <div class="d-tj-black-box">
-                <? print($venue_name); ?>
+                <? print($image); ?>
+                <h4><? print($venue_name); ?></h4>
               </div>
             </div>
             <div class="col-md-3">
