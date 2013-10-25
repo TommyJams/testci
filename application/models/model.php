@@ -506,11 +506,9 @@ class Model extends CI_Model{
                 if(isset($ret_obj['id']))
                 {
                     $eventID = $ret_obj['id'];
-                    //$picture = base_url().'images/artist/campaign/'.$backimg;
-                    $externalImage = 'http://lorempixel.com/400/200/';
-                    $picture = 'images/artist/campaign/temp.jpg';
+                    $picture = '/images/artist/campaign/'.$backimg;
 
-                    file_put_contents( $picture, file_get_contents( $externalImage ));
+                    error_log("Event Pic: ".$picture);
 
                     $fb_event = $this->facebook->api('/'.$eventID.'/picture', 'POST',
                                                 		array( 'source' => '@'. realpath($picture) )
