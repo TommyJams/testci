@@ -69,7 +69,7 @@
             <div class="col-md-3">
               <div class="d-tj-black-box">
                 <div style="background:black">
-                  <img src="/img/temp/<? print($image); ?>.jpg" alt="">
+                  <img src="/img/temp/<? print($image); ?>" alt="">
                 </div>
               </div>
             </div>
