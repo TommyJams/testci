@@ -48,7 +48,7 @@
 <? $tourDetail = (json_decode($getTourDetail));
   foreach($tourDetail as $tourDetail) 
   { 
-    $venuesDetail = $tourDetail->venuesDetail; 
+    $venuesDetail = $tourDetail->venues; 
   } 
   
   foreach($venuesDetail as $venue)
