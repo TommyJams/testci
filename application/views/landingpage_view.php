@@ -166,13 +166,13 @@
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
-      
+      <div class="who-campaigns">
         <h5>All the campaigns are initiated by the artists directly for the tours that they want to venture on. Every time you pledge your support, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
             <b>Start pledging now!</b><br><br>
             In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.
         </h5>
-      
-        <div class="text-center pull-right" >
+      </div>
+        <div class="text-center" >
         <input class="apply-btn" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
         <input class="apply-btn" onClick="window.location.href='/fans'" type="button" value="MORE CAMPAIGNS">
       </div>
