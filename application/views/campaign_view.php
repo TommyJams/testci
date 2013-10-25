@@ -62,8 +62,8 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <h4 class="raise">RAISED : Rs. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>    
-            <h4 class="tgt" >TARGET : Rs. <? print($target); ?></h4>
+            <h4 class="raise">RAISED : INR. <? print($raised); ?> [<? print($totalPledges); ?> PLEDGES]</h4>    
+            <h4 class="tgt" >TARGET : INR. <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" value="PLEDGE NOW">
@@ -207,7 +207,7 @@
                 $pledge_desc = $pledge->desc;
               ?>
               <div style="">
-                <h4>PLEDGE  AMT <? print($amount); ?></h4>
+                <h4>PLEDGE  AMOUNT INR. <? print($amount); ?></h4>
                 <h5><? print($pledge_desc); ?></h5>
               </div>
               <div class="seperator" ></div>

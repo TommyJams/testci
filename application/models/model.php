@@ -559,6 +559,7 @@ class Model extends CI_Model{
 
 				if(!isEmpty($amount))
 				{
+					$amount = intval($amount);
 					$query2 = $this->db->query("INSERT INTO `pledgeCF` (`campaign_id`, `amount`, `desc`) 
 								VALUES('".$this->db->escape_str($campaign_id)."', '".$this->db->escape_str($amount)."', '".$this->db->escape_str($desc)."')");
 				}
