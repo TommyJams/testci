@@ -767,8 +767,11 @@ div[data-role="editor-toolbar"] {
 	text-align: center;
 	color: #444;
 }
-.socialModal table tr{
+.socialModal table tbody tr{
 	cursor: pointer;
+}
+.socialModal table tbody tr:hover{
+	color: #000;
 }
 .modal-link input {
 	width: 100%;
