@@ -188,7 +188,7 @@
                 $image = $campaign->image;
 
                 if(!isset($image))
-                  $image = "2.jpg";
+                  $image = "defaultcampaign.jpg";
               ?>
               <li>
               <div class=" col-md-12" style="padding: 5px;">

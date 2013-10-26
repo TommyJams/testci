@@ -63,7 +63,7 @@
             $image = $campaign->image;
 
             if(!isset($image))
-              $image = "2.jpg";
+              $image = "defaultcampaign2.jpg";
           ?>
         <div class="col-md-3 col-sm-4 col-xs-6 d-tj-offset-top-30 c-tile">
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>

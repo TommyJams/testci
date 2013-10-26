@@ -130,7 +130,7 @@
                 $image = $campaign->image;
 
                 if(!isset($image))
-                  $image = "2.jpg";
+                  $image = "defaultcampaign.jpg";
               ?>
             <li>
               <div>
