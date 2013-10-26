@@ -86,7 +86,6 @@
       </div>
     </div>  
 <? } ?>
-
 <!--/venue modal--> 
 
 <!--Help modal-->

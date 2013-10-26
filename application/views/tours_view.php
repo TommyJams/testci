@@ -61,7 +61,6 @@
       </div>
     </div>  
 <? } ?>
-
 <!--/venue modal-->
 
 </head>
@@ -344,8 +343,9 @@ $('#foo5').carouFredSel({
 					next: '#next5',
 					scroll: 1
 				});
+	});
 
-function venueBox(id)
+  function venueBox(id)
   {
     var a = 'venue-form' + id;
 
@@ -360,9 +360,7 @@ function venueBox(id)
             'hideOnContentClick': false,
          }
     );  
-  } 
-  
-	});
+  }   
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 

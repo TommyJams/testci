@@ -16,6 +16,53 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
+<!--venue modal-->
+<? $tourDetail = (json_decode($campaign));
+  foreach($tourDetail as $tourDetail) 
+  { 
+    $venuesDetail = $tourDetail->venues; 
+  } 
+  
+  foreach($venuesDetail as $venue)
+  { 
+    $venue_name = $venue->venue_name;
+    $venue_id = $venue->venue_id;
+    $city = $venue->city;
+    $image = $venue->image;
+    $desc = $venue->desc;
+    $link = $venue->link;
+    $contact = $venue->contact;
+  ?>
+    <div class="venue-form<? print($venue_id); ?>" style="display: none;" >
+      <div class="modal-content socialModal">
+        <div class="modal-header">
+          <h4><? print($venue_name); ?></h4>
+        </div>
+        <div class="modal-body modal-link">
+
+          <div class="row">
+            <div class="col-md-12">
+                  <img src="/img/temp/<? print($image); ?>" style="margin-right:10px" align="left" alt="" height="150" width="150">
+                  <h4><? print($desc); ?></h4>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Location: <? print($city); ?></h4>
+              <h4>Contact: <? print($contact); ?></h4>
+              <a target="_blank" href="http://<? print($link);?>"><h4>Link</h4></a> 
+            </div> 
+          </div>
+
+      </div>
+        <div class="modal-footer">
+          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
+        </div>
+      </div>
+    </div>  
+<? } ?>
+<!--/venue modal-->    
+
 <?
   $campaign = (json_decode($campaign));
   foreach($campaign as $row)
@@ -82,11 +129,16 @@
           <? foreach($venues as $venue){ ?>
             <?
               $venue_name = $venue->venue_name;
+              $venue_id = $venue->venue_id;
               $city = $venue->city;
               $image = $venue->image;
             ?>
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
-            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;"></div>
+            <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
+              <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" target="_blank" >
+                <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;">
+              </a>
+            </div>
             <div class="col-md-1"></div>
             <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
               <h4 >
@@ -307,6 +359,23 @@ is a hack to prevent position fixed of background to be made redundant by the if
 			 }
     );
   });
+
+  function venueBox(id)
+  {
+    var a = 'venue-form' + id;
+
+    $.fancybox(
+        $('.'+a).html(),
+        {
+            'width'             : 950,
+            'height'            : 1100,
+            'autoScale'         : false,
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'hideOnContentClick': false,
+         }
+    );  
+  } 
 
 </script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
