@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="d-tj-bg-overlay">
-  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a> 
+  <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a> 
     <!--top 2 col-->
    <div class="d-tj-black-box d-tj-offset-top-40 d-tj-why">
       <h3 style="margin-top: 0px;">WHY PRE-BUY TICKETS ?</h3>
