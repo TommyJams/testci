@@ -9,6 +9,7 @@
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -364,6 +365,7 @@ $('#foo5').carouFredSel({
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
+<script type="text/javascript" src="/script/jquery.fancybox.js"></script>
 <script type="text/javascript" src="/script/jquery.easing.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 

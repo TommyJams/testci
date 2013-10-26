@@ -9,6 +9,7 @@
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -136,7 +137,7 @@
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
             <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" target="_blank" >
-                <img src="/img/<? print($image); ?>" alt="" style="max-height: 150px;">
+                <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px;">
               </a>
             </div>
             <div class="col-md-1"></div>
@@ -385,5 +386,6 @@ is a hack to prevent position fixed of background to be made redundant by the if
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.js"></script> --> 
 <!--<script src="/script/tj1.js"></script>-->
+<script type="text/javascript" src="/script/jquery.fancybox.js"></script>
 </body>
 </html>
