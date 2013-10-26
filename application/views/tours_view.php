@@ -15,6 +15,55 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+
+<!--venue modal-->
+<? $tourDetail = (json_decode($tours));
+  foreach($tourDetail as $tourDetail) 
+  { 
+    $venuesDetail = $tourDetail->venues; 
+  } 
+  
+  foreach($venuesDetail as $venue)
+  { 
+    $venue_name = $venue->venue_name;
+    $venue_id = $venue->venue_id;
+    $city = $venue->city;
+    $image = $venue->image;
+    $desc = $venue->desc;
+    $link = $venue->link;
+    $contact = $venue->contact;
+  ?>
+    <div class="venue-form<? print($venue_id); ?>" style="display: none;" >
+      <div class="modal-content socialModal">
+        <div class="modal-header">
+          <h4><? print($venue_name); ?></h4>
+        </div>
+        <div class="modal-body modal-link">
+
+          <div class="row">
+            <div class="col-md-12">
+                  <img src="/img/temp/<? print($image); ?>" style="margin-right:10px" align="left" alt="" height="150" width="150">
+                  <h4><? print($desc); ?></h4>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Location: <? print($city); ?></h4>
+              <h4>Contact: <? print($contact); ?></h4>
+              <a target="_blank" href="http://<? print($link);?>"><h4>Link</h4></a> 
+            </div> 
+          </div>
+
+      </div>
+        <div class="modal-footer">
+          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
+        </div>
+      </div>
+    </div>  
+<? } ?>
+
+<!--/venue modal-->
+
 </head>
 <body>   
 <div class="d-tj-bg-overlay">
@@ -45,12 +94,15 @@
             <? foreach($venues as $venue){ ?>
             <?
               $venue_name = $venue->venue_name;
+              $venue_id = $venue->venue_id;
               $city = $venue->city;
               $image = $venue->image;
             ?>
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div style="background:black">
-            <img src="img/temp/<? print($image); ?>" alt="">
+              <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" target="_blank" >
+                <img src="img/temp/<? print($image); ?>" alt="">
+              </a>
             </div>
               <h4>
                 <span ><? print($venue_name); ?></span> <? print($city); ?>
@@ -66,7 +118,7 @@
           <div class="d-tj-black-box d-tj-tour-right">
             <h4 class="raise" >APPLY BY: <? print($applyBy); ?></h4>
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
-            <h3>TARGET: <? print($target); ?></h3>
+            <h3>TARGET: INR. <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" onclick="window.location.href='<?print($login_url);?>'" value="APPLY NOW">
             <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
@@ -292,6 +344,24 @@ $('#foo5').carouFredSel({
 					next: '#next5',
 					scroll: 1
 				});
+
+function venueBox(id)
+  {
+    var a = 'venue-form' + id;
+
+    $.fancybox(
+        $('.'+a).html(),
+        {
+            'width'             : 950,
+            'height'            : 1100,
+            'autoScale'         : false,
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'hideOnContentClick': false,
+         }
+    );  
+  } 
+  
 	});
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
