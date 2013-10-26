@@ -175,7 +175,7 @@
 </head>
 <body>
 <div class="d-tj-bg-overlay">
-  <div class="container d-tj-container"> <a href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
+  <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
     <form name="editcampaign" id="editcampaign" method="post" enctype="multipart/form-data">
       <?  $getTourDetail = (json_decode($getTourDetail));
         foreach($getTourDetail as $getTourDetail) { ?>
