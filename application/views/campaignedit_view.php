@@ -236,9 +236,11 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
+            <div class="row">
             <h4 ><? print($venue_name); ?> <br>
               <? print($city); ?>
             </h4>
+          </div>
           </div>
         </div>
         <? 
