@@ -255,10 +255,12 @@
           <div class="row">
 
             <!--Tabs -->
-            <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Tickets</a></li>
-              <li class=""><a href="#profile" data-toggle="tab">Contributors</a></li>
-            </ul>
+            <div class="d-tj-pledge">
+              <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">Tickets</a></li>
+                <li class=""><a href="#profile" data-toggle="tab">Contributors</a></li>
+              </ul>
+            </div>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
@@ -268,7 +270,7 @@
                     $pledge_desc = $pledge->desc;
                   ?>
                   <div style="">
-                    <h4>PLEDGE  AMOUNT INR. <? print($amount); ?></h4>
+                    <h4>INR. <? print($amount); ?></h4>
                     <h5><? print($pledge_desc); ?></h5>
                   </div>
                   <div class="seperator" ></div>

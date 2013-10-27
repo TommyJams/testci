@@ -687,6 +687,12 @@ ul.social-list li a.social-list-blog-edit {
 	background-image:url('/img/help.png');
 	cursor: pointer;
 }
+.nav  li  a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+	color:#FFCC00;
+}
 
 /* Editor */
 #editor {
