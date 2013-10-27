@@ -255,7 +255,7 @@
           <div class="row">
 
             <!--Tabs -->
-            <div class="d-tj-pledge">
+            <div class="d-tj-tab">
               <ul id="myTab" class="nav nav-tabs">
                 <li class="active"><a href="#home" data-toggle="tab">Tickets</a></li>
                 <li class=""><a href="#profile" data-toggle="tab">Contributors</a></li>

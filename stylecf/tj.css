@@ -327,6 +327,9 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	color:white;
 	padding:30px
 }
+.d-tj-tab {
+	margin-left:30px;	
+}
 .seperator {
 	height: 2px;
 	background: url(../img/seperator.png) repeat-x;
