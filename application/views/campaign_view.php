@@ -253,8 +253,40 @@
         <!-- Pledge-->
         <div class="col-md-5 ">
           <div class="row">
-            <div class="d-tj-pledge">
-              <? foreach($pledges as $pledge){ ?>
+
+            <!--Tabs -->
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Tickets</a></li>
+              <li class=""><a href="#profile" data-toggle="tab">Contributors</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade active in" id="home">
+                <div class="d-tj-pledge">
+                  <? foreach($pledges as $pledge){ ?>
+                  <?
+                    $amount = $pledge->amount;
+                    $pledge_desc = $pledge->desc;
+                  ?>
+                  <div style="">
+                    <h4>PLEDGE  AMOUNT INR. <? print($amount); ?></h4>
+                    <h5><? print($pledge_desc); ?></h5>
+                  </div>
+                  <div class="seperator" ></div>
+                  <? 
+                    } 
+                  ?>
+                  <iframe style="display:inline-block" frameborder="0" src="http://em.explara.com/widget/test-ci-event" width="315" ></iframe>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+            </div>
+            <!--/Tabs -->
+
+
+        <!--    <div class="d-tj-pledge">
+              <? /*foreach($pledges as $pledge){ ?>
               <?
                 $amount = $pledge->amount;
                 $pledge_desc = $pledge->desc;
@@ -265,10 +297,13 @@
               </div>
               <div class="seperator" ></div>
               <? 
-                } 
+                } */
               ?>
               <iframe style="display:inline-block" frameborder="0" src="http://em.explara.com/widget/test-ci-event" width="315" ></iframe>
-            </div>
+            </div>-->
+
+
+
             <div class=" d-tj-offset-top-30 pledge-btn" >
               <input type="button" value="PLEDGE NOW" style="">
             </div>
