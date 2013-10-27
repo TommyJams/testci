@@ -514,18 +514,6 @@ class Model extends CI_Model{
 					$eventUpdate = $this->facebook->api( "/".$eventID, 'post', $cover );
 
 					error_log("Event Val: ".$eventUpdate);
-
-					$campaign_url = base_url().'campaign/'.$campaign_id;
-
-					$to = $email;
-					$sender = "alerts@tommyjams.com";
-					$subject = "Campaign Launched";
-					$mess="<p style='text-align:left;'> Dear $artist_name,<br><br>Congratulations!<br>Your campaign has been launched successfully on TommyJams.
-								<br>Your campaign target is INR. '$target'.
-								<br>You can monitor your campaign by going to '$campaign_url'.
-								<br>We wish you all the very best for the campaign.<br><br>Happy Jamming,<br>Team TommyJams<br><br></p>";
-						
-					$this->send_email($to, $sender, $subject, $mess);
                 }
             }
             else
@@ -576,6 +564,20 @@ class Model extends CI_Model{
 				
 				$maxIndex--;
 			}
+
+			$campaign_url = base_url().'campaign/'.$campaign_id;
+			$to = $email;
+			$sender = "alerts@tommyjams.com";
+			$subject = "Campaign Launched";
+			$mess="<p style='text-align:left;'> Dear $artist_name,<br><br>Congratulations!<br>Your campaign has been launched successfully on TommyJams.
+						<br>Kindly wait for one business day for us to verify your event and activate the payment gateway.
+						<br>You can monitor your campaign by going to '$campaign_url'.
+						<br>We wish you all the very best for the campaign.<br><br>Happy Jamming,<br>Team TommyJams<br><br></p>";
+				
+			$this->send_email($to, $sender, $subject, $mess);
+
+			$to = "alerts@tommyjams.com";
+			$this->send_email($to, $sender, $subject, $mess);
 
 			$response['id'] = $campaign_id;
 			return $response;
