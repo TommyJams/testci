@@ -514,6 +514,18 @@ class Model extends CI_Model{
 					$eventUpdate = $this->facebook->api( "/".$eventID, 'post', $cover );
 
 					error_log("Event Val: ".$eventUpdate);
+
+					$campaign_url = base_url().'campaign/'.$campaign_id;
+
+					$to = $email;
+					$sender = "alerts@tommyjams.com";
+					$subject = "Campaign Launched";
+					$mess="<p style='text-align:left;'> Dear $artist_name,<br><br>Congratulations!<br>Your campaign has been launched successfully on TommyJams.
+								<br>Your campaign target is INR. '$target'.
+								<br>You can monitor your campaign by going to '$campaign_url'.
+								<br>We wish you all the very best for the campaign.<br><br>Happy Jamming,<br>Team TommyJams<br><br></p>";
+						
+					$this->send_email($to, $sender, $subject, $mess);
                 }
             }
             else
@@ -667,6 +679,37 @@ class Model extends CI_Model{
 
                 return true;
         }
+
+        public function send_email($to, $sender, $subject, $mess)
+		{
+			$body = "
+				<html>
+				<head>
+				<title>$subject</title>
+				</head>
+				<body>
+				<div style='background:#000; padding:10px;'>
+					<table style='text-align:center; width: 100%; padding:50px; padding-top:20px;'>
+						<tr style='margin-top:20px;'>
+							<img src='http://www.tommyjams.com/beta/images/tjlogo_small.png'>
+						</tr>
+						<tr style='margin-top:50px; background:#ffcc00; padding:10px;'>
+							$mess
+						</tr>
+					</table>
+				</div>
+				</body>
+				</html>
+			";
+
+			//Using codeigniter mail library
+			$this->email->from(SMTP_USERNAME, SMTP_SENDER);
+			$this->email->to($to); 
+			$this->email->subject($subject);
+			$this->email->message($body);
+
+			$this->email->send();
+		}
 
 }
 ?>
