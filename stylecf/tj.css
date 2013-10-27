@@ -330,6 +330,14 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tab {
 	margin-left:30px;	
 }
+ul.nav {
+	color:black;
+	text-color:white;	
+}
+ul.nav:hover{
+	color:#FFCC00;
+	text-color:black;	
+}
 .seperator {
 	height: 2px;
 	background: url(../img/seperator.png) repeat-x;
@@ -694,7 +702,6 @@ ul.social-list li a.social-list-blog-edit {
     display: block;
     padding: 10px 15px;
     position: relative;
-	color:#FFCC00;
 }
 
 /* Editor */
