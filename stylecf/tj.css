@@ -330,13 +330,13 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tab {
 	margin-left:30px;	
 }
-ul.nav {
+.nav-tabs  li  a {
+	background-color:black;
 	color:black;
-	text-color:white;	
 }
-ul.nav:hover{
+.nav-tabs  li  a:hover{
+	background-color:#FFCC00;
 	color:#FFCC00;
-	text-color:black;	
 }
 .seperator {
 	height: 2px;
