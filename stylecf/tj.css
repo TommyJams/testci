@@ -330,11 +330,11 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tab {
 	margin-left:30px;	
 }
-.nav-tabs  li.active  a {
+.nav-tabs  li.active  a, , .nav-tabs li.active a:focus {
 	background-color:black;
 	color:#FFCC00;
 }
-.nav-tabs  li  a:hover{
+.nav-tabs  li  a {
 	background-color:#FFCC00;
 	color:black;
 }
