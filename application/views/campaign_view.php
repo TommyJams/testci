@@ -267,9 +267,7 @@
               <? 
                 } 
               ?>
-            </div>
-            <div class=" d-tj-offset-top-30 pledge-btn" >
-            <iframe frameborder="0" src="http://em.explara.com/widget/test-ci-event" width="300" height="110"></iframe>
+              <iframe style="display:inline-block" frameborder="0" src="http://em.explara.com/widget/test-ci-event" width="375" ></iframe>
             </div>
             <div class=" d-tj-offset-top-30 pledge-btn" >
               <input type="button" value="PLEDGE NOW" style="">
