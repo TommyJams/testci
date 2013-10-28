@@ -115,7 +115,7 @@
             <h4 class="tgt" >PLEDGES : <? print($totalPledges); ?></h4>
             <h4 class="tgt" >TARGET : INR <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
-            <div class="text-center d-tj-offset-top-30 pledge-btn-top">
+            <div class="text-center d-tj-offset-top-40 pledge-btn-top">
               <input type="button" value="PLEDGE NOW">
             </div>
           </div>
