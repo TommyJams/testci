@@ -339,6 +339,13 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	background-color:#FFCC00;
 	color:black;
 }
+.nav-tabs  li {
+    float: left;
+    margin-bottom: 0px;
+}
+.nav-tabs {
+    border-bottom: 1px solid #000000;
+}
 .seperator {
 	height: 2px;
 	background: url(../img/seperator.png) repeat-x;
