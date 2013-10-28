@@ -335,6 +335,9 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	border-color: #000000 #000000 rgba(0, 0, 0, 0);
 	color:#FFCC00;
 }
+.nav-tabs li.active a:focus {
+	color:black;
+}
 .nav-tabs  li  a {
 	background-color:#FFCC00;
 	color:black;
@@ -345,6 +348,9 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .nav-tabs {
     border-bottom: 0px solid #000000;
+}
+.nav-tabs  li  a {
+    border-radius: 0 0 0 0;
 }
 .seperator {
 	height: 2px;
