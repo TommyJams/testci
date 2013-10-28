@@ -378,8 +378,11 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	margin-left: 18px;
 	min-height: 300px;
 }
-.pledge-btn, .pledge-btn-top  {
+.pledge-btn  {
 	margin-left: 30px;
+}
+.pledge-btn-top  {
+	margin-left: 0px;
 }
 .pledge-btn input, .pledge-btn-top input {
 	width: 100%;
