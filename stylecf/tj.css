@@ -335,7 +335,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	border-color: #000000 #000000 rgba(0, 0, 0, 0);
 	color:#FFCC00;
 }
-.nav-tabs li.active a:focus {
+.nav-tabs li.active a:hover {
 	background-color:black;
 	border-color: #000000 #000000 rgba(0, 0, 0, 0);
 	color:#FFCC00;
