@@ -86,7 +86,7 @@
                 Looking to book events immediately ?
               </h4>
               <h4 class="text-center">
-                <img src="/img/test_icon.png" alt="" >
+                <img src="/img/book_events.png" alt="" >
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
@@ -101,7 +101,7 @@
                 Looking to campaign for cross-city tours ?
               </h4>
               <h4 class="text-center">
-                <img src="/img/test_icon.png" alt="" >
+                <img src="/img/grab_tours.png" alt="" >
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
