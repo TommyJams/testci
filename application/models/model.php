@@ -198,6 +198,18 @@ class Model extends CI_Model{
 
 					}
 				}
+
+				// 3D array formation; Getting fans contrinutors details
+   				$contributes = null;
+   				$query3 = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$campaign_id' ORDER BY amount DESC;");
+				if ($query3->num_rows() > 0)
+				{
+					$q3result = $query3->result();
+					foreach ($q3result as $rowFans)
+					{
+						$contributes[] = $rowFans;
+					}
+				}
    				
    				$todayDate = date("Y-m-d");	
 
