@@ -111,9 +111,9 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <h4 class="raise">FUNDED : INR. <? print($raised); ?></h4>    
-            <h4 class="tgt" >TARGET : INR. <? print($target); ?></h4>
+            <h4 class="raise">FUNDED : INR <? print($raised); ?></h4>    
             <h4 class="tgt" >PLEDGES : <? print($totalPledges); ?></h4>
+            <h4 class="tgt" >TARGET : INR <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40 pledge-btn">
               <input type="button" value="PLEDGE NOW">
@@ -272,7 +272,7 @@
                     $pledge_desc = $pledge->desc;
                   ?>
                   <div style="">
-                    <h4>INR. <? print($amount); ?></h4>
+                    <h4>INR <? print($amount); ?></h4>
                     <h5><? print($pledge_desc); ?></h5>
                   </div>
                   <div class="seperator" ></div>
@@ -293,7 +293,7 @@
                     $fans_location = $contributor->location;
                   ?>
                   <h4><? print($fans_name); ?></h4>
-                  <h4>INR. <? print($fans_contribution); ?></h4>
+                  <h4>INR <? print($fans_contribution); ?></h4>
                   <h4><? print($fans_contact); ?></h4>
                   <h4><? print($fans_location); ?></h4>
                   <div class="seperator" ></div>
