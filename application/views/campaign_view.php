@@ -291,10 +291,10 @@
                     $fans_contact = $contributor->contact;
                     $fans_location = $contributor->location;
                   ?>
-                  <h4>Name: <? print($fans_name); ?></h4>
-                  <h4>Contribution: INR. <? print($fans_contribution); ?></h4>
-                  <h4>Contact: <? print($fans_contact); ?></h4>
-                  <h4>Location: <? print($fans_location); ?></h4>
+                  <h4><? print($fans_name); ?></h4>
+                  <h4>INR. <? print($fans_contribution); ?></h4>
+                  <h4><? print($fans_contact); ?></h4>
+                  <h4><? print($fans_location); ?></h4>
                   <div class="seperator" ></div>
                   <? 
                     } 
