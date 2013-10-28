@@ -344,7 +344,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
     margin-bottom: 0px;
 }
 .nav-tabs {
-    border-bottom: 1px solid #000000;
+    border-bottom: 0px solid #000000;
 }
 .seperator {
 	height: 2px;
