@@ -295,6 +295,7 @@
                   <h4>Contribution: INR. <? print($fans_contribution); ?></h4>
                   <h4>Contact: <? print($fans_contact); ?></h4>
                   <h4>Location: <? print($fans_location); ?></h4>
+                  <div class="seperator" ></div>
                   <? 
                     } 
                   ?>

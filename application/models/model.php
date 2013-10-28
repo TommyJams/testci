@@ -290,6 +290,7 @@ class Model extends CI_Model{
 								'campaign_desc'      => $campaign_desc,
 								'venues' 		=> $venues,
 								'pledges' 		=> $pledges,
+								'contributes' 	=> $contributes,
 								'fb' 			=> $fb,
 								'twitter' 		=> $twitter,
 								'bandcamp' 		=> $bandcamp,
