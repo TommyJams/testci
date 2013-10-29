@@ -248,7 +248,7 @@
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-network-content" >
               <h3>NETWORK WITH US</h3>
-                <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
+              <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
                 <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
                 <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
                   <div class="network-ticker">
@@ -264,6 +264,7 @@
                   <li><a style="margin-right:2px;" href="http://www.tommyjams.com/blog" title="" alt="Blog" target="_blank" class="social-list-blog" data-original-title="Blog"></a></li>
                 </ul>
               </div>
+              <div class="clearfix"></div>
             </div>
           </div>
         </div>
@@ -332,11 +333,11 @@
     {
       if(data.length)
       {
-        var list=$('<ul>');
+        var list=$('<ul style="height: 80px">');
 
         $(data).each(function(index,value)
         {
-          list.append($('<li>').append($('<h5>').html(linkify(value.text))));
+          list.append($('<li style="height: 40px">').append($('<h5>').html(linkify(value.text))));
         });
 
         $('.network-ticker').append(list);
