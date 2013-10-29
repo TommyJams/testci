@@ -83,10 +83,10 @@
       $login_url = $tour->login_url;
 
       $date1 = strtotime($applyBy);
-      $applyBy = date('F jS Y', $date1);
+      $applyBy = date('jS F Y', $date1);
 
       $date2 = strtotime($startCamp);
-      $startCamp = date('F jS Y', $date2);
+      $startCamp = date('jS F Y', $date2);
 
     ?>
     <div class="d-tj-box " >
