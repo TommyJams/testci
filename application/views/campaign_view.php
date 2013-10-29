@@ -303,7 +303,7 @@
                       }
                     } 
                   ?>
-                  <? elseif(!isset($contributors)) { ?>
+                  <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to pledge and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
                 </div>
