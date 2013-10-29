@@ -333,11 +333,11 @@
     {
       if(data.length)
       {
-        var list=$('<ul style="height: 80px">');
+        var list=$('<ul style="height: 50px">');
 
         $(data).each(function(index,value)
         {
-          list.append($('<li style="height: 80px">').append($('<h5>').html(linkify(value.text))));
+          list.append($('<li style="height: 50px">').append($('<h5>').html(linkify(value.text))));
         });
 
         $('.network-ticker').append(list);
