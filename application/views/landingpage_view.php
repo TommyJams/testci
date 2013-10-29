@@ -301,9 +301,9 @@
       </div> 
     </div>
     <!--/bottom 1 col--> 
-   
-    <!-- Footer  -->      
+         
     </div>
+    <!-- Footer  -->
     <?
       include("include/footer.php");
     ?>

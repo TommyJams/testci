@@ -339,7 +339,6 @@
   </div>
   
   <!-- Footer  -->      
-  </div>
   <?
     include("include/footer.php");
   ?>
