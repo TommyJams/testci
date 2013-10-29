@@ -349,7 +349,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .nav-tabs  li  a {
     border-radius: 0 0 0 0;
 }
-a, a:hover {
+.network-ticker ul li h5 a, .network-ticker ul li h5 a:hover {
 	color:#FFCC00;
 }
 .seperator {
