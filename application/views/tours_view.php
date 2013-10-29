@@ -81,6 +81,13 @@
       $target = $tour->target;
       $venues = $tour->venues;
       $login_url = $tour->login_url;
+
+      $date1 = strtotime($applyBy);
+      $applyBy = date('F jS Y', $date1);
+
+      $date2 = strtotime($startCamp);
+      $startCamp = date('F jS Y', $date2);
+
     ?>
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
@@ -118,7 +125,7 @@
           <div class="d-tj-black-box d-tj-tour-right">
             <h4 class="raise" >APPLY BY: <? print($applyBy); ?></h4>
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
-            <h3>TARGET: INR. <? print($target); ?></h3>
+            <h3>TARGET: INR <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" onclick="window.location.href='<?print($login_url);?>'" value="APPLY NOW">
             <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
