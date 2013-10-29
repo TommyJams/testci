@@ -284,7 +284,9 @@
               </div>
               <div class="tab-pane fade" id="profile">
                 <div class="d-tj-pledge">
-                  <? foreach($contributors as $contributor){ ?>
+                  <? if(isset($contributors))
+                  { 
+                    foreach($contributors as $contributor){ ?>
                   <?
                     $fans_name = $contributor->name;
                     $fans_contribution = $contributor->amount;
@@ -298,8 +300,12 @@
                   <h5><? print($fans_location); ?></h5>
                   <div class="seperator" ></div>
                   <? 
+                      }
                     } 
                   ?>
+                  <? elseif(!isset($contributors)) { ?>
+                  <h4>Be the first fan to pledge and help <?print($artist_name);?> tour.</h4>
+                  <? } ?>
                 </div>
               </div>
             </div>
