@@ -1,7 +1,7 @@
 <footer class="d-tj-footer">
     <div class="col-md-12 col-sm-12 col-xs-12 footer-main">
       <div class="col-md-3 col-sm-12 col-xs-12 footer-top">
-        <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="img/tj.jpg" height="50" alt=""> </a> </div>
+        <div class="col-md-12 f-logo"> <a href="http://www.tommyjams.com/"><img src="/img/tj.jpg" height="50" alt=""> </a> </div>
         <div class="col-md-12 f-social">
           <ul class=" list-unstyled social-list clear-fix">
             <li><a style="margin-right:2px;margin-top:2px;" href="http://www.facebook.com/tommyjams.live" title="" alt="Facebook" target="_blank" class="social-list-facebook" data-original-title="Facebook"></a></li>
@@ -52,7 +52,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="img/m-s-ventures.png" /></a> </div>
+      <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a><img src="/img/m-s-ventures.png" /></a> </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
       <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
