@@ -273,7 +273,7 @@
                   ?>
                   <div style="">
                   </div>
-                  <div class="seperator" ></div>
+                  <!--<div class="seperator" ></div>-->
                   <? 
                     } 
                   ?>
