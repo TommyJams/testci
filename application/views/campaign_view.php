@@ -356,7 +356,7 @@ is a hack to prevent position fixed of background to be made redundant by the if
 -->
 <img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">
 
-<script src="/script/jquery.js"></script> 
+<script src="/script/jquery.min.js"></script>
 <script src="/script/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function(){
